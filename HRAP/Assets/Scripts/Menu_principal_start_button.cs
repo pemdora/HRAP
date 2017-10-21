@@ -24,6 +24,10 @@ public class Menu_principal_start_button : MonoBehaviour {
 	{
 		changeScene("4-Interview");
 	}
+	public void Transition_menu_5()//menu 5
+	{
+		changeScene("5-Greetings");
+	}
 	public void Finish()//exit
 	{
 		Application.Quit();
