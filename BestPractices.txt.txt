@@ -1,0 +1,13 @@
+Best practices utilisation de github :
+
+
+1/ Toujours "pull" ou "merge" en ouvrant un projet ou avant de push un code.
+2/ Comprendre le système de branches : 
+	La branche master possèdera tout le code stable et testé
+	La branche develop possèdera tout le code en cours de développement qui fonctionne mais pas forcément testé
+Créer une nouvelle branche lorsque l'on veut implémenter une nouvelles fonctionnalités :
+=> exemple je veux améliorer l'interface utilisateur, je créer une nouvelle branche "featureUpdateUI"
+3/ Ecrire les commits de facon clair et précise (pas de "code corrigé")
+4/ Commit le plus souvent possible (Exemple: je dois modifier le nom des variables et ajouter une fonctionnalité => 2 commits différent)
+5/ Toujours commit et push un code qui fonctionne.
+6/ Commenter le plus possible.
