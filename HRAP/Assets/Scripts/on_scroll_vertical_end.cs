@@ -2,8 +2,8 @@
 using UnityEngine.UI;
 
 public class on_scroll_vertical_end : MonoBehaviour {
-	public  Scrollbar vertical_scrollbar;
-	public  Button button_continue;
+	public Scrollbar vertical_scrollbar;
+	public Button button_continue;
 
 	// Use this for initialization
 	void Start () {
