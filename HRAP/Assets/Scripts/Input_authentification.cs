@@ -16,7 +16,7 @@ using UnityEngine.UI;
 			
 			// Update is called once per frame
 			void Update () {
-				if (firstName.text != "" && lastName.text != "") // if the fields has been filled
+		if (firstName.text != "" && lastName.text != "" && firstName.text.Length >= 2 && lastName.text.Length >=2) // if the fields has been filled
 					Set_interactable(true);
 				else
 						Set_interactable(false);
