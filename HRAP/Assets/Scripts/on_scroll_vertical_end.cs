@@ -3,11 +3,14 @@ using UnityEngine.UI;
 
 public class on_scroll_vertical_end : MonoBehaviour {
 
-	public  Scrollbar vertical_scrollbar;
-	public  Button button_continue;
+	Scrollbar vertical_scrollbar;
+	Button button_continue;
 
 	// Use this for initialization
 	void Start(){
+		
+		button_continue = GameObject.Find("button_continue").GetComponent<Button>();
+		vertical_scrollbar = GameObject.Find ("Scrollbar Horizontal").GetComponent<Scrollbar>();
 		button_continue.interactable = false;
 		//Set_Interactable_Button (false); // rends indisponible le bouton
 	}

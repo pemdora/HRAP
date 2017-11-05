@@ -18,12 +18,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1904
-    height: 931
-  m_MinSize: {x: 709, y: 592}
-  m_MaxSize: {x: 18004, y: 18042}
+    width: 958
+    height: 938
+  m_MinSize: {x: 707, y: 592}
+  m_MaxSize: {x: 18002, y: 18042}
   vertical: 0
-  controlID: 6368
+  controlID: 572
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,10 +46,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 489
-    y: 493
-    width: 876
-    height: 517
+    x: 242
+    y: 496
+    width: 438
+    height: 521
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
@@ -58,10 +58,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -438
-    m_HBaseRangeMax: 438
-    m_VBaseRangeMin: -250
-    m_VBaseRangeMax: 250
+    m_HBaseRangeMin: -219
+    m_HBaseRangeMax: 219
+    m_VBaseRangeMin: -252
+    m_VBaseRangeMax: 252
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -78,25 +78,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 876
-      height: 500
+      width: 438
+      height: 504
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 438, y: 250}
+    m_Translation: {x: 219, y: 252}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -438
-      y: -250
-      width: 876
-      height: 500
+      x: -219
+      y: -252
+      width: 438
+      height: 504
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 876, y: 517}
+  m_LastWindowPixelSize: {x: 438, y: 521}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -118,12 +118,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1355
-    height: 931
-  m_MinSize: {x: 434, y: 592}
-  m_MaxSize: {x: 14004, y: 18042}
+    width: 681
+    height: 938
+  m_MinSize: {x: 430, y: 592}
+  m_MaxSize: {x: 14000, y: 18042}
   vertical: 1
-  controlID: 6369
+  controlID: 573
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1355
-    height: 393
+    width: 681
+    height: 396
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 6370
+  controlID: 574
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,8 +164,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 403
-    height: 393
+    width: 203
+    height: 396
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
@@ -195,15 +195,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 12
+    x: 1
     y: 100
-    width: 401
-    height: 372
+    width: 201
+    height: 375
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a2c0000
-    m_LastClickedID: 11354
-    m_ExpandedIDs: 3c8efdff1ae5ffff20e5ffff28e5ffff2ee5ffffc2f7ffffcaf7ffffd0f7ffffe0fbffff00000000762c0000
+    m_SelectedIDs: 1a270000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0aedffff6cf1ffffe0fbffff00000000462f0000842f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -240,10 +240,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 403
+    x: 203
     y: 0
-    width: 952
-    height: 393
+    width: 478
+    height: 396
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 8}
@@ -274,10 +274,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 417
+    x: 206
     y: 100
-    width: 948
-    height: 372
+    width: 474
+    height: 375
   m_SceneLighting: 1
   lastFramingTime: 221.54442181726384
   m_2DMode: 0
@@ -369,13 +369,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 393
-    width: 1355
-    height: 538
-  m_MinSize: {x: 434, y: 371}
-  m_MaxSize: {x: 14004, y: 14021}
+    y: 396
+    width: 681
+    height: 542
+  m_MinSize: {x: 430, y: 371}
+  m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 6346
+  controlID: 558
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,12 +394,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 475
-    height: 538
+    width: 239
+    height: 542
   m_MinSize: {x: 230, y: 371}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 6328
+  controlID: 559
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,8 +416,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 475
-    height: 236
+    width: 239
+    height: 238
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -474,10 +474,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 12
-    y: 493
-    width: 473
-    height: 215
+    x: 1
+    y: 496
+    width: 237
+    height: 217
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 236
-    width: 475
-    height: 302
+    y: 238
+    width: 239
+    height: 304
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 18}
@@ -576,10 +576,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 12
-    y: 729
-    width: 473
-    height: 281
+    x: 1
+    y: 734
+    width: 237
+    height: 283
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -603,7 +603,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 392}
     m_SelectedIDs: fe280000
     m_LastClickedID: 10494
-    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae280000182a00003e2b000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae2800001a2a0000402b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -631,7 +631,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae280000182a00003e2b000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae2800001a2a0000402b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -656,8 +656,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 5a2c0000
-    m_LastClickedInstanceID: 11354
+    m_SelectedInstanceIDs: 1a270000
+    m_LastClickedInstanceID: 10010
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -685,7 +685,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 193
+  m_DirectoriesAreaWidth: 117
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -708,10 +708,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: -1
-    y: 774
-    width: 476
-    height: 252
+    x: 8
+    y: 729
+    width: 473
+    height: 281
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -726,12 +726,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 475
+    x: 239
     y: 0
-    width: 880
-    height: 538
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+    width: 442
+    height: 542
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -751,12 +751,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1355
+    x: 681
     y: 0
-    width: 549
-    height: 931
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 277
+    height: 938
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -785,10 +785,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1369
+    x: 684
     y: 100
-    width: 547
-    height: 910
+    width: 275
+    height: 917
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -840,153 +840,15 @@ MonoBehaviour:
     horizontalScroll: {x: 0, y: 688}
     tree:
       entries:
-      - Path: HRAP\Library\gfu\cache\gitlog.yaml
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\gfu\cache\gitlog.yaml
-        ProjectPath: Library\gfu\cache\gitlog.yaml
+      - Path: HRAP\HRAP.userprefs
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\HRAP.userprefs
+        ProjectPath: HRAP.userprefs
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel.meta
-        ProjectPath: Assets\UI unity sample\Animation\Panel.meta
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Closed.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Closed.anim
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Closed.anim
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Closed.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Closed.anim.meta
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Closed.anim.meta
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Closing.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Closing.anim
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Closing.anim
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Closing.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Closing.anim.meta
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Closing.anim.meta
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Open.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Open.anim
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Open.anim
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Open.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Open.anim.meta
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Open.anim.meta
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Panel.controller
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Panel.controller
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Panel.controller
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Animation\Panel\Panel.controller.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Animation\Panel\Panel.controller.meta
-        ProjectPath: Assets\UI unity sample\Animation\Panel\Panel.controller.meta
-        OriginalPath: 
-        Status: 5
-        Staged: 0
-      - Path: HRAP\Library\CurrentLayout.dwlt
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentLayout.dwlt
-        ProjectPath: Library\CurrentLayout.dwlt
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
-        ProjectPath: Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
-        ProjectPath: Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
-        ProjectPath: Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f
-        ProjectPath: Library\metadata\e1\e18126576915f8146af49e3910b4809f
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
-        ProjectPath: Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel.meta
-        ProjectPath: Assets\UI unity sample\Panel.meta
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Closed.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Closed.anim
-        ProjectPath: Assets\UI unity sample\Panel\Closed.anim
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Closed.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Closed.anim.meta
-        ProjectPath: Assets\UI unity sample\Panel\Closed.anim.meta
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Closing.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Closing.anim
-        ProjectPath: Assets\UI unity sample\Panel\Closing.anim
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Closing.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Closing.anim.meta
-        ProjectPath: Assets\UI unity sample\Panel\Closing.anim.meta
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Open.anim
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Open.anim
-        ProjectPath: Assets\UI unity sample\Panel\Open.anim
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Open.anim.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Open.anim.meta
-        ProjectPath: Assets\UI unity sample\Panel\Open.anim.meta
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Panel.controller
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Panel.controller
-        ProjectPath: Assets\UI unity sample\Panel\Panel.controller
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\UI unity sample\Panel\Panel.controller.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\UI unity sample\Panel\Panel.controller.meta
-        ProjectPath: Assets\UI unity sample\Panel\Panel.controller.meta
+      - Path: HRAP\Library\CurrentMaximizeLayout.dwlt
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentMaximizeLayout.dwlt
+        ProjectPath: Library\CurrentMaximizeLayout.dwlt
         OriginalPath: 
         Status: 1
         Staged: 0
@@ -996,9 +858,39 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Library\InspectorExpandedItems.asset
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\InspectorExpandedItems.asset
-        ProjectPath: Library\InspectorExpandedItems.asset
+      - Path: HRAP\obj\Debug\Assembly-CSharp.pdb
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.pdb
+        ProjectPath: obj\Debug\Assembly-CSharp.pdb
+        OriginalPath: 
+        Status: 5
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp.dll
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.dll
+        ProjectPath: obj\Debug\Assembly-CSharp.dll
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+        ProjectPath: obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.dll
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.dll
+        ProjectPath: obj\Debug\Assembly-CSharp-Editor.dll
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.pdb
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.pdb
+        ProjectPath: obj\Debug\Assembly-CSharp-Editor.pdb
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll
+        ProjectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
         OriginalPath: 
         Status: 3
         Staged: 0
@@ -1020,256 +912,7 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-        ProjectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-        ProjectPath: obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp.dll
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.dll
-        ProjectPath: obj\Debug\Assembly-CSharp.dll
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp.pdb
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.pdb
-        ProjectPath: obj\Debug\Assembly-CSharp.pdb
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        ProjectPath: obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.pdb
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.pdb
-        ProjectPath: obj\Debug\Assembly-CSharp-Editor.pdb
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.csproj.FileListAbsolute.txt
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csproj.FileListAbsolute.txt
-        ProjectPath: obj\Debug\Assembly-CSharp-Editor.csproj.FileListAbsolute.txt
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.dll
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.dll
-        ProjectPath: obj\Debug\Assembly-CSharp-Editor.dll
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\HRAP.userprefs
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\HRAP.userprefs
-        ProjectPath: HRAP.userprefs
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\expandedItems
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\expandedItems
-        ProjectPath: Library\expandedItems
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll
-        ProjectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\Scenes\2-Terms_of_contract.unity
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\2-Terms_of_contract.unity
-        ProjectPath: Assets\Scenes\2-Terms_of_contract.unity
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\Scripts\Input_authentification.cs
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scripts\Input_authentification.cs
-        ProjectPath: Assets\Scripts\Input_authentification.cs
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\9f\9f577c51cefd67444b173a52bd0b39fd
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9f\9f577c51cefd67444b173a52bd0b39fd
-        ProjectPath: Library\metadata\9f\9f577c51cefd67444b173a52bd0b39fd
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\CurrentMaximizeLayout.dwlt
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentMaximizeLayout.dwlt
-        ProjectPath: Library\CurrentMaximizeLayout.dwlt
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\Scenes\1-Main_menu.unity
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\1-Main_menu.unity
-        ProjectPath: Assets\Scenes\1-Main_menu.unity
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\Scenes\4-Interview.unity
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\4-Interview.unity
-        ProjectPath: Assets\Scenes\4-Interview.unity
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\logo_cs.png.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\logo_cs.png.meta
-        ProjectPath: Assets\logo_cs.png.meta
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510
-        ProjectPath: Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510.info
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510.info
-        ProjectPath: Library\metadata\e1\e1be2089d3baa3f49848f7fa2b4ae510.info
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.mat
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Atlas.mat
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.mat
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.psd.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Atlas.psd.meta
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.psd.meta
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f
-        ProjectPath: Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f.info
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f.info
-        ProjectPath: Library\metadata\d4\d4b622e2ae4b7aa4abf761706845a53f.info
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.png
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Atlas.png
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.png
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.png.meta
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Atlas.png.meta
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.png.meta
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648
-        ProjectPath: Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648.info
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648.info
-        ProjectPath: Library\metadata\7a\7aff9acb8fce60e4084b8ad2e0b7d648.info
-        OriginalPath: 
-        Status: 1
-        Staged: 0
-      - Path: HRAP\Library\metadata\d6\d650d98b3c4028a4a8b7225c1a6482f8.info
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d6\d650d98b3c4028a4a8b7225c1a6482f8.info
-        ProjectPath: Library\metadata\d6\d650d98b3c4028a4a8b7225c1a6482f8.info
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.prefab
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Atlas.prefab
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Atlas.prefab
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.prefab
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Font - Header.prefab
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.prefab
-        OriginalPath: 
-        Status: 3
-        Staged: 0
-      - Path: HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.prefab
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Atlases\SciFi\SciFi
-          Font - Normal.prefab
-        ProjectPath: Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.prefab
-        OriginalPath: 
-        Status: 3
-        Staged: 0
       entryCommitTargets:
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
-      - All: 0
       - All: 0
       - All: 0
       - All: 0
