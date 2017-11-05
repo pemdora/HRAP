@@ -6,13 +6,13 @@ public class on_scroll_vertical_end : MonoBehaviour {
 	Scrollbar vertical_scrollbar;
 	Button button_continue;
 
+
 	// Use this for initialization
 	void Start(){
-		
+		vertical_scrollbar = GameObject.Find ("Scrollbar Vertical").GetComponent<Scrollbar>();
 		button_continue = GameObject.Find("button_continue").GetComponent<Button>();
-		vertical_scrollbar = GameObject.Find ("Scrollbar Horizontal").GetComponent<Scrollbar>();
+		vertical_scrollbar.enabled = true;
 		button_continue.interactable = false;
-		//Set_Interactable_Button (false); // rends indisponible le bouton
 	}
 
 	// Update is called once per frame
