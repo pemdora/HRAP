@@ -32,6 +32,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
 Library/assetDatabase3
-Library/assetDatabase3
-Library/metadata/01/015fa701d862b2f4bab32228aaade619
+
+
+Library/metadata/

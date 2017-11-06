@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class on_scroll_vertical_end : MonoBehaviour {
+public class On_scroll_vertical_end : MonoBehaviour {
 
 	Scrollbar vertical_scrollbar;
 	Button button_continue;
