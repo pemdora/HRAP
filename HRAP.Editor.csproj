@@ -16,7 +16,7 @@
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
-    <UnityVersion>5.6.3f1</UnityVersion>
+    <UnityVersion>5.6.3p2</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
@@ -106,53 +106,83 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.AppleTV.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.AppleTV.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Facebook.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Facebook.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
-    </Reference>
-    <Reference Include="Octokit">
-      <HintPath>Assets\Plugins\GitHub\Editor\Octokit.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Logging">
-      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Rackspace.Threading">
-      <HintPath>Assets\Plugins\GitHub\Editor\Rackspace.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security">
-      <HintPath>Assets\Plugins\GitHub\Editor\Mono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="ReadOnlyCollectionsInterfaces">
-      <HintPath>Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Unity">
-      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading">
-      <HintPath>Assets\Plugins\GitHub\Editor\System.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Api">
-      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Api.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>Assets\Plugins\GitHub\Editor\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="AsyncBridge.Net35">
       <HintPath>Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>Assets\Plugins\GitHub\Editor\Mono.Posix.dll</HintPath>
+    <Reference Include="GitHub.Api">
+      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Unity">
+      <HintPath>Assets\Plugins\GitHub\Editor\GitHub.Unity.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>Assets\Plugins\GitHub\Editor\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>Assets\Plugins\GitHub\Editor\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Octokit">
+      <HintPath>Assets\Plugins\GitHub\Editor\Octokit.dll</HintPath>
+    </Reference>
+    <Reference Include="Rackspace.Threading">
+      <HintPath>Assets\Plugins\GitHub\Editor\Rackspace.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="ReadOnlyCollectionsInterfaces">
+      <HintPath>Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="sfw.net">
       <HintPath>Assets\Plugins\GitHub\Editor\sfw.net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>Assets\Plugins\GitHub\Editor\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>Assets\Plugins\GitHub\Editor\System.Threading.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
