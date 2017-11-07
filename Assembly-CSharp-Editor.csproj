@@ -88,7 +88,6 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
-     <None Include="Assets\Plugins\GitHub\Editor\CREDITS.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
@@ -116,9 +115,8 @@
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\Plugins\GitHub\Editor\EULA.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -173,45 +171,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="AsyncBridge.Net35">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Api">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/GitHub.Api.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Logging">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Unity">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Posix">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/Mono.Posix.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Security">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/Mono.Security.dll</HintPath>
- </Reference>
- <Reference Include="Octokit">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/Octokit.dll</HintPath>
- </Reference>
- <Reference Include="Rackspace.Threading">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/Rackspace.Threading.dll</HintPath>
- </Reference>
- <Reference Include="ReadOnlyCollectionsInterfaces">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll</HintPath>
- </Reference>
- <Reference Include="sfw.net">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/System.Net.Http.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Assets/Plugins/GitHub/Editor/System.Threading.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

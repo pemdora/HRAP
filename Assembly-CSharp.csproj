@@ -166,7 +166,6 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\Input_authentification.cs" />
      <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
-     <Compile Include="Assets\Scripts\Sound_Manager.cs" />
      <Compile Include="Assets\Scripts\on_scroll_vertical_end.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ActiveStateToggler.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ApplicationManager.cs" />
@@ -187,7 +186,6 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
-     <None Include="Assets\Plugins\GitHub\Editor\CREDITS.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
@@ -215,9 +213,8 @@
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\Plugins\GitHub\Editor\EULA.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
