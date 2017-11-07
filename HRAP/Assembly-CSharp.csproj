@@ -166,6 +166,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\Input_authentification.cs" />
      <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
+     <Compile Include="Assets\Scripts\Sound_Manager.cs" />
      <Compile Include="Assets\Scripts\on_scroll_vertical_end.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ActiveStateToggler.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ApplicationManager.cs" />

@@ -13,17 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 21}
+  - {fileID: 22}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 958
-    height: 931
+    width: 1920
+    height: 947
   m_MinSize: {x: 713, y: 613}
   m_MaxSize: {x: 18008, y: 18063}
   vertical: 0
-  controlID: 126
+  controlID: 8329
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,10 +46,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 249
+    x: 716
     y: 493
-    width: 438
-    height: 517
+    width: 647
+    height: 525
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
@@ -58,10 +58,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -219
-    m_HBaseRangeMax: 219
-    m_VBaseRangeMin: -250
-    m_VBaseRangeMax: 250
+    m_HBaseRangeMin: -323.5
+    m_HBaseRangeMax: 323.5
+    m_VBaseRangeMin: -254
+    m_VBaseRangeMax: 254
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -78,25 +78,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 438
-      height: 500
+      width: 647
+      height: 508
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 219, y: 250}
+    m_Translation: {x: 323.5, y: 254}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -219
-      y: -250
-      width: 438
-      height: 500
+      x: -323.5
+      y: -254
+      width: 647
+      height: 508
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 438, y: 517}
+  m_LastWindowPixelSize: {x: 647, y: 525}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -118,12 +118,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 681
-    height: 931
+    width: 1365
+    height: 947
   m_MinSize: {x: 436, y: 613}
   m_MaxSize: {x: 14006, y: 18063}
   vertical: 1
-  controlID: 127
+  controlID: 8330
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 681
-    height: 393
+    width: 1365
+    height: 401
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 8331
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,10 +164,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 203
-    height: 393
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 407
+    height: 401
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -195,15 +195,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 100
-    width: 201
-    height: 372
+    x: 0
+    y: 92
+    width: 405
+    height: 380
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: b8050000
     m_LastClickedID: 0
-    m_ExpandedIDs: e0fbffff00000000
+    m_ExpandedIDs: 72f1feffe0fbffff000000006a2c0000c82c0000d02c0000dc2c0000f02c000092500000c6500000f2500000fa50000018510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -222,7 +222,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
-  - 2-Terms_of_contract
+  - 6_Audio_Menu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -240,18 +240,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 203
+    x: 407
     y: 0
-    width: 478
-    height: 393
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 958
+    height: 401
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
   - {fileID: 9}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,19 +274,19 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 213
-    y: 100
-    width: 474
-    height: 372
+    x: 409
+    y: 92
+    width: 954
+    height: 380
   m_SceneLighting: 1
-  lastFramingTime: 1677.3605816538504
+  lastFramingTime: 230.2154232683245
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 358, y: 15, z: 0}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 358, y: 15, z: 0}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -309,13 +309,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.07222227, y: 0.91973925, z: -0.20211072, w: -0.32866034}
+    m_Target: {x: -0.07940054, y: 0.87305176, z: -0.4565304, w: -0.1518429}
     speed: 2
-    m_Value: {x: -0.07222217, y: 0.91973805, z: -0.20211045, w: -0.32865992}
+    m_Value: {x: -0.07940054, y: 0.8730518, z: -0.45653042, w: -0.1518429}
   m_Size:
-    m_Target: 268.60056
+    m_Target: 1.6616882
     speed: 2
-    m_Value: 268.60056
+    m_Value: 1.6616882
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -348,10 +348,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 409
+    y: 92
+    width: 954
+    height: 379
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,17 +365,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 11}
-  - {fileID: 20}
+  - {fileID: 21}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 393
-    width: 681
-    height: 538
+    y: 401
+    width: 1365
+    height: 546
   m_MinSize: {x: 436, y: 392}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 0
-  controlID: 128
+  controlID: 8556
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,12 +394,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 239
-    height: 538
+    width: 714
+    height: 546
   m_MinSize: {x: 232, y: 392}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 129
+  controlID: 8540
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,10 +416,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 239
-    height: 236
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 714
+    height: 240
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
@@ -427,7 +427,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -449,10 +449,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 570
-    width: 473
-    height: 123
+    x: 0
+    y: 493
+    width: 712
+    height: 219
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -474,10 +474,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
+    x: 0
     y: 493
-    width: 237
-    height: 215
+    width: 712
+    height: 219
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -499,10 +499,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 570
-    width: 473
-    height: 123
+    x: 1
+    y: 497
+    width: 354
+    height: 217
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -524,10 +524,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 570
-    width: 473
-    height: 123
+    x: 0
+    y: 492
+    width: 463
+    height: 219
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -543,15 +543,16 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 236
-    width: 239
-    height: 302
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+    y: 240
+    width: 714
+    height: 306
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &18
@@ -576,10 +577,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 729
-    width: 237
-    height: 281
+    x: 0
+    y: 733
+    width: 712
+    height: 285
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -591,19 +592,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 392}
-    m_SelectedIDs: fe280000
-    m_LastClickedID: 10494
-    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae2800001a2a0000402b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f8270000
+    m_LastClickedID: 10232
+    m_ExpandedIDs: 00000000ae260000b0270000f8270000ac280000b2280000202a0000462b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -631,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa26000020270000562700006a270000ac270000f4270000a8280000ae2800001a2a0000402b0000
+    m_ExpandedIDs: 00000000ae26000024270000b0270000f8270000ac280000b2280000202a0000462b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -656,8 +657,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: b8050000
+    m_LastClickedInstanceID: 1464
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -685,7 +686,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 117
+  m_DirectoriesAreaWidth: 167
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -708,10 +709,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 729
-    width: 237
-    height: 281
+    x: 0
+    y: 733
+    width: 712
+    height: 285
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -720,23 +721,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 239
-    y: 0
-    width: 442
-    height: 538
-  m_MinSize: {x: 200, y: 200}
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 2}
-  m_Panes:
-  - {fileID: 2}
-  m_Selected: 0
-  m_LastSelected: 0
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 732
+    width: 711
+    height: 286
+  m_AnimEditor: {fileID: 0}
+  m_Locked: 0
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -751,19 +755,44 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 681
+    x: 714
     y: 0
-    width: 277
-    height: 931
+    width: 651
+    height: 546
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 2}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1365
+    y: 0
+    width: 555
+    height: 947
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 22}
   - {fileID: 23}
+  - {fileID: 24}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -785,10 +814,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 691
-    y: 100
-    width: 275
-    height: 910
+    x: 1367
+    y: 92
+    width: 553
+    height: 926
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -796,7 +825,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
---- !u!114 &23
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -846,21 +875,1367 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Assets\Scenes\2-Terms_of_contract.unity
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\2-Terms_of_contract.unity
-        ProjectPath: Assets\Scenes\2-Terms_of_contract.unity
+      - Path: HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+        ProjectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Library\CurrentMaximizeLayout.dwlt
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentMaximizeLayout.dwlt
-        ProjectPath: Library\CurrentMaximizeLayout.dwlt
+      - Path: HRAP\Assets\NGUI\Examples\Models\Orc Armor\Bracers.FBX.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Models\Orc
+          Armor\Bracers.FBX.meta
+        ProjectPath: Assets\NGUI\Examples\Models\Orc Armor\Bracers.FBX.meta
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\NGUI\Examples\Models\Orc Armor\Shoulders.FBX.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Models\Orc
+          Armor\Shoulders.FBX.meta
+        ProjectPath: Assets\NGUI\Examples\Models\Orc Armor\Shoulders.FBX.meta
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\NGUI\Examples\Models\Orc\FBX.FBX.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Models\Orc\FBX.FBX.meta
+        ProjectPath: Assets\NGUI\Examples\Models\Orc\FBX.FBX.meta
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\NGUI\Examples\Models\Orc\FBX@idle.FBX.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Models\Orc\FBX@idle.FBX.meta
+        ProjectPath: Assets\NGUI\Examples\Models\Orc\FBX@idle.FBX.meta
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\NGUI\Examples\Models\Orc\FBX@idleBreaks.FBX.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\NGUI\Examples\Models\Orc\FBX@idleBreaks.FBX.meta
+        ProjectPath: Assets\NGUI\Examples\Models\Orc\FBX@idleBreaks.FBX.meta
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\HRAP.userprefs
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\HRAP.userprefs
+        ProjectPath: HRAP.userprefs
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll.mdb
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll.mdb
+        ProjectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll.mdb
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+        ProjectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000002000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000002000000000000000
+        ProjectPath: Library\metadata\00\00000000000000002000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000003000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000003000000000000000
+        ProjectPath: Library\metadata\00\00000000000000003000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000004000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000004000000000000000
+        ProjectPath: Library\metadata\00\00000000000000004000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000004100000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000004100000000000000
+        ProjectPath: Library\metadata\00\00000000000000004100000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000005000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000005000000000000000
+        ProjectPath: Library\metadata\00\00000000000000005000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000005100000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000005100000000000000
+        ProjectPath: Library\metadata\00\00000000000000005100000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000006000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000006000000000000000
+        ProjectPath: Library\metadata\00\00000000000000006000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000006100000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000006100000000000000
+        ProjectPath: Library\metadata\00\00000000000000006100000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000007000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000007000000000000000
+        ProjectPath: Library\metadata\00\00000000000000007000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000007100000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000007100000000000000
+        ProjectPath: Library\metadata\00\00000000000000007100000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000008000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000008000000000000000
+        ProjectPath: Library\metadata\00\00000000000000008000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00000000000000009000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00000000000000009000000000000000
+        ProjectPath: Library\metadata\00\00000000000000009000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\0000000000000000a000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\0000000000000000a000000000000000
+        ProjectPath: Library\metadata\00\0000000000000000a000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\0000000000000000a100000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\0000000000000000a100000000000000
+        ProjectPath: Library\metadata\00\0000000000000000a100000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\0000000000000000b000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\0000000000000000b000000000000000
+        ProjectPath: Library\metadata\00\0000000000000000b000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\0000000000000000c000000000000000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\0000000000000000c000000000000000
+        ProjectPath: Library\metadata\00\0000000000000000c000000000000000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\01\0116e799c8f4dc14a8a8b352845455d1
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\01\0116e799c8f4dc14a8a8b352845455d1
+        ProjectPath: Library\metadata\01\0116e799c8f4dc14a8a8b352845455d1
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\01\015fa701d862b2f4bab32228aaade619
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\01\015fa701d862b2f4bab32228aaade619
+        ProjectPath: Library\metadata\01\015fa701d862b2f4bab32228aaade619
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\02\020d0c1db3283a342ab86731270ea060
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\02\020d0c1db3283a342ab86731270ea060
+        ProjectPath: Library\metadata\02\020d0c1db3283a342ab86731270ea060
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\02\0249dc991b57a1f4fa6f192e9f4a3883
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\02\0249dc991b57a1f4fa6f192e9f4a3883
+        ProjectPath: Library\metadata\02\0249dc991b57a1f4fa6f192e9f4a3883
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\0480f64170b8ebe45812d18656dcfc44
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\0480f64170b8ebe45812d18656dcfc44
+        ProjectPath: Library\metadata\04\0480f64170b8ebe45812d18656dcfc44
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\049a2bcd8df653c4d9cb9d39404363a9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\049a2bcd8df653c4d9cb9d39404363a9
+        ProjectPath: Library\metadata\04\049a2bcd8df653c4d9cb9d39404363a9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328
+        ProjectPath: Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328.info
+        ProjectPath: Library\metadata\04\04c500d6ebb8403459ad4e44d4a35328.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\04cb63f7bb5b23f4faa0e2bc480e77c8
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\04cb63f7bb5b23f4faa0e2bc480e77c8
+        ProjectPath: Library\metadata\04\04cb63f7bb5b23f4faa0e2bc480e77c8
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\04\04d1b7c9e9a19a24ab67123a43c6544b
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\04\04d1b7c9e9a19a24ab67123a43c6544b
+        ProjectPath: Library\metadata\04\04d1b7c9e9a19a24ab67123a43c6544b
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\06\065e02ce5c5ec66429de34a0eabdf3f1
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\06\065e02ce5c5ec66429de34a0eabdf3f1
+        ProjectPath: Library\metadata\06\065e02ce5c5ec66429de34a0eabdf3f1
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\06\06647390effa1ca49a5b31219b23963c
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\06\06647390effa1ca49a5b31219b23963c
+        ProjectPath: Library\metadata\06\06647390effa1ca49a5b31219b23963c
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\06\0691e062d343d1b41b435e34db5d467f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\06\0691e062d343d1b41b435e34db5d467f
+        ProjectPath: Library\metadata\06\0691e062d343d1b41b435e34db5d467f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\06\06fab1249a3cb60469c68b2ee2a0701f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\06\06fab1249a3cb60469c68b2ee2a0701f
+        ProjectPath: Library\metadata\06\06fab1249a3cb60469c68b2ee2a0701f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\0b\0b4eb3a400afab046abb8471a9d746d6
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\0b\0b4eb3a400afab046abb8471a9d746d6
+        ProjectPath: Library\metadata\0b\0b4eb3a400afab046abb8471a9d746d6
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\0b\0b826b69ae58db24e94e9e2441b5bde8
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\0b\0b826b69ae58db24e94e9e2441b5bde8
+        ProjectPath: Library\metadata\0b\0b826b69ae58db24e94e9e2441b5bde8
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\0d\0d15ff9fd80670345b53fd7be4f2f295
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\0d\0d15ff9fd80670345b53fd7be4f2f295
+        ProjectPath: Library\metadata\0d\0d15ff9fd80670345b53fd7be4f2f295
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\12\12e164431dbd8714bbde0aeef453b764
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\12\12e164431dbd8714bbde0aeef453b764
+        ProjectPath: Library\metadata\12\12e164431dbd8714bbde0aeef453b764
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\12\12e164431dbd8714bbde0aeef453b764.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\12\12e164431dbd8714bbde0aeef453b764.info
+        ProjectPath: Library\metadata\12\12e164431dbd8714bbde0aeef453b764.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\15\15cc9c62605319f4a9b20b15918913fa
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\15\15cc9c62605319f4a9b20b15918913fa
+        ProjectPath: Library\metadata\15\15cc9c62605319f4a9b20b15918913fa
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\17\17aeef7ce6c142344959e650cab20151
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\17\17aeef7ce6c142344959e650cab20151
+        ProjectPath: Library\metadata\17\17aeef7ce6c142344959e650cab20151
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\18\182695e850938314fa6675a8926ad9ee
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\18\182695e850938314fa6675a8926ad9ee
+        ProjectPath: Library\metadata\18\182695e850938314fa6675a8926ad9ee
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+        ProjectPath: Library\metadata\18\18b4dbf8a0b54ea4adf46fb7f4d71dd0
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
+        ProjectPath: Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3.info
+        ProjectPath: Library\metadata\19\192d548898c01fb43bf53b8e95b9fff3.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\19\19fb2eefdd5dffc40926407f1e877f90.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\19\19fb2eefdd5dffc40926407f1e877f90.info
+        ProjectPath: Library\metadata\19\19fb2eefdd5dffc40926407f1e877f90.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1a\1a4e623d2eabebb4e8f6296a5fee1116
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1a\1a4e623d2eabebb4e8f6296a5fee1116
+        ProjectPath: Library\metadata\1a\1a4e623d2eabebb4e8f6296a5fee1116
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1b\1b3dc54f924693f41b5cbecb267e647a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1b\1b3dc54f924693f41b5cbecb267e647a
+        ProjectPath: Library\metadata\1b\1b3dc54f924693f41b5cbecb267e647a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc
+        ProjectPath: Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc.info
+        ProjectPath: Library\metadata\1b\1badfd6944994af44b5ddf21766a94bc.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1d\1d805c79a1ab11643bfd9d91e10c195a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1d\1d805c79a1ab11643bfd9d91e10c195a
+        ProjectPath: Library\metadata\1d\1d805c79a1ab11643bfd9d91e10c195a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1d\1da6f8367fbe7454ebb850836a5ed0b0
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1d\1da6f8367fbe7454ebb850836a5ed0b0
+        ProjectPath: Library\metadata\1d\1da6f8367fbe7454ebb850836a5ed0b0
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1f\1f5158b7acfccaf4ca4a8a581255b653
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1f\1f5158b7acfccaf4ca4a8a581255b653
+        ProjectPath: Library\metadata\1f\1f5158b7acfccaf4ca4a8a581255b653
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\1f\1fdca5042b1d12a4890ec1bd4f04290d
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\1f\1fdca5042b1d12a4890ec1bd4f04290d
+        ProjectPath: Library\metadata\1f\1fdca5042b1d12a4890ec1bd4f04290d
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\24\2403d1f95ea54028853403e595bc9274
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\24\2403d1f95ea54028853403e595bc9274
+        ProjectPath: Library\metadata\24\2403d1f95ea54028853403e595bc9274
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\24\24438193675d223439c8b044419aab8c
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\24\24438193675d223439c8b044419aab8c
+        ProjectPath: Library\metadata\24\24438193675d223439c8b044419aab8c
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\24\245788f199aedac469f04dfc612b041f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\24\245788f199aedac469f04dfc612b041f
+        ProjectPath: Library\metadata\24\245788f199aedac469f04dfc612b041f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\28\28e7f0f53a61c6842a620d1114ae614f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\28\28e7f0f53a61c6842a620d1114ae614f
+        ProjectPath: Library\metadata\28\28e7f0f53a61c6842a620d1114ae614f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\2a\2a92b5d748695fd44aac9feef17ba415
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\2a\2a92b5d748695fd44aac9feef17ba415
+        ProjectPath: Library\metadata\2a\2a92b5d748695fd44aac9feef17ba415
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\2c\2c5ecb5660b11414fb042fb826e03b73
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\2c\2c5ecb5660b11414fb042fb826e03b73
+        ProjectPath: Library\metadata\2c\2c5ecb5660b11414fb042fb826e03b73
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\2e\2e1a147c24165da4b8936f4a453da17e
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\2e\2e1a147c24165da4b8936f4a453da17e
+        ProjectPath: Library\metadata\2e\2e1a147c24165da4b8936f4a453da17e
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\2e\2e773be3c69e0ef49b8ae5ee2b644fbd.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\2e\2e773be3c69e0ef49b8ae5ee2b644fbd.info
+        ProjectPath: Library\metadata\2e\2e773be3c69e0ef49b8ae5ee2b644fbd.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
+        ProjectPath: Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3.info
+        ProjectPath: Library\metadata\32\3252d5b9b2d549b44a5e7f6c348993b3.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\34\34baafa8cf35dfe4b968d22d0e7556e2
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\34\34baafa8cf35dfe4b968d22d0e7556e2
+        ProjectPath: Library\metadata\34\34baafa8cf35dfe4b968d22d0e7556e2
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\35\35a096bcfb49b9c409c3875999a2cda9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\35\35a096bcfb49b9c409c3875999a2cda9
+        ProjectPath: Library\metadata\35\35a096bcfb49b9c409c3875999a2cda9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\36\365827806a6dd8b4583deeefe6e483c9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\36\365827806a6dd8b4583deeefe6e483c9
+        ProjectPath: Library\metadata\36\365827806a6dd8b4583deeefe6e483c9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\39\394ce1e2bba14ce45bee393b8728818a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\39\394ce1e2bba14ce45bee393b8728818a
+        ProjectPath: Library\metadata\39\394ce1e2bba14ce45bee393b8728818a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\39\395f00539de3dd44e8e1dffd3531a1ae
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\39\395f00539de3dd44e8e1dffd3531a1ae
+        ProjectPath: Library\metadata\39\395f00539de3dd44e8e1dffd3531a1ae
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\39\396530a0e33debf4cbf0fb836d77eb01
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\39\396530a0e33debf4cbf0fb836d77eb01
+        ProjectPath: Library\metadata\39\396530a0e33debf4cbf0fb836d77eb01
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\3c\3c8d596c16f05d949922ef16347e4cc9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\3c\3c8d596c16f05d949922ef16347e4cc9
+        ProjectPath: Library\metadata\3c\3c8d596c16f05d949922ef16347e4cc9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\3d\3d166255cacf07b4292b8402b3ddefc5
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\3d\3d166255cacf07b4292b8402b3ddefc5
+        ProjectPath: Library\metadata\3d\3d166255cacf07b4292b8402b3ddefc5
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\3f\3f093ad5830afe44aba6efa8b8a5d5b9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\3f\3f093ad5830afe44aba6efa8b8a5d5b9
+        ProjectPath: Library\metadata\3f\3f093ad5830afe44aba6efa8b8a5d5b9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\40\4033f00d093b3164a9ab789dcce5a78c
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\40\4033f00d093b3164a9ab789dcce5a78c
+        ProjectPath: Library\metadata\40\4033f00d093b3164a9ab789dcce5a78c
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\42\4271d0dec29cc9845a75627e88f762af
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\42\4271d0dec29cc9845a75627e88f762af
+        ProjectPath: Library\metadata\42\4271d0dec29cc9845a75627e88f762af
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\43\43133e037305160469507743bfeb73fa
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\43\43133e037305160469507743bfeb73fa
+        ProjectPath: Library\metadata\43\43133e037305160469507743bfeb73fa
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\48\48ae3b1123bedc6429fcbcd3f1548030
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\48\48ae3b1123bedc6429fcbcd3f1548030
+        ProjectPath: Library\metadata\48\48ae3b1123bedc6429fcbcd3f1548030
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\4d\4d0c51bb0b6e93049af5e88f93826e3b
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\4d\4d0c51bb0b6e93049af5e88f93826e3b
+        ProjectPath: Library\metadata\4d\4d0c51bb0b6e93049af5e88f93826e3b
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\4e\4e758c1de6cfd8b498cd2526d5b629df
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\4e\4e758c1de6cfd8b498cd2526d5b629df
+        ProjectPath: Library\metadata\4e\4e758c1de6cfd8b498cd2526d5b629df
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\4e\4ecb26c462ed72b4dbfba168ff91e2fa.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\4e\4ecb26c462ed72b4dbfba168ff91e2fa.info
+        ProjectPath: Library\metadata\4e\4ecb26c462ed72b4dbfba168ff91e2fa.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+        ProjectPath: Library\metadata\51\51288a4fc4384861a5b1f9dd49b3da26
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\57\57e428c9b6087304da439ec665b56a2d
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\57\57e428c9b6087304da439ec665b56a2d
+        ProjectPath: Library\metadata\57\57e428c9b6087304da439ec665b56a2d
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\5c\5c645c85ed4826348b5000ddccd0f936
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\5c\5c645c85ed4826348b5000ddccd0f936
+        ProjectPath: Library\metadata\5c\5c645c85ed4826348b5000ddccd0f936
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\62\623be2c02ff0ce24d83ce440e4fa393d
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\62\623be2c02ff0ce24d83ce440e4fa393d
+        ProjectPath: Library\metadata\62\623be2c02ff0ce24d83ce440e4fa393d
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\65\65ee607e1177db1479c3cbf94cac327e
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\65\65ee607e1177db1479c3cbf94cac327e
+        ProjectPath: Library\metadata\65\65ee607e1177db1479c3cbf94cac327e
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\66\6640bfdeeb55c3846ae12d39c4be16c7
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\66\6640bfdeeb55c3846ae12d39c4be16c7
+        ProjectPath: Library\metadata\66\6640bfdeeb55c3846ae12d39c4be16c7
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\66\66ca9c6e5cbd4544ab22016a27d817a4
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\66\66ca9c6e5cbd4544ab22016a27d817a4
+        ProjectPath: Library\metadata\66\66ca9c6e5cbd4544ab22016a27d817a4
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\67\67ee969cd76de204fabb3af9227ad2f3.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\67\67ee969cd76de204fabb3af9227ad2f3.info
+        ProjectPath: Library\metadata\67\67ee969cd76de204fabb3af9227ad2f3.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\69\69381003764fe1547ae1574f92908a15
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\69\69381003764fe1547ae1574f92908a15
+        ProjectPath: Library\metadata\69\69381003764fe1547ae1574f92908a15
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\6b\6be1c23e94a0ec847bf5784666c3432d
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\6b\6be1c23e94a0ec847bf5784666c3432d
+        ProjectPath: Library\metadata\6b\6be1c23e94a0ec847bf5784666c3432d
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\6c\6c20815eb3063c24290a61b7020a1836
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\6c\6c20815eb3063c24290a61b7020a1836
+        ProjectPath: Library\metadata\6c\6c20815eb3063c24290a61b7020a1836
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\6f\6f9aef6d5962d8849aa830ef46c7c993
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\6f\6f9aef6d5962d8849aa830ef46c7c993
+        ProjectPath: Library\metadata\6f\6f9aef6d5962d8849aa830ef46c7c993
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\70\705e3be56bcded34a85b8cd6b21f03d0
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\70\705e3be56bcded34a85b8cd6b21f03d0
+        ProjectPath: Library\metadata\70\705e3be56bcded34a85b8cd6b21f03d0
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\71\7163253a2d8b90f4cbdd7b0630b84dcd
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\71\7163253a2d8b90f4cbdd7b0630b84dcd
+        ProjectPath: Library\metadata\71\7163253a2d8b90f4cbdd7b0630b84dcd
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\75\75e7459110b9666449485c40f25362a5
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\75\75e7459110b9666449485c40f25362a5
+        ProjectPath: Library\metadata\75\75e7459110b9666449485c40f25362a5
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\7d\7d44bc69c2ca5f943b845318866dc1bd
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\7d\7d44bc69c2ca5f943b845318866dc1bd
+        ProjectPath: Library\metadata\7d\7d44bc69c2ca5f943b845318866dc1bd
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\7e\7e58031db5aeb444da199e06c340c871
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\7e\7e58031db5aeb444da199e06c340c871
+        ProjectPath: Library\metadata\7e\7e58031db5aeb444da199e06c340c871
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\81\81229f2f75daa254298ceeba4651fa0d
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\81\81229f2f75daa254298ceeba4651fa0d
+        ProjectPath: Library\metadata\81\81229f2f75daa254298ceeba4651fa0d
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\82\82ca0ae319ab64341b8336b689389d6b.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\82\82ca0ae319ab64341b8336b689389d6b.info
+        ProjectPath: Library\metadata\82\82ca0ae319ab64341b8336b689389d6b.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\85\858a20c1b21a3f94bb5b2d3b901c9aaf
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\85\858a20c1b21a3f94bb5b2d3b901c9aaf
+        ProjectPath: Library\metadata\85\858a20c1b21a3f94bb5b2d3b901c9aaf
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\87\8705eb83ab801c74b8876f4b901d4587
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\87\8705eb83ab801c74b8876f4b901d4587
+        ProjectPath: Library\metadata\87\8705eb83ab801c74b8876f4b901d4587
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\8a\8a405728ee80ddd458732a8e2ac86dff
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\8a\8a405728ee80ddd458732a8e2ac86dff
+        ProjectPath: Library\metadata\8a\8a405728ee80ddd458732a8e2ac86dff
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\8d\8d847f26b6745fb4d9076f59a3cf0151.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\8d\8d847f26b6745fb4d9076f59a3cf0151.info
+        ProjectPath: Library\metadata\8d\8d847f26b6745fb4d9076f59a3cf0151.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\8e\8e158bb7b8285214086ac67290f0cecd
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\8e\8e158bb7b8285214086ac67290f0cecd
+        ProjectPath: Library\metadata\8e\8e158bb7b8285214086ac67290f0cecd
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\90\90b2b27c885e1544598b824822e98119
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\90\90b2b27c885e1544598b824822e98119
+        ProjectPath: Library\metadata\90\90b2b27c885e1544598b824822e98119
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\90\90d839770baeee54097f3c167e390010
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\90\90d839770baeee54097f3c167e390010
+        ProjectPath: Library\metadata\90\90d839770baeee54097f3c167e390010
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\90\90d839770baeee54097f3c167e390010.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\90\90d839770baeee54097f3c167e390010.info
+        ProjectPath: Library\metadata\90\90d839770baeee54097f3c167e390010.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\92\921cc3716d59a904faeee8dec757dea6
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\92\921cc3716d59a904faeee8dec757dea6
+        ProjectPath: Library\metadata\92\921cc3716d59a904faeee8dec757dea6
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\92\9254a456c0f8d064a9f8c8596ce772c3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\92\9254a456c0f8d064a9f8c8596ce772c3
+        ProjectPath: Library\metadata\92\9254a456c0f8d064a9f8c8596ce772c3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\93\93c84009f8f004b4f84697c8cb12dd63
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\93\93c84009f8f004b4f84697c8cb12dd63
+        ProjectPath: Library\metadata\93\93c84009f8f004b4f84697c8cb12dd63
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\94\94b5bd8d2e1bcbe4580036799fb6ca41
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\94\94b5bd8d2e1bcbe4580036799fb6ca41
+        ProjectPath: Library\metadata\94\94b5bd8d2e1bcbe4580036799fb6ca41
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\99\9997db2c14b24cd4d94a8ebb76fff1f5
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\99\9997db2c14b24cd4d94a8ebb76fff1f5
+        ProjectPath: Library\metadata\99\9997db2c14b24cd4d94a8ebb76fff1f5
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9a\9a4738b17d7857b4fa52eb2d3ca0cb3a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9a\9a4738b17d7857b4fa52eb2d3ca0cb3a
+        ProjectPath: Library\metadata\9a\9a4738b17d7857b4fa52eb2d3ca0cb3a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9b\9b07b9d136934c04b965f9adb7054484
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9b\9b07b9d136934c04b965f9adb7054484
+        ProjectPath: Library\metadata\9b\9b07b9d136934c04b965f9adb7054484
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9c\9c436d67fac37854ba0477a76f2b2489
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9c\9c436d67fac37854ba0477a76f2b2489
+        ProjectPath: Library\metadata\9c\9c436d67fac37854ba0477a76f2b2489
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9e\9e2747e3775af504da1a4d5a46c5a1ce
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9e\9e2747e3775af504da1a4d5a46c5a1ce
+        ProjectPath: Library\metadata\9e\9e2747e3775af504da1a4d5a46c5a1ce
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9e\9e55520451765634c9abb4830c2b53b3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9e\9e55520451765634c9abb4830c2b53b3
+        ProjectPath: Library\metadata\9e\9e55520451765634c9abb4830c2b53b3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\9f\9f39f1d1f2f3ee04bb793082eee05819
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\9f\9f39f1d1f2f3ee04bb793082eee05819
+        ProjectPath: Library\metadata\9f\9f39f1d1f2f3ee04bb793082eee05819
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
+        ProjectPath: Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19.info
+        ProjectPath: Library\metadata\a1\a1a76cb6763ca8a4ab0450fc989edb19.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a1\a1bf769ed077fac4b821591f35174d8a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a1\a1bf769ed077fac4b821591f35174d8a
+        ProjectPath: Library\metadata\a1\a1bf769ed077fac4b821591f35174d8a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a3\a33cb394358c5814ab9a2a098384df3b
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a3\a33cb394358c5814ab9a2a098384df3b
+        ProjectPath: Library\metadata\a3\a33cb394358c5814ab9a2a098384df3b
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a4\a40a40a3e330dd64b88859d19e82b8ec.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a4\a40a40a3e330dd64b88859d19e82b8ec.info
+        ProjectPath: Library\metadata\a4\a40a40a3e330dd64b88859d19e82b8ec.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\a5\a5a2a079a3e532341bc353243c67d9be
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\a5\a5a2a079a3e532341bc353243c67d9be
+        ProjectPath: Library\metadata\a5\a5a2a079a3e532341bc353243c67d9be
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\aa\aa69d5b40401f77469779cf7f6fc94a0
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\aa\aa69d5b40401f77469779cf7f6fc94a0
+        ProjectPath: Library\metadata\aa\aa69d5b40401f77469779cf7f6fc94a0
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ab\ab4b41aa0a43dcc48a386073b6a1a0d9.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ab\ab4b41aa0a43dcc48a386073b6a1a0d9.info
+        ProjectPath: Library\metadata\ab\ab4b41aa0a43dcc48a386073b6a1a0d9.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ab\ab50a3f3a2c84ad4fa15556036c5b8d3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ab\ab50a3f3a2c84ad4fa15556036c5b8d3
+        ProjectPath: Library\metadata\ab\ab50a3f3a2c84ad4fa15556036c5b8d3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ac\ac5060295fbd39b4a88d20d0c83d925e
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ac\ac5060295fbd39b4a88d20d0c83d925e
+        ProjectPath: Library\metadata\ac\ac5060295fbd39b4a88d20d0c83d925e
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ad\adc37ed6aacf32a4d9aca7dadadae0a8
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ad\adc37ed6aacf32a4d9aca7dadadae0a8
+        ProjectPath: Library\metadata\ad\adc37ed6aacf32a4d9aca7dadadae0a8
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ae\ae942c9068183dc40a9d01f648273726
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ae\ae942c9068183dc40a9d01f648273726
+        ProjectPath: Library\metadata\ae\ae942c9068183dc40a9d01f648273726
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b1\b1bd99dcf43f97d48bb6215c70f0cd40
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b1\b1bd99dcf43f97d48bb6215c70f0cd40
+        ProjectPath: Library\metadata\b1\b1bd99dcf43f97d48bb6215c70f0cd40
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b1\b1f4b562d0ebea24299650435eec3efb
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b1\b1f4b562d0ebea24299650435eec3efb
+        ProjectPath: Library\metadata\b1\b1f4b562d0ebea24299650435eec3efb
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b2\b2f7cad6a754193478a36b8177641278
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b2\b2f7cad6a754193478a36b8177641278
+        ProjectPath: Library\metadata\b2\b2f7cad6a754193478a36b8177641278
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b3\b34b6233cb2c16f46a5c82586eab2960
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b3\b34b6233cb2c16f46a5c82586eab2960
+        ProjectPath: Library\metadata\b3\b34b6233cb2c16f46a5c82586eab2960
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b5\b5083cfe83bb875479bd797c61594131.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b5\b5083cfe83bb875479bd797c61594131.info
+        ProjectPath: Library\metadata\b5\b5083cfe83bb875479bd797c61594131.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b5\b566c1f22015f644a83ceccc0279fc88
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b5\b566c1f22015f644a83ceccc0279fc88
+        ProjectPath: Library\metadata\b5\b566c1f22015f644a83ceccc0279fc88
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b5\b5f48ecc218d2db49baa9ac1bfe73ba9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b5\b5f48ecc218d2db49baa9ac1bfe73ba9
+        ProjectPath: Library\metadata\b5\b5f48ecc218d2db49baa9ac1bfe73ba9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b7\b7fee06681a472243a6427c8b9847475
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b7\b7fee06681a472243a6427c8b9847475
+        ProjectPath: Library\metadata\b7\b7fee06681a472243a6427c8b9847475
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\b9\b90fc8427bee38c478f5b2f6f0ae9580
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\b9\b90fc8427bee38c478f5b2f6f0ae9580
+        ProjectPath: Library\metadata\b9\b90fc8427bee38c478f5b2f6f0ae9580
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ba\ba9d9afe888570648bcbad1b0d7a3971
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ba\ba9d9afe888570648bcbad1b0d7a3971
+        ProjectPath: Library\metadata\ba\ba9d9afe888570648bcbad1b0d7a3971
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+        ProjectPath: Library\metadata\bb\bb6b4101ad2c42ec99f064a70c354e3c
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\bb\bbfb3121457347d40b85543a3884da43
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\bb\bbfb3121457347d40b85543a3884da43
+        ProjectPath: Library\metadata\bb\bbfb3121457347d40b85543a3884da43
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\be\be10cbaaf1096094ca8285024d49002e
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\be\be10cbaaf1096094ca8285024d49002e
+        ProjectPath: Library\metadata\be\be10cbaaf1096094ca8285024d49002e
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c3\c3212969823f62c4f90c010c49b4d816
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c3\c3212969823f62c4f90c010c49b4d816
+        ProjectPath: Library\metadata\c3\c3212969823f62c4f90c010c49b4d816
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c3\c33bc83ab81ec0c44976c6fb1d44e55a
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c3\c33bc83ab81ec0c44976c6fb1d44e55a
+        ProjectPath: Library\metadata\c3\c33bc83ab81ec0c44976c6fb1d44e55a
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c4\c4850261060aea044ae098e8e9979e62
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c4\c4850261060aea044ae098e8e9979e62
+        ProjectPath: Library\metadata\c4\c4850261060aea044ae098e8e9979e62
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c7\c70d290e4a4da804eb63c8b0c528a1b7
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c7\c70d290e4a4da804eb63c8b0c528a1b7
+        ProjectPath: Library\metadata\c7\c70d290e4a4da804eb63c8b0c528a1b7
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c8\c8077b76001d36d489868d20d28bddb9
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c8\c8077b76001d36d489868d20d28bddb9
+        ProjectPath: Library\metadata\c8\c8077b76001d36d489868d20d28bddb9
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c8\c8ec094592868d540af38cb278cc80ce
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c8\c8ec094592868d540af38cb278cc80ce
+        ProjectPath: Library\metadata\c8\c8ec094592868d540af38cb278cc80ce
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c9\c91d13dd6a85732418472200f4abc68c.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c9\c91d13dd6a85732418472200f4abc68c.info
+        ProjectPath: Library\metadata\c9\c91d13dd6a85732418472200f4abc68c.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\c9\c96860f5597f2494abb42d29cdca0bcc
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\c9\c96860f5597f2494abb42d29cdca0bcc
+        ProjectPath: Library\metadata\c9\c96860f5597f2494abb42d29cdca0bcc
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ca\cab912f3009b43843b0a48ac3120c6ad.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ca\cab912f3009b43843b0a48ac3120c6ad.info
+        ProjectPath: Library\metadata\ca\cab912f3009b43843b0a48ac3120c6ad.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ce\cefb9dda325427d48ab4bc7fff3e8777
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ce\cefb9dda325427d48ab4bc7fff3e8777
+        ProjectPath: Library\metadata\ce\cefb9dda325427d48ab4bc7fff3e8777
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\cf\cfa4a4a103e4fed43a7e9e9df4a6915c
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\cf\cfa4a4a103e4fed43a7e9e9df4a6915c
+        ProjectPath: Library\metadata\cf\cfa4a4a103e4fed43a7e9e9df4a6915c
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d0\d03d26915d3a63542807ee5e560595e0
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d0\d03d26915d3a63542807ee5e560595e0
+        ProjectPath: Library\metadata\d0\d03d26915d3a63542807ee5e560595e0
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d2\d2278f9af1633ae43a759ad6cdb74608
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d2\d2278f9af1633ae43a759ad6cdb74608
+        ProjectPath: Library\metadata\d2\d2278f9af1633ae43a759ad6cdb74608
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d3\d331b94ba7bbfa343bb6b9f9282b5c93
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d3\d331b94ba7bbfa343bb6b9f9282b5c93
+        ProjectPath: Library\metadata\d3\d331b94ba7bbfa343bb6b9f9282b5c93
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d5\d5c5ca47aa5c01740810b7c66662099f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d5\d5c5ca47aa5c01740810b7c66662099f
+        ProjectPath: Library\metadata\d5\d5c5ca47aa5c01740810b7c66662099f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d6\d6b1ee5e07651d74fa5f4b8f8adfbc9b.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d6\d6b1ee5e07651d74fa5f4b8f8adfbc9b.info
+        ProjectPath: Library\metadata\d6\d6b1ee5e07651d74fa5f4b8f8adfbc9b.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d8\d81807633ea807d4c8e3fff7e10c6000
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d8\d81807633ea807d4c8e3fff7e10c6000
+        ProjectPath: Library\metadata\d8\d81807633ea807d4c8e3fff7e10c6000
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d8\d8a786fe017602a438111c9d297ffcac
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d8\d8a786fe017602a438111c9d297ffcac
+        ProjectPath: Library\metadata\d8\d8a786fe017602a438111c9d297ffcac
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d9\d900a06197aa6b841b6f2ae5d629f2f3
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d9\d900a06197aa6b841b6f2ae5d629f2f3
+        ProjectPath: Library\metadata\d9\d900a06197aa6b841b6f2ae5d629f2f3
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b
+        ProjectPath: Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b.info
+        ProjectPath: Library\metadata\d9\d9a637e69b9f0a7449ee6b6e158ddd5b.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\df\df649a5c42709b348bc24a4c552ff369
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\df\df649a5c42709b348bc24a4c552ff369
+        ProjectPath: Library\metadata\df\df649a5c42709b348bc24a4c552ff369
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\df\df9bfb5c080dac24cbbc6c9f595ed413
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\df\df9bfb5c080dac24cbbc6c9f595ed413
+        ProjectPath: Library\metadata\df\df9bfb5c080dac24cbbc6c9f595ed413
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e1\e14f05c1fecce3c489e85a9d53b8c9a5
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e14f05c1fecce3c489e85a9d53b8c9a5
+        ProjectPath: Library\metadata\e1\e14f05c1fecce3c489e85a9d53b8c9a5
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f
+        ProjectPath: Library\metadata\e1\e18126576915f8146af49e3910b4809f
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e1\e18126576915f8146af49e3910b4809f.info
+        ProjectPath: Library\metadata\e1\e18126576915f8146af49e3910b4809f.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e4\e4c4ff40739c7904ca26c14ffbdc4176
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e4\e4c4ff40739c7904ca26c14ffbdc4176
+        ProjectPath: Library\metadata\e4\e4c4ff40739c7904ca26c14ffbdc4176
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e5\e5e1210a659c71f49b09ec14c4d40e77
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e5\e5e1210a659c71f49b09ec14c4d40e77
+        ProjectPath: Library\metadata\e5\e5e1210a659c71f49b09ec14c4d40e77
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e6\e6bdb4ea88d2c1c4eaf930ee572b7bbd
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e6\e6bdb4ea88d2c1c4eaf930ee572b7bbd
+        ProjectPath: Library\metadata\e6\e6bdb4ea88d2c1c4eaf930ee572b7bbd
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e7\e75727d9555d9d14ca51d91908c681bc
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e7\e75727d9555d9d14ca51d91908c681bc
+        ProjectPath: Library\metadata\e7\e75727d9555d9d14ca51d91908c681bc
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e7\e772b2bb85dc225499db07c5206af708
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e7\e772b2bb85dc225499db07c5206af708
+        ProjectPath: Library\metadata\e7\e772b2bb85dc225499db07c5206af708
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
+        ProjectPath: Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84.info
+        ProjectPath: Library\metadata\e7\e7b4b73a0b041314f856b13bf63f0b84.info
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e9\e99a627c1d84ba64faaf1a819b50fd6e
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e9\e99a627c1d84ba64faaf1a819b50fd6e
+        ProjectPath: Library\metadata\e9\e99a627c1d84ba64faaf1a819b50fd6e
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e9\e9bef69d3483c064f88f285d261cbd10
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e9\e9bef69d3483c064f88f285d261cbd10
+        ProjectPath: Library\metadata\e9\e9bef69d3483c064f88f285d261cbd10
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\e9\e9d0b5f3bbe925a408bd595c79d0bf63
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\e9\e9d0b5f3bbe925a408bd595c79d0bf63
+        ProjectPath: Library\metadata\e9\e9d0b5f3bbe925a408bd595c79d0bf63
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ec\ecb9547bf2766f645b5e6046483a6c72
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ec\ecb9547bf2766f645b5e6046483a6c72
+        ProjectPath: Library\metadata\ec\ecb9547bf2766f645b5e6046483a6c72
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\ed\ed5591596df551e4c8f4b05ce88a7a07
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\ed\ed5591596df551e4c8f4b05ce88a7a07
+        ProjectPath: Library\metadata\ed\ed5591596df551e4c8f4b05ce88a7a07
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f0\f0956b9fe87fb4d43ad76a06b9b0b3a1
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f0\f0956b9fe87fb4d43ad76a06b9b0b3a1
+        ProjectPath: Library\metadata\f0\f0956b9fe87fb4d43ad76a06b9b0b3a1
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f0\f0ca5f9597ed3ff48aab27234e363f92
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f0\f0ca5f9597ed3ff48aab27234e363f92
+        ProjectPath: Library\metadata\f0\f0ca5f9597ed3ff48aab27234e363f92
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f3\f3fd145b191cf4040ac6b55cda352a53
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f3\f3fd145b191cf4040ac6b55cda352a53
+        ProjectPath: Library\metadata\f3\f3fd145b191cf4040ac6b55cda352a53
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f5\f58673abf18fa334bbffe3a5b682f103
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f5\f58673abf18fa334bbffe3a5b682f103
+        ProjectPath: Library\metadata\f5\f58673abf18fa334bbffe3a5b682f103
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f5\f5c76bc91647aa4458588ee4b5d9e298
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f5\f5c76bc91647aa4458588ee4b5d9e298
+        ProjectPath: Library\metadata\f5\f5c76bc91647aa4458588ee4b5d9e298
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\f9\f9585a629f3ca7a41863121f0b99af20
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\f9\f9585a629f3ca7a41863121f0b99af20
+        ProjectPath: Library\metadata\f9\f9585a629f3ca7a41863121f0b99af20
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\1\13802b55a2bc1c1d665b4c730893e86d.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\1\13802b55a2bc1c1d665b4c730893e86d.bin
+        ProjectPath: Library\ShaderCache\1\13802b55a2bc1c1d665b4c730893e86d.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\1\13863ef020d7e9ed88c81adbc9f7c505.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\1\13863ef020d7e9ed88c81adbc9f7c505.bin
+        ProjectPath: Library\ShaderCache\1\13863ef020d7e9ed88c81adbc9f7c505.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\1\150c6a4cb3198db8c085cebd2f29ec63.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\1\150c6a4cb3198db8c085cebd2f29ec63.bin
+        ProjectPath: Library\ShaderCache\1\150c6a4cb3198db8c085cebd2f29ec63.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\232abbabb1a63b7fba6eaea586bc4450.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\232abbabb1a63b7fba6eaea586bc4450.bin
+        ProjectPath: Library\ShaderCache\2\232abbabb1a63b7fba6eaea586bc4450.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\292cd0bdd58296b4f9df092add54a39e.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\292cd0bdd58296b4f9df092add54a39e.bin
+        ProjectPath: Library\ShaderCache\2\292cd0bdd58296b4f9df092add54a39e.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\2b5a19f25982f603d7b0fe8b2e0f37e2.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\2b5a19f25982f603d7b0fe8b2e0f37e2.bin
+        ProjectPath: Library\ShaderCache\2\2b5a19f25982f603d7b0fe8b2e0f37e2.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\2f089e00ad439789f7f8a575666ae918.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\2f089e00ad439789f7f8a575666ae918.bin
+        ProjectPath: Library\ShaderCache\2\2f089e00ad439789f7f8a575666ae918.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\31e64c073f1756637667fb70c912f289.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\31e64c073f1756637667fb70c912f289.bin
+        ProjectPath: Library\ShaderCache\3\31e64c073f1756637667fb70c912f289.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\3a2bb422a2c992f3ea167bbf430628ac.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\3a2bb422a2c992f3ea167bbf430628ac.bin
+        ProjectPath: Library\ShaderCache\3\3a2bb422a2c992f3ea167bbf430628ac.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\3cee6ae7f229fbb99da40d4974e5b59c.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\3cee6ae7f229fbb99da40d4974e5b59c.bin
+        ProjectPath: Library\ShaderCache\3\3cee6ae7f229fbb99da40d4974e5b59c.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\3dc04e3417c170f4bd4edd07c2b8e7fc.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\3dc04e3417c170f4bd4edd07c2b8e7fc.bin
+        ProjectPath: Library\ShaderCache\3\3dc04e3417c170f4bd4edd07c2b8e7fc.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\4\45798e7c6fcb658e9ffc96d33bd143f1.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\4\45798e7c6fcb658e9ffc96d33bd143f1.bin
+        ProjectPath: Library\ShaderCache\4\45798e7c6fcb658e9ffc96d33bd143f1.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\5\58ba86022fe5da67ca607071282251d5.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\5\58ba86022fe5da67ca607071282251d5.bin
+        ProjectPath: Library\ShaderCache\5\58ba86022fe5da67ca607071282251d5.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\6\6581f7c627137e73a7d0d3070e88b5dd.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\6\6581f7c627137e73a7d0d3070e88b5dd.bin
+        ProjectPath: Library\ShaderCache\6\6581f7c627137e73a7d0d3070e88b5dd.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\6\6a955c022d4b385afc56074cc785e7c4.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\6\6a955c022d4b385afc56074cc785e7c4.bin
+        ProjectPath: Library\ShaderCache\6\6a955c022d4b385afc56074cc785e7c4.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\7\7f17dd75b57e62db300bd378dc939fd4.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\7\7f17dd75b57e62db300bd378dc939fd4.bin
+        ProjectPath: Library\ShaderCache\7\7f17dd75b57e62db300bd378dc939fd4.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\8\834f2c77edaa9e6782f306f5652c1b7a.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\8\834f2c77edaa9e6782f306f5652c1b7a.bin
+        ProjectPath: Library\ShaderCache\8\834f2c77edaa9e6782f306f5652c1b7a.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\8\861ab5b43ac26b41f16f7765ab3de54d.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\8\861ab5b43ac26b41f16f7765ab3de54d.bin
+        ProjectPath: Library\ShaderCache\8\861ab5b43ac26b41f16f7765ab3de54d.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\8\8cb7ee1a2a44c1b39d92deb2c19d2284.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\8\8cb7ee1a2a44c1b39d92deb2c19d2284.bin
+        ProjectPath: Library\ShaderCache\8\8cb7ee1a2a44c1b39d92deb2c19d2284.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\9\9ac3e389a7aff408ed408959bdc5f89f.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\9\9ac3e389a7aff408ed408959bdc5f89f.bin
+        ProjectPath: Library\ShaderCache\9\9ac3e389a7aff408ed408959bdc5f89f.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\9\9e8270c53cd58d43947049579879d3bf.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\9\9e8270c53cd58d43947049579879d3bf.bin
+        ProjectPath: Library\ShaderCache\9\9e8270c53cd58d43947049579879d3bf.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\a\a8dce28a4f749e974a2ffed51deccee1.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\a\a8dce28a4f749e974a2ffed51deccee1.bin
+        ProjectPath: Library\ShaderCache\a\a8dce28a4f749e974a2ffed51deccee1.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\a\a92efa6eadb0e689d228525ef8979b3e.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\a\a92efa6eadb0e689d228525ef8979b3e.bin
+        ProjectPath: Library\ShaderCache\a\a92efa6eadb0e689d228525ef8979b3e.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\c\c4a9109a0ced7a85e9229e9ebc4292e7.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\c\c4a9109a0ced7a85e9229e9ebc4292e7.bin
+        ProjectPath: Library\ShaderCache\c\c4a9109a0ced7a85e9229e9ebc4292e7.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\d\d79cc3d1d52f782a682ebc484d58d92f.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\d\d79cc3d1d52f782a682ebc484d58d92f.bin
+        ProjectPath: Library\ShaderCache\d\d79cc3d1d52f782a682ebc484d58d92f.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\e9d9da9b560a878050fa9f73baeb513d.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\e9d9da9b560a878050fa9f73baeb513d.bin
+        ProjectPath: Library\ShaderCache\e\e9d9da9b560a878050fa9f73baeb513d.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\ec90c497a6d1a99f168e375151f42774.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\ec90c497a6d1a99f168e375151f42774.bin
+        ProjectPath: Library\ShaderCache\e\ec90c497a6d1a99f168e375151f42774.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\ecf023d7a0487b14cb3b541c8d0dfa4e.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\ecf023d7a0487b14cb3b541c8d0dfa4e.bin
+        ProjectPath: Library\ShaderCache\e\ecf023d7a0487b14cb3b541c8d0dfa4e.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\f\f1d02e3b81cb7b0afb18a5ab1d3dc114.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\f\f1d02e3b81cb7b0afb18a5ab1d3dc114.bin
+        ProjectPath: Library\ShaderCache\f\f1d02e3b81cb7b0afb18a5ab1d3dc114.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\f\f34d2503d88ce011ab7e30d4d601a603.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\f\f34d2503d88ce011ab7e30d4d601a603.bin
+        ProjectPath: Library\ShaderCache\f\f34d2503d88ce011ab7e30d4d601a603.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\f\f82a68266673a3b9c6ed0f636c632a44.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\f\f82a68266673a3b9c6ed0f636c632a44.bin
+        ProjectPath: Library\ShaderCache\f\f82a68266673a3b9c6ed0f636c632a44.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\f\fc539fb6cba730df138b2111fc7fcc54.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\f\fc539fb6cba730df138b2111fc7fcc54.bin
+        ProjectPath: Library\ShaderCache\f\fc539fb6cba730df138b2111fc7fcc54.bin
         OriginalPath: 
         Status: 1
         Staged: 0
       - Path: HRAP\Assets\Scripts\on_scroll_vertical_end.cs
         FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scripts\on_scroll_vertical_end.cs
         ProjectPath: Assets\Scripts\on_scroll_vertical_end.cs
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+        ProjectPath: obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+        ProjectPath: obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
         OriginalPath: 
         Status: 3
         Staged: 0
@@ -876,12 +2251,6 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        ProjectPath: obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
-        OriginalPath: 
-        Status: 3
-        Staged: 0
       - Path: HRAP\obj\Debug\Assembly-CSharp-Editor.dll
         FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.dll
         ProjectPath: obj\Debug\Assembly-CSharp-Editor.dll
@@ -894,9 +2263,9 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Library\InspectorExpandedItems.asset
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\InspectorExpandedItems.asset
-        ProjectPath: Library\InspectorExpandedItems.asset
+      - Path: HRAP\Library\CurrentMaximizeLayout.dwlt
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentMaximizeLayout.dwlt
+        ProjectPath: Library\CurrentMaximizeLayout.dwlt
         OriginalPath: 
         Status: 3
         Staged: 0
@@ -906,19 +2275,522 @@ MonoBehaviour:
         OriginalPath: 
         Status: 3
         Staged: 0
-      - Path: HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
-        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
-        ProjectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
-        OriginalPath: 
-        Status: 3
-        Staged: 0
       - Path: HRAP\Library\metadata\7f\7f53d68c0d5f2fb4ca4f474986453d3f
         FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\7f\7f53d68c0d5f2fb4ca4f474986453d3f
         ProjectPath: Library\metadata\7f\7f53d68c0d5f2fb4ca4f474986453d3f
         OriginalPath: 
         Status: 3
         Staged: 0
+      - Path: HRAP\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+        ProjectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\InspectorExpandedItems.asset
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\InspectorExpandedItems.asset
+        ProjectPath: Library\InspectorExpandedItems.asset
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\Scenes\2-Terms_of_contract.unity
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\2-Terms_of_contract.unity
+        ProjectPath: Assets\Scenes\2-Terms_of_contract.unity
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\0\07d66f25d84e306e1409531e81aa74c4.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\0\07d66f25d84e306e1409531e81aa74c4.bin
+        ProjectPath: Library\ShaderCache\0\07d66f25d84e306e1409531e81aa74c4.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\1\105fe48bb6dbea25dfaa64d8d5490328.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\1\105fe48bb6dbea25dfaa64d8d5490328.bin
+        ProjectPath: Library\ShaderCache\1\105fe48bb6dbea25dfaa64d8d5490328.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\1\15e56b21dd5e7d837f5ca7236afa82f4.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\1\15e56b21dd5e7d837f5ca7236afa82f4.bin
+        ProjectPath: Library\ShaderCache\1\15e56b21dd5e7d837f5ca7236afa82f4.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\2460e81f461be2a52d30eff0f87880f2.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\2460e81f461be2a52d30eff0f87880f2.bin
+        ProjectPath: Library\ShaderCache\2\2460e81f461be2a52d30eff0f87880f2.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\2\2c71238da675bc5987c563086bc89552.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\2\2c71238da675bc5987c563086bc89552.bin
+        ProjectPath: Library\ShaderCache\2\2c71238da675bc5987c563086bc89552.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\310a184ce2115a616e0cc9cf10e74766.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\310a184ce2115a616e0cc9cf10e74766.bin
+        ProjectPath: Library\ShaderCache\3\310a184ce2115a616e0cc9cf10e74766.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\3a1f64bd0207bc932ea223a66574a0d5.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\3a1f64bd0207bc932ea223a66574a0d5.bin
+        ProjectPath: Library\ShaderCache\3\3a1f64bd0207bc932ea223a66574a0d5.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\3\3d910f340bb615095035a46185f0077b.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\3\3d910f340bb615095035a46185f0077b.bin
+        ProjectPath: Library\ShaderCache\3\3d910f340bb615095035a46185f0077b.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\5\58ebbaa9ce1408e577fadcaec6d72c0d.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\5\58ebbaa9ce1408e577fadcaec6d72c0d.bin
+        ProjectPath: Library\ShaderCache\5\58ebbaa9ce1408e577fadcaec6d72c0d.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\6\6250335be74c768487ae1584640e43fb.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\6\6250335be74c768487ae1584640e43fb.bin
+        ProjectPath: Library\ShaderCache\6\6250335be74c768487ae1584640e43fb.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\6\6e3560ded0209aa84a647dc679fe1fc6.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\6\6e3560ded0209aa84a647dc679fe1fc6.bin
+        ProjectPath: Library\ShaderCache\6\6e3560ded0209aa84a647dc679fe1fc6.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\6\6f00b6f3391607ea8d16dc199665723a.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\6\6f00b6f3391607ea8d16dc199665723a.bin
+        ProjectPath: Library\ShaderCache\6\6f00b6f3391607ea8d16dc199665723a.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\7\715bc5550b115e7927775ab058a2b1be.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\7\715bc5550b115e7927775ab058a2b1be.bin
+        ProjectPath: Library\ShaderCache\7\715bc5550b115e7927775ab058a2b1be.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\9\9cc0bbfc1ff541bac1ac596c81765e55.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\9\9cc0bbfc1ff541bac1ac596c81765e55.bin
+        ProjectPath: Library\ShaderCache\9\9cc0bbfc1ff541bac1ac596c81765e55.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\c\c199d15cf6b6b71d5a37ea6f9da71bdb.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\c\c199d15cf6b6b71d5a37ea6f9da71bdb.bin
+        ProjectPath: Library\ShaderCache\c\c199d15cf6b6b71d5a37ea6f9da71bdb.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\c\cbfddd357eff11899d876db61a74412e.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\c\cbfddd357eff11899d876db61a74412e.bin
+        ProjectPath: Library\ShaderCache\c\cbfddd357eff11899d876db61a74412e.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\d\dd62b1c6a3b9cc9cfd28037c0ba57c1a.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\d\dd62b1c6a3b9cc9cfd28037c0ba57c1a.bin
+        ProjectPath: Library\ShaderCache\d\dd62b1c6a3b9cc9cfd28037c0ba57c1a.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\d\df38b4e81ef942f7a87e636dc8226ec6.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\d\df38b4e81ef942f7a87e636dc8226ec6.bin
+        ProjectPath: Library\ShaderCache\d\df38b4e81ef942f7a87e636dc8226ec6.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\d\df6fbe424c445d06b187d57572ada2b4.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\d\df6fbe424c445d06b187d57572ada2b4.bin
+        ProjectPath: Library\ShaderCache\d\df6fbe424c445d06b187d57572ada2b4.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\e666665e5a575a4aba954461a5bf35f1.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\e666665e5a575a4aba954461a5bf35f1.bin
+        ProjectPath: Library\ShaderCache\e\e666665e5a575a4aba954461a5bf35f1.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\e925fd8222972b7528c3b218b29759f3.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\e925fd8222972b7528c3b218b29759f3.bin
+        ProjectPath: Library\ShaderCache\e\e925fd8222972b7528c3b218b29759f3.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache\e\ec0d1ffbc5a09dc7f6c8c46aacd3dcd1.bin
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache\e\ec0d1ffbc5a09dc7f6c8c46aacd3dcd1.bin
+        ProjectPath: Library\ShaderCache\e\ec0d1ffbc5a09dc7f6c8c46aacd3dcd1.bin
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Assets\Scenes\1-Main_menu.unity
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\1-Main_menu.unity
+        ProjectPath: Assets\Scenes\1-Main_menu.unity
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\CurrentLayout.dwlt
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\CurrentLayout.dwlt
+        ProjectPath: Library\CurrentLayout.dwlt
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\LastSceneManagerSetup.txt
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\LastSceneManagerSetup.txt
+        ProjectPath: Library\LastSceneManagerSetup.txt
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\ShaderCache.db
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\ShaderCache.db
+        ProjectPath: Library\ShaderCache.db
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\Scenes\4-Interview.unity
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\4-Interview.unity
+        ProjectPath: Assets\Scenes\4-Interview.unity
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\Scenes\6_Audio_Menu.unity
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\6_Audio_Menu.unity
+        ProjectPath: Assets\Scenes\6_Audio_Menu.unity
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Assets\Scenes\6_Audio_Menu.unity.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scenes\6_Audio_Menu.unity.meta
+        ProjectPath: Assets\Scenes\6_Audio_Menu.unity.meta
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674
+        ProjectPath: Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674.info
+        ProjectPath: Library\metadata\d4\d4efe9ca8fe379b42aa67fa001a1a674.info
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Assembly-CSharp.csproj
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assembly-CSharp.csproj
+        ProjectPath: Assembly-CSharp.csproj
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00a7f990a0f9672429207e2e959c6158
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00a7f990a0f9672429207e2e959c6158
+        ProjectPath: Library\metadata\00\00a7f990a0f9672429207e2e959c6158
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\metadata\00\00a7f990a0f9672429207e2e959c6158.info
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\metadata\00\00a7f990a0f9672429207e2e959c6158.info
+        ProjectPath: Library\metadata\00\00a7f990a0f9672429207e2e959c6158.info
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Library\expandedItems
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Library\expandedItems
+        ProjectPath: Library\expandedItems
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\ProjectSettings\EditorBuildSettings.asset
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\ProjectSettings\EditorBuildSettings.asset
+        ProjectPath: ProjectSettings\EditorBuildSettings.asset
+        OriginalPath: 
+        Status: 3
+        Staged: 0
+      - Path: HRAP\Assets\Scripts\Sound_Manager.cs
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scripts\Sound_Manager.cs
+        ProjectPath: Assets\Scripts\Sound_Manager.cs
+        OriginalPath: 
+        Status: 1
+        Staged: 0
+      - Path: HRAP\Assets\Scripts\Sound_Manager.cs.meta
+        FullPath: C:\Users\badre\Documents\GitHub\HRAP\HRAP\Assets\Scripts\Sound_Manager.cs.meta
+        ProjectPath: Assets\Scripts\Sound_Manager.cs.meta
+        OriginalPath: 
+        Status: 1
+        Staged: 0
       entryCommitTargets:
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
       - All: 0
       - All: 0
       - All: 0
