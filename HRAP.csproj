@@ -16,7 +16,7 @@
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
-    <UnityVersion>5.6.3p2</UnityVersion>
+    <UnityVersion>5.6.3f1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
@@ -75,15 +75,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
@@ -210,6 +201,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Scripts\Input_authentification.cs" />
     <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
+    <Compile Include="Assets\Scripts\Sound_Manager.cs" />
     <Compile Include="Assets\Scripts\on_scroll_vertical_end.cs" />
     <Compile Include="Assets\UI unity sample\Scenes\ActiveStateToggler.cs" />
     <Compile Include="Assets\UI unity sample\Scenes\ApplicationManager.cs" />
@@ -256,8 +248,6 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
-    <None Include="Assets\Plugins\GitHub\Editor\CREDITS.txt" />
-    <None Include="Assets\Plugins\GitHub\Editor\EULA.txt" />
     <None Include="Assets\UI unity sample\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\UI unity sample\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\UI unity sample\Textures and Sprites\SF UI\Background\LICENSE.txt" />
