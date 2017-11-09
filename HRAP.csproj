@@ -199,6 +199,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\AImovment.cs" />
     <Compile Include="Assets\Scripts\Input_authentification.cs" />
     <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
     <Compile Include="Assets\Scripts\Sound_Manager.cs" />

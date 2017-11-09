@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/2-Terms_of_contract.unity
+- path: Assets/Scenes/4-Interview.unity
   isLoaded: 1
   isActive: 1
