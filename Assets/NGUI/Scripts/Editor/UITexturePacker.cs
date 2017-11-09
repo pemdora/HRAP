@@ -1,5 +1,5 @@
 /*
-	Based on the Public Domain MaxRectsBinPack.cpp source by Jukka Jylänki
+	Based on the Public Domain MaxRectsBinPack.cpp source by Jukka JylÃ¤nki
 	https://github.com/juj/RectangleBinPack/
 
 	Ported to C# by Sven Magnus
@@ -57,7 +57,7 @@ public class UITexturePacker
 		public bool paddingY;
 	}
 
-	public static Rect[] PackTextures (Texture2D texture, Texture2D[] textures, int width, int height, int padding, int maxSize)
+	static public Rect[] PackTextures (Texture2D texture, Texture2D[] textures, int width, int height, int padding, int maxSize)
 	{
 		if (width > maxSize && height > maxSize) return null;
 		if (width > maxSize || height > maxSize) { int temp = width; width = height; height = temp; }
@@ -76,6 +76,7 @@ public class UITexturePacker
 		for (int i = 0; i < textures.Length; i++)
 		{
 			Texture2D tex = textures[i];
+			if (!tex) continue;
 
 			Rect rect = new Rect();
 
@@ -115,6 +116,8 @@ public class UITexturePacker
 		for (int i = 0; i < textures.Length; i++)
 		{
 			Texture2D tex = textures[i];
+			if (!tex) continue;
+
 			Rect rect = storage[i].rect;
 			int xPadding = (storage[i].paddingX ? padding : 0);
 			int yPadding = (storage[i].paddingY ? padding : 0);
@@ -144,6 +147,7 @@ public class UITexturePacker
 			rect.height = (rect.height - yPadding) / height;
 			rects[i] = rect;
 		}
+		texture.Apply();
 		return rects;
 	}
 
