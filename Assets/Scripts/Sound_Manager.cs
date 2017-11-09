@@ -6,12 +6,12 @@ public class Sound_Manager : MonoBehaviour {
 	Vector3 thumbPos;// position du curseur
 	UILabel percent; // récuperation du label pourcentage
 	UISlider volume; // récuperation du slider pour régler le volume 
-	UICheckbox cb;
+	UIToggle cb;
 	// Use this for initialization
 	void Start () {
 		percent = GameObject.Find("percent").GetComponent<UILabel>();
 		volume = GameObject.Find ("Slider").GetComponent<UISlider> ();
-		cb = GameObject.Find ("Checkbox").GetComponent<UICheckbox> ();
+		cb = GameObject.Find ("Checkbox").GetComponent<UIToggle> ();
 
 	}
 	

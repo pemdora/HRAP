@@ -6,13 +6,13 @@ public class on_scroll_vertical_end : MonoBehaviour {
 
 	Scrollbar vertical_scrollbar;
 	Button button_continue;
-	UICheckbox cb;
+	UIToggle cb;
 	// Use this for initialization
 	void Start(){
 		try{
 			button_continue = GameObject.Find("button_continue").GetComponent<Button>();
 			vertical_scrollbar = GameObject.Find ("Scrollbar Vertical").GetComponent<Scrollbar>();
-			cb = GameObject.Find ("Checkbox").GetComponent<UICheckbox> (); 
+			cb = GameObject.Find ("Checkbox").GetComponent<UIToggle> (); 
 		}catch(UnityException e){
 			Debug.LogException (e, this);
 		

@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\on_scroll_vertical_end.cs">
     <Files>
-      <File FileName="Assets\Scripts\on_scroll_vertical_end.cs" Line="8" Column="24" />
+      <File FileName="Assets\Scripts\on_scroll_vertical_end.cs" Line="15" Column="59" />
+      <File FileName="Assets\Scripts\Sound_Manager.cs" Line="14" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
