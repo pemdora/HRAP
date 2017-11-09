@@ -1,9 +1,14 @@
-﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\on_scroll_vertical_end.cs">
+﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="HRAP.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rogo Digital\LipSync Pro\Components\LipSync.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scripts\on_scroll_vertical_end.cs" Line="15" Column="59" />
       <File FileName="Assets\Scripts\Sound_Manager.cs" Line="14" Column="61" />
+=======
+      <File FileName="Assets\Scripts\on_scroll_vertical_end.cs" Line="8" Column="24" />
+      <File FileName="Assets\Rogo Digital\LipSync Pro\Components\LipSync.cs" Line="251" Column="1" />
+>>>>>>> 54cd4660a921f18ceb638920a93673a8a0d647e7
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
