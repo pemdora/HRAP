@@ -14,15 +14,6 @@ public class AImovment : MonoBehaviour
     {
         // Find a reference to the Animator component in Awake since it exists in the scene.
         animator = GetComponent<Animator>();
-        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        //get animation speed, add animation speed
-
-        Debug.Log("StateInfo :  " + stateInfo.length);
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            animator.speed += 1f;
-        }
 
     }
 
@@ -51,7 +42,6 @@ public class AImovment : MonoBehaviour
         {
             LookAt(directionCandidate.position);
             Move();
-            Debug.Log(animator.GetBool("isWalking"));
         }
     }
     
