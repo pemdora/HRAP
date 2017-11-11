@@ -28,6 +28,10 @@ public class Menu_principal_start_button : MonoBehaviour {
 	{
 		changeScene("5-Greetings");
 	}
+	public void Transition_optionAudio()//menu 5
+	{
+		changeScene("6-Audio_Menu");
+	}
 	public void Finish()//exit
 	{
 		Application.Quit();

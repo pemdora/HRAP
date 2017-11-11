@@ -2,16 +2,18 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class on_scroll_vertical_end : MonoBehaviour {
 
-	Scrollbar vertical_scrollbar;
-	Button button_continue;
+public class on_scroll_vertical_end : MonoBehaviour {
+	
+
+	UIButton button_continue;
 	UIToggle cb;
+	UIScrollBar vertical_scrollbar;
 	// Use this for initialization
 	void Start(){
 		try{
-			button_continue = GameObject.Find("button_continue").GetComponent<Button>();
-			vertical_scrollbar = GameObject.Find ("Scrollbar Vertical").GetComponent<Scrollbar>();
+			button_continue = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
+			vertical_scrollbar = GameObject.Find ("Vertical_Scroll_Bar").GetComponent<UIScrollBar>();
 			cb = GameObject.Find ("Checkbox").GetComponent<UIToggle> (); 
 		}catch(UnityException e){
 			Debug.LogException (e, this);
@@ -19,13 +21,13 @@ public class on_scroll_vertical_end : MonoBehaviour {
 		}
 
 		Set_Interactable_Button(false);
-		vertical_scrollbar.enabled = true;
+		//vertical_scrollbar.enabled = true;
 		//Set_Interactable_Button (false); // rends indisponible le bouton
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (vertical_scrollbar.value == 0 && cb.isChecked) { // tant que le scroll n'est pas en bas
+		if (vertical_scrollbar.value >=0.99 && cb.value) { // tant que le scroll n'est pas en bas
 			Set_Interactable_Button (true);// rendre le bouton clickable 
 		} else
 			Set_Interactable_Button (false);
@@ -33,6 +35,6 @@ public class on_scroll_vertical_end : MonoBehaviour {
 
 	void Set_Interactable_Button(bool b)
 	{
-		 button_continue.interactable = b;
+		button_continue.isEnabled = b;
 	}
 }
