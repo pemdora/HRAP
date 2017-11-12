@@ -118,13 +118,17 @@ namespace HRAP
                     reponse = PoseQuestion(12);
                     Evaluation(reponse, candidat);
                     BilanQuestionReponse.Add(12, reponse.Id);
-                    
+                    QuestionAleatoir += 1;
+                    NombreQuestionPoser += 1;
+
                 }
                 if (QuestionAleatoir == 13)
                 {
                     reponse = PoseQuestion(14);
                     Evaluation(reponse, candidat);
-                    BilanQuestionReponse.Add(13, reponse.Id);
+                    BilanQuestionReponse.Add(14, reponse.Id);
+                    QuestionAleatoir += 1;
+                    NombreQuestionPoser += 1;
                 }
 
                 else
@@ -143,7 +147,7 @@ namespace HRAP
 
 
 
-                if (NombreQuestionPoser == 13)
+                if (NombreQuestionPoser == 14)
                 {
 
                     int ScoreTotal = ScoreControleEmmotionnel + ScoreLeadership + ScoreMotivation + ScoreSociabilite;
