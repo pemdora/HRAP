@@ -56,7 +56,12 @@ namespace HRAP_TEST_GRAPHIQUE
                 BilanQuestionReponse.Add(IDQuestion, -1);
             }
 
-           
+            if (NUMquestion==10)
+            {
+                Form1 frm = new Form1();
+                frm.test(candidat.Skills);
+                frm.Show();
+            }
             
 
         }
