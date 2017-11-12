@@ -1,0 +1,10 @@
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\bin\Debug\HRAP TEST GRAPHIQUE.exe.config
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\bin\Debug\HRAP TEST GRAPHIQUE.exe
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\bin\Debug\HRAP TEST GRAPHIQUE.pdb
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP TEST GRAPHIQUE.csprojResolveAssemblyReference.cache
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP_TEST_GRAPHIQUE.Form1.resources
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP_TEST_GRAPHIQUE.Properties.Resources.resources
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP TEST GRAPHIQUE.csproj.GenerateResource.Cache
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP TEST GRAPHIQUE.exe
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP TEST GRAPHIQUE.pdb
+C:\Users\hassiba\Desktop\A5 ESILV !!\IBO\projet pii RH\HRAP TEST GRAPHIQUE\HRAP TEST GRAPHIQUE\obj\Debug\HRAP_TEST_GRAPHIQUE.QCM1.resources
