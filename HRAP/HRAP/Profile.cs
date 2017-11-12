@@ -23,14 +23,11 @@ namespace HRAP
 
         // Access attributes
         public int Id { get { return id; } }
-        public string Type { get { return type; } }
+        public string Type { get { return type; } set { type = value; } }
         public string Name { get { return name; } }
         public Dictionary<string, int> Skills { get { return skills; } }
 
-        public void AddSkillValue(string skill, int value)
-        {
 
-        }
 
 
     }

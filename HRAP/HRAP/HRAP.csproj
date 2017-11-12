@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DataManager.cs" />
     <Compile Include="Answer.cs" />
+    <Compile Include="Data\Candidate.cs" />
     <Compile Include="Profile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
