@@ -14,7 +14,7 @@ public class AImovment : MonoBehaviour
     {
         // Find a reference to the Animator component in Awake since it exists in the scene.
         animator = GetComponent<Animator>();
-
+        
     }
 
     public void LookAt(Vector3 positionToLookAt)
