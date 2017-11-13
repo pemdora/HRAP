@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 
-public class on_scroll_vertical_end : MonoBehaviour {
+public class On_scroll_vertical_end : MonoBehaviour {
 	
 
 	UIButton button_continue;

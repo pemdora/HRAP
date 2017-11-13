@@ -23,7 +23,7 @@ namespace RogoDigital.Lipsync {
 #endif
 #else
         [DllImport("pocketsphinx", EntryPoint = "ps_run")]
-        public static extern int psRun ([MarshalAs(UnmanagedType.FunctionPtr)] MessageCallback msgCallbackPtr, [MarshalAs(UnmanagedType.FunctionPtr)] ResultCallback resCallbackPtr, int argsCount, string[] argsArray);
+        public static extern int PsRun ([MarshalAs(UnmanagedType.FunctionPtr)] MessageCallback msgCallbackPtr, [MarshalAs(UnmanagedType.FunctionPtr)] ResultCallback resCallbackPtr, int argsCount, string[] argsArray);
 #endif
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
@@ -114,12 +114,12 @@ namespace RogoDigital.Lipsync {
                 try {
                     if (multiThread) {
                         Thread thread = new Thread(new ThreadStart(() => {
-                            resultCode = psRun(msgCallback, resCallback, argsCount, args);
+                            resultCode = PsRun(msgCallback, resCallback, argsCount, args);
                             isFinished = true;
                         }));
                         thread.Start();
                     } else {
-                        resultCode = psRun(msgCallback, resCallback, argsCount, args);
+                        resultCode = PsRun(msgCallback, resCallback, argsCount, args);
                         isFinished = true;
                     }
                 } catch (Exception e) {
