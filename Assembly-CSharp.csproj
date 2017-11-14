@@ -214,11 +214,18 @@
      <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\TransformAnimationCurve.cs" />
      <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\EyeController.cs" />
      <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\LipSync.cs" />
+     <Compile Include="Assets\Scripts\AIengine\AIengine.cs" />
+     <Compile Include="Assets\Scripts\AIengine\Answer.cs" />
+     <Compile Include="Assets\Scripts\AIengine\Candidat.cs" />
+     <Compile Include="Assets\Scripts\AIengine\DataManager.cs" />
+     <Compile Include="Assets\Scripts\AIengine\Profile.cs" />
+     <Compile Include="Assets\Scripts\AIengine\QCM.cs" />
+     <Compile Include="Assets\Scripts\AIengine\Question.cs" />
      <Compile Include="Assets\Scripts\AImovment.cs" />
      <Compile Include="Assets\Scripts\Input_authentification.cs" />
      <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
+     <Compile Include="Assets\Scripts\On_scroll_vertical_end.cs" />
      <Compile Include="Assets\Scripts\Sound_Manager.cs" />
-     <Compile Include="Assets\Scripts\on_scroll_vertical_end.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ActiveStateToggler.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ApplicationManager.cs" />
      <Compile Include="Assets\UI unity sample\Scenes\ChangeColor.cs" />
@@ -281,7 +288,7 @@
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/TARA/Documents/GitHub/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
