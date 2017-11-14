@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AImovment.cs">
+    <Files>
+      <File FileName="Assets\Scripts\on_scroll_vertical_end.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\ReadMe - 3.11.4.txt" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Sound_Manager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Input_authentification.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Scripts\Internal\Localization.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu_principal_start_button.cs" Line="43" Column="1" />
+      <File FileName="Assets\Scripts\AImovment.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
