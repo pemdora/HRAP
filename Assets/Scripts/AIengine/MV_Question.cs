@@ -13,7 +13,7 @@ namespace HRAP
         public MV_Question(M_Question question)
         {
             this.question = question;
-            this.answers = M_DataManager.GetAnswersByQuestionId(question.Id);
+            this.answers = M_DataManager.Instance.GetAnswersByQuestionId(question.Id);
         }
 
         public MV_Question(M_Question question, List<Answer> answers)

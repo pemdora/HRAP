@@ -7,7 +7,7 @@ using System.Text;
 
 namespace HRAP
 {
-    abstract class M_DataManager
+    class M_DataManager
     {
         private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
         private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
@@ -15,7 +15,29 @@ namespace HRAP
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
         private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
 
-        public static int Count(string file)
+        private static M_DataManager instance;
+
+        private M_DataManager() { }
+
+        public static M_DataManager Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new M_DataManager();
+                }
+                return instance;
+            }
+        }
+
+        
+        /// <summary>
+        /// Counts number of lines in a file
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns>Number of lines</returns>
+        private int Count(string file)
         {
             int result = 0;
 
@@ -36,12 +58,12 @@ namespace HRAP
 
         // QUESTIONS
 
-        public static int CountQuestions()
+        public int CountQuestions()
         {
             return Count(questionsPath);
         }
 
-        public static M_Question GetQuestionById(int id)
+        public  M_Question GetQuestionById(int id)
         {
             StreamReader reader = new StreamReader(questionsPath);
             string line = reader.ReadLine();
@@ -65,9 +87,11 @@ namespace HRAP
             return null;
         }
 
+
+
         // ANSWERS
 
-        public static List<Answer> GetAnswersByQuestionId(int questionId)
+        public  List<Answer> GetAnswersByQuestionId(int questionId)
         {
             List<Answer> result = new List<Answer>();
 
@@ -107,41 +131,24 @@ namespace HRAP
             return result;
         }
 
+
+
         // PROFILES
 
-        public static int CountProfiles()
+        public  int CountProfiles()
         {
             return Count(candidatesPath);
         }
 
-        public static Dictionary<string, int> InitialisationSkill()
-        {
-            Dictionary<string, int> skills = new Dictionary<string, int>();
-
-            StreamReader reader = new StreamReader(answersPath);
-            string line = reader.ReadLine();
-
-            string[] temp = line.Split(';');
-            for (int i = 3; i < 27; i++)
-            {
-                skills.Add(temp[i], 0);
-
-            }
-
-
-            reader.Close();
-
-            return skills;
-        }
 
         //Enregistre le candidat dans le fichier profiles.csv
-        public static void SetCandidatIntoFile(M_Candidate candidat)
+        public  void AddCandidate(M_Candidate candidate)
         {
 
-            string newLine = candidat.Id + ";" + candidat.Name;
-            for (int i = 0; i < candidat.Skills.Count; i++)
+            string newLine = candidate.Id + ";" + candidate.Name;
+            for (int i = 0; i < candidate.Skills.Count; i++)
             {
-                newLine += ";" + candidat.Skills[i].Points;
+                newLine += ";" + candidate.Skills[i].Points;
             }
 
             newLine += "\n";
@@ -150,9 +157,11 @@ namespace HRAP
 
         }
 
+
+
         // SKILLS
 
-        public static M_SkillCategory GetSkillCategory(string category)
+        public  M_SkillCategory GetSkillCategory(string category)
         {
             M_SkillCategory result;
             switch (category)
@@ -176,7 +185,7 @@ namespace HRAP
             return result;
         }
 
-        public static List<M_Skill> initializeSkills()
+        public  List<M_Skill> InitializeSkills()
         {
             List<M_Skill> result = new List<M_Skill>();
 
@@ -203,13 +212,6 @@ namespace HRAP
 
         }
 
-        //IA
-
-        public void GetBestQuestion()
-        {
-
-
-        }
 
     }
 }

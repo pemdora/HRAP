@@ -33,12 +33,12 @@ namespace HRAP
 
        private int InitializeId()
         {
-            return M_DataManager.CountProfiles() + 1;
+            return M_DataManager.Instance.CountProfiles() + 1;
         }
 
         private List<M_Skill> InitializeSkills()
         {
-            return M_DataManager.initializeSkills();
+            return M_DataManager.Instance.InitializeSkills();
         }
 
     }
