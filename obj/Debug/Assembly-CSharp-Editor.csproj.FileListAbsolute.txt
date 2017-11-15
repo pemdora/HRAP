@@ -65,4 +65,3 @@ C:\Users\badre\Documents\GitHub\HRAP\HRAP\Temp\bin\Debug\UnityEditor.iOS.Extensi
 C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.dll
 C:\Users\badre\Documents\GitHub\HRAP\HRAP\obj\Debug\Assembly-CSharp-Editor.pdb
-C:\Users\badre\Documents\GitHub\HRAP\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache

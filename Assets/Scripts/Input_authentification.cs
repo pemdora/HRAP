@@ -5,19 +5,17 @@
 
 		//Ce code permettra de traiter les inputs, de les faire valider via la BDD
 		public class Input_authentification : MonoBehaviour {
-		public UIInput firstName;
-		public UIInput lastName;
+		public static UIInput firstName;
+		public static UIInput lastName;
 		//public UIPopupList listPoste;
-	public UILabel poplist_label;
+	    UILabel poplist_label;
 		UIButton bouton_continuer;
-
-				// Use this for initialization
-		void Start () {
+    // Use this for initialization
+    void Start () {
 			bouton_continuer = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
 			firstName = GameObject.Find ("Input_name").GetComponent<UIInput> ();
 			lastName = GameObject.Find ("Input_lastname").GetComponent<UIInput> ();
-			//listPoste = GameObject.Find ("PopUp_Liste").GetComponent<UIPopupList> ();
-		poplist_label = GameObject.Find("pop_list_label").GetComponent<UILabel>();
+		    poplist_label = GameObject.Find("pop_list_label").GetComponent<UILabel>();
 
 			Set_interactable (false); // make the button uninteractable at the begining
 		}
