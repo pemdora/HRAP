@@ -8,10 +8,12 @@ public class AIengine : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        //QCM qcm = new QCM();
-        //qcm.LancementQCM();
-        Question quest = new Question(1,"Est ce que vous êtes motivé ?",2);
-        Debug.Log(quest.String);
+        /* QCM qcm = new QCM();
+         qcm.LancementQCM();*/
+
+        M_Candidate candidate = new M_Candidate("Tom");
+        M_QCM qcm = new M_QCM();
+        Debug.Log("tamere");
 
 
     }

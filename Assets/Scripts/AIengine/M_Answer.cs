@@ -9,20 +9,20 @@ namespace HRAP
     {
         private int answerId;
         private int questionId;
-        private string answerStr;
-        private Dictionary<string, int> skills;
+        private string body;
+        private List<M_Skill> skillsList;
 
-        public Answer(int id, int questionId, string str, Dictionary<string, int> skills)
+        public Answer(int id, int questionId, string body, List<M_Skill> skillsList)
         {
             this.answerId = id;
             this.questionId = questionId;
-            this.answerStr = str;
-            this.skills = skills;
+            this.body = body;
+            this.skillsList = skillsList;
         }
 
         public int Id { get { return answerId; } }
         public int QuestionId { get { return questionId; } }
-        public string String { get { return answerStr; } }
-        public Dictionary<string, int> Skills { get { return skills; } }
+        public string String { get { return body; } }
+        public List<M_Skill> Skills { get { return skillsList; } }
     }
 }

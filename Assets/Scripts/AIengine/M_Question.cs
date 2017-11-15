@@ -6,21 +6,21 @@ using System.Text;
 
 namespace HRAP
 {
-    class Question
+    class M_Question
     {
         private int questionId;
-        private string questionStr;
+        private string body;
         private int numAnswers;
 
-        public Question(int id, string str, int answers)
+        public M_Question(int id, string body, int answers)
         {
             this.questionId = id;
-            this.questionStr = str;
+            this.body = body;
             this.numAnswers = answers;
         }
 
         public int Id { get { return questionId; } }
-        public string String { get { return questionStr; }  }
+        public string String { get { return body; }  }
         public int NumAnswers { get { return numAnswers; } }
 
     }

@@ -23,25 +23,25 @@ namespace HRAP
 
         }
 
-        public void Evaluation(Answer answer,Candidate candidat)
+        public void Evaluation(Answer answer,M_Candidate candidat)
         {
             candidat.UpdateCandidate(answer);
 
             for (int i = 0; i < 4; i++)
             {                
-                ScoreMotivation += candidat.Skills.ElementAt(i).Value;
+                ScoreMotivation += candidat.Skills[i].Points;
             }
             for (int i = 4; i < 9; i++)
             {                
-                ScoreControleEmmotionnel += candidat.Skills.ElementAt(i).Value;
+                ScoreControleEmmotionnel += candidat.Skills[i].Points;
             }
             for (int i = 9; i < 16; i++)
             {               
-                ScoreLeadership += candidat.Skills.ElementAt(i).Value;
+                ScoreLeadership += candidat.Skills[i].Points;
             }
             for (int i = 16; i < 24; i++)
             {
-                ScoreSociabilite += candidat.Skills.ElementAt(i).Value;
+                ScoreSociabilite += candidat.Skills[i].Points;
             }
 
 
@@ -52,8 +52,8 @@ namespace HRAP
         {       
            
 
-            Console.WriteLine(DataManager.GetQuestionById(IDQuestion).String);
-            List<Answer> answers = DataManager.GetAnswersByQuestionId(IDQuestion);
+            Console.WriteLine(M_DataManager.GetQuestionById(IDQuestion).String);
+            List<Answer> answers = M_DataManager.GetAnswersByQuestionId(IDQuestion);
             
             for(int i = 0; i < answers.LongCount(); i++)
             {
@@ -93,7 +93,7 @@ namespace HRAP
             Console.WriteLine("Pour quel post postulez vous?");
             string type = Console.ReadLine();
 
-            Candidate candidat = new Candidate(DataManager.GetIDProfile(),type, nom, DataManager.InitialisationSkill());
+            M_Candidate candidat = new M_Candidate(nom);
             
             int QuestionAleatoir = 1;
 
@@ -159,7 +159,7 @@ namespace HRAP
                     Console.WriteLine();
                     for(int i = 0; i < candidat.Skills.Count(); i++)
                     {
-                       Console.WriteLine(candidat.Skills.ElementAt(i).Key + ":" + candidat.Skills.ElementAt(i).Value);
+                       Console.WriteLine(candidat.Skills[i].Name + ":" + candidat.Skills[i].Points);
                     }
 
 
@@ -172,7 +172,7 @@ namespace HRAP
                 }
             }
 
-            DataManager.SetCandidatIntoFile(candidat);
+            M_DataManager.SetCandidatIntoFile(candidat);
         }
 
     }
