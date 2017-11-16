@@ -73,10 +73,10 @@ namespace HRAP
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                // first line is titles
+                // first line is headers
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    return new M_Question(id, temp[1], Convert.ToInt32(temp[2]));
+                    return new M_Question(id, temp[1], Convert.ToInt32(temp[2]), Convert.ToInt32(temp[3]));
                 }
 
                 line = reader.ReadLine();
@@ -91,9 +91,9 @@ namespace HRAP
 
         // ANSWERS
 
-        public  List<Answer> GetAnswersByQuestionId(int questionId)
+        public  List<M_Answer> GetAnswersByQuestionId(int questionId)
         {
-            List<Answer> result = new List<Answer>();
+            List<M_Answer> result = new List<M_Answer>();
 
 
 
@@ -115,11 +115,11 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[1]) == questionId)
                 {
                     List<M_Skill> skills = new List<M_Skill>();
-                    for (int i = 3; i < 27; i++)
+                    for (int i = 4; i < 28; i++)
                     {
                         skills.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i])));
                     }
-                    result.Add(new Answer(Convert.ToInt32(temp[0]), questionId, temp[2], skills));
+                    result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), skills));
                 }
 
 

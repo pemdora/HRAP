@@ -8,12 +8,11 @@ namespace HRAP
     class M_Quizz
     {
         private int length = 5;
-        private List<MV_Question> questions;
-        // private Dictionary<int, int> candidateAnswers = new Dictionary<int, int>();
+        private List<M_Question> questions;
 
         public M_Quizz()
         {
-            questions = new List<MV_Question>();
+            questions = new List<M_Question>();
             GenerateRandom();
         }
 
@@ -34,7 +33,7 @@ namespace HRAP
             {
                 random = new Random();
                 randomId = random.Next(1, numQuestions);
-                this.questions.Add(new MV_Question(M_DataManager.Instance.GetQuestionById(randomId)));
+                this.questions.Add(M_DataManager.Instance.GetQuestionById(randomId));
             }
 
         }

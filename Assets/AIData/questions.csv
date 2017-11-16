@@ -1,15 +1,15 @@
-question_id; question_str;answers_number
-1;Quelles qualites sont indispensables pour savoir diriger un projet ?;3
-2;Quelle opinion avez-vous de vos collaborateurs les mieux prepares ?;3
-3;Aimez-vous prendre des decisions seul(e);2
-4; Participez-vous a des activites de coaching ou a des formations pour ameliorer vos competences en leadership? ;2
-5;Vous etes quelqu'un :;4
-6;Vous etes satisfaits de votre journee :;4
-7;Votre principale qualite en tant que chef est :;4
-8;Pour etre un bon decideur, il faut :;4
-9;Comment je definis mes objectifs :;4
-10;Un de vos collaborateurs realise une bourde, comment reagissez vous? ;4
-11;Avez-vous deja vecu un echec professionnel?;2
-12;Si oui a la question 11, a quoi cela est-ce lie? Solution la plus adapte?;4
-13;Avez-vous deja vecu un succe professionnel?;2
-14;Si oui a la question 13, a quoi cela est-ce lie?;4
+question_id; question_str;next;answers_number
+1;Quelles qualites sont indispensables pour savoir diriger un projet ?;0;3
+2;Quelle opinion avez-vous de vos collaborateurs les mieux prepares ?;0;3
+3;Aimez-vous prendre des decisions seul(e);0;2
+4; Participez-vous a des activites de coaching ou a des formations pour ameliorer vos competences en leadership? ;0;2
+5;Vous etes quelqu'un :;0;4
+6;Vous etes satisfaits de votre journee :;0;4
+7;Votre principale qualite en tant que chef est :;0;4
+8;Pour etre un bon decideur, il faut :;0;4
+9;Comment je definis mes objectifs :;0;4
+10;Un de vos collaborateurs realise une bourde, comment reagissez vous? ;0;4
+11;Avez-vous deja vecu un echec professionnel?;0;2
+12;Si oui a la question 11, a quoi cela est-ce lie? Solution la plus adapte?;0;4
+13;Avez-vous deja vecu un succe professionnel?;0;2
+14;Si oui a la question 13, a quoi cela est-ce lie?;0;4

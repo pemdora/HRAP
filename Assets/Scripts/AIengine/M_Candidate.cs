@@ -14,7 +14,7 @@ namespace HRAP
         {
         }
 
-        public void UpdateCandidate(Answer answer)
+        public void UpdateCandidate(M_Answer answer)
         {
             for (int i = 0; i < this.skillsList.Count(); i++)
             {
