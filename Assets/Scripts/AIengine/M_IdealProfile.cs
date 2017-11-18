@@ -7,7 +7,7 @@ namespace HRAP
 {
     class M_IdealProfile : M_Profile
     {
-        M_Experience experience;
+       // M_Experience experience;
 
         public M_IdealProfile(string name) : base(name)
         {

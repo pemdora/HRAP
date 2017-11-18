@@ -90,6 +90,5 @@ C:\Users\Yasmeen\Documents\GitHub\HRAP\Temp\bin\Debug\nunit.framework.xml
 C:\Users\Yasmeen\Documents\GitHub\HRAP\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\Yasmeen\Documents\GitHub\HRAP\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\Yasmeen\Documents\GitHub\HRAP\Temp\bin\Debug\UnityEngine.VR.xml
-C:\Users\Yasmeen\Documents\GitHub\HRAP\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Yasmeen\Documents\GitHub\HRAP\obj\Debug\Assembly-CSharp.dll
 C:\Users\Yasmeen\Documents\GitHub\HRAP\obj\Debug\Assembly-CSharp.pdb

@@ -19,11 +19,11 @@ public class AIengine : MonoBehaviour {
         cname = GameObject.Find("cname").GetComponent<UILabel>();
         clastname = GameObject.Find("clastname").GetComponent<UILabel>();
         //Init Candidate and QCM
-        M_Candidate candidate = new M_Candidate("Tom");
-        M_Quizz qcm = new M_Quizz();
+        //M_Candidate candidate = new M_Candidate("Tom");
+       // M_Quizz qcm = new M_Quizz();
         //Debug.Log(candidate.Name);
-        clastname.text = Input_authentification.lastName.label.text;//test
-        cname.text = Input_authentification.firstName.label.text;//test
+        //clastname.text = Input_authentification.lastName.label.text;//test
+        //cname.text = Input_authentification.firstName.label.text;//test
 
     }
 	
