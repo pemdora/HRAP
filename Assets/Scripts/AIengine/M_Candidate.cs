@@ -7,14 +7,26 @@ namespace HRAP
 {
     class M_Candidate : M_Profile
     {
-        // private string surname;
-        // private string targetJob;
+         private string targetJob;
+         private string result;
 
-        public M_Candidate(string name) : base( name)
+        public M_Candidate(string name, string targetJob) : base(name)
         {
+            this.targetJob = targetJob;
+            this.result = null;
         }
 
-        public void UpdateCandidate(M_Answer answer)
+        public M_Candidate(int id, string name, string targetJob, string result, List<M_Skill> skillsList) : base(id, name, skillsList)
+        {
+            this.targetJob = targetJob;
+            this.result = result;
+        }
+
+        public string TargetJob { get { return targetJob; } }
+
+        public string Result { get { return result; } }
+
+        public void UpdateSkills(M_Answer answer)
         {
             for (int i = 0; i < this.skillsList.Count(); i++)
             {

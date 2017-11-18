@@ -18,6 +18,7 @@ namespace HRAP
             this.answerId = id;
             this.questionId = questionId;
             this.body = body;
+            this.nextQuestionId = nextQuestionId;
             this.skillsList = skillsList;
         }
 

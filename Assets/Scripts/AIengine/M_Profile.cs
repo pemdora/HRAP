@@ -19,9 +19,9 @@ namespace HRAP
             this.skillsList = InitializeSkills();
         }
 
-        public M_Profile(string name, List<M_Skill> skills)
+        public M_Profile(int id, string name, List<M_Skill> skills)
         {
-            this.id = InitializeId();
+            this.id = id;
             this.name = name;
             this.skillsList = skills;
         }
@@ -33,7 +33,7 @@ namespace HRAP
 
        private int InitializeId()
         {
-            return M_DataManager.Instance.CountProfiles() + 1;
+            return M_DataManager.Instance.CountCandidates() + 1;
         }
 
         private List<M_Skill> InitializeSkills()

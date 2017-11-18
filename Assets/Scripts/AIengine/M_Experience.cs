@@ -8,6 +8,7 @@ namespace HRAP
     enum M_Experience
     {
         EXPERT,
+        INTERMEDIATE,
         JUNIOR,
         NULL
     }
