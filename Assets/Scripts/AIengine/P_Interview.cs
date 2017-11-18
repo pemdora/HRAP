@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class P_Interview
+    public class P_Interview
     {
     }
 }

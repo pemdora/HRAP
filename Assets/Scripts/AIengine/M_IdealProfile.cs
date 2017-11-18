@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_IdealProfile : M_Profile
+    public class M_IdealProfile : M_Profile
     {
         M_Experience experience;
 

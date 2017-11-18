@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_Answer
+    public class M_Answer
     {
         private int answerId;
         private int questionId;

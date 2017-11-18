@@ -7,7 +7,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_DataManager
+    public class M_DataManager
     {
         private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
         private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";

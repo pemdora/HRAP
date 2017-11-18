@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_Candidate : M_Profile
+    public class M_Candidate : M_Profile
     {
          private string targetJob;
          private string result;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    enum M_SkillCategory
+    public enum M_SkillCategory
     {
         NULL,
         MOTIVATION,

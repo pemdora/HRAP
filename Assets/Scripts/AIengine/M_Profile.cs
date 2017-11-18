@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HRAP
 {
-    abstract class M_Profile
+    public abstract class M_Profile
     {
         private int id;
         private string name;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    enum M_Experience
+    public enum M_Experience
     {
         EXPERT,
         INTERMEDIATE,

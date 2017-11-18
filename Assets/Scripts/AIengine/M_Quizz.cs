@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_Quizz
+    public class M_Quizz
     {
         private int length = 5;
         private List<M_Question> questions;

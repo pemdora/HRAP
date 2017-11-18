@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_Skill
+    public class M_Skill
     {
         private string name;
         private M_SkillCategory category;
