@@ -22,7 +22,7 @@ namespace HRAP
         }
 
         public int Id { get { return questionId; } }
-        public string String { get { return body; }  }
+        public string Body { get { return body; }  }
         public int NextQuestionId { get { return nextQuestionId; } }
         public int NumAnswers { get { return numAnswers; } }
 

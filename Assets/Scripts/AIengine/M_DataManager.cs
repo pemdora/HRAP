@@ -36,7 +36,7 @@ namespace HRAP
 
         private int Count(string file)
         {
-            int result = 0;
+            int result = -1;
 
             StreamReader reader = new StreamReader(file);
             string line = reader.ReadLine();
