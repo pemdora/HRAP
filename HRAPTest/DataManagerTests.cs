@@ -55,7 +55,7 @@ namespace HRAPTest
         // ANSWERS
 
         [TestMethod]
-        public void GetAnswers_WithValidID()
+        public void GetAnswers_WithValidQuestionID()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
@@ -72,6 +72,55 @@ namespace HRAPTest
             Assert.AreEqual(expected_answer2, actual_answer2);
 
             //Assert.Fail(answersList[0].Skills[3].Points.ToString());
+        }
+
+        [TestMethod]
+        public void GetAnswerID_WithValidQuestionID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            int expected_id = 35;
+            string s = "Oui";
+            int actual_answerID = M_DataManager.Instance.GetAnswerID(11,s);
+
+            Assert.AreEqual(expected_id, actual_answerID);
+        }
+
+        [TestMethod]
+        public void GetAnswer_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            string expected_answer = "Oui";
+
+            M_Answer actual_answer = M_DataManager.Instance.GetAnswer(35);
+            Assert.AreEqual(expected_answer, actual_answer.Body);
+        }
+
+        // CANDIDATES
+
+        [TestMethod]
+        public void GetCandidate_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            string expected_name = "yasmeen";
+            M_Candidate actual_candidate = M_DataManager.Instance.GetCandidate(2);
+            Assert.AreEqual(expected_name, actual_candidate.Name);
+             
+        }
+
+        // IDEAL PROFILES
+
+            // TO DO
+        [TestMethod]
+        public void GetIdealProfile_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            //string expected_name = "chef de projet";
+            //M_IdealProfile actual_idealprofile = M_DataManager.Instance.GetIdealProfile(1);
+            //Assert.AreEqual(expected_name, actual_idealprofile.Name);
 
         }
 

@@ -197,7 +197,7 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[1]) == questionId)
                 {
                     result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), null));
-                    //pointsIDs.Add(Convert.ToInt32(temp[4]));
+                    pointsIDs.Add(Convert.ToInt32(temp[4]));
                 }
 
 
@@ -208,13 +208,13 @@ namespace HRAP
             reader.Close();
 
             // Set points in answers
-            /*if (result != null)
+            if (result != null)
             {
                 for (int i = 0; i < result.Count; i++)
                 {
                     result[i].Skills = GetPoints(pointsIDs[i]);
                 }
-            }*/
+            }
             
 
             return result;
@@ -224,15 +224,20 @@ namespace HRAP
         {
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
+            int count = 0;
 
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                if (Convert.ToInt32(temp[1]) == questionId && temp[2] == answer)
+                if (count != 0)
                 {
-                    return Convert.ToInt32(temp[0]);
+                    if (Convert.ToInt32(temp[1]) == questionId && temp[2] == answer)
+                    {
+                        return Convert.ToInt32(temp[0]);
+                    }
                 }
                 line = reader.ReadLine();
+                count++;
             }
 
             reader.Close();
@@ -242,6 +247,7 @@ namespace HRAP
         public M_Answer GetAnswer(int id)
         {
             M_Answer result= null;
+            int pointsID = 0;
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -253,6 +259,7 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
                     result=  new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), null);
+                    pointsID = Convert.ToInt32(temp[4]);
                 }
 
 
@@ -265,7 +272,7 @@ namespace HRAP
             // Set points in answer
             if (result !=null)
             {
-                result.Skills = GetPoints(result.Id);
+                result.Skills = GetPoints(pointsID);
             }
             return result;
         }
@@ -281,6 +288,9 @@ namespace HRAP
 
         public M_Candidate GetCandidate(int id)
         {
+            M_Candidate result = null;
+            int pointsID = 0;
+
             StreamReader reader = new StreamReader(candidatesPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -291,8 +301,8 @@ namespace HRAP
 
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
-                    return new M_Candidate(id, temp[1], temp[2], temp[3], skills);
+                     result = new M_Candidate(id, temp[1], temp[2], temp[3], null);
+                    pointsID = Convert.ToInt32(temp[4]);
                 }
 
 
@@ -301,9 +311,17 @@ namespace HRAP
             }
 
             reader.Close();
-            return null;
+
+            // Set points in candidate
+            if (result != null)
+            {
+                result.Skills = GetPoints(pointsID);
+            }
+
+            return result;
         }
 
+        // TO DO
         public void AddCandidate(M_Candidate candidate)
         {
 
@@ -350,32 +368,10 @@ namespace HRAP
             return result;
         }
 
-    /*    public string GetExperienceToString(M_Experience exp)
-        {
-            string result;
-            switch (exp)
-            {
-                case M_Experience.NULL:
-                    result = "NULL";
-                    break;
-                case M_Experience.JUNIOR:
-                    result = "JUNIOR";
-                    break;
-                case M_Experience.INTERMEDIATE:
-                    result = "INTERMEDIATE";
-                    break;
-                case M_Experience.EXPERT:
-                    result = "EXPERT";
-                    break;
-                default:
-                    result = "NULL";
-                    break;
-            }
-            return result;
-        }*/
-
         public M_IdealProfile GetIdealProfile(int id)
         {
+            M_IdealProfile result = null;
+            int pointsID = 0;
             StreamReader reader = new StreamReader(idealProfilesPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -383,11 +379,11 @@ namespace HRAP
             while (line != null)
             {
                 string[] temp = line.Split(';');
-
+                
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[3]));
-                    return new M_IdealProfile(id, temp[1], GetExperience(temp[2]), skills);
+                    result = new M_IdealProfile(id, temp[1], GetExperience(temp[2]), null);
+                    pointsID = Convert.ToInt32(temp[3]);
                 }
 
 
@@ -396,7 +392,13 @@ namespace HRAP
             }
 
             reader.Close();
-            return null;
+
+            if (result != null)
+            {
+                result.Skills = GetPoints(pointsID);
+            }
+
+            return result;
         }
 
         public int GetIdealProfileID(string name, M_Experience exp)

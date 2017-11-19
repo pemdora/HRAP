@@ -23,7 +23,6 @@ namespace HRAP
         }
 
         public string TargetJob { get { return targetJob; } }
-
         public string Result { get { return result; } }
 
         public void UpdateSkills(M_Answer answer)

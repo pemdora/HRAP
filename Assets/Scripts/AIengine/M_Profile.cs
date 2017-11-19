@@ -29,7 +29,7 @@ namespace HRAP
         // Access attributes
         public int Id { get { return id; } }
         public string Name { get { return name; } }
-        public List<M_Skill> Skills { get { return skillsList; } }
+        public List<M_Skill> Skills { get { return skillsList; } set { skillsList = value; } }
 
        private int InitializeId()
         {

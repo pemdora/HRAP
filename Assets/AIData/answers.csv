@@ -9,39 +9,39 @@ id;question_id;body;next;points_id
 8;3;Non;0;8
 9;4;Oui;0;9
 10;4;Non;0;10
-11;5;Qui ne compte pas son temps pour atteindre les objectifs et dispose d'une vision claire des actions à realiser;11
-12;5;Enthousiaste, charismatique, plein de charme et d'idees, vous aimez echanger sur vos idees;12
-13;5;Qui fixe le cap et donne totale confiance à votre equipe;13
-14;5;Sensible, souriant, interesse par les relations et par ce que ressentent les autres;14
-15;6;Si vous parvenez à savoir, comprendre et agir sur le moral de l'equipe;15
-16;6;Si vous sentez les gens travailler ardemment à la concretisation des projets que vous avez concus;16
-17;6;Si chacun a bien compris les règles du jeu et les respecte attentivement;17
-18;6;Si vous avez abattu une grande quantite de travail;18
-19;7;La proximite;19
-20;7;La delegation;20
-21;7;La droiture;21
-22;7;Le leadership;22
-23;8;Decider et laisser aux collaborateurs le soin de mettre en œuvre;23
-24;8;Ne decider qu'après avoir obtenu le maximum d'adhesion des collaborateurs;24
-25;8;Avoir la capacite de decider instantanement quelles que soient les circonstances;25
-26;8;Se referer à des situations similaires pour prendre des decisions;26
-27;9;Je fixe les objectifs indivuels en favorisant la demarche participative;27
-28;9;Je fixe les objecifs en donnant des instructions precises à mon equipe;28
-29;9;J'encourage la prise d'initiative de mes collaborateurs;29
-30;9;Je fixe les objectifs à mon equipe en m'assurant de leur adhesion;30
-31;10;Je suis decus;31
-32;10;Il doit apprendre de ses experiences;32
-33;10;Je lui reproche cet echec;33
-34;10;Avec serenite, j'essaie de comprendre;34
-35;11;Oui;35
-36;11;Non;36
-37;12;Mauvaise cohesion d'equipe et manque de communication au sein d'une equipe;37
-38;12;Manque d'organisation et objectifs non atteints;38
-39;12;Lacune techniques;39
-40;12;Insatisfaction du client;40
-41;13;Oui;41
-42;13;Non;42
-43;14;Votre aisance dans la coordination d'equipe;43
-44;14;Les objectif fixes sont atteints;44
-45;14;Satisfaction du client;45
-46;14;Votre aisance dans la technique;46
+11;5;Qui ne compte pas son temps pour atteindre les objectifs et dispose d'une vision claire des actions à realiser;0;11
+12;5;Enthousiaste, charismatique, plein de charme et d'idees, vous aimez echanger sur vos idees;0;12
+13;5;Qui fixe le cap et donne totale confiance à votre equipe;0;13
+14;5;Sensible, souriant, interesse par les relations et par ce que ressentent les autres;0;14
+15;6;Si vous parvenez à savoir, comprendre et agir sur le moral de l'equipe;0;15
+16;6;Si vous sentez les gens travailler ardemment à la concretisation des projets que vous avez concus;0;16
+17;6;Si chacun a bien compris les règles du jeu et les respecte attentivement;0;17
+18;6;Si vous avez abattu une grande quantite de travail;0;18
+19;7;La proximite;0;19
+20;7;La delegation;0;20
+21;7;La droiture;0;21
+22;7;Le leadership;0;22
+23;8;Decider et laisser aux collaborateurs le soin de mettre en œuvre;0;23
+24;8;Ne decider qu'après avoir obtenu le maximum d'adhesion des collaborateurs;0;24
+25;8;Avoir la capacite de decider instantanement quelles que soient les circonstances;0;25
+26;8;Se referer à des situations similaires pour prendre des decisions;0;26
+27;9;Je fixe les objectifs indivuels en favorisant la demarche participative;0;27
+28;9;Je fixe les objecifs en donnant des instructions precises à mon equipe;0;28
+29;9;J'encourage la prise d'initiative de mes collaborateurs;0;29
+30;9;Je fixe les objectifs à mon equipe en m'assurant de leur adhesion;0;30
+31;10;Je suis decus;0;31
+32;10;Il doit apprendre de ses experiences;0;32
+33;10;Je lui reproche cet echec;0;33
+34;10;Avec serenite, j'essaie de comprendre;0;34
+35;11;Oui;0;35
+36;11;Non;0;36
+37;12;Mauvaise cohesion d'equipe et manque de communication au sein d'une equipe;0;37
+38;12;Manque d'organisation et objectifs non atteints;0;38
+39;12;Lacune techniques;0;39
+40;12;Insatisfaction du client;0;40
+41;13;Oui;0;41
+42;13;Non;0;42
+43;14;Votre aisance dans la coordination d'equipe;0;43
+44;14;Les objectif fixes sont atteints;0;44
+45;14;Satisfaction du client;0;45
+46;14;Votre aisance dans la technique;0;46
