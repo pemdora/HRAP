@@ -2,6 +2,7 @@
 using System.IO;
 using HRAP;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace HRAPTest
 {
@@ -47,9 +48,32 @@ namespace HRAPTest
             M_Question expected = M_DataManager.Instance.GetQuestionById(9);
 
             int actual_id = M_DataManager.Instance.GetQuestionID(expected.Body);
-
             Assert.AreEqual(expected.Id, actual_id);
 
         }
+
+        // ANSWERS
+
+        [TestMethod]
+        public void GetAnswers_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            string expected_answer1 = "Oui";
+            string expected_answer2 = "Non";
+
+
+            List<M_Answer> answersList = new List<M_Answer>();
+            answersList = M_DataManager.Instance.GetAnswersByQuestionId(11);
+            string actual_answer1 = answersList[0].Body;
+            string actual_answer2 = answersList[1].Body;
+
+            Assert.AreEqual(expected_answer1, actual_answer1);
+            Assert.AreEqual(expected_answer2, actual_answer2);
+
+            //Assert.Fail(answersList[0].Skills[3].Points.ToString());
+
+        }
+
     }
 }

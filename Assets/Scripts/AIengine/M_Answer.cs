@@ -24,8 +24,8 @@ namespace HRAP
 
         public int Id { get { return answerId; } }
         public int QuestionId { get { return questionId; } }
-        public string String { get { return body; } }
+        public string Body { get { return body; } }
         public int NextQuestionId { get { return nextQuestionId; } }
-        public List<M_Skill> Skills { get { return skillsList; } }
+        public List<M_Skill> Skills { get { return skillsList; } set { skillsList = value; } }
     }
 }

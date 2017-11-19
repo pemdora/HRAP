@@ -61,8 +61,8 @@ namespace HRAP
 
             // 1. Get points in points File
 
-            StreamReader reader = new StreamReader(pointsPath);
-            string line = reader.ReadLine();
+            StreamReader p_reader = new StreamReader(pointsPath);
+            string line = p_reader.ReadLine();
             string[] headers = { };
             int count = 0;
 
@@ -83,17 +83,17 @@ namespace HRAP
                     }
                 }
 
-                line = reader.ReadLine();
+                line = p_reader.ReadLine();
                 count++;
             }
 
-            reader.Close();
+            p_reader.Close();
 
             // Check whether skills are important
             if(skillsList != null)
             {
-                reader = new StreamReader(importantpointsPath);
-                line = reader.ReadLine();
+                p_reader = new StreamReader(importantpointsPath);
+                line = p_reader.ReadLine();
                 count = 0;
 
                 while (line != null)
@@ -111,11 +111,11 @@ namespace HRAP
                         }
                     }
 
-                    line = reader.ReadLine();
+                    line = p_reader.ReadLine();
                     count++;
                 }
 
-                reader.Close();
+                p_reader.Close();
             }
 
             return skillsList;
@@ -183,6 +183,7 @@ namespace HRAP
         public List<M_Answer> GetAnswersByQuestionId(int questionId)
         {
             List<M_Answer> result = new List<M_Answer>();
+            List<int> pointsIDs = new List<int>();
 
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
@@ -195,8 +196,8 @@ namespace HRAP
 
                 if (count != 0 && Convert.ToInt32(temp[1]) == questionId)
                 {
-                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
-                    result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), skills));
+                    result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), null));
+                    //pointsIDs.Add(Convert.ToInt32(temp[4]));
                 }
 
 
@@ -205,6 +206,17 @@ namespace HRAP
             }
 
             reader.Close();
+
+            // Set points in answers
+            /*if (result != null)
+            {
+                for (int i = 0; i < result.Count; i++)
+                {
+                    result[i].Skills = GetPoints(pointsIDs[i]);
+                }
+            }*/
+            
+
             return result;
         }
 
@@ -229,6 +241,7 @@ namespace HRAP
 
         public M_Answer GetAnswer(int id)
         {
+            M_Answer result= null;
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -239,8 +252,7 @@ namespace HRAP
 
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
-                    return new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), skills);
+                    result=  new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), null);
                 }
 
 
@@ -249,7 +261,13 @@ namespace HRAP
             }
 
             reader.Close();
-            return null;
+
+            // Set points in answer
+            if (result !=null)
+            {
+                result.Skills = GetPoints(result.Id);
+            }
+            return result;
         }
 
        

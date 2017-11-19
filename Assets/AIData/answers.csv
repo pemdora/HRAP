@@ -1,14 +1,14 @@
 id;question_id;body;next;points_id
-1;1;Savoir commander et imposer son autorite aux autres est le plus important.;1
-2;1;Etre habile dans les relations avec les superieurs et les subordonnes, savoir nager entre deux eaux.;2
-3;1;Etre capable d'attirer l'attention et l'admiration de ceux qui collaborent avec vous.;3
-4;2;Vous vous mefiez, ils pourraient envier votre poste et vous le derober.;4
-5;2;Vous êtes convaincu que vous avez votre place parmi eux : s'ils etaient si bien prepares, pourquoi est-ce vous qui dirigez ?;5
-6;2;Vous les voyez comme une aide indispensable pour être là où vous êtes, sans eux vous ne seriez rien.;6
-7;3;Oui;7
-8;3;Non;8
-9;4;Oui;9
-10;4;Non;10
+1;1;Savoir commander et imposer son autorite aux autres est le plus important.;0;1
+2;1;Etre habile dans les relations avec les superieurs et les subordonnes, savoir nager entre deux eaux.;0;2
+3;1;Etre capable d'attirer l'attention et l'admiration de ceux qui collaborent avec vous.;0;3
+4;2;Vous vous mefiez, ils pourraient envier votre poste et vous le derober.;0;4
+5;2;Vous êtes convaincu que vous avez votre place parmi eux : s'ils etaient si bien prepares, pourquoi est-ce vous qui dirigez ?;0;5
+6;2;Vous les voyez comme une aide indispensable pour être là où vous êtes, sans eux vous ne seriez rien.;0;6
+7;3;Oui;0;7
+8;3;Non;0;8
+9;4;Oui;0;9
+10;4;Non;0;10
 11;5;Qui ne compte pas son temps pour atteindre les objectifs et dispose d'une vision claire des actions à realiser;11
 12;5;Enthousiaste, charismatique, plein de charme et d'idees, vous aimez echanger sur vos idees;12
 13;5;Qui fixe le cap et donne totale confiance à votre equipe;13
