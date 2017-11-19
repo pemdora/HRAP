@@ -1,4 +1,4 @@
-question_id; question_str;next;answers_number
+id; body;next;answers_number
 1;Quelles qualites sont indispensables pour savoir diriger un projet ?;0;3
 2;Quelle opinion avez-vous de vos collaborateurs les mieux prepares ?;0;3
 3;Aimez-vous prendre des decisions seul(e);0;2

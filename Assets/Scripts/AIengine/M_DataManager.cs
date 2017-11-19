@@ -14,6 +14,8 @@ namespace HRAP
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
         private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
+        private static string pointsPath = @"..\HRAP\Assets\AIData\points.csv";
+        private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
 
         private static M_DataManager instance;
 
@@ -53,6 +55,71 @@ namespace HRAP
 
         }
 
+        private List<M_Skill> GetPoints(int pointsID)
+        {
+            List<M_Skill> skillsList = new List<M_Skill>();
+
+            // 1. Get points in points File
+
+            StreamReader reader = new StreamReader(pointsPath);
+            string line = reader.ReadLine();
+            string[] headers = { };
+            int count = 0;
+
+            while (line != null)
+            {
+                string[] temp = line.Split(';');
+                if (count == 0)
+                {
+                    headers = temp;
+
+                }
+                if (count != 0 && Convert.ToInt32(temp[0]) == pointsID)
+                {
+                    
+                    for (int i = 1; i < temp.Length; i++)
+                    {
+                        skillsList.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i]), false));
+                    }
+                }
+
+                line = reader.ReadLine();
+                count++;
+            }
+
+            reader.Close();
+
+            // Check whether skills are important
+            if(skillsList != null)
+            {
+                reader = new StreamReader(importantpointsPath);
+                line = reader.ReadLine();
+                count = 0;
+
+                while (line != null)
+                {
+                    string[] temp = line.Split(';');
+
+                    if (count != 0 && Convert.ToInt32(temp[0]) == pointsID)
+                    {
+                        for (int i = 1; i < temp.Length; i++)
+                        {
+                            if (Convert.ToInt32(temp[i]) != 0)
+                            {
+                                skillsList[i].IsImportant = true;
+                            }
+                        }
+                    }
+
+                    line = reader.ReadLine();
+                    count++;
+                }
+
+                reader.Close();
+            }
+
+            return skillsList;
+        }
 
         // QUESTIONS
 
@@ -117,30 +184,18 @@ namespace HRAP
         {
             List<M_Answer> result = new List<M_Answer>();
 
-
-
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
-            string[] headers = { };
             int count = 0;
 
             while (line != null)
             {
 
-
                 string[] temp = line.Split(';');
-                if (count == 0)
-                {
-                    headers = temp;
 
-                }
                 if (count != 0 && Convert.ToInt32(temp[1]) == questionId)
                 {
-                    List<M_Skill> skills = new List<M_Skill>();
-                    for (int i = 4; i < 28; i++)
-                    {
-                        skills.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i])));
-                    }
+                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
                     result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), skills));
                 }
 
@@ -176,24 +231,15 @@ namespace HRAP
         {
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
-            string[] headers = { };
             int count = 0;
 
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                if (count == 0)
-                {
-                    headers = temp;
 
-                }
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = new List<M_Skill>();
-                    for (int i = 4; i < 28; i++)
-                    {
-                        skills.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i])));
-                    }
+                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
                     return new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), skills);
                 }
 
@@ -217,26 +263,17 @@ namespace HRAP
 
         public M_Candidate GetCandidate(int id)
         {
-            StreamReader reader = new StreamReader(answersPath);
+            StreamReader reader = new StreamReader(candidatesPath);
             string line = reader.ReadLine();
-            string[] headers = { };
             int count = 0;
 
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                if (count == 0)
-                {
-                    headers = temp;
 
-                }
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = new List<M_Skill>();
-                    for (int i = 4; i < 28; i++)
-                    {
-                        skills.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i])));
-                    }
+                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[4]));
                     return new M_Candidate(id, temp[1], temp[2], temp[3], skills);
                 }
 
@@ -323,24 +360,15 @@ namespace HRAP
         {
             StreamReader reader = new StreamReader(idealProfilesPath);
             string line = reader.ReadLine();
-            string[] headers = { };
             int count = 0;
 
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                if (count == 0)
-                {
-                    headers = temp;
 
-                }
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    List<M_Skill> skills = new List<M_Skill>();
-                    for (int i = 4; i < 28; i++)
-                    {
-                        skills.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i])));
-                    }
+                    List<M_Skill> skills = GetPoints(Convert.ToInt32(temp[3]));
                     return new M_IdealProfile(id, temp[1], GetExperience(temp[2]), skills);
                 }
 
@@ -420,7 +448,7 @@ namespace HRAP
                 // first line is headers
                 if (count != 0)
                 {
-                    result.Add(new M_Skill(temp[0], GetSkillCategory(temp[1]), 0));
+                    result.Add(new M_Skill(temp[0], GetSkillCategory(temp[1]), 0, false));
                 }
 
                 line = reader.ReadLine();

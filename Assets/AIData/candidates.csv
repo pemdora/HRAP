@@ -1,6 +1,6 @@
-profile_id; name; targetJob; result; Ambiton ;Perseverence;Implication;Gout pour le travail;Anticipation;Resistence à la pression;Stabilite;Optimisme;Prendre des risques;Convaincre;Force de proposition;Autonomie;Reactivite;Organisation / Rigueur;Leadership;Diplomatie;Sens du contact;Sens de l'ecoute;Communication (ecrite+oral);Travail en equipe;Adaptabilite;Sens du service;Accepte les critiques;Empathie
-1;martine;chef de projet;null;0;0;0;5;5;4;5;4;2;5;2;5;5;2;2;0;0;-1;2;1;5;0;0;4
-2;yasmeen;chef de projet;null;2;1;2;2;0;0;-1;2;1;5;0;0;1;1;2;2;0;0;-1;2;1;5;0;7
-3;candidata;chef de projet;null;20;26;65;69;26;9;16;11;-20;8;25;40;10;25;44;47;39;39;49;39;52;39;44;8
-4;uhjgtf;chef de projet;null;15;18;51;43;23;15;14;1;-20;20;15;48;5;27;53;11;12;12;12;22;35;22;17;-6
-5;okijhyu;chef de projet;null;35;38;67;69;43;14;21;33;0;18;50;45;15;35;49;66;62;62;72;62;65;62;57;44
+profile_id; name; targetJob; result;points_id
+1;martine;chef de projet;null;46
+2;yasmeen;chef de projet;null;47
+3;candidata;chef de projet;null;48
+4;uhjgtf;chef de projet;null;49
+5;okijhyu;chef de projet;null;50

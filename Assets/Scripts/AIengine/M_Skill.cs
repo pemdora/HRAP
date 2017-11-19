@@ -10,16 +10,20 @@ namespace HRAP
         private string name;
         private M_SkillCategory category;
         private int points;
+        private bool isImportant;
 
-        public M_Skill(string name, M_SkillCategory category, int points)
+        public M_Skill(string name, M_SkillCategory category, int points, bool isImportant)
         {
             this.name = name;
             this.category = category;
             this.points = points;
+            this.isImportant = isImportant;
         }
 
         public string Name { get { return name; } }
         public M_SkillCategory Category { get { return category; } }
         public int Points { get { return points; } set { points = value; } }
+        public bool IsImportant { get { return isImportant; } set { isImportant = value; } }
+
     }
 }

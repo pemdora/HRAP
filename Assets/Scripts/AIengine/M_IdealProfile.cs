@@ -19,5 +19,7 @@ namespace HRAP
             this.experience = experience;
         }
 
+        public M_Experience Experience { get { return experience; } }
+
     }
 }
