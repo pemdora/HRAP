@@ -7,7 +7,7 @@ namespace HRAP
 {
     public class M_Quizz
     {
-        private int length = 5;
+        private int numQuestions = 5;
         private List<M_Question> questions;
 
         public M_Quizz()
@@ -21,18 +21,17 @@ namespace HRAP
 
         }
 
+        public int NumQuestions { get { return numQuestions; } }
+        public List<M_Question> Questions { get { return questions; }}
 
         private void GenerateRandom()
         {
-
             int numQuestions = M_DataManager.Instance.CountQuestions();
-            Random random;
-            int randomId;
+            Random random = new Random();
 
-            for (int i = 0; i < length; i++)
-            {
-                random = new Random();
-                randomId = random.Next(1, numQuestions);
+            for (int i = 0; i < this.numQuestions; i++)
+            {                
+                int randomId = random.Next(1, numQuestions);
                 this.questions.Add(M_DataManager.Instance.GetQuestionById(randomId));
             }
 
