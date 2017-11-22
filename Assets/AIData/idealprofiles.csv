@@ -1,5 +1,4 @@
-profile_id; name;experience;points_id
-1;chef de projet;EXPERT;52
-2;chef de projet;JUNIOR;53
-3;chef de projet;INTERMEDIATE;54
-
+profile_id; name;experience
+1;chef de projet;EXPERT
+2;chef de projet;JUNIOR
+3;chef de projet;INTERMEDIATE

@@ -14,7 +14,9 @@ namespace HRAP
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
         private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
-        private static string pointsPath = @"..\HRAP\Assets\AIData\points.csv";
+        private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
+        private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
+        private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
         private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
 
         private static M_DataManager instance;
@@ -55,13 +57,13 @@ namespace HRAP
 
         }
 
-        private List<M_Skill> GetPoints(int pointsID)
+        private List<M_Skill> GetPoints(string file, int id)
         {
             List<M_Skill> skillsList = new List<M_Skill>();
 
             // 1. Get points in points File
 
-            StreamReader p_reader = new StreamReader(pointsPath);
+            StreamReader p_reader = new StreamReader(file);
             string line = p_reader.ReadLine();
             string[] headers = { };
             int count = 0;
@@ -74,14 +76,16 @@ namespace HRAP
                     headers = temp;
 
                 }
-                if (count != 0 && Convert.ToInt32(temp[0]) == pointsID)
-                {
-                    
-                    for (int i = 1; i < temp.Length; i++)
+                
+                    if (count != 0 && Convert.ToInt32(temp[0]) == id)
                     {
-                        skillsList.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i]), false));
+
+                        for (int i = 1; i < temp.Length; i++)
+                        {
+                            skillsList.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i]), false));
+                        }
                     }
-                }
+                
 
                 line = p_reader.ReadLine();
                 count++;
@@ -100,7 +104,7 @@ namespace HRAP
                 {
                     string[] temp = line.Split(';');
 
-                    if (count != 0 && Convert.ToInt32(temp[0]) == pointsID)
+                    if (count != 0 && Convert.ToInt32(temp[0]) == id)
                     {
                         for (int i = 1; i < temp.Length; i++)
                         {
@@ -183,7 +187,6 @@ namespace HRAP
         public List<M_Answer> GetAnswersByQuestionId(int questionId)
         {
             List<M_Answer> result = new List<M_Answer>();
-            List<int> pointsIDs = new List<int>();
 
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
@@ -197,7 +200,6 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[1]) == questionId)
                 {
                     result.Add(new M_Answer(Convert.ToInt32(temp[0]), questionId, temp[2], Convert.ToInt32(temp[3]), null));
-                    pointsIDs.Add(Convert.ToInt32(temp[4]));
                 }
 
 
@@ -210,9 +212,9 @@ namespace HRAP
             // Set points in answers
             if (result != null)
             {
-                for (int i = 0; i < result.Count; i++)
+                foreach(M_Answer a in result)
                 {
-                    result[i].Skills = GetPoints(pointsIDs[i]);
+                    a.Skills = GetPoints(answers_pointsPath, a.Id);
                 }
             }
             
@@ -247,7 +249,6 @@ namespace HRAP
         public M_Answer GetAnswer(int id)
         {
             M_Answer result= null;
-            int pointsID = 0;
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -259,7 +260,6 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
                     result=  new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), null);
-                    pointsID = Convert.ToInt32(temp[4]);
                 }
 
 
@@ -272,7 +272,7 @@ namespace HRAP
             // Set points in answer
             if (result !=null)
             {
-                result.Skills = GetPoints(pointsID);
+                result.Skills = GetPoints(answers_pointsPath, id);
             }
             return result;
         }
@@ -289,7 +289,6 @@ namespace HRAP
         public M_Candidate GetCandidate(int id)
         {
             M_Candidate result = null;
-            int pointsID = 0;
 
             StreamReader reader = new StreamReader(candidatesPath);
             string line = reader.ReadLine();
@@ -302,7 +301,6 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
                      result = new M_Candidate(id, temp[1], temp[2], temp[3], null);
-                    pointsID = Convert.ToInt32(temp[4]);
                 }
 
 
@@ -315,7 +313,7 @@ namespace HRAP
             // Set points in candidate
             if (result != null)
             {
-                result.Skills = GetPoints(pointsID);
+                result.Skills = GetPoints(candidates_pointsPath, id);
             }
 
             return result;
@@ -371,7 +369,6 @@ namespace HRAP
         public M_IdealProfile GetIdealProfile(int id)
         {
             M_IdealProfile result = null;
-            int pointsID = 0;
             StreamReader reader = new StreamReader(idealProfilesPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -383,7 +380,6 @@ namespace HRAP
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
                     result = new M_IdealProfile(id, temp[1], GetExperience(temp[2]), null);
-                    pointsID = Convert.ToInt32(temp[3]);
                 }
 
 
@@ -395,7 +391,7 @@ namespace HRAP
 
             if (result != null)
             {
-                result.Skills = GetPoints(pointsID);
+                result.Skills = GetPoints(idealprofiles_pointsPath,id);
             }
 
             return result;

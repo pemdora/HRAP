@@ -14,16 +14,19 @@ namespace HRAPTest
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
+            // 1. On instancie P_Interview avec le nom du candidat et son poste
             P_Interview interview = new P_Interview("steve", "chef de projet");
 
+            // 2. On récupère une liste de strings (ordre : question, rep1, rep2 )
             List<string> q = interview.GetNextQuestion();
 
+            // 3. On affiche chaque string dans la console
             foreach(string s in q)
             {
                 Console.WriteLine(s);
             }
 
-            // Pour envoyer la reponse du candidat
+            // 4. On enregistre la reponse du candidat
             interview.SetChosenAnswer("la reponse du candidat");
 
         }
