@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -262,6 +264,7 @@
     <Compile Include="Assets\Scripts\AIengine\M_Skill.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_SkillCategory.cs" />
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
+    <Compile Include="Assets\Scripts\AIengine\V_Question.cs" />
     <Compile Include="Assets\Scripts\AImovment.cs" />
     <Compile Include="Assets\Scripts\Input_authentification.cs" />
     <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />

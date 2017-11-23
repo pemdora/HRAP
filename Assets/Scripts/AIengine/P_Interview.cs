@@ -25,9 +25,9 @@ namespace HRAP
             isOver = false;
         }
 
-        public List<string> GetNextQuestion()
+        public V_Question GetNextQuestion()
         {
-            List<string> result = null;
+            V_Question result = null;
 
             if (currentQuestion < quizzList[currentQuizz].NumQuestions)
             {
@@ -36,12 +36,13 @@ namespace HRAP
 
                 if (question != null)
                 {
-                    result = new List<string>();
-                    result.Add(question.Body);
+                    List<string> answersToString = new List<string>();
                     foreach (M_Answer a in answers)
                     {
-                        result.Add(a.Body);
+                        answersToString.Add(a.Body);
                     }
+
+                    result = new V_Question(question.Body, question.NumAnswers, answersToString);
                     currentQuestion++;
                 }
             }

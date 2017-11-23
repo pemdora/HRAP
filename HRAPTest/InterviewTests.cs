@@ -18,10 +18,12 @@ namespace HRAPTest
             P_Interview interview = new P_Interview("steve", "chef de projet");
 
             // 2. On récupère une liste de strings (ordre : question, rep1, rep2 )
-            List<string> q = interview.GetNextQuestion();
+            V_Question q = interview.GetNextQuestion();
 
-            // 3. On affiche chaque string dans la console
-            foreach(string s in q)
+            // 3. On affiche la question, le nb de réponses et les réponses dans la console
+            Console.WriteLine(q.Question);
+            Console.WriteLine(q.NumAnswers);
+            foreach(string s in q.Answers)
             {
                 Console.WriteLine(s);
             }
