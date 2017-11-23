@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 840d9e96aaeafee419c847911e4d91de
+timeCreated: 1483906391
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: 0      012
+    100002: 10:1:2D
+    100004: 172:1:8
+    100006: 173:1:8
+    100008: 174:1:8
+    100010: 175:1:8
+    100012: 177:1:8
+    100014: 178:1:8
+    100016: 179:1:8
+    100018: 181:1:8
+    100020: 183:1:8
+    100022: 185:1:8
+    100024: 187:1:8
+    100026: 189:1:8
+    100028: 191:1:8
+    100030: 193:1:8
+    100032: 195:1:8
+    100034: 197:1:8
+    100036: 199:1:8
+    100038: 201:1:8
+    100040: 203:1:8
+    100042: 205:1:8
+    100044: 207:1:8
+    100046: 209:1:8
+    100048: 21     011
+    100050: 211:1:8
+    100052: 213:1:8
+    100054: 214:1:8
+    100056: 215:1:8
+    100058: 217:1:8
+    100060: 219:1:8
+    100062: 4:1:2D
+    100064: Box3165
+    100066: Box3166
+    100068: //RootNode
+    100070: Object275
+    400000: 0      012
+    400002: 10:1:2D
+    400004: 172:1:8
+    400006: 173:1:8
+    400008: 174:1:8
+    400010: 175:1:8
+    400012: 177:1:8
+    400014: 178:1:8
+    400016: 179:1:8
+    400018: 181:1:8
+    400020: 183:1:8
+    400022: 185:1:8
+    400024: 187:1:8
+    400026: 189:1:8
+    400028: 191:1:8
+    400030: 193:1:8
+    400032: 195:1:8
+    400034: 197:1:8
+    400036: 199:1:8
+    400038: 201:1:8
+    400040: 203:1:8
+    400042: 205:1:8
+    400044: 207:1:8
+    400046: 209:1:8
+    400048: 21     011
+    400050: 211:1:8
+    400052: 213:1:8
+    400054: 214:1:8
+    400056: 215:1:8
+    400058: 217:1:8
+    400060: 219:1:8
+    400062: 4:1:2D
+    400064: Box3165
+    400066: Box3166
+    400068: //RootNode
+    400070: Object275
+    2300000: 0      012
+    2300002: 10:1:2D
+    2300004: 172:1:8
+    2300006: 173:1:8
+    2300008: 174:1:8
+    2300010: 175:1:8
+    2300012: 177:1:8
+    2300014: 178:1:8
+    2300016: 179:1:8
+    2300018: 181:1:8
+    2300020: 183:1:8
+    2300022: 185:1:8
+    2300024: 187:1:8
+    2300026: 189:1:8
+    2300028: 191:1:8
+    2300030: 193:1:8
+    2300032: 195:1:8
+    2300034: 197:1:8
+    2300036: 199:1:8
+    2300038: 201:1:8
+    2300040: 203:1:8
+    2300042: 205:1:8
+    2300044: 207:1:8
+    2300046: 209:1:8
+    2300048: 21     011
+    2300050: 211:1:8
+    2300052: 213:1:8
+    2300054: 214:1:8
+    2300056: 215:1:8
+    2300058: 217:1:8
+    2300060: 219:1:8
+    2300062: 4:1:2D
+    2300064: Box3165
+    2300066: Box3166
+    2300068: Object275
+    3300000: 0      012
+    3300002: 10:1:2D
+    3300004: 172:1:8
+    3300006: 173:1:8
+    3300008: 174:1:8
+    3300010: 175:1:8
+    3300012: 177:1:8
+    3300014: 178:1:8
+    3300016: 179:1:8
+    3300018: 181:1:8
+    3300020: 183:1:8
+    3300022: 185:1:8
+    3300024: 187:1:8
+    3300026: 189:1:8
+    3300028: 191:1:8
+    3300030: 193:1:8
+    3300032: 195:1:8
+    3300034: 197:1:8
+    3300036: 199:1:8
+    3300038: 201:1:8
+    3300040: 203:1:8
+    3300042: 205:1:8
+    3300044: 207:1:8
+    3300046: 209:1:8
+    3300048: 21     011
+    3300050: 211:1:8
+    3300052: 213:1:8
+    3300054: 214:1:8
+    3300056: 215:1:8
+    3300058: 217:1:8
+    3300060: 219:1:8
+    3300062: 4:1:2D
+    3300064: Box3165
+    3300066: Box3166
+    3300068: Object275
+    4300000: 21     011
+    4300002: 4:1:2D
+    4300004: 10:1:2D
+    4300006: Box3165
+    4300008: Box3166
+    4300010: 0      012
+    4300012: 172:1:8
+    4300014: 173:1:8
+    4300016: 174:1:8
+    4300018: 175:1:8
+    4300020: 177:1:8
+    4300022: 178:1:8
+    4300024: 179:1:8
+    4300026: 181:1:8
+    4300028: 183:1:8
+    4300030: 185:1:8
+    4300032: 187:1:8
+    4300034: 189:1:8
+    4300036: 191:1:8
+    4300038: 193:1:8
+    4300040: 195:1:8
+    4300042: 197:1:8
+    4300044: 199:1:8
+    4300046: 201:1:8
+    4300048: 203:1:8
+    4300050: 205:1:8
+    4300052: 207:1:8
+    4300054: 209:1:8
+    4300056: 211:1:8
+    4300058: 213:1:8
+    4300060: 214:1:8
+    4300062: 215:1:8
+    4300064: 217:1:8
+    4300066: 219:1:8
+    4300068: Object275
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

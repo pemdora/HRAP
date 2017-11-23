@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 65329deebdd9180478e1b78153b55fc3
+timeCreated: 1468017540
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Box060
+    100002: Box061
+    100004: Box062
+    100006: Group_008
+    100008: //RootNode
+    100010: Object033
+    100012: Object034
+    100014: Object035
+    100016: Object036
+    100018: Object037
+    100020: Object039
+    100022: Object041
+    100024: Group_009
+    100026: Object045
+    100028: Object047
+    100030: Object055
+    100032: Lantern
+    100034: Lantern_Glass
+    400000: Box060
+    400002: Box061
+    400004: Box062
+    400006: Group_008
+    400008: //RootNode
+    400010: Object033
+    400012: Object034
+    400014: Object035
+    400016: Object036
+    400018: Object037
+    400020: Object039
+    400022: Object041
+    400024: Group_009
+    400026: Object045
+    400028: Object047
+    400030: Object055
+    400032: Lantern
+    400034: Lantern_Glass
+    2300000: Box060
+    2300002: Box061
+    2300004: Box062
+    2300006: Group_008
+    2300008: Object033
+    2300010: Object034
+    2300012: Object035
+    2300014: Object036
+    2300016: Object037
+    2300018: Object039
+    2300020: Object041
+    2300022: Group_009
+    2300024: Object045
+    2300026: Object047
+    2300028: //RootNode
+    2300030: Object055
+    2300032: Lantern
+    2300034: Lantern_Glass
+    3300000: Box060
+    3300002: Box061
+    3300004: Box062
+    3300006: Group_008
+    3300008: Object033
+    3300010: Object034
+    3300012: Object035
+    3300014: Object036
+    3300016: Object037
+    3300018: Object039
+    3300020: Object041
+    3300022: Group_009
+    3300024: Object045
+    3300026: Object047
+    3300028: //RootNode
+    3300030: Object055
+    3300032: Lantern
+    3300034: Lantern_Glass
+    4300000: Group_008
+    4300002: Object033
+    4300004: Box060
+    4300006: Box061
+    4300008: Box062
+    4300010: Object034
+    4300012: Object035
+    4300014: Object036
+    4300016: Object037
+    4300018: Object039
+    4300020: Object041
+    4300022: Group_009
+    4300024: Object045
+    4300026: Object047
+    4300028: Object055
+    4300030: Lantern
+    4300032: Lantern_Glass
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

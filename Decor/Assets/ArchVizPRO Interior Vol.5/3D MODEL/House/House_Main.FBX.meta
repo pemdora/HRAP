@@ -1,0 +1,1028 @@
+fileFormatVersion: 2
+guid: db1c128fe8785b749bb790d91ad0b501
+timeCreated: 1485684639
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Box3204
+    100002: Ceiling_Exterior
+    100004: Ceiling_Interior
+    100006: Concrete_Bottom
+    100008: Concrete_Exterior
+    100010: Concrete_Top
+    100012: Double_Glass
+    100014: Double_Glass001
+    100016: Double_Glass002
+    100018: Double_Glass003
+    100020: Double_Glass004
+    100022: Double_Glass005
+    100024: Double_Glass006
+    100026: Double_Glass007
+    100028: Double_Glass008
+    100030: Double_Glass009
+    100032: Double_Glass016
+    100034: Double_Glass017
+    100036: Double_Glass018
+    100038: Double_Glass019
+    100040: Double_Glass020
+    100042: Double_Glass021
+    100044: Double_Glass022
+    100046: Double_Glass023
+    100048: Double_Glass024
+    100050: Double_Glass025
+    100052: Double_Glass026
+    100054: Double_Glass027
+    100056: Double_Glass028
+    100058: Floor_Exterior
+    100060: Floor_Interior
+    100062: Frame
+    100064: Frame 1
+    100066: Frame116
+    100068: Frame117
+    100070: Frame118
+    100072: Frame119
+    100074: Frame120
+    100076: Frame121
+    100078: Frame122
+    100080: Frame123
+    100082: Frame124
+    100084: Frame125
+    100086: Frame126
+    100088: Frame127
+    100090: Frame128
+    100092: Frame129
+    100094: Frame130
+    100096: Frame131
+    100098: Frame132
+    100100: Frame133
+    100102: Frame146
+    100104: Frame147
+    100106: Frame148
+    100108: Frame149
+    100110: Frame150
+    100112: Frame151
+    100114: Frame152
+    100116: Frame153
+    100118: Frame154
+    100120: Frame155
+    100122: Frame156
+    100124: Frame157
+    100126: Frame158
+    100128: Frame159
+    100130: Frame160
+    100132: Frame161
+    100134: Frame162
+    100136: Frame163
+    100138: Frame164
+    100140: Frame165
+    100142: Frame166
+    100144: Frame167
+    100146: Frame168
+    100148: Frame169
+    100150: Frame170
+    100152: Frame171
+    100154: Frame_Door
+    100156: Frame_Door 1
+    100158: Frame_Door_Glass
+    100160: Frame_Door_Glass 1
+    100162: Frame_Front
+    100164: Frame_Glass
+    100166: Frame_Glass059
+    100168: Frame_Glass060
+    100170: Frame_Glass061
+    100172: Frame_Glass062
+    100174: Frame_Glass063
+    100176: Frame_Glass064
+    100178: Frame_Glass065
+    100180: Frame_Glass066
+    100182: Frame_Glass067
+    100184: Frame_Glass074
+    100186: Frame_Glass075
+    100188: Frame_Glass076
+    100190: Frame_Glass077
+    100192: Frame_Glass078
+    100194: Frame_Glass079
+    100196: Frame_Glass080
+    100198: Frame_Glass081
+    100200: Frame_Glass082
+    100202: Frame_Glass083
+    100204: Frame_Glass084
+    100206: Frame_Glass085
+    100208: Frame_Glass086
+    100210: Frame_Left
+    100212: Frame_Right
+    100214: Frame_Windows
+    100216: Frame_Windows 1
+    100218: Frame_Windows116
+    100220: Frame_Windows117
+    100222: Frame_Windows118
+    100224: Frame_Windows119
+    100226: Frame_Windows120
+    100228: Frame_Windows121
+    100230: Frame_Windows122
+    100232: Frame_Windows123
+    100234: Frame_Windows124
+    100236: Frame_Windows125
+    100238: Frame_Windows126
+    100240: Frame_Windows127
+    100242: Frame_Windows128
+    100244: Frame_Windows129
+    100246: Frame_Windows130
+    100248: Frame_Windows131
+    100250: Frame_Windows132
+    100252: Frame_Windows133
+    100254: Frame_Windows146
+    100256: Frame_Windows147
+    100258: Frame_Windows148
+    100260: Frame_Windows149
+    100262: Frame_Windows150
+    100264: Frame_Windows151
+    100266: Frame_Windows152
+    100268: Frame_Windows153
+    100270: Frame_Windows154
+    100272: Frame_Windows155
+    100274: Frame_Windows156
+    100276: Frame_Windows157
+    100278: Frame_Windows158
+    100280: Frame_Windows159
+    100282: Frame_Windows160
+    100284: Frame_Windows161
+    100286: Frame_Windows162
+    100288: Frame_Windows163
+    100290: Frame_Windows164
+    100292: Frame_Windows165
+    100294: Frame_Windows166
+    100296: Frame_Windows167
+    100298: Frame_Windows168
+    100300: Frame_Windows169
+    100302: Frame_Windows170
+    100304: Frame_Windows171
+    100306: Frames_Glass
+    100308: Group001
+    100310: Group015
+    100312: Group016
+    100314: Group017
+    100316: Group018
+    100318: Group019
+    100320: Group020
+    100322: Group021
+    100324: Group022
+    100326: Group023
+    100328: Group030
+    100330: Group031
+    100332: Group032
+    100334: Group033
+    100336: Group034
+    100338: Group035
+    100340: Group036
+    100342: Group037
+    100344: Group038
+    100346: Group039
+    100348: Group040
+    100350: Group041
+    100352: Group042
+    100354: Handrail_Front
+    100356: Handrail_Glass_Front
+    100358: Handrail_Glass_Left
+    100360: Handrail_Left
+    100362: //RootNode
+    100364: Mensola
+    100366: Mensola 1
+    100368: Mensole
+    100370: Metal_Bolts
+    100372: Metal_Cables
+    100374: Metal_Joint
+    100376: Metal_Pillars
+    100378: Metal_Profiles
+    100380: Metal_Under
+    100382: Object271
+    100384: Object273
+    100386: Object275
+    100388: Trave
+    100390: Trave 1
+    100392: Trave 10
+    100394: Trave 11
+    100396: Trave 12
+    100398: Trave 13
+    100400: Trave 14
+    100402: Trave 15
+    100404: Trave 2
+    100406: Trave 3
+    100408: Trave 4
+    100410: Trave 5
+    100412: Trave 6
+    100414: Trave 7
+    100416: Trave 8
+    100418: Trave 9
+    100420: Travi
+    100422: Wood_Exterior
+    100424: Wood_Exterior2
+    100426: Wood_Interior
+    100428: Object277
+    100430: Concrete_Interior
+    100432: Floor_Interior 1
+    100434: Floor_Interior 2
+    100436: Floor_Interior 3
+    100438: Floor_Interior 4
+    100440: Floor_Interior 5
+    100442: Door_Glass
+    100444: Door_Glass_Exterior
+    100446: Frames
+    100448: Glass
+    100450: Glass_Exterior
+    100452: Group004
+    100454: Ceiling_Interior001
+    100456: Box3263
+    100458: Ceiling_Emissive
+    100460: Object
+    100462: Floor_Exterior 1
+    100464: Floor_Interior 6
+    400000: Box3204
+    400002: Ceiling_Exterior
+    400004: Ceiling_Interior
+    400006: Concrete_Bottom
+    400008: Concrete_Exterior
+    400010: Concrete_Top
+    400012: Double_Glass
+    400014: Double_Glass001
+    400016: Double_Glass002
+    400018: Double_Glass003
+    400020: Double_Glass004
+    400022: Double_Glass005
+    400024: Double_Glass006
+    400026: Double_Glass007
+    400028: Double_Glass008
+    400030: Double_Glass009
+    400032: Double_Glass016
+    400034: Double_Glass017
+    400036: Double_Glass018
+    400038: Double_Glass019
+    400040: Double_Glass020
+    400042: Double_Glass021
+    400044: Double_Glass022
+    400046: Double_Glass023
+    400048: Double_Glass024
+    400050: Double_Glass025
+    400052: Double_Glass026
+    400054: Double_Glass027
+    400056: Double_Glass028
+    400058: Floor_Exterior
+    400060: Floor_Interior
+    400062: Frame
+    400064: Frame 1
+    400066: Frame116
+    400068: Frame117
+    400070: Frame118
+    400072: Frame119
+    400074: Frame120
+    400076: Frame121
+    400078: Frame122
+    400080: Frame123
+    400082: Frame124
+    400084: Frame125
+    400086: Frame126
+    400088: Frame127
+    400090: Frame128
+    400092: Frame129
+    400094: Frame130
+    400096: Frame131
+    400098: Frame132
+    400100: Frame133
+    400102: Frame146
+    400104: Frame147
+    400106: Frame148
+    400108: Frame149
+    400110: Frame150
+    400112: Frame151
+    400114: Frame152
+    400116: Frame153
+    400118: Frame154
+    400120: Frame155
+    400122: Frame156
+    400124: Frame157
+    400126: Frame158
+    400128: Frame159
+    400130: Frame160
+    400132: Frame161
+    400134: Frame162
+    400136: Frame163
+    400138: Frame164
+    400140: Frame165
+    400142: Frame166
+    400144: Frame167
+    400146: Frame168
+    400148: Frame169
+    400150: Frame170
+    400152: Frame171
+    400154: Frame_Door
+    400156: Frame_Door 1
+    400158: Frame_Door_Glass
+    400160: Frame_Door_Glass 1
+    400162: Frame_Front
+    400164: Frame_Glass
+    400166: Frame_Glass059
+    400168: Frame_Glass060
+    400170: Frame_Glass061
+    400172: Frame_Glass062
+    400174: Frame_Glass063
+    400176: Frame_Glass064
+    400178: Frame_Glass065
+    400180: Frame_Glass066
+    400182: Frame_Glass067
+    400184: Frame_Glass074
+    400186: Frame_Glass075
+    400188: Frame_Glass076
+    400190: Frame_Glass077
+    400192: Frame_Glass078
+    400194: Frame_Glass079
+    400196: Frame_Glass080
+    400198: Frame_Glass081
+    400200: Frame_Glass082
+    400202: Frame_Glass083
+    400204: Frame_Glass084
+    400206: Frame_Glass085
+    400208: Frame_Glass086
+    400210: Frame_Left
+    400212: Frame_Right
+    400214: Frame_Windows
+    400216: Frame_Windows 1
+    400218: Frame_Windows116
+    400220: Frame_Windows117
+    400222: Frame_Windows118
+    400224: Frame_Windows119
+    400226: Frame_Windows120
+    400228: Frame_Windows121
+    400230: Frame_Windows122
+    400232: Frame_Windows123
+    400234: Frame_Windows124
+    400236: Frame_Windows125
+    400238: Frame_Windows126
+    400240: Frame_Windows127
+    400242: Frame_Windows128
+    400244: Frame_Windows129
+    400246: Frame_Windows130
+    400248: Frame_Windows131
+    400250: Frame_Windows132
+    400252: Frame_Windows133
+    400254: Frame_Windows146
+    400256: Frame_Windows147
+    400258: Frame_Windows148
+    400260: Frame_Windows149
+    400262: Frame_Windows150
+    400264: Frame_Windows151
+    400266: Frame_Windows152
+    400268: Frame_Windows153
+    400270: Frame_Windows154
+    400272: Frame_Windows155
+    400274: Frame_Windows156
+    400276: Frame_Windows157
+    400278: Frame_Windows158
+    400280: Frame_Windows159
+    400282: Frame_Windows160
+    400284: Frame_Windows161
+    400286: Frame_Windows162
+    400288: Frame_Windows163
+    400290: Frame_Windows164
+    400292: Frame_Windows165
+    400294: Frame_Windows166
+    400296: Frame_Windows167
+    400298: Frame_Windows168
+    400300: Frame_Windows169
+    400302: Frame_Windows170
+    400304: Frame_Windows171
+    400306: Frames_Glass
+    400308: Group001
+    400310: Group015
+    400312: Group016
+    400314: Group017
+    400316: Group018
+    400318: Group019
+    400320: Group020
+    400322: Group021
+    400324: Group022
+    400326: Group023
+    400328: Group030
+    400330: Group031
+    400332: Group032
+    400334: Group033
+    400336: Group034
+    400338: Group035
+    400340: Group036
+    400342: Group037
+    400344: Group038
+    400346: Group039
+    400348: Group040
+    400350: Group041
+    400352: Group042
+    400354: Handrail_Front
+    400356: Handrail_Glass_Front
+    400358: Handrail_Glass_Left
+    400360: Handrail_Left
+    400362: //RootNode
+    400364: Mensola
+    400366: Mensola 1
+    400368: Mensole
+    400370: Metal_Bolts
+    400372: Metal_Cables
+    400374: Metal_Joint
+    400376: Metal_Pillars
+    400378: Metal_Profiles
+    400380: Metal_Under
+    400382: Object271
+    400384: Object273
+    400386: Object275
+    400388: Trave
+    400390: Trave 1
+    400392: Trave 10
+    400394: Trave 11
+    400396: Trave 12
+    400398: Trave 13
+    400400: Trave 14
+    400402: Trave 15
+    400404: Trave 2
+    400406: Trave 3
+    400408: Trave 4
+    400410: Trave 5
+    400412: Trave 6
+    400414: Trave 7
+    400416: Trave 8
+    400418: Trave 9
+    400420: Travi
+    400422: Wood_Exterior
+    400424: Wood_Exterior2
+    400426: Wood_Interior
+    400428: Object277
+    400430: Concrete_Interior
+    400432: Floor_Interior 1
+    400434: Floor_Interior 2
+    400436: Floor_Interior 3
+    400438: Floor_Interior 4
+    400440: Floor_Interior 5
+    400442: Door_Glass
+    400444: Door_Glass_Exterior
+    400446: Frames
+    400448: Glass
+    400450: Glass_Exterior
+    400452: Group004
+    400454: Ceiling_Interior001
+    400456: Box3263
+    400458: Ceiling_Emissive
+    400460: Object
+    400462: Floor_Exterior 1
+    400464: Floor_Interior 6
+    2300000: Box3204
+    2300002: Ceiling_Exterior
+    2300004: Ceiling_Interior
+    2300006: Concrete_Bottom
+    2300008: Concrete_Exterior
+    2300010: Concrete_Top
+    2300012: Double_Glass
+    2300014: Double_Glass001
+    2300016: Double_Glass002
+    2300018: Double_Glass003
+    2300020: Double_Glass004
+    2300022: Double_Glass005
+    2300024: Double_Glass006
+    2300026: Double_Glass007
+    2300028: Double_Glass008
+    2300030: Double_Glass009
+    2300032: Double_Glass016
+    2300034: Double_Glass017
+    2300036: Double_Glass018
+    2300038: Double_Glass019
+    2300040: Double_Glass020
+    2300042: Double_Glass021
+    2300044: Double_Glass022
+    2300046: Double_Glass023
+    2300048: Double_Glass024
+    2300050: Double_Glass025
+    2300052: Double_Glass026
+    2300054: Double_Glass027
+    2300056: Double_Glass028
+    2300058: Floor_Exterior
+    2300060: Floor_Interior
+    2300062: Frame 1
+    2300064: Frame116
+    2300066: Frame118
+    2300068: Frame120
+    2300070: Frame123
+    2300072: Frame125
+    2300074: Frame127
+    2300076: Frame129
+    2300078: Frame131
+    2300080: Frame133
+    2300082: Frame147
+    2300084: Frame148
+    2300086: Frame150
+    2300088: Frame153
+    2300090: Frame154
+    2300092: Frame157
+    2300094: Frame158
+    2300096: Frame161
+    2300098: Frame162
+    2300100: Frame164
+    2300102: Frame167
+    2300104: Frame169
+    2300106: Frame171
+    2300108: Frame_Door
+    2300110: Frame_Door 1
+    2300112: Frame_Door_Glass
+    2300114: Frame_Door_Glass 1
+    2300116: Frame_Front
+    2300118: Frame_Glass
+    2300120: Frame_Glass059
+    2300122: Frame_Glass060
+    2300124: Frame_Glass061
+    2300126: Frame_Glass062
+    2300128: Frame_Glass063
+    2300130: Frame_Glass064
+    2300132: Frame_Glass065
+    2300134: Frame_Glass066
+    2300136: Frame_Glass067
+    2300138: Frame_Glass074
+    2300140: Frame_Glass075
+    2300142: Frame_Glass076
+    2300144: Frame_Glass077
+    2300146: Frame_Glass078
+    2300148: Frame_Glass079
+    2300150: Frame_Glass080
+    2300152: Frame_Glass081
+    2300154: Frame_Glass082
+    2300156: Frame_Glass083
+    2300158: Frame_Glass084
+    2300160: Frame_Glass085
+    2300162: Frame_Glass086
+    2300164: Frame_Left
+    2300166: Frame_Right
+    2300168: Frame_Windows 1
+    2300170: Frame_Windows117
+    2300172: Frame_Windows119
+    2300174: Frame_Windows121
+    2300176: Frame_Windows122
+    2300178: Frame_Windows124
+    2300180: Frame_Windows126
+    2300182: Frame_Windows128
+    2300184: Frame_Windows130
+    2300186: Frame_Windows132
+    2300188: Frame_Windows146
+    2300190: Frame_Windows149
+    2300192: Frame_Windows151
+    2300194: Frame_Windows153
+    2300196: Frame_Windows155
+    2300198: Frame_Windows157
+    2300200: Frame_Windows159
+    2300202: Frame_Windows161
+    2300204: Frame_Windows163
+    2300206: Frame_Windows165
+    2300208: Frame_Windows167
+    2300210: Frame_Windows169
+    2300212: Frame_Windows171
+    2300214: Frames_Glass
+    2300216: Handrail_Front
+    2300218: Handrail_Glass_Front
+    2300220: Handrail_Glass_Left
+    2300222: Handrail_Left
+    2300224: Mensola
+    2300226: Mensola 1
+    2300228: Metal_Bolts
+    2300230: Metal_Cables
+    2300232: Metal_Joint
+    2300234: Metal_Pillars
+    2300236: Metal_Profiles
+    2300238: Metal_Under
+    2300240: Object271
+    2300242: Object273
+    2300244: Object275
+    2300246: Trave
+    2300248: Trave 1
+    2300250: Trave 10
+    2300252: Trave 11
+    2300254: Trave 12
+    2300256: Trave 13
+    2300258: Trave 14
+    2300260: Trave 15
+    2300262: Trave 2
+    2300264: Trave 3
+    2300266: Trave 4
+    2300268: Trave 5
+    2300270: Trave 6
+    2300272: Trave 7
+    2300274: Trave 8
+    2300276: Trave 9
+    2300278: Wood_Exterior
+    2300280: Wood_Exterior2
+    2300282: Wood_Interior
+    2300284: Object277
+    2300286: Concrete_Interior
+    2300288: Floor_Interior 1
+    2300290: Floor_Interior 2
+    2300292: Floor_Interior 3
+    2300294: Floor_Interior 4
+    2300296: Floor_Interior 5
+    2300298: Door_Glass
+    2300300: Door_Glass_Exterior
+    2300302: Frames
+    2300304: Glass
+    2300306: Glass_Exterior
+    2300308: Ceiling_Interior001
+    2300310: Box3263
+    2300312: Ceiling_Emissive
+    2300314: Object
+    2300316: Floor_Exterior 1
+    2300318: Floor_Interior 6
+    3300000: Box3204
+    3300002: Ceiling_Exterior
+    3300004: Ceiling_Interior
+    3300006: Concrete_Bottom
+    3300008: Concrete_Exterior
+    3300010: Concrete_Top
+    3300012: Double_Glass
+    3300014: Double_Glass001
+    3300016: Double_Glass002
+    3300018: Double_Glass003
+    3300020: Double_Glass004
+    3300022: Double_Glass005
+    3300024: Double_Glass006
+    3300026: Double_Glass007
+    3300028: Double_Glass008
+    3300030: Double_Glass009
+    3300032: Double_Glass016
+    3300034: Double_Glass017
+    3300036: Double_Glass018
+    3300038: Double_Glass019
+    3300040: Double_Glass020
+    3300042: Double_Glass021
+    3300044: Double_Glass022
+    3300046: Double_Glass023
+    3300048: Double_Glass024
+    3300050: Double_Glass025
+    3300052: Double_Glass026
+    3300054: Double_Glass027
+    3300056: Double_Glass028
+    3300058: Floor_Exterior
+    3300060: Floor_Interior
+    3300062: Frame 1
+    3300064: Frame116
+    3300066: Frame118
+    3300068: Frame120
+    3300070: Frame123
+    3300072: Frame125
+    3300074: Frame127
+    3300076: Frame129
+    3300078: Frame131
+    3300080: Frame133
+    3300082: Frame147
+    3300084: Frame148
+    3300086: Frame150
+    3300088: Frame153
+    3300090: Frame154
+    3300092: Frame157
+    3300094: Frame158
+    3300096: Frame161
+    3300098: Frame162
+    3300100: Frame164
+    3300102: Frame167
+    3300104: Frame169
+    3300106: Frame171
+    3300108: Frame_Door
+    3300110: Frame_Door 1
+    3300112: Frame_Door_Glass
+    3300114: Frame_Door_Glass 1
+    3300116: Frame_Front
+    3300118: Frame_Glass
+    3300120: Frame_Glass059
+    3300122: Frame_Glass060
+    3300124: Frame_Glass061
+    3300126: Frame_Glass062
+    3300128: Frame_Glass063
+    3300130: Frame_Glass064
+    3300132: Frame_Glass065
+    3300134: Frame_Glass066
+    3300136: Frame_Glass067
+    3300138: Frame_Glass074
+    3300140: Frame_Glass075
+    3300142: Frame_Glass076
+    3300144: Frame_Glass077
+    3300146: Frame_Glass078
+    3300148: Frame_Glass079
+    3300150: Frame_Glass080
+    3300152: Frame_Glass081
+    3300154: Frame_Glass082
+    3300156: Frame_Glass083
+    3300158: Frame_Glass084
+    3300160: Frame_Glass085
+    3300162: Frame_Glass086
+    3300164: Frame_Left
+    3300166: Frame_Right
+    3300168: Frame_Windows 1
+    3300170: Frame_Windows117
+    3300172: Frame_Windows119
+    3300174: Frame_Windows121
+    3300176: Frame_Windows122
+    3300178: Frame_Windows124
+    3300180: Frame_Windows126
+    3300182: Frame_Windows128
+    3300184: Frame_Windows130
+    3300186: Frame_Windows132
+    3300188: Frame_Windows146
+    3300190: Frame_Windows149
+    3300192: Frame_Windows151
+    3300194: Frame_Windows153
+    3300196: Frame_Windows155
+    3300198: Frame_Windows157
+    3300200: Frame_Windows159
+    3300202: Frame_Windows161
+    3300204: Frame_Windows163
+    3300206: Frame_Windows165
+    3300208: Frame_Windows167
+    3300210: Frame_Windows169
+    3300212: Frame_Windows171
+    3300214: Frames_Glass
+    3300216: Handrail_Front
+    3300218: Handrail_Glass_Front
+    3300220: Handrail_Glass_Left
+    3300222: Handrail_Left
+    3300224: Mensola
+    3300226: Mensola 1
+    3300228: Metal_Bolts
+    3300230: Metal_Cables
+    3300232: Metal_Joint
+    3300234: Metal_Pillars
+    3300236: Metal_Profiles
+    3300238: Metal_Under
+    3300240: Object271
+    3300242: Object273
+    3300244: Object275
+    3300246: Trave
+    3300248: Trave 1
+    3300250: Trave 10
+    3300252: Trave 11
+    3300254: Trave 12
+    3300256: Trave 13
+    3300258: Trave 14
+    3300260: Trave 15
+    3300262: Trave 2
+    3300264: Trave 3
+    3300266: Trave 4
+    3300268: Trave 5
+    3300270: Trave 6
+    3300272: Trave 7
+    3300274: Trave 8
+    3300276: Trave 9
+    3300278: Wood_Exterior
+    3300280: Wood_Exterior2
+    3300282: Wood_Interior
+    3300284: Object277
+    3300286: Concrete_Interior
+    3300288: Floor_Interior 1
+    3300290: Floor_Interior 2
+    3300292: Floor_Interior 3
+    3300294: Floor_Interior 4
+    3300296: Floor_Interior 5
+    3300298: Door_Glass
+    3300300: Door_Glass_Exterior
+    3300302: Frames
+    3300304: Glass
+    3300306: Glass_Exterior
+    3300308: Ceiling_Interior001
+    3300310: Box3263
+    3300312: Ceiling_Emissive
+    3300314: Object
+    3300316: Floor_Exterior 1
+    3300318: Floor_Interior 6
+    4300000: Metal_Under
+    4300002: Metal_Bolts
+    4300004: Handrail_Glass_Left
+    4300006: Handrail_Left
+    4300008: Handrail_Front
+    4300010: Handrail_Glass_Front
+    4300012: Concrete_Top
+    4300014: Metal_Profiles
+    4300016: Metal_Cables
+    4300018: Metal_Pillars
+    4300020: Wood_Exterior
+    4300022: Concrete_Exterior
+    4300024: Frame_Windows
+    4300026: Double_Glass
+    4300028: Frame
+    4300030: Frame_Glass
+    4300032: Frame116
+    4300034: Frame_Glass059
+    4300036: Frame_Windows117
+    4300038: Double_Glass001
+    4300040: Frame118
+    4300042: Frame_Glass060
+    4300044: Frame_Windows119
+    4300046: Double_Glass002
+    4300048: Frame120
+    4300050: Frame_Glass061
+    4300052: Frame_Windows121
+    4300054: Double_Glass003
+    4300056: Frame_Windows122
+    4300058: Double_Glass004
+    4300060: Frame123
+    4300062: Frame_Glass062
+    4300064: Frame_Windows124
+    4300066: Double_Glass005
+    4300068: Frame125
+    4300070: Frame_Glass063
+    4300072: Frame_Windows126
+    4300074: Double_Glass006
+    4300076: Frame127
+    4300078: Frame_Glass064
+    4300080: Frame_Windows128
+    4300082: Double_Glass007
+    4300084: Frame129
+    4300086: Frame_Glass065
+    4300088: Frame_Windows130
+    4300090: Double_Glass008
+    4300092: Frame131
+    4300094: Frame_Glass066
+    4300096: Frame_Windows132
+    4300098: Double_Glass009
+    4300100: Frame133
+    4300102: Frame_Glass067
+    4300104: Frame_Windows146
+    4300106: Double_Glass016
+    4300108: Frame147
+    4300110: Frame_Glass074
+    4300112: Frame148
+    4300114: Frame_Glass075
+    4300116: Frame_Windows149
+    4300118: Double_Glass017
+    4300120: Frame150
+    4300122: Frame_Glass076
+    4300124: Frame_Windows151
+    4300126: Double_Glass018
+    4300128: Frame_Glass077
+    4300130: Frame153
+    4300132: Frame_Windows153
+    4300134: Double_Glass019
+    4300136: Frame154
+    4300138: Frame_Glass078
+    4300140: Frame_Windows155
+    4300142: Double_Glass020
+    4300144: Frame_Glass079
+    4300146: Frame157
+    4300148: Frame_Windows157
+    4300150: Double_Glass021
+    4300152: Frame158
+    4300154: Frame_Glass080
+    4300156: Frame_Windows159
+    4300158: Double_Glass022
+    4300160: Frame_Glass081
+    4300162: Frame161
+    4300164: Frame_Windows161
+    4300166: Double_Glass023
+    4300168: Frame162
+    4300170: Frame_Glass082
+    4300172: Frame_Windows163
+    4300174: Double_Glass024
+    4300176: Frame164
+    4300178: Frame_Glass083
+    4300180: Frame_Windows165
+    4300182: Double_Glass025
+    4300184: Frame_Glass084
+    4300186: Frame167
+    4300188: Frame_Windows167
+    4300190: Double_Glass026
+    4300192: Frame_Glass085
+    4300194: Frame169
+    4300196: Frame_Windows169
+    4300198: Double_Glass027
+    4300200: Frame_Glass086
+    4300202: Frame171
+    4300204: Frame_Windows171
+    4300206: Double_Glass028
+    4300208: Frame_Door
+    4300210: Frame_Door_Glass
+    4300212: Frame_Door_Glass
+    4300214: Frame_Door
+    4300216: Frames_Glass
+    4300218: Frame_Front
+    4300220: Frame_Right
+    4300222: Frame_Left
+    4300224: Wood_Interior
+    4300226: Metal_Joint
+    4300228: Concrete_Bottom
+    4300230: Wood_Exterior2
+    4300232: Ceiling_Interior
+    4300234: Floor_Interior
+    4300236: Floor_Exterior
+    4300238: Ceiling_Exterior
+    4300240: Box3204
+    4300242: Trave
+    4300244: Trave
+    4300246: Trave
+    4300248: Trave
+    4300250: Trave
+    4300252: Trave
+    4300254: Trave
+    4300256: Trave
+    4300258: Trave
+    4300260: Trave
+    4300262: Trave
+    4300264: Trave
+    4300266: Trave
+    4300268: Trave
+    4300270: Trave
+    4300272: Trave
+    4300274: Mensola
+    4300276: Mensola
+    4300278: Object271
+    4300280: Object273
+    4300282: Object275
+    4300284: Object277
+    4300286: Concrete_Interior
+    4300288: Floor_Interior
+    4300290: Floor_Interior
+    4300292: Floor_Interior
+    4300294: Floor_Interior
+    4300296: Floor_Interior
+    4300298: Door_Glass_Exterior
+    4300300: Glass_Exterior
+    4300302: Frames
+    4300304: Glass
+    4300306: Door_Glass
+    4300308: Ceiling_Interior001
+    4300310: Box3263
+    4300312: Ceiling_Emissive
+    4300314: Object
+    4300316: Floor_Exterior
+    4300318: Floor_Interior
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

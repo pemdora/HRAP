@@ -1,0 +1,334 @@
+fileFormatVersion: 2
+guid: 13e4f7d05d0fd5845b68d52e5fabb8ee
+timeCreated: 1495224587
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Spotlights
+    100004: Spotlights 1
+    100006: Spotlights 10
+    100008: Spotlights 11
+    100010: Spotlights 12
+    100012: Spotlights 13
+    100014: Spotlights 14
+    100016: Spotlights 15
+    100018: Spotlights 16
+    100020: Spotlights 17
+    100022: Spotlights 18
+    100024: Spotlights 19
+    100026: Spotlights 2
+    100028: Spotlights 20
+    100030: Spotlights 21
+    100032: Spotlights 22
+    100034: Spotlights 23
+    100036: Spotlights 24
+    100038: Spotlights 25
+    100040: Spotlights 26
+    100042: Spotlights 27
+    100044: Spotlights 28
+    100046: Spotlights 29
+    100048: Spotlights 3
+    100050: Spotlights 30
+    100052: Spotlights 31
+    100054: Spotlights 32
+    100056: Spotlights 33
+    100058: Spotlights 34
+    100060: Spotlights 35
+    100062: Spotlights 36
+    100064: Spotlights 37
+    100066: Spotlights 38
+    100068: Spotlights 39
+    100070: Spotlights 4
+    100072: Spotlights 40
+    100074: Spotlights 41
+    100076: Spotlights 42
+    100078: Spotlights 5
+    100080: Spotlights 6
+    100082: Spotlights 7
+    100084: Spotlights 8
+    100086: Spotlights 9
+    100088: Spotlights001
+    100090: Spotlights002
+    100092: Spotlights003
+    100094: Spotlights004
+    100096: Spotlights005
+    100098: Spotlights006
+    100100: Spotlights007
+    400000: //RootNode
+    400002: Spotlights
+    400004: Spotlights 1
+    400006: Spotlights 10
+    400008: Spotlights 11
+    400010: Spotlights 12
+    400012: Spotlights 13
+    400014: Spotlights 14
+    400016: Spotlights 15
+    400018: Spotlights 16
+    400020: Spotlights 17
+    400022: Spotlights 18
+    400024: Spotlights 19
+    400026: Spotlights 2
+    400028: Spotlights 20
+    400030: Spotlights 21
+    400032: Spotlights 22
+    400034: Spotlights 23
+    400036: Spotlights 24
+    400038: Spotlights 25
+    400040: Spotlights 26
+    400042: Spotlights 27
+    400044: Spotlights 28
+    400046: Spotlights 29
+    400048: Spotlights 3
+    400050: Spotlights 30
+    400052: Spotlights 31
+    400054: Spotlights 32
+    400056: Spotlights 33
+    400058: Spotlights 34
+    400060: Spotlights 35
+    400062: Spotlights 36
+    400064: Spotlights 37
+    400066: Spotlights 38
+    400068: Spotlights 39
+    400070: Spotlights 4
+    400072: Spotlights 40
+    400074: Spotlights 41
+    400076: Spotlights 42
+    400078: Spotlights 5
+    400080: Spotlights 6
+    400082: Spotlights 7
+    400084: Spotlights 8
+    400086: Spotlights 9
+    400088: Spotlights001
+    400090: Spotlights002
+    400092: Spotlights003
+    400094: Spotlights004
+    400096: Spotlights005
+    400098: Spotlights006
+    400100: Spotlights007
+    2300000: Spotlights
+    2300002: Spotlights 1
+    2300004: Spotlights 10
+    2300006: Spotlights 11
+    2300008: Spotlights 12
+    2300010: Spotlights 13
+    2300012: Spotlights 14
+    2300014: Spotlights 15
+    2300016: Spotlights 16
+    2300018: Spotlights 17
+    2300020: Spotlights 18
+    2300022: Spotlights 19
+    2300024: Spotlights 2
+    2300026: Spotlights 20
+    2300028: Spotlights 21
+    2300030: Spotlights 22
+    2300032: Spotlights 23
+    2300034: Spotlights 24
+    2300036: Spotlights 25
+    2300038: Spotlights 26
+    2300040: Spotlights 27
+    2300042: Spotlights 28
+    2300044: Spotlights 29
+    2300046: Spotlights 3
+    2300048: Spotlights 30
+    2300050: Spotlights 31
+    2300052: Spotlights 32
+    2300054: Spotlights 33
+    2300056: Spotlights 34
+    2300058: Spotlights 35
+    2300060: Spotlights 36
+    2300062: Spotlights 37
+    2300064: Spotlights 38
+    2300066: Spotlights 39
+    2300068: Spotlights 4
+    2300070: Spotlights 40
+    2300072: Spotlights 41
+    2300074: Spotlights 42
+    2300076: Spotlights 5
+    2300078: Spotlights 6
+    2300080: Spotlights 7
+    2300082: Spotlights 8
+    2300084: Spotlights 9
+    2300086: Spotlights001
+    2300088: Spotlights002
+    2300090: Spotlights003
+    2300092: Spotlights004
+    2300094: Spotlights005
+    2300096: Spotlights006
+    2300098: Spotlights007
+    3300000: Spotlights
+    3300002: Spotlights 1
+    3300004: Spotlights 10
+    3300006: Spotlights 11
+    3300008: Spotlights 12
+    3300010: Spotlights 13
+    3300012: Spotlights 14
+    3300014: Spotlights 15
+    3300016: Spotlights 16
+    3300018: Spotlights 17
+    3300020: Spotlights 18
+    3300022: Spotlights 19
+    3300024: Spotlights 2
+    3300026: Spotlights 20
+    3300028: Spotlights 21
+    3300030: Spotlights 22
+    3300032: Spotlights 23
+    3300034: Spotlights 24
+    3300036: Spotlights 25
+    3300038: Spotlights 26
+    3300040: Spotlights 27
+    3300042: Spotlights 28
+    3300044: Spotlights 29
+    3300046: Spotlights 3
+    3300048: Spotlights 30
+    3300050: Spotlights 31
+    3300052: Spotlights 32
+    3300054: Spotlights 33
+    3300056: Spotlights 34
+    3300058: Spotlights 35
+    3300060: Spotlights 36
+    3300062: Spotlights 37
+    3300064: Spotlights 38
+    3300066: Spotlights 39
+    3300068: Spotlights 4
+    3300070: Spotlights 40
+    3300072: Spotlights 41
+    3300074: Spotlights 42
+    3300076: Spotlights 5
+    3300078: Spotlights 6
+    3300080: Spotlights 7
+    3300082: Spotlights 8
+    3300084: Spotlights 9
+    3300086: Spotlights001
+    3300088: Spotlights002
+    3300090: Spotlights003
+    3300092: Spotlights004
+    3300094: Spotlights005
+    3300096: Spotlights006
+    3300098: Spotlights007
+    4300000: Spotlights
+    4300002: Spotlights
+    4300004: Spotlights
+    4300006: Spotlights
+    4300008: Spotlights
+    4300010: Spotlights
+    4300012: Spotlights
+    4300014: Spotlights
+    4300016: Spotlights
+    4300018: Spotlights
+    4300020: Spotlights
+    4300022: Spotlights
+    4300024: Spotlights
+    4300026: Spotlights
+    4300028: Spotlights
+    4300030: Spotlights
+    4300032: Spotlights
+    4300034: Spotlights
+    4300036: Spotlights
+    4300038: Spotlights
+    4300040: Spotlights
+    4300042: Spotlights
+    4300044: Spotlights
+    4300046: Spotlights
+    4300048: Spotlights
+    4300050: Spotlights
+    4300052: Spotlights
+    4300054: Spotlights
+    4300056: Spotlights
+    4300058: Spotlights
+    4300060: Spotlights
+    4300062: Spotlights
+    4300064: Spotlights
+    4300066: Spotlights
+    4300068: Spotlights
+    4300070: Spotlights
+    4300072: Spotlights
+    4300074: Spotlights
+    4300076: Spotlights
+    4300078: Spotlights
+    4300080: Spotlights
+    4300082: Spotlights
+    4300084: Spotlights
+    4300086: Spotlights001
+    4300088: Spotlights002
+    4300090: Spotlights003
+    4300092: Spotlights004
+    4300094: Spotlights005
+    4300096: Spotlights006
+    4300098: Spotlights007
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

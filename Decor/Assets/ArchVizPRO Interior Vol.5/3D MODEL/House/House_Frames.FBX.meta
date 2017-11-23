@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: b94c0d2e4b5f4d94a997f4d5e6932ac7
+timeCreated: 1485708313
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Frame_Door
+    100002: Frame_Door 1
+    100004: Frame_Door_Glass
+    100006: Frame_Door_Glass 1
+    100008: Frame_Front
+    100010: Frame_Left
+    100012: Frame_Right
+    100014: Frames_Glass
+    100016: //RootNode
+    100018: Door_Glass
+    100020: Door_Glass 1
+    100022: Door_Glass_Exterior
+    100024: Door_Glass_Exterior 1
+    100026: Frames
+    100028: Frames 1
+    100030: Frames 2
+    100032: Frames 3
+    100034: Frames 4
+    100036: Frames 5
+    100038: Frames 6
+    100040: Frames 7
+    100042: Frames 8
+    100044: Frames 9
+    100046: Glass
+    100048: Glass 1
+    100050: Glass 2
+    100052: Glass 3
+    100054: Glass 4
+    100056: Glass 5
+    100058: Glass 6
+    100060: Glass 7
+    100062: Glass 8
+    100064: Glass_Exterior
+    100066: Glass_Exterior 1
+    100068: Glass_Exterior 2
+    100070: Glass_Exterior 3
+    100072: Glass_Exterior 4
+    100074: Glass_Exterior 5
+    100076: Glass_Exterior 6
+    100078: Glass_Exterior 7
+    100080: Glass_Exterior 8
+    100082: Group004
+    400000: Frame_Door
+    400002: Frame_Door 1
+    400004: Frame_Door_Glass
+    400006: Frame_Door_Glass 1
+    400008: Frame_Front
+    400010: Frame_Left
+    400012: Frame_Right
+    400014: Frames_Glass
+    400016: //RootNode
+    400018: Door_Glass
+    400020: Door_Glass 1
+    400022: Door_Glass_Exterior
+    400024: Door_Glass_Exterior 1
+    400026: Frames
+    400028: Frames 1
+    400030: Frames 2
+    400032: Frames 3
+    400034: Frames 4
+    400036: Frames 5
+    400038: Frames 6
+    400040: Frames 7
+    400042: Frames 8
+    400044: Frames 9
+    400046: Glass
+    400048: Glass 1
+    400050: Glass 2
+    400052: Glass 3
+    400054: Glass 4
+    400056: Glass 5
+    400058: Glass 6
+    400060: Glass 7
+    400062: Glass 8
+    400064: Glass_Exterior
+    400066: Glass_Exterior 1
+    400068: Glass_Exterior 2
+    400070: Glass_Exterior 3
+    400072: Glass_Exterior 4
+    400074: Glass_Exterior 5
+    400076: Glass_Exterior 6
+    400078: Glass_Exterior 7
+    400080: Glass_Exterior 8
+    400082: Group004
+    2300000: Frame_Door
+    2300002: Frame_Door 1
+    2300004: Frame_Door_Glass
+    2300006: Frame_Door_Glass 1
+    2300008: Frame_Front
+    2300010: Frame_Left
+    2300012: Frame_Right
+    2300014: Frames_Glass
+    2300016: Door_Glass
+    2300018: Door_Glass 1
+    2300020: Door_Glass_Exterior
+    2300022: Door_Glass_Exterior 1
+    2300024: Frames
+    2300026: Frames 1
+    2300028: Frames 2
+    2300030: Frames 3
+    2300032: Frames 4
+    2300034: Frames 5
+    2300036: Frames 6
+    2300038: Frames 7
+    2300040: Frames 8
+    2300042: Frames 9
+    2300044: Glass
+    2300046: Glass 2
+    2300048: Glass 3
+    2300050: Glass 4
+    2300052: Glass 5
+    2300054: Glass 6
+    2300056: Glass 7
+    2300058: Glass 8
+    2300060: Glass_Exterior
+    2300062: Glass_Exterior 1
+    2300064: Glass_Exterior 2
+    2300066: Glass_Exterior 3
+    2300068: Glass_Exterior 4
+    2300070: Glass_Exterior 5
+    2300072: Glass_Exterior 6
+    2300074: Glass_Exterior 7
+    2300076: Glass 1
+    2300078: Glass_Exterior 8
+    3300000: Frame_Door
+    3300002: Frame_Door 1
+    3300004: Frame_Door_Glass
+    3300006: Frame_Door_Glass 1
+    3300008: Frame_Front
+    3300010: Frame_Left
+    3300012: Frame_Right
+    3300014: Frames_Glass
+    3300016: Door_Glass
+    3300018: Door_Glass 1
+    3300020: Door_Glass_Exterior
+    3300022: Door_Glass_Exterior 1
+    3300024: Frames
+    3300026: Frames 1
+    3300028: Frames 2
+    3300030: Frames 3
+    3300032: Frames 4
+    3300034: Frames 5
+    3300036: Frames 6
+    3300038: Frames 7
+    3300040: Frames 8
+    3300042: Frames 9
+    3300044: Glass
+    3300046: Glass 2
+    3300048: Glass 3
+    3300050: Glass 4
+    3300052: Glass 5
+    3300054: Glass 6
+    3300056: Glass 7
+    3300058: Glass 8
+    3300060: Glass_Exterior
+    3300062: Glass_Exterior 1
+    3300064: Glass_Exterior 2
+    3300066: Glass_Exterior 3
+    3300068: Glass_Exterior 4
+    3300070: Glass_Exterior 5
+    3300072: Glass_Exterior 6
+    3300074: Glass_Exterior 7
+    3300076: Glass 1
+    3300078: Glass_Exterior 8
+    4300000: Frame_Door
+    4300002: Frame_Door_Glass
+    4300004: Frame_Door_Glass
+    4300006: Frame_Door
+    4300008: Frames_Glass
+    4300010: Frame_Front
+    4300012: Frame_Right
+    4300014: Frame_Left
+    4300016: Door_Glass
+    4300018: Glass
+    4300020: Frames
+    4300022: Frames
+    4300024: Frames
+    4300026: Glass
+    4300028: Frames
+    4300030: Glass
+    4300032: Door_Glass
+    4300034: Frames
+    4300036: Glass
+    4300038: Frames
+    4300040: Glass
+    4300042: Frames
+    4300044: Glass
+    4300046: Frames
+    4300048: Glass
+    4300050: Frames
+    4300052: Frames
+    4300054: Glass
+    4300056: Glass_Exterior
+    4300058: Glass_Exterior
+    4300060: Glass_Exterior
+    4300062: Glass_Exterior
+    4300064: Glass_Exterior
+    4300066: Glass_Exterior
+    4300068: Glass_Exterior
+    4300070: Glass_Exterior
+    4300072: Door_Glass_Exterior
+    4300074: Door_Glass_Exterior
+    4300076: Glass_Exterior
+    4300078: Glass
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
