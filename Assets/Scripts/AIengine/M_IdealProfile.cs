@@ -21,5 +21,35 @@ namespace HRAP
 
         public M_Experience Experience { get { return experience; } }
 
+        public List<M_Skill> GetImportantSkills()
+        {
+            List<M_Skill> result = new List<M_Skill>();
+
+            foreach (M_Skill s in skillsList)
+            {
+                if (s.IsImportant)
+                {
+                    result.Add(s);
+                }
+            }
+
+            return result;
+        }
+
+        public List<M_Skill> GetNotImportantSkills()
+        {
+            List<M_Skill> result = new List<M_Skill>();
+
+            foreach (M_Skill s in skillsList)
+            {
+                if (!s.IsImportant)
+                {
+                    result.Add(s);
+                }
+            }
+
+            return result;
+        }
+
     }
 }

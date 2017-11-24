@@ -31,7 +31,7 @@ namespace HRAP
         public string Name { get { return name; } }
         public List<M_Skill> Skills { get { return skillsList; } set { skillsList = value; } }
 
-       private int InitializeId()
+        private int InitializeId()
         {
             return M_DataManager.Instance.CountCandidates() + 1;
         }
@@ -41,5 +41,20 @@ namespace HRAP
             return M_DataManager.Instance.InitializeSkills();
         }
 
+        
+        public List<M_Skill> CompareSkillsTo(M_Profile otherProfile)
+        {
+            List<M_Skill> result = new List<M_Skill>();
+            int count = 0;
+            foreach (M_Skill s in skillsList)
+            {
+                s.Points -= otherProfile.Skills[count].Points;
+                result.Add(s);
+                count++;
+            }
+            return result;
+        }
+
+        
     }
 }

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace HRAPTest
 {
     [TestClass]
-    public class InterviewTests
+    public class P_InterviewTests
     {
         [TestMethod]
         public void test2()

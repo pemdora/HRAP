@@ -50,10 +50,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DataManagerTests.cs" />
-    <Compile Include="InterviewTests.cs" />
+    <Compile Include="M_DataManagerTests.cs" />
+    <Compile Include="M_IdealProfileTests.cs" />
+    <Compile Include="P_InterviewTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuizzTests.cs" />
+    <Compile Include="M_QuizzTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HRAP.csproj">

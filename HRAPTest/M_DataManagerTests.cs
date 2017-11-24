@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace HRAPTest
 {
     [TestClass]
-    public class DataManagerTests
+    public class M_DataManagerTests
     {
         [TestMethod]
         public void CountQuestions()
