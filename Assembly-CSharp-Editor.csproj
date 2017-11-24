@@ -171,6 +171,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
@@ -184,7 +185,9 @@
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
      <None Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\NewBlendSystemTemplate.cs.txt" />
+     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
@@ -210,6 +213,9 @@
      <None Include="Assets\Rogo Digital\LipSync Pro\Documentation is now online!.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
