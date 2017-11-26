@@ -36,14 +36,17 @@ namespace HRAP
             int count = 0;
             while (!isOver)
             {
+                // if the candidate has answer 
                 if (!isWaiting)
                 {
                     
                     // TODO : Envoi  de la question dans la vue
-
                     Console.WriteLine("question : " + currentQuestion);
                     Console.WriteLine("quizz : " + currentQuizz);
                     Console.WriteLine(GetNextQuestion().Question);
+
+                    AIengine.AffichageQuestion(GetNextQuestion().Question);
+                    AIengine.AffichageRéponses(GetNextQuestion().Answers);
 
                     // Set next question
                     if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
@@ -57,15 +60,14 @@ namespace HRAP
                     {
                         this.currentQuestion++;
                     }
-                    
+
                     // We are waiting for the candidate answer
                     isWaiting = true;
-                }
 
+                }
                 // TODO : Récuperer la réponse depuis la vue
                 // (ici on force l'arret de la boucle au bout de 10 itérations)
                 count++;
-                SetChosenAnswer(0);
                 if (count == 10)
                 {
                     isOver = true;
