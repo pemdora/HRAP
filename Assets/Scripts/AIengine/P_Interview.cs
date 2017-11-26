@@ -29,57 +29,38 @@ namespace HRAP
             this.isOver = false;
         }
 
-        public bool IsOver { set { isOver = value; } }
+        public bool IsOver { get { return isOver; } set { isOver = value; }  }
 
-        public void Launch()
+        public void Launch() 
         {
-            int count = 0;
-            while (!isOver)
+            // if the candidate has answer 
+            if (!isWaiting)
             {
-                // if the candidate has answer 
-                if (!isWaiting)
+                // TODO : Envoi  de la question dans la vue
+                Console.WriteLine("question : " + currentQuestion);
+                Console.WriteLine("quizz : " + currentQuizz);
+                Console.WriteLine(GetNextQuestion().Question);
+
+                AIengine.AffichageQuestion(GetNextQuestion().Question);
+                AIengine.AffichageRéponses(GetNextQuestion().Answers);
+
+                // Set next question
+                if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
                 {
-                    
-                    // TODO : Envoi  de la question dans la vue
-                    Console.WriteLine("question : " + currentQuestion);
-                    Console.WriteLine("quizz : " + currentQuizz);
-                    Console.WriteLine(GetNextQuestion().Question);
-
-                    AIengine.AffichageQuestion(GetNextQuestion().Question);
-                    AIengine.AffichageRéponses(GetNextQuestion().Answers);
-
-                    // Set next question
-                    if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
-                    {
-                        this.quizzList.Add(new M_Quizz());
-                        this.currentQuestion = 0;
-                        this.currentQuizz++;
-                    }
-
-                    if (currentQuestion < quizzList[currentQuizz].NumQuestions - 1)
-                    {
-                        this.currentQuestion++;
-                    }
-
-                    // We are waiting for the candidate answer
-                    isWaiting = true;
-
-                }
-                // TODO : Récuperer la réponse depuis la vue
-                // (ici on force l'arret de la boucle au bout de 10 itérations)
-                count++;
-                if (count == 10)
-                {
-                    isOver = true;
+                    this.quizzList.Add(new M_Quizz());
+                    this.currentQuestion = 0;
+                    this.currentQuizz++;
                 }
 
-            }
+                if (currentQuestion < quizzList[currentQuizz].NumQuestions - 1)
+                {
+                    this.currentQuestion++;
+                }
 
-            if (isOver)
-            {
-                // TODO : afficher le résultat dans la vue
-                Console.WriteLine(GetResult());
+                // We are waiting for the candidate answer
+                isWaiting = true;
             }
+            // otherwise do nothing
         }
 
         public V_Question GetNextQuestion()
@@ -119,7 +100,6 @@ namespace HRAP
         {
             return "tu crains, le job est pour moi";
         }
-
-
+        
     }
 }
