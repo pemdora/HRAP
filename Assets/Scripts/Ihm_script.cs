@@ -9,7 +9,7 @@ public class Ihm_script : MonoBehaviour
     UILabel cname, clastname;
     string firstname = "";
     string lastname = "";
-    P_Interview interview = new P_Interview("tom", "chef de projet");
+    P_Interview interview; // = new P_Interview("tom", "chef de projet");
     V_Question question_nbanswers_aswers;
     bool is_answered; // quizz state
     bool is_questioned; // once the question has been given = true
@@ -57,22 +57,28 @@ public class Ihm_script : MonoBehaviour
         //settings buttons
 
     }
+    
+    // Initialise Presenter
+    public void SetPresenter(P_Interview interview)
+    {
+        this.interview = interview;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("1");
+        // Debug.Log("1");
         //display name and lastname from last scene
         if (firstname != "" && lastname != "")
         {
             cname.text = Input_authentification.firstName.value;
             clastname.text = Input_authentification.lastName.value;
-        }
+        } /*
         if (!is_questioned)
         {
             Debug.Log("2");
             Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to number of answers 
-                
+            /*
             question.text = question_nbanswers_aswers.Question;//print question
             List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
             int index = 0;
@@ -86,16 +92,17 @@ public class Ihm_script : MonoBehaviour
         }
         else if (is_answered)
         {
+            
             question.text = "[u][b]Question[/u] : [/b]";
             answer_a.text = "[FF0000][b]A: [/b][-]";
             answer_b.text = "[0000FF][b]B: [/b][-]";
             answer_c.text = "[00FF00][b]C: [/b][-]";
             answer_d.text = "[FFFF00][b]D: [/b][-]";
             Debug.Log("3");
-            question_nbanswers_aswers = interview.GetNextQuestion();
+            // question_nbanswers_aswers = interview.GetNextQuestion();
             is_questioned = false;
             is_answered = false;
-        }    
+        } */
     }
 
     //button manager
@@ -206,6 +213,13 @@ public class Ihm_script : MonoBehaviour
     }
     public void Button_is_pressed_next_question()
     {
+        // Clean previous questions and answers
+        question.text = "[u][b]Question[/u] : [/b]";
+        answer_a.text = "[FF0000][b]A: [/b][-]";
+        answer_b.text = "[0000FF][b]B: [/b][-]";
+        answer_c.text = "[00FF00][b]C: [/b][-]";
+        answer_d.text = "[FFFF00][b]D: [/b][-]";
+
         is_answered = true;
         interview.SetChosenAnswer(0);
     }

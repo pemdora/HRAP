@@ -8,6 +8,7 @@ namespace HRAP
     public class P_Interview
     {
         private M_Candidate candidate;
+        private Ihm_script ihm;
         private List<M_Quizz> quizzList;
         private Dictionary<int, int> candidateAnswers;
 
@@ -17,9 +18,9 @@ namespace HRAP
 
         private bool isOver;
 
-        public P_Interview(string name, string targetJob)
+        public P_Interview(M_Candidate candidate,Ihm_script ihm)
         {
-            this.candidate = new M_Candidate(name, targetJob);
+            this.candidate = candidate;
             this.quizzList = new List<M_Quizz>();
             this.quizzList.Add(new M_Quizz());
             this.candidateAnswers = new Dictionary<int, int>();
@@ -27,6 +28,8 @@ namespace HRAP
             this.currentQuestion = 0;
             this.isWaiting = false;
             this.isOver = false;
+
+            this.ihm = ihm;
         }
 
         public bool IsOver { get { return isOver; } set { isOver = value; }  }
@@ -36,13 +39,15 @@ namespace HRAP
             // if the candidate has answer 
             if (!isWaiting)
             {
+                // TEST
+                AIengine.Affichage("Affichage des questions");
                 // TODO : Envoi  de la question dans la vue
                 Console.WriteLine("question : " + currentQuestion);
                 Console.WriteLine("quizz : " + currentQuizz);
                 Console.WriteLine(GetNextQuestion().Question);
-
-                AIengine.AffichageQuestion(GetNextQuestion().Question);
-                AIengine.AffichageRéponses(GetNextQuestion().Answers);
+                
+                ihm.DisplayQuestion(GetNextQuestion().Question);
+                ihm.DisplayAnswers(GetNextQuestion().Answers);
 
                 // Set next question
                 if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
@@ -93,6 +98,7 @@ namespace HRAP
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
             this.candidate.UpdateSkills(answers[chosen_answer]);
+            AIengine.Affichage("Envoie des résultats");
             isWaiting = false;
         }
 
