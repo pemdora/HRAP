@@ -33,7 +33,7 @@ sysinfo.txt
 *.unitypackage
 
 # Unity3D generated Layout files
-Library/*.dwlt
+*.dwlt
 Library/assetDatabase3
 
 */Library/metadata/*
