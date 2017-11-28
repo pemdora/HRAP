@@ -71,7 +71,8 @@ public class Ihm_script : MonoBehaviour
         if (!is_questioned)
         {
             Debug.Log("2");
-            Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to number of answers     
+            Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to number of answers 
+                
             question.text = question_nbanswers_aswers.Question;//print question
             List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
             int index = 0;
@@ -206,5 +207,21 @@ public class Ihm_script : MonoBehaviour
     public void Button_is_pressed_next_question()
     {
         is_answered = true;
+        interview.SetChosenAnswer(0);
+    }
+
+    public void DisplayQuestion(string q)//for controller
+    {
+        question.text = q;//print question
+    }
+    public void DisplayAnswers(List<string> ans)//for controller
+    {
+        List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
+        int index = 0;
+        foreach (string a in ans)//collect text answers
+        {
+            answers[index].text += a;
+            index++;
+        }
     }
 }
