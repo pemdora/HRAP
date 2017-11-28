@@ -41,7 +41,7 @@ namespace HRAP
             return M_DataManager.Instance.InitializeSkills();
         }
 
-        
+
         public List<M_Skill> CompareSkillsTo(M_Profile otherProfile)
         {
             List<M_Skill> result = new List<M_Skill>();
@@ -53,7 +53,8 @@ namespace HRAP
                 count++;
             }
             return result;
-        }
+        
+    }
 
         
     }

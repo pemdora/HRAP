@@ -19,7 +19,7 @@ namespace HRAP
             this.experience = experience;
         }
 
-        public M_Experience Experience { get { return experience; } }
+        public M_Experience Experience { get { return experience; } set { experience = value; } }
 
         public List<M_Skill> GetImportantSkills()
         {

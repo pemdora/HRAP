@@ -7,8 +7,8 @@ namespace HRAP
 {
     public class M_Candidate : M_Profile
     {
-         private string targetJob;
-         private string result;
+        private string targetJob;
+        private string result;
 
         public M_Candidate(string name, string targetJob) : base(name)
         {
@@ -16,7 +16,7 @@ namespace HRAP
             this.result = null;
         }
 
-        public M_Candidate(int id, string name, string targetJob, string result, List<M_Skill> skillsList) : base(id, name, skillsList)
+        public M_Candidate(int id, string name, string targetJob, string result, List<M_Skill> skillList) : base(id, name, skillList)
         {
             this.targetJob = targetJob;
             this.result = result;
@@ -27,15 +27,18 @@ namespace HRAP
 
         public void UpdateSkills(M_Answer answer)
         {
-            for (int i = 0; i < this.skillsList.Count(); i++)
-            {
-                if (this.skillsList[i].Name == answer.Skills[i].Name)
-                {
-                    this.skillsList[i].Points += answer.Skills[i].Points;
-                }
-            }
-        }
+            int idCompetence = M_DataManager.Instance.GetIdCompetenceByIdQuestion(answer.QuestionId);
 
+            int score = 0;
+
+            for (int i = 0; i < answer.QualityList.Count(); i++)
+            {
+                score += answer.QualityList[i].Point * answer.QualityList[i].Ponderation;
+
+
+            }
+            this.skillsList[idCompetence - 1].Points += score;
+        }
 
     }
 }

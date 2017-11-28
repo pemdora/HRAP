@@ -13,11 +13,12 @@ namespace HRAP
         private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
-        private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
+        private static string skillsPath = @"..\HRAP\Assets\AIData\competence.csv";
         private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
         private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
         private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
-        private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
+        private static string matriceQualityCompetencePath = @"..\HRAP\Assets\AIData\qualityCompetence.csv";
+        private static string importantCompetencePath = @"..\HRAP\Assets\AIData\importantCompetence.csv";
 
         private static M_DataManager instance;
 
@@ -35,7 +36,7 @@ namespace HRAP
             }
         }
 
-        
+
         // Counts number of lines in a file
 
         private int Count(string file)
@@ -57,9 +58,9 @@ namespace HRAP
 
         }
 
-        private List<M_Skill> GetPoints(string file, int id)
+        private List<M_Quality> GetPointsQuality(string file, int id, int idCompentence)
         {
-            List<M_Skill> skillsList = new List<M_Skill>();
+            List<M_Quality> qualityList = new List<M_Quality>();
 
             // 1. Get points in points File
 
@@ -76,16 +77,16 @@ namespace HRAP
                     headers = temp;
 
                 }
-                
-                    if (count != 0 && Convert.ToInt32(temp[0]) == id)
-                    {
 
-                        for (int i = 1; i < temp.Length; i++)
-                        {
-                            skillsList.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i]), false));
-                        }
+                if (count != 0 && Convert.ToInt32(temp[0]) == id)
+                {
+
+                    for (int i = 1; i < temp.Length; i++)
+                    {
+                        qualityList.Add(new M_Quality(headers[i], Convert.ToInt32(temp[i])));
                     }
-                
+                }
+
 
                 line = p_reader.ReadLine();
                 count++;
@@ -94,9 +95,9 @@ namespace HRAP
             p_reader.Close();
 
             // Check whether skills are important
-            if(skillsList != null)
+            if (qualityList != null)
             {
-                p_reader = new StreamReader(importantpointsPath);
+                p_reader = new StreamReader(matriceQualityCompetencePath);
                 line = p_reader.ReadLine();
                 count = 0;
 
@@ -104,13 +105,13 @@ namespace HRAP
                 {
                     string[] temp = line.Split(';');
 
-                    if (count != 0 && Convert.ToInt32(temp[0]) == id)
+                    if (count != 0 && Convert.ToInt32(temp[0]) == idCompentence)
                     {
-                        for (int i = 1; i < temp.Length; i++)
+                        for (int i = 0; i < qualityList.Count(); i++)
                         {
                             if (Convert.ToInt32(temp[i]) != 0)
                             {
-                                skillsList[i].IsImportant = true;
+                                qualityList[i].Ponderation = Convert.ToInt32(temp[i + 1]);
                             }
                         }
                     }
@@ -122,8 +123,70 @@ namespace HRAP
                 p_reader.Close();
             }
 
-            return skillsList;
+
+            return qualityList;
+
         }
+
+        //calcul pour une competence retourne le nombre de point total avec les ponderation associé
+        public int calculPointSkill(List<M_Quality> listQualite)
+        {
+            int score = 0;
+            for (int i = 0; i < listQualite.Count(); i++)
+            {
+                score += listQualite[i].Ponderation * listQualite[i].Point;
+            }
+            return score;
+        }
+
+        //retourne une liste de competence associé au profile ideal ou au canididat
+        private List<M_Skill> getPointSkill(string file, int idProfil, int id)
+        {
+            List<M_Skill> listSkill = new List<M_Skill>();
+
+            StreamReader p_reader = new StreamReader(importantCompetencePath);
+            string line = p_reader.ReadLine();
+            string[] headers = { };
+            int count = 0;
+
+            while (line != null)
+            {
+                string[] temp = line.Split(';');
+                if (count == 0)
+                {
+                    headers = temp;
+
+                }
+
+                if (count != 0 && Convert.ToInt32(temp[0]) == idProfil)
+                {
+
+                    for (int i = 1; i < temp.Length; i++)
+                    {
+                        if (Convert.ToInt32(temp[i]) == 0)
+                        {
+                            listSkill.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), calculPointSkill(GetPointsQuality(file, id, i)), false, GetPointsQuality(file, id, i)));
+
+                        }
+                        if (Convert.ToInt32(temp[i]) == 1)
+                        {
+                            listSkill.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), calculPointSkill(GetPointsQuality(file, id, i)), true, GetPointsQuality(file, id, i)));
+
+                        }
+
+                    }
+                }
+
+
+                line = p_reader.ReadLine();
+                count++;
+            }
+
+            p_reader.Close();
+
+            return listSkill;
+        }
+
 
         // QUESTIONS
 
@@ -132,7 +195,7 @@ namespace HRAP
             return Count(questionsPath);
         }
 
-        public  M_Question GetQuestionById(int id)
+        public M_Question GetQuestionById(int id)
         {
             StreamReader reader = new StreamReader(questionsPath);
             string line = reader.ReadLine();
@@ -145,7 +208,7 @@ namespace HRAP
                 // first line is headers
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    return new M_Question(id, temp[1], Convert.ToInt32(temp[2]), Convert.ToInt32(temp[3]));
+                    return new M_Question(id, temp[1], Convert.ToInt32(temp[2]), Convert.ToInt32(temp[3]), Convert.ToInt32(temp[4]));
                 }
 
                 line = reader.ReadLine();
@@ -155,6 +218,31 @@ namespace HRAP
             reader.Close();
             return null;
         }
+
+        public int GetIdCompetenceByIdQuestion(int id)
+        {
+
+            StreamReader reader = new StreamReader(questionsPath);
+            string line = reader.ReadLine();
+            int count = 0;
+
+            while (line != null)
+            {
+                string[] temp = line.Split(';');
+                if (count != 0 && Convert.ToInt32(temp[0]) == id)
+                {
+                    return Convert.ToInt32(temp[4]);
+                }
+                line = reader.ReadLine();
+                count += 1;
+            }
+
+            reader.Close();
+
+            return 0;
+        }
+
+
 
         public int GetQuestionID(string question)
         {
@@ -212,12 +300,13 @@ namespace HRAP
             // Set points in answers
             if (result != null)
             {
-                foreach(M_Answer a in result)
+                foreach (M_Answer a in result)
                 {
-                    a.Skills = GetPoints(answers_pointsPath, a.Id);
+                    a.QualityList = GetPointsQuality(answers_pointsPath, a.Id, GetIdCompetenceByIdQuestion(questionId));
+
                 }
             }
-            
+
 
             return result;
         }
@@ -248,7 +337,7 @@ namespace HRAP
 
         public M_Answer GetAnswer(int id)
         {
-            M_Answer result= null;
+            M_Answer result = null;
             StreamReader reader = new StreamReader(answersPath);
             string line = reader.ReadLine();
             int count = 0;
@@ -259,7 +348,7 @@ namespace HRAP
 
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                    result=  new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), null);
+                    result = new M_Answer(id, Convert.ToInt32(temp[1]), temp[2], Convert.ToInt32(temp[3]), null);
                 }
 
 
@@ -270,23 +359,23 @@ namespace HRAP
             reader.Close();
 
             // Set points in answer
-            if (result !=null)
+            if (result != null)
             {
-                result.Skills = GetPoints(answers_pointsPath, id);
+                result.QualityList = GetPointsQuality(answers_pointsPath, id, GetIdCompetenceByIdQuestion(result.QuestionId));
             }
             return result;
         }
 
-       
+
 
         // CANDIDATES
 
-        public  int CountCandidates()
+        public int CountCandidates()
         {
             return Count(candidatesPath);
         }
 
-        public M_Candidate GetCandidate(int id)
+        public M_Candidate GetCandidate(int id, M_Experience exp)
         {
             M_Candidate result = null;
 
@@ -300,7 +389,7 @@ namespace HRAP
 
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
-                     result = new M_Candidate(id, temp[1], temp[2], temp[3], null);
+                    result = new M_Candidate(id, temp[1], temp[2], temp[3], null);
                 }
 
 
@@ -313,19 +402,48 @@ namespace HRAP
             // Set points in candidate
             if (result != null)
             {
-                result.Skills = GetPoints(candidates_pointsPath, id);
+                //un candidat est associé à un profil ideal pour l'evaluation de celui ci 
+
+                result.Skills = getPointSkill(candidates_pointsPath, GetIdealProfileID(result.Name, exp), id);
             }
 
             return result;
+        }
+
+        public List<M_Question> GetListQuestion(int idCompetence)
+        {
+            List<M_Question> question = new List<M_Question>();
+
+            StreamReader reader = new StreamReader(questionsPath);
+            string line = reader.ReadLine();
+            int count = 0;
+
+            while (line != null)
+            {
+                string[] temp = line.Split(';');
+
+                if (count != 0 && Convert.ToInt32(temp[4]) == idCompetence)
+                {
+                    question.Add(new M_Question(Convert.ToInt32(temp[0]), temp[1], Convert.ToInt32(temp[2]), Convert.ToInt32(temp[3]), idCompetence));
+                }
+
+
+                line = reader.ReadLine();
+                count++;
+            }
+
+            reader.Close();
+
+            return question;
         }
 
         // TO DO
         public void AddCandidate(M_Candidate candidate)
         {
 
-            string newLine =    candidate.Id + ";" + 
-                                candidate.Name + ";" + 
-                                candidate.TargetJob + ";" + 
+            string newLine = candidate.Id + ";" +
+                                candidate.Name + ";" +
+                                candidate.TargetJob + ";" +
                                 candidate.Result;
 
             for (int i = 0; i < candidate.Skills.Count; i++)
@@ -339,6 +457,31 @@ namespace HRAP
 
         }
 
+        public int GetIdCompetenceByName(string name)
+        {
+            int result = 0;
+            StreamReader reader = new StreamReader(skillsPath);
+            string line = reader.ReadLine();
+            int count = 0;
+
+            while (line != null)
+            {
+                string[] temp = line.Split(';');
+
+                if (count != 0 && temp[1] == name)
+                {
+                    result = Convert.ToInt32(temp[0]);
+                }
+
+
+                line = reader.ReadLine();
+                count++;
+            }
+
+            reader.Close();
+
+            return result;
+        }
 
         // IDEAL PROFILES
 
@@ -376,7 +519,7 @@ namespace HRAP
             while (line != null)
             {
                 string[] temp = line.Split(';');
-                
+
                 if (count != 0 && Convert.ToInt32(temp[0]) == id)
                 {
                     result = new M_IdealProfile(id, temp[1], GetExperience(temp[2]), null);
@@ -391,11 +534,15 @@ namespace HRAP
 
             if (result != null)
             {
-                result.Skills = GetPoints(idealprofiles_pointsPath,id);
+
+                result.Skills = getPointSkill(idealprofiles_pointsPath, id, id);
             }
 
             return result;
         }
+
+
+
 
         public int GetIdealProfileID(string name, M_Experience exp)
         {
@@ -425,31 +572,28 @@ namespace HRAP
             return Count(skillsPath);
         }
 
-        public  M_SkillCategory GetSkillCategory(string category)
+        public M_SkillCategory GetSkillCategory(string category)
         {
             M_SkillCategory result;
             switch (category)
             {
-                case "motivation":
-                    result = M_SkillCategory.MOTIVATION;
+                case "Leadership":
+                    result = M_SkillCategory.HUMAINE;
                     break;
-                case "controle emotionnel":
-                    result = M_SkillCategory.CONTROLE_EMOTIONNEL;
-                    break; 
-                case "leadership":
-                    result = M_SkillCategory.LEADERSHIP;
+                case "Controle emotionnel":
+                    result = M_SkillCategory.HUMAINE;
                     break;
-                case "sociabilite":
-                    result = M_SkillCategory.SOCIABILITE;
+                case "Sociabilite":
+                    result = M_SkillCategory.HUMAINE;
                     break;
                 default:
-                    result = M_SkillCategory.NULL;
+                    result = M_SkillCategory.TECHNIQUE;
                     break;
             }
             return result;
         }
 
-        public  List<M_Skill> InitializeSkills()
+        public List<M_Skill> InitializeSkills()
         {
             List<M_Skill> result = new List<M_Skill>();
 
@@ -464,7 +608,7 @@ namespace HRAP
                 // first line is headers
                 if (count != 0)
                 {
-                    result.Add(new M_Skill(temp[0], GetSkillCategory(temp[1]), 0, false));
+                    result.Add(new M_Skill(temp[1], GetSkillCategory(temp[1]), 0, false));
                 }
 
                 line = reader.ReadLine();
@@ -475,6 +619,7 @@ namespace HRAP
             return result;
 
         }
+
 
 
     }

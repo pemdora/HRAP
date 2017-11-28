@@ -7,10 +7,7 @@ namespace HRAP
 {
     public enum M_SkillCategory
     {
-        NULL,
-        MOTIVATION,
-        CONTROLE_EMOTIONNEL,
-        LEADERSHIP,
-        SOCIABILITE
+        HUMAINE,
+        TECHNIQUE,
     }
 }
