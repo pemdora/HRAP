@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using HRAP;
-public class Ihm_script : MonoBehaviour
+using System.Collections;
+public class IHMInterview : MonoBehaviour
 {
     // I
     UIButton button_a, button_b, button_c, button_d;
@@ -11,8 +12,8 @@ public class Ihm_script : MonoBehaviour
     string lastname = "";
     P_Interview interview; // = new P_Interview("tom", "chef de projet");
     V_Question question_nbanswers_aswers;
-    bool is_answered; // quizz state
-    bool is_questioned; // once the question has been given = true
+    bool is_answered; // quizz state // not used 
+    bool is_questioned; // once the question has been given = true // not used
     string[] split_text;
     string base_text;
 
@@ -33,12 +34,12 @@ public class Ihm_script : MonoBehaviour
         clastname = GameObject.Find("clastname").GetComponent<UILabel>();
 
         //Collecting variables from last scene ( authentication)
-        if (Input_authentification.firstName != null && Input_authentification.lastName != null)
+        if (IHMAuthentification.firstName != null && IHMAuthentification.lastName != null)
         {
             try
             {
-                firstname = Input_authentification.firstName.value;
-                lastname = Input_authentification.lastName.value;
+                firstname = IHMAuthentification.firstName.value;
+                lastname = IHMAuthentification.lastName.value;
             }
             catch (UnassignedReferenceException e)
             {
@@ -71,13 +72,14 @@ public class Ihm_script : MonoBehaviour
         //display name and lastname from last scene
         if (firstname != "" && lastname != "")
         {
-            cname.text = Input_authentification.firstName.value;
-            clastname.text = Input_authentification.lastName.value;
-        } /*
+            cname.text = IHMAuthentification.firstName.value;
+            clastname.text = IHMAuthentification.lastName.value;
+        }
+        /*
         if (!is_questioned)
         {
             Debug.Log("2");
-            Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to number of answers 
+            Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to the number of answers 
             /*
             question.text = question_nbanswers_aswers.Question;//print question
             List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
@@ -106,7 +108,7 @@ public class Ihm_script : MonoBehaviour
     }
 
     //button manager
-    void Activate_buttons_nb_answers(int nb_answers)
+    public void Activate_buttons_nb_answers(int nb_answers)
     {
         try
         {
@@ -211,6 +213,7 @@ public class Ihm_script : MonoBehaviour
         answer_c.enabled = false;
         answer_d.enabled = false;
     }
+    //n'est plus utilisé depuis l'installation du controlleur
     public void Button_is_pressed_next_question()
     {
         // Clean previous questions and answers
@@ -226,16 +229,27 @@ public class Ihm_script : MonoBehaviour
 
     public void DisplayQuestion(string q)//for controller
     {
-        question.text = q;//print question
+        question.text = "[u][b]Question[/u] : [/b]";
+        question.text += q;//print question
     }
     public void DisplayAnswers(List<string> ans)//for controller
     {
-        List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
-        int index = 0;
-        foreach (string a in ans)//collect text answers
+        // collect list of label for answers
+        List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers);
+        
+        Debug.Log(question_nbanswers_aswers.NumAnswers);
+        if (ans.Count == question_nbanswers_aswers.NumAnswers)
         {
-            answers[index].text += a;
-            index++;
+            int index = 0;
+            foreach (string a in ans)//collect text answers
+            {
+                answers[index].text += a;
+                index++;
+            }
+        }
+        else
+        {
+            answers[0].text += "SORRY... NUMBER OF ANSWERS OVEREVALUATED !";
         }
     }
 }

@@ -7,7 +7,7 @@ namespace HRAP
 {
     public class M_Quizz
     {
-        private int numQuestions = 5;
+        private int numQuestions = 5; // ne sert plus a rien
         private List<M_Question> questions;
 
         public M_Quizz()
@@ -21,7 +21,7 @@ namespace HRAP
 
         }
 
-        public int NumQuestions { get { return numQuestions; } }
+        public int NumQuestions { get { return numQuestions; } } // ne sert plus a rien
         public List<M_Question> Questions { get { return questions; }}
 
         private void GenerateRandom()

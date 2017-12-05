@@ -7,7 +7,8 @@ public class AIengine : MonoBehaviour
 {
     private M_Candidate candidate;
     private P_Interview interview;
-    private Ihm_script ihm;
+    private IHMInterview ihm;
+    ChatManager chatm;
 
     // TODO has to get arguments from previous view
     private string candidateName;
@@ -16,7 +17,8 @@ public class AIengine : MonoBehaviour
     // Use this for initialization
     void Start () {
         // 1. We initialise model, view and Presenter with name of candidate and his job
-        ihm = GetComponent<Ihm_script>();
+        ihm = GetComponent<IHMInterview>();
+        chatm = GetComponent<ChatManager>();
         candidate = new M_Candidate("steve", "chef de projet"); // TODO has to get arguments from previous view
         interview = new P_Interview(candidate, ihm);
 

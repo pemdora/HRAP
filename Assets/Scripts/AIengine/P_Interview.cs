@@ -8,17 +8,17 @@ namespace HRAP
     public class P_Interview
     {
         private M_Candidate candidate;
-        private Ihm_script ihm;
+        private IHMInterview ihm;
         private List<M_Quizz> quizzList;
         private Dictionary<int, int> candidateAnswers;
+
 
         private int currentQuizz;
         private int currentQuestion;
         private bool isWaiting;
-
         private bool isOver;
 
-        public P_Interview(M_Candidate candidate,Ihm_script ihm)
+        public P_Interview(M_Candidate candidate, IHMInterview ihm)
         {
             this.candidate = candidate;
             this.quizzList = new List<M_Quizz>();
@@ -40,14 +40,16 @@ namespace HRAP
             if (!isWaiting)
             {
                 // TEST
-                AIengine.Affichage("Affichage des questions");
+                //AIengine.Affichage("Affichage des questions");
                 // TODO : Envoi  de la question dans la vue
-                Console.WriteLine("question : " + currentQuestion);
-                Console.WriteLine("quizz : " + currentQuizz);
-                Console.WriteLine(GetNextQuestion().Question);
-                
-                ihm.DisplayQuestion(GetNextQuestion().Question);
-                ihm.DisplayAnswers(GetNextQuestion().Answers);
+                // Console.WriteLine("question : " + currentQuestion);
+                // Console.WriteLine("quizz : " + currentQuizz);
+                // Console.WriteLine(GetNextQuestion().Question);
+
+                //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
+                ihm.Activate_buttons_nb_answers(GetNextQuestion().NumAnswers);
+                ihm.DisplayQuestion(GetNextQuestion().Question);//IHM
+                ihm.DisplayAnswers(GetNextQuestion().Answers);//IHM
 
                 // Set next question
                 if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)

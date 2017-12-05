@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 //Ce code permet de changer de scene entre les menus
 
-public class Menu_principal_start_button : MonoBehaviour {
+public class IHMTransition : MonoBehaviour {
 
+    //AsyncOperation ao;
 
 	public void Transition_menu_1() //menu 1
 	{
@@ -22,8 +23,8 @@ public class Menu_principal_start_button : MonoBehaviour {
 	}
 	public void Transition_menu_4()//menu 4
 	{
-		ChangeScene("4-Interview");
-	}
+        ChangeScene("4-Interview");
+    }
 	public void Transition_menu_5()//menu 5
 	{
 		ChangeScene("5-Greetings");
@@ -37,10 +38,10 @@ public class Menu_principal_start_button : MonoBehaviour {
 		Application.Quit();
 	}
 
-
 	void ChangeScene(string scene)
 	{
 		SceneManager.LoadScene(scene);
 	}
+
 		
 }
