@@ -6,15 +6,10 @@ using System.Collections;
 public class IHMInterview : MonoBehaviour
 {
     // Init
-    UIButton button_a, button_b, button_c, button_d;
+    UIButton button_a, button_b, button_c, button_d, button_pause, button_settings;
     UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
     UILabel cname, clastname, cposition;
-    string firstname = "";
-    string lastname = "";
-    string position = "";
     P_Interview interview;
-    string[] split_text;
-    string base_text;
     //IHMAuthentification authentication;
     // Use this for initialization
     void Start()
@@ -24,6 +19,8 @@ public class IHMInterview : MonoBehaviour
         button_b = GameObject.Find("ButtonB").GetComponent<UIButton>();
         button_c = GameObject.Find("ButtonC").GetComponent<UIButton>();
         button_d = GameObject.Find("ButtonD").GetComponent<UIButton>();
+        button_settings = GameObject.Find("Button_settings").GetComponent<UIButton>();
+        button_pause = GameObject.Find("Button_pause").GetComponent<UIButton>();
 
         question = GameObject.Find("question").GetComponent<UILabel>();
         answer_a = GameObject.Find("answer_a").GetComponent<UILabel>();
@@ -222,5 +219,15 @@ public class IHMInterview : MonoBehaviour
     public void Clear()
     {
         question.text = "WAITING FOR NEXT QUESTION";
+    }
+    public void Pause()
+    {
+       
+                if (Time.timeScale == 1)
+                {
+                    Time.timeScale = 0;
+                }
+                else
+                    Time.timeScale = 1;
     }
 }

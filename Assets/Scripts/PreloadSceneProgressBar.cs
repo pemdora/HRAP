@@ -24,12 +24,12 @@ public class PreloadSceneProgressBar : MonoBehaviour {
 	[HideInInspector]
 	public bool Tweened;
 
-    UIButton continu;
+    //UIButton continu;
 	
 	
 	// ---------------------------------------
 void Start () {
-        continu = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
+      //  continu = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
 	if( UsePlayerPrefs ){
 	_LevelToLoad = PlayerPrefs.GetString("LoadLevel");
 }

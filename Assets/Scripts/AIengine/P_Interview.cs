@@ -10,7 +10,7 @@ namespace HRAP
         private M_Candidate candidate;
         private IHMInterview ihm;
         private List<M_Quizz> quizzList;
-        private Dictionary<int, int> candidateAnswers;
+      //  private Dictionary<int, int> candidateAnswers;// not used
         private V_Question q;
 
 
@@ -24,7 +24,7 @@ namespace HRAP
             this.candidate = candidate;
             this.quizzList = new List<M_Quizz>();
             this.quizzList.Add(new M_Quizz());
-            this.candidateAnswers = new Dictionary<int, int>();
+       //     this.candidateAnswers = new Dictionary<int, int>();//not used
             this.currentQuizz = 0;
             this.currentQuestion = 0;
             this.isWaiting = false;
