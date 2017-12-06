@@ -11,6 +11,7 @@ namespace HRAP
         private IHMInterview ihm;
         private List<M_Quizz> quizzList;
         private Dictionary<int, int> candidateAnswers;
+        private V_Question q;
 
 
         private int currentQuizz;
@@ -47,9 +48,10 @@ namespace HRAP
                 // Console.WriteLine(GetNextQuestion().Question);
 
                 //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
-                ihm.Activate_buttons_nb_answers(GetNextQuestion().NumAnswers);
-                ihm.DisplayQuestion(GetNextQuestion().Question);//IHM
-                ihm.DisplayAnswers(GetNextQuestion().Answers);//IHM
+                q = GetNextQuestion(); 
+                ihm.Activate_buttons_nb_answers(q.NumAnswers);
+                ihm.DisplayQuestion(q.Question);//IHM
+                ihm.DisplayAnswers(q.Answers);//IHM
 
                 // Set next question
                 if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)

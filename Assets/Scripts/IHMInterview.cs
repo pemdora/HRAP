@@ -12,8 +12,8 @@ public class IHMInterview : MonoBehaviour
     string lastname = "";
     P_Interview interview; // = new P_Interview("tom", "chef de projet");
     V_Question question_nbanswers_aswers;
-    bool is_answered; // quizz state // not used 
-    bool is_questioned; // once the question has been given = true // not used
+    //bool is_answered; // quizz state // not used 
+    //bool is_questioned; // once the question has been given = true // not used
     string[] split_text;
     string base_text;
 
@@ -52,10 +52,10 @@ public class IHMInterview : MonoBehaviour
         answer_b.text = "[0000FF][b]B: [/b][-]";
         answer_c.text = "[00FF00][b]C: [/b][-]";
         answer_d.text = "[FFFF00][b]D: [/b][-]";
-        question_nbanswers_aswers = interview.GetNextQuestion();
-        is_answered = false;
-        is_questioned = false;
-        //settings buttons
+       // question_nbanswers_aswers = interview.GetNextQuestion();
+        //is_answered = false;
+       // is_questioned = false;
+        
 
     }
     
@@ -223,7 +223,7 @@ public class IHMInterview : MonoBehaviour
         answer_c.text = "[00FF00][b]C: [/b][-]";
         answer_d.text = "[FFFF00][b]D: [/b][-]";
 
-        is_answered = true;
+        //is_answered = true;
         interview.SetChosenAnswer(0);
     }
 
@@ -235,21 +235,20 @@ public class IHMInterview : MonoBehaviour
     public void DisplayAnswers(List<string> ans)//for controller
     {
         // collect list of label for answers
-        List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers);
+        Debug.Log(ans.Count);
+        List<UILabel> answers = List_answers_by_question(ans.Count);
         
-        Debug.Log(question_nbanswers_aswers.NumAnswers);
-        if (ans.Count == question_nbanswers_aswers.NumAnswers)
+        Debug.Log(ans.Count);
+        int index = 0;
+        foreach (string a in ans)//collect text answers
         {
-            int index = 0;
-            foreach (string a in ans)//collect text answers
-            {
-                answers[index].text += a;
-                index++;
-            }
+            answers[index].text += a;
+            index++;
         }
-        else
-        {
-            answers[0].text += "SORRY... NUMBER OF ANSWERS OVEREVALUATED !";
-        }
+    
+    }
+    public void Clear()
+    {
+        question.text = "WAITING FOR NEXT QUESTION";
     }
 }

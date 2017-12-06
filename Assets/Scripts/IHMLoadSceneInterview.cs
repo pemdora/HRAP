@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// 
 /// </summary>
-public class LoadScene : MonoBehaviour {
+public class IHMLoadSceneInterview : MonoBehaviour {
 
     AsyncOperation ao;
     public UISlider slider;

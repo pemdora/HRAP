@@ -250,9 +250,9 @@
      <Compile Include="Assets\Scripts\AImovment.cs" />
      <Compile Include="Assets\Scripts\IHMAuthentification.cs" />
      <Compile Include="Assets\Scripts\IHMInterview.cs" />
+     <Compile Include="Assets\Scripts\IHMLoadSceneInterview.cs" />
      <Compile Include="Assets\Scripts\IHMTermsOfContract.cs" />
      <Compile Include="Assets\Scripts\IHMTransition.cs" />
-     <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\PreloadSceneProgressBar.cs" />
      <Compile Include="Assets\Scripts\PreloaderTween.cs" />
      <Compile Include="Assets\Scripts\Sound_Manager.cs" />
