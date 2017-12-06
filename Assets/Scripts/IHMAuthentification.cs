@@ -8,8 +8,7 @@ public class IHMAuthentification : MonoBehaviour
 {
     public static UIInput firstName;
     public static UIInput lastName;
-    //public UIPopupList listPoste;
-    UILabel poplist_label;
+    public static UILabel poplist_label;
     UIButton bouton_continuer;
 
     // Use this for initialization
@@ -25,7 +24,6 @@ public class IHMAuthentification : MonoBehaviour
     }
 
     // Update is called once per frame
-
     void Update()
     {
 

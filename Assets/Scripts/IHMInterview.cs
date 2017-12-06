@@ -1,22 +1,21 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using HRAP;
+using System;
 using System.Collections;
 public class IHMInterview : MonoBehaviour
 {
-    // I
+    // Init
     UIButton button_a, button_b, button_c, button_d;
-    UILabel question, answer_a, answer_b, answer_c, answer_d;
-    UILabel cname, clastname;
+    UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
+    UILabel cname, clastname, cposition;
     string firstname = "";
     string lastname = "";
-    P_Interview interview; // = new P_Interview("tom", "chef de projet");
-    V_Question question_nbanswers_aswers;
-    //bool is_answered; // quizz state // not used 
-    //bool is_questioned; // once the question has been given = true // not used
+    string position = "";
+    P_Interview interview;
     string[] split_text;
     string base_text;
-
+    //IHMAuthentification authentication;
     // Use this for initialization
     void Start()
     {
@@ -25,26 +24,31 @@ public class IHMInterview : MonoBehaviour
         button_b = GameObject.Find("ButtonB").GetComponent<UIButton>();
         button_c = GameObject.Find("ButtonC").GetComponent<UIButton>();
         button_d = GameObject.Find("ButtonD").GetComponent<UIButton>();
+
         question = GameObject.Find("question").GetComponent<UILabel>();
         answer_a = GameObject.Find("answer_a").GetComponent<UILabel>();
         answer_b = GameObject.Find("answer_b").GetComponent<UILabel>();
         answer_c = GameObject.Find("answer_c").GetComponent<UILabel>();
         answer_d = GameObject.Find("answer_d").GetComponent<UILabel>();
+        comment = GameObject.Find("comment").GetComponent<UILabel>();
+
         cname = GameObject.Find("cname").GetComponent<UILabel>();
         clastname = GameObject.Find("clastname").GetComponent<UILabel>();
+        cposition = GameObject.Find("cposition").GetComponent<UILabel>();
 
         //Collecting variables from last scene ( authentication)
-        if (IHMAuthentification.firstName != null && IHMAuthentification.lastName != null)
+        try
         {
-            try
+            if (IHMAuthentification.firstName.value != null && IHMAuthentification.lastName.value != null && IHMAuthentification.poplist_label.text != "Choix du poste")
             {
-                firstname = IHMAuthentification.firstName.value;
-                lastname = IHMAuthentification.lastName.value;
+                cname.text = IHMAuthentification.firstName.value;
+                clastname.text = IHMAuthentification.lastName.value;
+                cposition.text = IHMAuthentification.poplist_label.text;
             }
-            catch (UnassignedReferenceException e)
-            {
-                Debug.Log(e.Message);
-            }
+        }
+        catch (UnassignedReferenceException e)
+        {
+            Debug.Log(e.Message);
         }
         //Initialising variables
         question.text = "[u][b]Question[/u] : [/b]";
@@ -52,13 +56,13 @@ public class IHMInterview : MonoBehaviour
         answer_b.text = "[0000FF][b]B: [/b][-]";
         answer_c.text = "[00FF00][b]C: [/b][-]";
         answer_d.text = "[FFFF00][b]D: [/b][-]";
-       // question_nbanswers_aswers = interview.GetNextQuestion();
+        // question_nbanswers_aswers = interview.GetNextQuestion();
         //is_answered = false;
-       // is_questioned = false;
-        
+        // is_questioned = false;
+
 
     }
-    
+
     // Initialise Presenter
     public void SetPresenter(P_Interview interview)
     {
@@ -68,43 +72,7 @@ public class IHMInterview : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log("1");
-        //display name and lastname from last scene
-        if (firstname != "" && lastname != "")
-        {
-            cname.text = IHMAuthentification.firstName.value;
-            clastname.text = IHMAuthentification.lastName.value;
-        }
-        /*
-        if (!is_questioned)
-        {
-            Debug.Log("2");
-            Activate_buttons_nb_answers(question_nbanswers_aswers.NumAnswers);//activate buttons according to the number of answers 
-            /*
-            question.text = question_nbanswers_aswers.Question;//print question
-            List<UILabel> answers = List_answers_by_question(question_nbanswers_aswers.NumAnswers); // collect list of label for answers
-            int index = 0;
-            foreach (string a in question_nbanswers_aswers.Answers)//collect text answers
-            {
-                answers[index].text += a;
-                index++;
-            }
-            is_questioned = true;
-            is_answered = false;
-        }
-        else if (is_answered)
-        {
-            
-            question.text = "[u][b]Question[/u] : [/b]";
-            answer_a.text = "[FF0000][b]A: [/b][-]";
-            answer_b.text = "[0000FF][b]B: [/b][-]";
-            answer_c.text = "[00FF00][b]C: [/b][-]";
-            answer_d.text = "[FFFF00][b]D: [/b][-]";
-            Debug.Log("3");
-            // question_nbanswers_aswers = interview.GetNextQuestion();
-            is_questioned = false;
-            is_answered = false;
-        } */
+
     }
 
     //button manager
@@ -130,8 +98,9 @@ public class IHMInterview : MonoBehaviour
                         break;
                 }
             }
-           
-        }catch(MissingReferenceException e)
+
+        }
+        catch (MissingReferenceException e)
         {
             Debug.Log(e.Message);
         }
@@ -139,7 +108,7 @@ public class IHMInterview : MonoBehaviour
 
     List<UILabel> List_answers_by_question(int nb_answers)
     {
-        List<UILabel> result= new List<UILabel> (new UILabel[] { }); // init list of uilabel
+        List<UILabel> result = new List<UILabel>(new UILabel[] { }); // init list of uilabel
         switch (nb_answers)
         {
             case 2:
@@ -237,7 +206,7 @@ public class IHMInterview : MonoBehaviour
         // collect list of label for answers
         Debug.Log(ans.Count);
         List<UILabel> answers = List_answers_by_question(ans.Count);
-        
+
         Debug.Log(ans.Count);
         int index = 0;
         foreach (string a in ans)//collect text answers
@@ -245,7 +214,10 @@ public class IHMInterview : MonoBehaviour
             answers[index].text += a;
             index++;
         }
-    
+    }
+    public void DisplayComment(string c)//for controller
+    {
+        comment.text +="\n\n"+c;//print question
     }
     public void Clear()
     {

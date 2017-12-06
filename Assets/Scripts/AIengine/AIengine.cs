@@ -28,7 +28,6 @@ public class AIengine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (!interview.IsOver)
         {
             interview.Launch();

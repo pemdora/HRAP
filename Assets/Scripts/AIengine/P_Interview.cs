@@ -52,6 +52,7 @@ namespace HRAP
                 ihm.Activate_buttons_nb_answers(q.NumAnswers);
                 ihm.DisplayQuestion(q.Question);//IHM
                 ihm.DisplayAnswers(q.Answers);//IHM
+                ihm.DisplayComment("question ! ");
 
                 // Set next question
                 if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
