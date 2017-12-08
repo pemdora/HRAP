@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -27,7 +29,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CT_RTV</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -37,7 +39,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CT_RTV</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -79,9 +81,23 @@
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
+    <Reference Include="RTVoiceUWPBridge">
+      <HintPath>Assets\crosstales\RTVoice\Plugins\WSA\Stub\RTVoiceUWPBridge.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ArchVizPRO Interior Vol.5\3D SCRIPT\ExampleRenderScale.cs" />
+    <Compile Include="Assets\Laireon Games\Common\Note.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\AlphaTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\BaseTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\ColourTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\MovingTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\MyMaths.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\RotatingTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\ScalingTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\StaggeringTransition.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\TransitionGroup.cs" />
+    <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\TransitionalObject.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -264,11 +280,75 @@
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
     <Compile Include="Assets\Scripts\AIengine\V_Question.cs" />
     <Compile Include="Assets\Scripts\AImovment.cs" />
-    <Compile Include="Assets\Scripts\Ihm_script.cs" />
-    <Compile Include="Assets\Scripts\Input_authentification.cs" />
-    <Compile Include="Assets\Scripts\Menu_principal_start_button.cs" />
+    <Compile Include="Assets\Scripts\IHMAuthentification.cs" />
+    <Compile Include="Assets\Scripts\IHMInterview.cs" />
+    <Compile Include="Assets\Scripts\IHMLoadSceneInterview.cs" />
+    <Compile Include="Assets\Scripts\IHMPauseResume.cs" />
+    <Compile Include="Assets\Scripts\IHMTermsOfContract.cs" />
+    <Compile Include="Assets\Scripts\IHMTransition.cs" />
+    <Compile Include="Assets\Scripts\PreloadSceneProgressBar.cs" />
+    <Compile Include="Assets\Scripts\PreloaderTween.cs" />
     <Compile Include="Assets\Scripts\Sound_Manager.cs" />
-    <Compile Include="Assets\Scripts\on_scroll_vertical_end.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Dialog.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIAudioFilter.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIDialog.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIMain.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIMultiAudioFilter.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIScenes.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUISpeech.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\NativeAudio.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\PreGeneratedAudio.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SendMessage.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SequenceCaller.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Simple.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SimpleNative.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SpeakWrapper.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\AudioVisualizer.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\FFTAnalyzer.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\MaterialChanger.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\NativeController.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\PlatformController.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomColor.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomRotator.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomScaler.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\ScrollRectHandler.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\iOSController.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\ExtensionMethods.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\LiveSpeaker.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\MaryTTSType.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\ProviderType.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\SpeakMode.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Sequence.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Voice.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Wrapper.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\BaseVoiceProvider.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderAndroid.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderIOS.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMacOS.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMary.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWSA.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWindows.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Speaker.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\AudioFileGenerator.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\Loudspeaker.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\Sequencer.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\SpeechText.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\TextFileSpeaker.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\VoiceInitalizer.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\CTPlayerPrefs.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\CTWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Config.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Constants.cs" />
+    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Helper.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\Social.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\StaticManager.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\UIDrag.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\UIFocus.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\UIWindowManager.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\Util\FPSDisplay.cs" />
+    <Compile Include="Assets\crosstales\UI\Scripts\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
@@ -321,6 +401,16 @@
     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\Shaders\DoubleSided_Alpha-Diffuse.shader" />
     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
+    <None Include="Assets\crosstales\RTVoice\3rd party\Assets.txt" />
+    <None Include="Assets\crosstales\RTVoice\Demo\Text\Poem.txt" />
+    <None Include="Assets\crosstales\RTVoice\Demo\Text\Speeches.txt" />
+    <None Include="Assets\crosstales\RTVoice\Documentation\EmotionML.txt" />
+    <None Include="Assets\crosstales\RTVoice\Documentation\SSML.txt" />
+    <None Include="Assets\crosstales\RTVoice\Documentation\VERSIONS.txt" />
+    <None Include="Assets\crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
+    <None Include="Assets\crosstales\RTVoice\README.txt" />
+    <None Include="Assets\crosstales\UI\Documentation\Colors.txt" />
+    <None Include="Assets\crosstales\UI\Documentation\VERSIONS.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
