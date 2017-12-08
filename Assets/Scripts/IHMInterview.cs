@@ -43,7 +43,7 @@ public class IHMInterview : MonoBehaviour
                 cposition.text = IHMAuthentification.poplist_label.text;
             }
         }
-        catch (UnassignedReferenceException e)
+        catch (NullReferenceException e)
         {
             Debug.Log(e.Message);
         }

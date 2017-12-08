@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //Ce code permet de changer de scene entre les menus
 
 public class IHMTransition : MonoBehaviour {
 
-    //AsyncOperation ao;
 
 	public void Transition_menu_1() //menu 1
 	{
