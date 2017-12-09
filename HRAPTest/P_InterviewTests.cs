@@ -15,9 +15,9 @@ namespace HRAPTest
             Directory.SetCurrentDirectory(@"..\..\..");
 
             // 1. On instancie P_Interview avec le nom du candidat et son poste
-            P_Interview interview = new P_Interview("steve", "chef de projet");
+            //P_Interview interview = new P_Interview("steve", "chef de projet");
 
-            interview.Launch();
+            //interview.Launch();
 
         }
     }

@@ -9,93 +9,30 @@ namespace HRAPTest
     [TestClass]
     public class M_DataManagerTests
     {
+
+        // SEQUENCES
+
         [TestMethod]
-        public void CountQuestions()
+        public void testXML()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-            int expected = 14;
-            int numQuestions = M_DataManager.Instance.CountQuestions();
-            Assert.AreEqual(expected, numQuestions);
-            
-        }
+            //M_DataManager.Instance.ReadXml();
 
-        [TestMethod]
-        public void GetQuestion_WithValidID()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
+            M_Sequence seq = M_DataManager.Instance.GetSequence(2);
+            if (seq != null)
+            {
+                Console.WriteLine(seq.ToString());
+            }
 
-            // Get a question in DB
+            M_DialogElement element = M_DataManager.Instance.GetNextDialogElement("2a");
+            Console.WriteLine(element.ToString());
 
-            int id = 9;
-            string body = "Comment je definis mes objectifs :";
-            int next = 0;
-            int numAnswers = 4;
 
-            M_Question expected = new M_Question(id,body, next,numAnswers);
-            M_Question actual = M_DataManager.Instance.GetQuestionById(id);
-            Assert.AreEqual(expected.Id, actual.Id);
-            Assert.AreEqual(expected.Body, actual.Body);
 
         }
 
-        [TestMethod]
-        public void GetQuestionID()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            // Get a question in DB
-            M_Question expected = M_DataManager.Instance.GetQuestionById(9);
-
-            int actual_id = M_DataManager.Instance.GetQuestionID(expected.Body);
-            Assert.AreEqual(expected.Id, actual_id);
-
-        }
-
-        // ANSWERS
-
-        [TestMethod]
-        public void GetAnswers_WithValidQuestionID()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            string expected_answer1 = "Oui";
-            string expected_answer2 = "Non";
-
-
-            List<M_Answer> answersList = new List<M_Answer>();
-            answersList = M_DataManager.Instance.GetAnswersByQuestionId(11);
-            string actual_answer1 = answersList[0].Body;
-            string actual_answer2 = answersList[1].Body;
-
-            Assert.AreEqual(expected_answer1, actual_answer1);
-            Assert.AreEqual(expected_answer2, actual_answer2);
-
-            //Assert.Fail(answersList[0].Skills[3].Points.ToString());
-        }
-
-        [TestMethod]
-        public void GetAnswerID_WithValidQuestionID()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            int expected_id = 35;
-            string s = "Oui";
-            int actual_answerID = M_DataManager.Instance.GetAnswerID(11,s);
-
-            Assert.AreEqual(expected_id, actual_answerID);
-        }
-
-        [TestMethod]
-        public void GetAnswer_WithValidID()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            string expected_answer = "Oui";
-
-            M_Answer actual_answer = M_DataManager.Instance.GetAnswer(35);
-            Assert.AreEqual(expected_answer, actual_answer.Body);
-        }
+       
 
         // CANDIDATES
 

@@ -14,12 +14,12 @@ namespace HRAPTest
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-            M_Quizz quizz = new M_Quizz();
+           /* M_Sequence quizz = new M_Sequence();
             
             foreach(M_Question question in quizz.Questions)
             {
                 Console.WriteLine(question.Body);
-            }
+            }*/
 
         }
     }

@@ -5,27 +5,18 @@ using System.Text;
 
 namespace HRAP
 {
-    public class M_Answer
+    public class M_Answer:M_DialogElement
     {
-        private int answerId;
-        private int questionId;
-        private string body;
-        private int nextQuestionId;
+        private string questionId;
         private List<M_Skill> skillsList;
 
-        public M_Answer(int id, int questionId, string body, int nextQuestionId, List<M_Skill> skillsList)
+        public M_Answer(string id, string questionId, int seqID, string actor, string text, M_Animation animation, M_Camera camera, string next, List<M_Skill> skillsList) :base(id, seqID, actor, text, animation, camera, next)
         {
-            this.answerId = id;
             this.questionId = questionId;
-            this.body = body;
-            this.nextQuestionId = nextQuestionId;
             this.skillsList = skillsList;
         }
-
-        public int Id { get { return answerId; } }
-        public int QuestionId { get { return questionId; } }
-        public string Body { get { return body; } }
-        public int NextQuestionId { get { return nextQuestionId; } }
+        
+        public string QuestionId { get { return questionId; } }
         public List<M_Skill> Skills { get { return skillsList; } set { skillsList = value; } }
     }
 }

@@ -267,14 +267,19 @@
     <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\EyeController.cs" />
     <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\LipSync.cs" />
     <Compile Include="Assets\Scripts\AIengine\AIengine.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_Animation.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Answer.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_Camera.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Candidate.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_DataManager.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_DialogElement.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Experience.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_IdealProfile.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_Phrase.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Profile.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_QCM.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Question.cs" />
-    <Compile Include="Assets\Scripts\AIengine\M_Quizz.cs" />
+    <Compile Include="Assets\Scripts\AIengine\M_Sequence.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Skill.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_SkillCategory.cs" />
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
@@ -351,6 +356,24 @@
     <Compile Include="Assets\crosstales\UI\Scripts\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AIData\answers.csv" />
+    <None Include="Assets\AIData\answers.csv.meta" />
+    <None Include="Assets\AIData\answers_points.csv" />
+    <None Include="Assets\AIData\answers_points.csv.meta" />
+    <None Include="Assets\AIData\candidates.csv" />
+    <None Include="Assets\AIData\candidates.csv.meta" />
+    <None Include="Assets\AIData\candidates_points.csv" />
+    <None Include="Assets\AIData\candidates_points.csv.meta" />
+    <None Include="Assets\AIData\idealprofiles.csv" />
+    <None Include="Assets\AIData\idealprofiles.csv.meta" />
+    <None Include="Assets\AIData\idealprofiles_points.csv" />
+    <None Include="Assets\AIData\idealprofiles_points.csv.meta" />
+    <None Include="Assets\AIData\importantpoints.csv" />
+    <None Include="Assets\AIData\importantpoints.csv.meta" />
+    <None Include="Assets\AIData\questions.csv" />
+    <None Include="Assets\AIData\questions.csv.meta" />
+    <None Include="Assets\AIData\skills.csv" />
+    <None Include="Assets\AIData\skills.csv.meta" />
     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
     <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />
@@ -411,6 +434,9 @@
     <None Include="Assets\crosstales\RTVoice\README.txt" />
     <None Include="Assets\crosstales\UI\Documentation\Colors.txt" />
     <None Include="Assets\crosstales\UI\Documentation\VERSIONS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AIData\dialog.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -6,25 +6,14 @@ using System.Text;
 
 namespace HRAP
 {
-    public class M_Question
+    public class M_Question:M_DialogElement
     {
-        private int questionId;
-        private string body;
-        private int nextQuestionId;
-        private int numAnswers;
 
-        public M_Question(int id, string body, int next, int answers)
+        public M_Question(string id, int seqID, string actor, string text, M_Animation animation, M_Camera camera, string next):base(id, seqID, actor, text, animation, camera, next)
         {
-            this.questionId = id;
-            this.body = body;
-            this.nextQuestionId = next;
-            this.numAnswers = answers;
+
         }
 
-        public int Id { get { return questionId; } }
-        public string Body { get { return body; }  }
-        public int NextQuestionId { get { return nextQuestionId; } }
-        public int NumAnswers { get { return numAnswers; } }
 
     }
 }
