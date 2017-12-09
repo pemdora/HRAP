@@ -1,0 +1,9 @@
+#Text;Output file (without extension);Voice name;Rate;Pitch;Volume
+#This is a test speech;C:\Users\slaub\Desktop\Speeches\01
+#This is a test speech;C:\Users\slaub\Desktop\Speeches\02;Microsoft Zira Desktop
+#This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary01
+#This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary02;cmu-slt-hsmm
+#This is a test speech;_Speeches\01
+#This is a test speech;_Speeches\02;Microsoft Zira Desktop
+This is a test speech;_Speeches\Mary01
+This is a test speech;_Speeches\Mary02;cmu-slt-hsmm

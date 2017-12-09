@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -82,11 +80,97 @@
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="RTVoiceUWPBridge">
-      <HintPath>Assets\crosstales\RTVoice\Plugins\WSA\Stub\RTVoiceUWPBridge.dll</HintPath>
+      <HintPath>Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\WSA\Stub\RTVoiceUWPBridge.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ArchVizPRO Interior Vol.5\3D SCRIPT\ExampleRenderScale.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SCRIPT\ExampleRenderScale.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\AdvancedBlendshapeBlendSystem.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\BlendshapeBlendSystem.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\BlendshapeManager.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\BonesOnlyBlendSystem.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\SpriteBlendSystem.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\SpriteManager.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\BlendSystem.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\BlendSystemButton.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\BlendSystemUser.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\Blendable.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\BlendshapePreset.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\BoneShape.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\EmotionMarker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\EmotionMixer.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\EmotionShape.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\GestureInstance.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\GestureMarker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\LipSyncData.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\LipSyncExtensions.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\LipSyncPreset.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\LipSyncProject.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\PhonemeMarker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\PhonemeSet.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\PhonemeShape.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\Shape.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Classes\TransformAnimationCurve.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Components\EyeController.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Components\LipSync.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Dialog.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUIAudioFilter.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUIDialog.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUIMain.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUIMultiAudioFilter.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUIScenes.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\GUISpeech.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\NativeAudio.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\PreGeneratedAudio.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\SendMessage.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\SequenceCaller.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Simple.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\SimpleNative.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\SpeakWrapper.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\AudioVisualizer.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\FFTAnalyzer.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\MaterialChanger.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\NativeController.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\PlatformController.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\RandomColor.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\RandomRotator.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\RandomScaler.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\ScrollRectHandler.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Scripts\Util\iOSController.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\ExtensionMethods.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\LiveSpeaker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Enum\MaryTTSType.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Enum\ProviderType.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Enum\SpeakMode.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Sequence.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Voice.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Model\Wrapper.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\BaseVoiceProvider.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderAndroid.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderIOS.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMacOS.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMary.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWSA.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWindows.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Speaker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\AudioFileGenerator.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\Loudspeaker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\Sequencer.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\SpeechText.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\TextFileSpeaker.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\VoiceInitalizer.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\CTPlayerPrefs.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\CTWebClient.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Config.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Constants.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Helper.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\Social.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\StaticManager.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\UIDrag.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\UIFocus.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\UIWindowManager.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\Util\FPSDisplay.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Scripts\WindowManager.cs" />
     <Compile Include="Assets\Laireon Games\Common\Note.cs" />
     <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\AlphaTransition.cs" />
     <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\BaseTransition.cs" />
@@ -238,34 +322,6 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\AdvancedBlendshapeBlendSystem.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\BlendshapeBlendSystem.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\BlendshapeManager.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\BonesOnlyBlendSystem.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\SpriteBlendSystem.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\SpriteManager.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\BlendSystem.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\BlendSystemButton.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\BlendSystemUser.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\Blendable.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\BlendshapePreset.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\BoneShape.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\EmotionMarker.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\EmotionMixer.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\EmotionShape.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\GestureInstance.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\GestureMarker.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\LipSyncData.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\LipSyncExtensions.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\LipSyncPreset.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\LipSyncProject.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\PhonemeMarker.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\PhonemeSet.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\PhonemeShape.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\Shape.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Classes\TransformAnimationCurve.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\EyeController.cs" />
-    <Compile Include="Assets\Rogo Digital\LipSync Pro\Components\LipSync.cs" />
     <Compile Include="Assets\Scripts\AIengine\AIengine.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Animation.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Answer.cs" />
@@ -294,89 +350,28 @@
     <Compile Include="Assets\Scripts\PreloadSceneProgressBar.cs" />
     <Compile Include="Assets\Scripts\PreloaderTween.cs" />
     <Compile Include="Assets\Scripts\Sound_Manager.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Dialog.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIAudioFilter.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIDialog.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIMain.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIMultiAudioFilter.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUIScenes.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\GUISpeech.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\NativeAudio.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\PreGeneratedAudio.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SendMessage.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SequenceCaller.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Simple.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SimpleNative.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\SpeakWrapper.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\AudioVisualizer.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\FFTAnalyzer.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\MaterialChanger.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\NativeController.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\PlatformController.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomColor.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomRotator.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\RandomScaler.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\ScrollRectHandler.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Demo\Scripts\Util\iOSController.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\ExtensionMethods.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\LiveSpeaker.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\MaryTTSType.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\ProviderType.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Enum\SpeakMode.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Sequence.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Voice.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Model\Wrapper.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\BaseVoiceProvider.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderAndroid.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderIOS.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMacOS.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderMary.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWSA.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Provider\VoiceProviderWindows.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Speaker.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\AudioFileGenerator.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\Loudspeaker.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\Sequencer.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\SpeechText.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\TextFileSpeaker.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Tool\VoiceInitalizer.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\CTPlayerPrefs.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\CTWebClient.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Config.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Constants.cs" />
-    <Compile Include="Assets\crosstales\RTVoice\Plugins\Scripts\Util\Helper.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\Social.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\StaticManager.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\UIDrag.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\UIFocus.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\UIWindowManager.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\Util\FPSDisplay.cs" />
-    <Compile Include="Assets\crosstales\UI\Scripts\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AIData\answers.csv" />
-    <None Include="Assets\AIData\answers.csv.meta" />
-    <None Include="Assets\AIData\answers_points.csv" />
-    <None Include="Assets\AIData\answers_points.csv.meta" />
-    <None Include="Assets\AIData\candidates.csv" />
-    <None Include="Assets\AIData\candidates.csv.meta" />
-    <None Include="Assets\AIData\candidates_points.csv" />
-    <None Include="Assets\AIData\candidates_points.csv.meta" />
-    <None Include="Assets\AIData\idealprofiles.csv" />
-    <None Include="Assets\AIData\idealprofiles.csv.meta" />
-    <None Include="Assets\AIData\idealprofiles_points.csv" />
-    <None Include="Assets\AIData\idealprofiles_points.csv.meta" />
-    <None Include="Assets\AIData\importantpoints.csv" />
-    <None Include="Assets\AIData\importantpoints.csv.meta" />
-    <None Include="Assets\AIData\questions.csv" />
-    <None Include="Assets\AIData\questions.csv.meta" />
-    <None Include="Assets\AIData\skills.csv" />
-    <None Include="Assets\AIData\skills.csv.meta" />
-    <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
-    <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
-    <None Include="Assets\ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />
+    <None Include="Assets\AIData\dialog.xml" />
+    <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
+    <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
+    <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\ReadMe.txt" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\NewBlendSystemTemplate.cs.txt" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Documentation is now online!.txt" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\Shaders\DoubleSided_Alpha-Diffuse.shader" />
+    <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\3rd party\Assets.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Text\Poem.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Text\Speeches.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\EmotionML.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\SSML.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\VERSIONS.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\README.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Documentation\Colors.txt" />
+    <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Documentation\VERSIONS.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -418,25 +413,6 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\AutoSync\ReadMe.txt" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\NewBlendSystemTemplate.cs.txt" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\Documentation is now online!.txt" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\Shaders\DoubleSided_Alpha-Diffuse.shader" />
-    <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
-    <None Include="Assets\crosstales\RTVoice\3rd party\Assets.txt" />
-    <None Include="Assets\crosstales\RTVoice\Demo\Text\Poem.txt" />
-    <None Include="Assets\crosstales\RTVoice\Demo\Text\Speeches.txt" />
-    <None Include="Assets\crosstales\RTVoice\Documentation\EmotionML.txt" />
-    <None Include="Assets\crosstales\RTVoice\Documentation\SSML.txt" />
-    <None Include="Assets\crosstales\RTVoice\Documentation\VERSIONS.txt" />
-    <None Include="Assets\crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
-    <None Include="Assets\crosstales\RTVoice\README.txt" />
-    <None Include="Assets\crosstales\UI\Documentation\Colors.txt" />
-    <None Include="Assets\crosstales\UI\Documentation\VERSIONS.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\AIData\dialog.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
