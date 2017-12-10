@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -81,6 +83,9 @@
     </Reference>
     <Reference Include="RTVoiceUWPBridge">
       <HintPath>Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\WSA\Stub\RTVoiceUWPBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>Assets\Imported Environnement Assets\Audio Resampling - NAudio Dll\NAudio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +165,9 @@
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\TextFileSpeaker.cs" />
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Tool\VoiceInitalizer.cs" />
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\CTPlayerPrefs.cs" />
-    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\CTWebClient.cs" />
+    <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\CTWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Config.cs" />
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Constants.cs" />
     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Scripts\Util\Helper.cs" />
@@ -353,6 +360,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AIData\dialog.xml" />
+    <None Include="Assets\Audio\AudioText\Speeches.txt" />
+    <None Include="Assets\Imported Environnement Assets\Audio Resampling - NAudio Dll\NAudio.xml" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />

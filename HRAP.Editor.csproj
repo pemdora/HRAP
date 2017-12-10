@@ -118,6 +118,9 @@
     <Reference Include="RTVoiceUWPBridge">
       <HintPath>Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\WSA\Stub\RTVoiceUWPBridge.dll</HintPath>
     </Reference>
+    <Reference Include="NAudio">
+      <HintPath>Assets\Imported Environnement Assets\Audio Resampling - NAudio Dll\NAudio.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-UnityScript">
       <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
     </Reference>
@@ -282,6 +285,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AIData\dialog.xml" />
+    <None Include="Assets\Audio\AudioText\Speeches.txt" />
+    <None Include="Assets\Imported Environnement Assets\Audio Resampling - NAudio Dll\NAudio.xml" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
     <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />

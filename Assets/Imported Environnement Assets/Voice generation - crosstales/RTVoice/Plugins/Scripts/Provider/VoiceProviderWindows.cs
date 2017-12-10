@@ -761,11 +761,11 @@ namespace Crosstales.RTVoice.Provider
         {
             if (Application.platform == RuntimePlatform.WindowsEditor)
             {
-                return Application.dataPath + @"/Imported Environnement Assets/Voice generation - crosstales/RTVoice/Plugins/Windows/RTVoiceTTSWrapper.exe";
+                return dataPath + @"/Imported Environnement Assets/Voice generation - crosstales/RTVoice/Plugins/Windows/RTVoiceTTSWrapper.exe";
             }
             else
             {
-                return Application.dataPath + @"/RTVoiceTTSWrapper.exe";
+                return dataPath + @"/RTVoiceTTSWrapper.exe";
             }
         }
 
