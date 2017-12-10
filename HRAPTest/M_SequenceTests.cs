@@ -7,19 +7,22 @@ using System.Collections.Generic;
 namespace HRAPTest
 {
     [TestClass]
-    public class M_QuizzTests
+    public class M_SequenceTests
     {
         [TestMethod]
         public void test1()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-           /* M_Sequence quizz = new M_Sequence();
-            
-            foreach(M_Question question in quizz.Questions)
+            M_Sequence seq = new M_Sequence();
+            seq = seq.GetNextSequence();
+
+            foreach(M_DialogElement e in seq.DialogElements)
             {
-                Console.WriteLine(question.Body);
-            }*/
+                Console.WriteLine(e.Text);
+            }
+
+            Console.WriteLine(seq.DialogElements.Count);
 
         }
     }

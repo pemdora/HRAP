@@ -5,10 +5,15 @@ using System.Text;
 
 namespace HRAP
 {
-    class M_QCM
+    public class M_QCM
     {
         private M_Question question;
         private List<M_Answer> answers;
+
+        public M_QCM(int questionID)
+        {
+
+        }
 
         public M_QCM(M_Question question, List<M_Answer> answers)
         {

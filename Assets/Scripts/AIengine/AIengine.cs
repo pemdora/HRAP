@@ -11,8 +11,8 @@ public class AIengine : MonoBehaviour
     // ChatManager chatm;
 
     // TODO has to get arguments from previous view
-    private string candidateName;
-    private string targetJob; 
+    // private string candidateName;
+    // private string targetJob; 
 
     // Use this for initialization
     void Start () {

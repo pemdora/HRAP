@@ -10,12 +10,12 @@ namespace HRAP
     public class M_DataManager
     {
         private static string dialogPath = @"..\HRAP\Assets\AIData\dialog.xml";
-        private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
-        private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
+        // private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
+        // private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
         private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
-        private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
+        // private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
         private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
         private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
         private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
@@ -328,41 +328,6 @@ namespace HRAP
 
         // DIALOG
 
-        public void ReadXml()
-        {
-            XmlTextReader reader = new XmlTextReader(dialogPath);
-            while (reader.Read())
-            {
-                switch (reader.NodeType)
-                {
-                    case XmlNodeType.Element: // The node is an element.
-                        if (reader.Name == "question")
-                        {
-                            Console.WriteLine(reader.GetAttribute("id"));
-                            Console.WriteLine(reader.GetAttribute("actor"));
-                            Console.WriteLine(reader.GetAttribute("text"));
-                            Console.WriteLine(reader.GetAttribute("animation"));
-                            Console.WriteLine(reader.GetAttribute("camera"));
-                            Console.WriteLine(reader.GetAttribute("next"));
-                        }
-
-                        if (reader.Name == "answer")
-                        {
-                            Console.WriteLine("Answer: ");
-                            Console.WriteLine(reader.GetAttribute("text"));
-                        }
-                        break;
-                    case XmlNodeType.Text: //Display the text in each element.
-                        //Console.WriteLine(reader.Value);
-                        break;
-                    case XmlNodeType.EndElement: //Display the end of the element.
-                        //Console.Write("</" + reader.Name);
-                        //Console.WriteLine(">");
-                        break;
-                }
-            }
-        }
-
 
         private M_Animation ToAnimation(string toParse)
         {
@@ -434,18 +399,20 @@ namespace HRAP
             return result;
         }
 
+        // Return a sequence with the first element
         public M_Sequence GetSequence(int id)
         {
             M_Sequence result = null;
             List<M_DialogElement> dialogElements = new List<M_DialogElement>();
             bool seqFound = false;
-            bool nextElementFound = false;
+            bool seqOver = false;
             int dialogId = 0;
 
             XmlTextReader reader = new XmlTextReader(dialogPath);
             while (reader.Read())
             {
                 if (reader.NodeType == XmlNodeType.Element)
+                {
 
                     if (reader.Name == "dialog")
                     {
@@ -456,76 +423,74 @@ namespace HRAP
                             result = new M_Sequence(id, reader.GetAttribute("name"), null);
                             seqFound = true;
                         }
+                        // TO DO : seqfound and end
+                        if (dialogId > id)
+                        {
+                            seqOver = true;
+                            result.DialogElements = dialogElements;
+                        }
                     }
 
-                if (seqFound && !nextElementFound)
-                {
-                    if (reader.Name == "question")
+                    if (seqFound && !seqOver)
                     {
-                        M_Question question = new M_Question(
-                            reader.GetAttribute("id"),
-                            id,
-                            reader.GetAttribute("actor"),
-                            reader.GetAttribute("text"),
-                            ToAnimation(reader.GetAttribute("animation")),
-                            ToCamera(reader.GetAttribute("camera")),
-                            reader.GetAttribute("next"));
-                        dialogElements.Add(question);
-                    }
+                        if (reader.Name == "question")
+                        {
+                            M_Question question = new M_Question(
+                                reader.GetAttribute("id"),
+                                id,
+                                reader.GetAttribute("actor"),
+                                reader.GetAttribute("text"),
+                                ToAnimation(reader.GetAttribute("animation")),
+                                ToCamera(reader.GetAttribute("camera")),
+                                reader.GetAttribute("next"));
+                            dialogElements.Add(question);
+                        }
 
-                    if (reader.Name == "answer")
-                    {
-                        // TO COMPLETE -- IDs and Skills
-                        M_Answer answer = new M_Answer(
-                            "id",
-                            "qid",
-                            id,
-                            reader.GetAttribute("actor"),
-                            reader.GetAttribute("text"),
-                            ToAnimation(reader.GetAttribute("animation")),
-                            ToCamera(reader.GetAttribute("camera")),
-                            reader.GetAttribute("next"),
-                            null);
-                        dialogElements.Add(answer);
-                    }
+                        if (reader.Name == "answer")
+                        {
+                            // TO COMPLETE -- IDs and Skills
+                            M_Answer answer = new M_Answer(
+                                "id",
+                                "qid",
+                                id,
+                                reader.GetAttribute("actor"),
+                                reader.GetAttribute("text"),
+                                ToAnimation(reader.GetAttribute("animation")),
+                                ToCamera(reader.GetAttribute("camera")),
+                                reader.GetAttribute("next"),
+                                null);
+                            dialogElements.Add(answer);
+                        }
 
-                    if (reader.Name == "line")
-                    {
-                        M_Phrase phrase = new M_Phrase(
-                            reader.GetAttribute("id"),
-                            id,
-                            reader.GetAttribute("actor"),
-                            reader.GetAttribute("text"),
-                            ToAnimation(reader.GetAttribute("animation")),
-                            ToCamera(reader.GetAttribute("camera")),
-                            reader.GetAttribute("next"));
-                        dialogElements.Add(phrase);
-                    }
+                        if (reader.Name == "line")
+                        {
+                            M_Phrase phrase = new M_Phrase(
+                                reader.GetAttribute("id"),
+                                id,
+                                reader.GetAttribute("actor"),
+                                reader.GetAttribute("text"),
+                                ToAnimation(reader.GetAttribute("animation")),
+                                ToCamera(reader.GetAttribute("camera")),
+                                reader.GetAttribute("next"));
+                            dialogElements.Add(phrase);
+                        }
 
-                    if (dialogElements.Count > 0)
-                    {
-                        result.DialogElements = dialogElements;
-                        nextElementFound = true;
                     }
-
                 }
-
-
             }
-
-
 
             return result;
         }
 
-        public M_DialogElement GetNextDialogElement(string nextId)
+
+        public M_DialogElement GetElementById(string elementId)
         {
             XmlTextReader reader = new XmlTextReader(dialogPath);
             while (reader.Read())
             {
                 if (reader.NodeType == XmlNodeType.Element)
                 {
-                    if (reader.GetAttribute("id") == nextId)
+                    if (reader.GetAttribute("id") == elementId)
                     {
                         if (reader.Name == "question")
                         {
@@ -574,5 +539,8 @@ namespace HRAP
             }
             return null;
         }
+
+       
+
     }
 }

@@ -9,7 +9,7 @@ namespace HRAP
     {
         private M_Candidate candidate;
         private IHMInterview ihm;
-        private List<M_Sequence> sequenceList;
+        public List<M_Sequence> sequenceList;
       //  private Dictionary<int, int> candidateAnswers;// not used
         private V_Question q;
 
@@ -23,8 +23,8 @@ namespace HRAP
         {
             this.candidate = candidate;
             this.sequenceList = new List<M_Sequence>();
-           // this.quizzList.Add(new M_Sequence());
-       //     this.candidateAnswers = new Dictionary<int, int>();//not used
+            sequenceList.Add(new M_Sequence());
+            //this.candidateAnswers = new Dictionary<int, int>();// TO DO
             this.currentSequence = 0;
             this.currentElement = 0;
             this.isWaiting = false;
@@ -40,6 +40,7 @@ namespace HRAP
             // if the candidate has answer 
             if (!isWaiting)
             {
+
                 // TEST
                 //AIengine.Affichage("Affichage des questions");
                 // TODO : Envoi  de la question dans la vue
@@ -48,24 +49,48 @@ namespace HRAP
                 // Console.WriteLine(GetNextQuestion().Question);
 
                 //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
-                q = GetNextQuestion(); 
-                ihm.Activate_buttons_nb_answers(q.NumAnswers);
-                ihm.DisplayQuestion(q.Question);//IHM
-                ihm.DisplayAnswers(q.Answers);//IHM
-                ihm.DisplayComment("question ! ");
 
-                // Set next question
-              /*  if (currentQuestion == quizzList[currentQuizz].NumQuestions - 1)
+                if (Object.ReferenceEquals(
+                    sequenceList[currentSequence].DialogElements[currentElement].GetType(),
+                    typeof(M_Question)))
                 {
-                    this.quizzList.Add(new M_Sequence());
-                    this.currentQuestion = 0;
-                    this.currentQuizz++;
+                    q = GetNextQuestion();
+                    Console.WriteLine("Q: " + q.Question);
+                    Console.WriteLine("Num Answers: " + q.NumAnswers);
+                    foreach (string s in q.Answers)
+                    {
+                        Console.WriteLine("A: " + s);
+                    }
+
+                    ihm.Activate_buttons_nb_answers(q.NumAnswers);
+                    ihm.DisplayQuestion(q.Question);//IHM
+                    ihm.DisplayAnswers(q.Answers);//IHM
                 }
 
-                if (currentQuestion < quizzList[currentQuizz].NumQuestions - 1)
+                if (Object.ReferenceEquals(
+                    sequenceList[currentSequence].DialogElements[currentElement].GetType(),
+                    typeof(M_Phrase)))
                 {
-                    this.currentQuestion++;
-                }*/
+                    Console.WriteLine("P: "+sequenceList[currentSequence].DialogElements[currentElement].Text);
+                    ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
+                }
+
+                 
+                 
+                
+                // Set next sequence
+                if (currentElement == sequenceList[currentSequence].DialogElements.Count - 1)
+                {
+                    this.sequenceList.Add(sequenceList[currentSequence].GetNextSequence());
+                    this.currentElement = -1;
+                    this.currentSequence++;
+                }
+
+                // Set next element
+                if (currentElement < sequenceList[currentSequence].DialogElements.Count - 1)
+                {
+                    this.currentElement++;
+                }
 
                 // We are waiting for the candidate answer
                 isWaiting = true;
@@ -73,50 +98,45 @@ namespace HRAP
             // otherwise do nothing
         }
 
-        public V_Question GetNextQuestion()
+        private V_Question GetNextQuestion()
         {
             V_Question result = null;
 
-            // Solution provisoire 
+            M_Question question = (M_Question)sequenceList[currentSequence].DialogElements[currentElement];
 
-            List<string> answersToString = new List<string>();
+            if (question != null)
+            {
+                
+                int count = currentElement + 1;
+                List<string> answersString = new List<string>();
+                while (Object.ReferenceEquals(
+                    sequenceList[currentSequence].DialogElements[count].GetType(),
+                    typeof(M_Answer)))
+                {
+                    answersString.Add(sequenceList[currentSequence].DialogElements[count].Text);
+                    count++;
+                }
+                int numAnswers = count-(currentElement+1);
+                result = new V_Question(question.Text, numAnswers, answersString);
+            }
 
-            answersToString.Add("answer 1");
-            answersToString.Add("answer 2");
-            answersToString.Add("answer 3");
-            answersToString.Add("answer 4");
-
-
-            result = new V_Question("what is the good answer ?", 4, answersToString);
-
-            /* M_Question question = quizzList[currentQuizz].Questions[currentQuestion];
-             List<M_Answer> answers = M_DataManager.Instance.GetAnswersByQuestionId(question.Id);
-
-             if (question != null)
-             {
-                 List<string> answersToString = new List<string>();
-                 foreach (M_Answer a in answers)
-                 {
-                     answersToString.Add(a.Body);
-                 }
-
-                 result = new V_Question(question.Body, question.NumAnswers, answersToString);
-             }*/
 
             return result;
         }
 
         public void SetChosenAnswer(int chosen_answer)
         {
-          /*  int id = quizzList[currentQuizz].Questions[currentQuestion].Id;
+            // TO DO
+
+            /*string id = sequenceList[currentSequence].DialogElements[currentElement].Id;
             List<M_Answer> answers = M_DataManager.Instance.GetAnswersByQuestionId(id);
             // Error : Un élément avec la même clé a déjà été ajouté
             // TODO : Ne pas générer les questions déjà posées
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
-            this.candidate.UpdateSkills(answers[chosen_answer]);
+            this.candidate.UpdateSkills(answers[chosen_answer]);*/
             AIengine.Affichage("Envoie des résultats");
-            isWaiting = false;*/
+            isWaiting = false;
         }
 
         public string GetResult()

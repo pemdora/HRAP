@@ -22,12 +22,15 @@ namespace HRAP
         public string Name { get { return name; } }
         public List<M_DialogElement> DialogElements { get { return dialogElements; } set { dialogElements = value; } }
 
-        public M_Sequence GetFirst()
+        public M_Sequence()
         {
-            return M_DataManager.Instance.GetSequence(1);
+            M_Sequence sequence = M_DataManager.Instance.GetSequence(1);
+            this.seqId = sequence.seqId;
+            this.name = sequence.name;
+            this.dialogElements = sequence.dialogElements;
         }
 
-        public M_Sequence GetNext()
+        public M_Sequence GetNextSequence()
         {
             return M_DataManager.Instance.GetSequence(seqId + 1);
         }

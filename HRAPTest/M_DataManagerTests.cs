@@ -25,7 +25,7 @@ namespace HRAPTest
                 Console.WriteLine(seq.ToString());
             }
 
-            M_DialogElement element = M_DataManager.Instance.GetNextDialogElement("2a");
+            M_DialogElement element = M_DataManager.Instance.GetElementById("2a");
             Console.WriteLine(element.ToString());
 
 
