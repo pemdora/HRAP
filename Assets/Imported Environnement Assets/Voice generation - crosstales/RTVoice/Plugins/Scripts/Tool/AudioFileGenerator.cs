@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using NAudio.Wave;
+using System;
 
 namespace Crosstales.RTVoice.Tool
 {
@@ -17,6 +19,8 @@ namespace Crosstales.RTVoice.Tool
         public bool FileInsideAssets = true;
 
         private static char[] splitChar = new char[] { ';' };
+
+        private string outputFile;
 
         #endregion
 
@@ -61,7 +65,7 @@ namespace Crosstales.RTVoice.Tool
 
                                 string text = args[0];
 
-                                string outputFile = null;
+                                // string outputFile = null;
                                 if (FileInsideAssets)
                                 {
                                     outputFile = Application.dataPath + @"/" + args[1];
@@ -114,6 +118,8 @@ namespace Crosstales.RTVoice.Tool
                                 {
                                     Speaker.Generate(text, outputFile, voice, rate, pitch, volume);
                                 }
+
+                                SamplingTo16k(outputFile);
                             }
                             else
                             {
@@ -125,24 +131,56 @@ namespace Crosstales.RTVoice.Tool
             }
         }
 
-        #endregion
-
-
-        #region Callbacks
-
-
-        private void onVoicesReady()
+        public void SamplingTo16k(string inFile)
         {
-            Generate();
+            Debug.Log(inFile.ToString());
+            inFile = inFile + ".wav";
+            int outRate = 16000;
+            var outFile = @"C:\Users\TARA\Documents\GitHub\HRAP\Assets\Audio\"+"sampled.wav";
+            /*
+            WaveFileReader reader = new NAudio.Wave.WaveFileReader();
+
+            WaveFormat newFormat = new WaveFormat(8000, 16, 1);
+
+            WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);*/
+            WaveFileReader reader = new NAudio.Wave.WaveFileReader(inFile);
+            WaveFormat newFormat = new WaveFormat(outRate, 16, 1);
+            WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);
+
+            try
+            {
+                WaveFileWriter.CreateWaveFile(outFile, str);
+            }
+            catch (Exception ex)
+            {
+                Debug.Log(ex.Message);
+            }
+            finally
+            {
+                str.Close();
+            }
+
+            Debug.Log("Conversion done");
         }
 
-        private void onSpeakAudioGenerationComplete(Model.Wrapper wrapper)
-        {
-            Debug.Log("Speech generated: " + wrapper);
-        }
+    #endregion
 
-        #endregion
 
+    #region Callbacks
+
+
+    private void onVoicesReady()
+    {
+        Generate();
     }
+
+    private void onSpeakAudioGenerationComplete(Model.Wrapper wrapper)
+    {
+        Debug.Log("Speech generated: " + wrapper);
+    }
+
+    #endregion
+
+}
 }
 // © 2017 crosstales LLC (https://www.crosstales.com)
