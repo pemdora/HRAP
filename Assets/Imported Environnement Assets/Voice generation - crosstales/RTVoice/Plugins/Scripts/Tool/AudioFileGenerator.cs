@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using NAudio.Wave;
 using System;
+using System.Linq;
+using System.IO;
 
 namespace Crosstales.RTVoice.Tool
 {
@@ -18,9 +20,13 @@ namespace Crosstales.RTVoice.Tool
         [Tooltip("Are the specified file paths inside the Assets-folder (current project)? If this option is enabled, it prefixes the path with 'Application.dataPath'.")]
         public bool FileInsideAssets = true;
 
-        private static char[] splitChar = new char[] { ';' };
+        /// <summary>Folder where audio files are created from folder Asset ex "Audio\RTgeneration".</summary>
+        [Tooltip("Text files to generate.")]
+        public string inFolder = @"/Audio/RTgeneration";
+        public string outFolder = @"/Audio/RTgenerationSampled/";
 
-        private string outputFile;
+        private string name;
+        private static char[] splitChar = new char[] { ';' };
 
         #endregion
 
@@ -65,7 +71,7 @@ namespace Crosstales.RTVoice.Tool
 
                                 string text = args[0];
 
-                                // string outputFile = null;
+                                string outputFile = null;
                                 if (FileInsideAssets)
                                 {
                                     outputFile = Application.dataPath + @"/" + args[1];
@@ -118,8 +124,6 @@ namespace Crosstales.RTVoice.Tool
                                 {
                                     Speaker.Generate(text, outputFile, voice, rate, pitch, volume);
                                 }
-
-                                SamplingTo16k(outputFile);
                             }
                             else
                             {
@@ -129,35 +133,42 @@ namespace Crosstales.RTVoice.Tool
                     }
                 }
             }
+            SamplingTo16k();
         }
 
-        public void SamplingTo16k(string inFile)
+        /// <summary>Generate the audio files sampled in 16kHz from the generated .wav files.</summary>
+        public void SamplingTo16k()
         {
-            Debug.Log(inFile.ToString());
-            inFile = inFile + ".wav";
+            Debug.Log("Sampling generated .wav files to 16kHz");
             int outRate = 16000;
-            var outFile = @"C:\Users\TARA\Documents\GitHub\HRAP\Assets\Audio\"+"sampled.wav";
-            /*
-            WaveFileReader reader = new NAudio.Wave.WaveFileReader();
-
-            WaveFormat newFormat = new WaveFormat(8000, 16, 1);
-
-            WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);*/
-            WaveFileReader reader = new NAudio.Wave.WaveFileReader(inFile);
-            WaveFormat newFormat = new WaveFormat(outRate, 16, 1);
-            WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);
-
-            try
+            string outFile;
+            DirectoryInfo dir = new DirectoryInfo(Application.dataPath+inFolder);
+            FileInfo[] info = dir.GetFiles("*.wav");
+            string[] fullNames = info.Select(f => f.FullName).ToArray();
+            if (fullNames.Length==0)
             {
-                WaveFileWriter.CreateWaveFile(outFile, str);
+                Debug.Log("Generate a second time for sampling please");
             }
-            catch (Exception ex)
+            int i = 0;
+            foreach (string inFile in fullNames)
             {
-                Debug.Log(ex.Message);
-            }
-            finally
-            {
-                str.Close();
+                string name = Path.GetFileName(inFile);
+                WaveFileReader reader = new NAudio.Wave.WaveFileReader(inFile);
+                WaveFormat newFormat = new WaveFormat(outRate, 16, 1);
+                WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);
+                outFile = Application.dataPath + outFolder + @"/" + name;
+                try
+                {
+                    WaveFileWriter.CreateWaveFile(outFile, str);
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log(ex.Message);
+                }
+                finally
+                {
+                    str.Close();
+                }
             }
 
             Debug.Log("Conversion done");

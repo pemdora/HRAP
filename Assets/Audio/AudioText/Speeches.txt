@@ -5,4 +5,6 @@
 #This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary02;cmu-slt-hsmm
 #This is a test speech;_Speeches\01
 #This is a test speech;_Speeches\02;Microsoft Zira Desktop
-Hello, i'm glad to meet you, I'm EVA;Audio\1a
+Bonjour, je suis ravie de vous accueillir;Audio\RTgeneration\1a;Microsoft Hortense Desktop
+Je vous en prie, asseyez vous;Audio\RTgeneration\1b;Microsoft Hortense Desktop
+Par quoi souhaitez-vous commencer notre entretien ?;Audio\RTgeneration\1c;Microsoft Hortense Desktop
