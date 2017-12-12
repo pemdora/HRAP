@@ -7,7 +7,7 @@ public class IHMInterview : MonoBehaviour
 {
     // Init
     UIButton button_a, button_b, button_c, button_d, button_pause, button_settings;
-    UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
+    UILabel question, answer_a, answer_b, answer_c, answer_d,comment,pause;
     UILabel cname, clastname, cposition;
     P_Interview interview;
     //IHMAuthentification authentication;
@@ -28,6 +28,7 @@ public class IHMInterview : MonoBehaviour
         answer_c = GameObject.Find("answer_c").GetComponent<UILabel>();
         answer_d = GameObject.Find("answer_d").GetComponent<UILabel>();
         comment = GameObject.Find("comment").GetComponent<UILabel>();
+        pause = GameObject.Find("pause").GetComponent<UILabel>();
 
         cname = GameObject.Find("cname").GetComponent<UILabel>();
         clastname = GameObject.Find("clastname").GetComponent<UILabel>();
@@ -56,6 +57,7 @@ public class IHMInterview : MonoBehaviour
         // question_nbanswers_aswers = interview.GetNextQuestion();
         //is_answered = false;
         // is_questioned = false;
+        pause.gameObject.SetActive(false);
 
 
     }
@@ -201,10 +203,11 @@ public class IHMInterview : MonoBehaviour
     public void DisplayAnswers(List<string> ans)//for controller
     {
         // collect list of label for answers
+        Debug.Log("ICIIIIIIII");
         Debug.Log(ans.Count);
+        Debug.Log(ans.ToString());
         List<UILabel> answers = List_answers_by_question(ans.Count);
 
-        Debug.Log(ans.Count);
         int index = 0;
         foreach (string a in ans)//collect text answers
         {
@@ -222,12 +225,18 @@ public class IHMInterview : MonoBehaviour
     }
     public void Pause()
     {
-       
-                if (Time.timeScale == 1)
-                {
-                    Time.timeScale = 0;
-                }
-                else
-                    Time.timeScale = 1;
+
+
+        if (Time.timeScale == 1)
+        {
+            pause.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pause.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
+
     }
 }
