@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using NAudio.Wave;
+//using NAudio.Wave;
 using System;
 using System.Linq;
 using System.IO;
@@ -7,9 +7,11 @@ using System.IO;
 namespace Crosstales.RTVoice.Tool
 {
     /// <summary>Process files with configured speeches.</summary>
+    
     [HelpURL("https://crosstales.com/media/data/assets/rtvoice/api/class_crosstales_1_1_r_t_voice_1_1_tool_1_1_audio_file_generator.html")]
     public class AudioFileGenerator : MonoBehaviour
     {
+        /*
         #region Variables
 
         /// <summary>Text files to generate.</summary>
@@ -191,7 +193,7 @@ namespace Crosstales.RTVoice.Tool
     }
 
     #endregion
-
+    */
 }
 }
 // © 2017 crosstales LLC (https://www.crosstales.com)

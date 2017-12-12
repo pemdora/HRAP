@@ -10,7 +10,7 @@ namespace HRAP
         private M_Candidate candidate;
         private IHMInterview ihm;
         public List<M_Sequence> sequenceList;
-      //  private Dictionary<int, int> candidateAnswers;// not used
+        //  private Dictionary<int, int> candidateAnswers;// not used
         private V_Question q;
 
 
@@ -33,20 +33,14 @@ namespace HRAP
             this.ihm = ihm;
         }
 
-        public bool IsOver { get { return isOver; } set { isOver = value; }  }
 
-        public void Launch() 
+        public bool IsOver { get { return isOver; } set { isOver = value; } }
+
+        public void Launch()
         {
             // if the candidate has answer 
             if (!isWaiting)
             {
-
-                // TEST
-                //AIengine.Affichage("Affichage des questions");
-                // TODO : Envoi  de la question dans la vue
-                // Console.WriteLine("question : " + currentQuestion);
-                // Console.WriteLine("quizz : " + currentQuizz);
-                // Console.WriteLine(GetNextQuestion().Question);
 
                 //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
 
@@ -62,28 +56,37 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
+                    
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
-                    ihm.DisplayQuestion(q.Question);//IHM
-                    ihm.DisplayAnswers(q.Answers);//IHM
+                    ihm.DisplayQuestion(q.Question);
+                    ihm.DisplayAnswers(q.Answers);
                 }
 
                 if (Object.ReferenceEquals(
                     sequenceList[currentSequence].DialogElements[currentElement].GetType(),
                     typeof(M_Phrase)))
                 {
-                    Console.WriteLine("P: "+sequenceList[currentSequence].DialogElements[currentElement].Text);
+                    Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
                 }
 
-                 
-                 
-                
+
+
+
                 // Set next sequence
                 if (currentElement == sequenceList[currentSequence].DialogElements.Count - 1)
                 {
-                    this.sequenceList.Add(sequenceList[currentSequence].GetNextSequence());
-                    this.currentElement = -1;
-                    this.currentSequence++;
+                    if (sequenceList[currentSequence].GetNextSequence() != null)
+                    {
+                        this.sequenceList.Add(sequenceList[currentSequence].GetNextSequence());
+                        this.currentElement = -1;
+                        this.currentSequence++;
+                    }
+                    else
+                    {
+                        Console.WriteLine(currentSequence);
+                        this.IsOver = true;
+                    }
                 }
 
                 // Set next element
@@ -106,17 +109,19 @@ namespace HRAP
 
             if (question != null)
             {
-                
+
                 int count = currentElement + 1;
                 List<string> answersString = new List<string>();
-                while (Object.ReferenceEquals(
-                    sequenceList[currentSequence].DialogElements[count].GetType(),
-                    typeof(M_Answer)))
-                {
-                    answersString.Add(sequenceList[currentSequence].DialogElements[count].Text);
-                    count++;
-                }
-                int numAnswers = count-(currentElement+1);
+
+                    while (count < sequenceList[currentSequence].DialogElements.Count
+                        && Object.ReferenceEquals(
+                        sequenceList[currentSequence].DialogElements[count].GetType(),
+                        typeof(M_Answer)))
+                    {
+                        answersString.Add(sequenceList[currentSequence].DialogElements[count].Text);
+                        count++;
+                    }
+                int numAnswers = count - (currentElement + 1);
                 result = new V_Question(question.Text, numAnswers, answersString);
             }
 
@@ -143,6 +148,6 @@ namespace HRAP
         {
             return "tu crains, le job est pour moi";
         }
-        
+
     }
 }

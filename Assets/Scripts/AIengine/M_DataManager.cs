@@ -399,43 +399,9 @@ namespace HRAP
             return result;
         }
 
-        // Return a sequence with the first element
-        public M_Sequence GetSequence(int id)
+        private M_Question GenerateQuestion(XmlTextReader reader, int id)
         {
-            M_Sequence result = null;
-            List<M_DialogElement> dialogElements = new List<M_DialogElement>();
-            bool seqFound = false;
-            bool seqOver = false;
-            int dialogId = 0;
-
-            XmlTextReader reader = new XmlTextReader(dialogPath);
-            while (reader.Read())
-            {
-                if (reader.NodeType == XmlNodeType.Element)
-                {
-
-                    if (reader.Name == "dialog")
-                    {
-                        try { dialogId = Convert.ToInt32(reader.GetAttribute("id")); }
-                        catch { }
-                        if (dialogId == id)
-                        {
-                            result = new M_Sequence(id, reader.GetAttribute("name"), null);
-                            seqFound = true;
-                        }
-                        // TO DO : seqfound and end
-                        if (dialogId > id)
-                        {
-                            seqOver = true;
-                            result.DialogElements = dialogElements;
-                        }
-                    }
-
-                    if (seqFound && !seqOver)
-                    {
-                        if (reader.Name == "question")
-                        {
-                            M_Question question = new M_Question(
+            return new M_Question(
                                 reader.GetAttribute("id"),
                                 id,
                                 reader.GetAttribute("actor"),
@@ -443,13 +409,11 @@ namespace HRAP
                                 ToAnimation(reader.GetAttribute("animation")),
                                 ToCamera(reader.GetAttribute("camera")),
                                 reader.GetAttribute("next"));
-                            dialogElements.Add(question);
-                        }
+        }
 
-                        if (reader.Name == "answer")
-                        {
-                            // TO COMPLETE -- IDs and Skills
-                            M_Answer answer = new M_Answer(
+        private M_Answer GenerateAnswer(XmlTextReader reader, int id)
+        {
+            return new M_Answer(
                                 "id",
                                 "qid",
                                 id,
@@ -459,12 +423,11 @@ namespace HRAP
                                 ToCamera(reader.GetAttribute("camera")),
                                 reader.GetAttribute("next"),
                                 null);
-                            dialogElements.Add(answer);
-                        }
+        }
 
-                        if (reader.Name == "line")
-                        {
-                            M_Phrase phrase = new M_Phrase(
+        private M_Phrase GeneratePhrase(XmlTextReader reader, int id)
+        {
+            return new M_Phrase(
                                 reader.GetAttribute("id"),
                                 id,
                                 reader.GetAttribute("actor"),
@@ -472,15 +435,100 @@ namespace HRAP
                                 ToAnimation(reader.GetAttribute("animation")),
                                 ToCamera(reader.GetAttribute("camera")),
                                 reader.GetAttribute("next"));
-                            dialogElements.Add(phrase);
+        }
+
+
+        // Return a sequence with the first element
+        public M_Sequence GetSequence(int id)
+        {
+            M_Sequence result = null;
+            List<M_DialogElement> dialogElements = new List<M_DialogElement>();
+            bool seqFound = false;
+            bool seqOver = false;
+            int readerId = 0;
+
+            XmlTextReader reader = new XmlTextReader(dialogPath);
+            while (reader.Read())
+            {
+                if (reader.NodeType == XmlNodeType.Element)
+                {
+                    if (reader.Name == "dialog")
+                    {
+                        try
+                        {
+                            readerId = Convert.ToInt32(reader.GetAttribute("id"));
+
+                            if (seqFound)
+                            {
+                                seqOver = true;
+                                result.DialogElements = dialogElements;
+                            }
+
+                            if (readerId == id)
+                            {
+                                result = new M_Sequence(id, reader.GetAttribute("name"), null);
+                                seqFound = true;
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
                         }
 
+                    }
+
+                    if (seqFound && !seqOver)
+                    {
+                        switch (reader.Name)
+                        {
+                            case "question":
+                                dialogElements.Add(GenerateQuestion(reader, id));
+                                break;
+                            case "answer":
+                                dialogElements.Add(GenerateAnswer(reader, id));
+                                break;
+                            case "line":
+                                dialogElements.Add(GeneratePhrase(reader, id));
+                                break;
+                        }
                     }
                 }
             }
 
             return result;
         }
+
+        // Cette fonction est necessaire pcq les ids ne se suivent pas
+        public int GetNextSequenceId(int previousId)
+        {
+            XmlTextReader reader = new XmlTextReader(dialogPath);
+            int readerId = 0;
+            bool seqFound = false;
+
+
+            reader.ReadToFollowing("dialog");
+            do
+            {
+                try
+                {
+                    readerId = Convert.ToInt32(reader.GetAttribute("id"));
+                    if (readerId == previousId)
+                    {
+                        seqFound = true;
+                    }
+                    if (seqFound && readerId != previousId)
+                    {
+                        return readerId;
+                    }
+
+                }
+                catch { }
+            } while (reader.ReadToNextSibling("dialog"));
+
+
+            return 0;
+        }
+
 
 
         public M_DialogElement GetElementById(string elementId)
@@ -492,46 +540,15 @@ namespace HRAP
                 {
                     if (reader.GetAttribute("id") == elementId)
                     {
-                        if (reader.Name == "question")
+                        // TO DO : set sequence id
+                        switch (reader.Name)
                         {
-                            M_Question question = new M_Question(
-                                reader.GetAttribute("id"),
-                                0,
-                                reader.GetAttribute("actor"),
-                                reader.GetAttribute("text"),
-                                ToAnimation(reader.GetAttribute("animation")),
-                                ToCamera(reader.GetAttribute("camera")),
-                                reader.GetAttribute("next"));
-                            return question;
-                        }
-
-                        if (reader.Name == "answer")
-                        {
-                            // TO COMPLETE -- IDs and Skills
-                            M_Answer answer = new M_Answer(
-                                "id",
-                                "qid",
-                                0,
-                                reader.GetAttribute("actor"),
-                                reader.GetAttribute("text"),
-                                ToAnimation(reader.GetAttribute("animation")),
-                                ToCamera(reader.GetAttribute("camera")),
-                                reader.GetAttribute("next"),
-                                null);
-                            return answer;
-                        }
-
-                        if (reader.Name == "line")
-                        {
-                            M_Phrase phrase = new M_Phrase(
-                                reader.GetAttribute("id"),
-                                0,
-                                reader.GetAttribute("actor"),
-                                reader.GetAttribute("text"),
-                                ToAnimation(reader.GetAttribute("animation")),
-                                ToCamera(reader.GetAttribute("camera")),
-                                reader.GetAttribute("next"));
-                            return phrase;
+                            case "question":
+                                return GenerateQuestion(reader, 0);
+                            case "answer":
+                                return GenerateAnswer(reader, 0);
+                            case "line":
+                                return GeneratePhrase(reader, 0);
                         }
                     }
                 }
@@ -540,7 +557,49 @@ namespace HRAP
             return null;
         }
 
-       
+        // Count number of sequences in dialog.xml
+        // Not used
+        public int CountSequences()
+        {
+            int result = 0;
+            XmlTextReader reader = new XmlTextReader(dialogPath);
+            reader.ReadToFollowing("dialog");
+            do
+            {
+                result++;
+            } while (reader.ReadToNextSibling("dialog"));
+            reader.Close();
+            return result;
+
+        }
+
+
+        // A ameliorer
+        public int GetLastSequenceId()
+        {
+            int numSequences = CountSequences();
+            int count = 0;
+            XmlTextReader reader = new XmlTextReader(dialogPath);
+
+            reader.ReadToFollowing("dialog");
+            do
+            {
+                count++;
+                if (numSequences == count)
+                {
+                    try
+                    {
+                        return Convert.ToInt32(reader.GetAttribute("id"));
+                    }
+                    catch { }
+                }
+                
+            } while (reader.ReadToNextSibling("dialog"));
+
+            
+            return 0;
+        }
+        
 
     }
 }

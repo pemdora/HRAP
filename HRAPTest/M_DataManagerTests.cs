@@ -17,17 +17,22 @@ namespace HRAPTest
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-            //M_DataManager.Instance.ReadXml();
-
-            M_Sequence seq = M_DataManager.Instance.GetSequence(2);
+            int countSequences = M_DataManager.Instance.CountSequences();
+            M_Sequence seq = M_DataManager.Instance.GetSequence(countSequences);
             if (seq != null)
             {
                 Console.WriteLine(seq.ToString());
             }
-
+            
             M_DialogElement element = M_DataManager.Instance.GetElementById("2a");
-            Console.WriteLine(element.ToString());
+            Console.WriteLine(element.GetType());
+            Console.WriteLine(countSequences);
 
+            // must display 5
+            Console.WriteLine("Next sq of 3: "+M_DataManager.Instance.GetNextSequenceId(3));
+
+            // must display 25
+            Console.WriteLine("Last seq id : " + M_DataManager.Instance.GetLastSequenceId());
 
 
         }

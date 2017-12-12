@@ -32,7 +32,12 @@ namespace HRAP
 
         public M_Sequence GetNextSequence()
         {
-            return M_DataManager.Instance.GetSequence(seqId + 1);
+            int nextSequenceId = M_DataManager.Instance.GetNextSequenceId(seqId);
+            if (nextSequenceId < M_DataManager.Instance.GetLastSequenceId())
+            {
+                return M_DataManager.Instance.GetSequence(nextSequenceId);
+            }
+            return null;            
         }
 
 
