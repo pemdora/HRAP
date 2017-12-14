@@ -26,8 +26,6 @@ namespace Crosstales.RTVoice.Tool
         [Tooltip("Text files to generate.")]
         public string inFolder = @"/Audio/RTgeneration";
         public string outFolder = @"/Audio/RTgenerationSampled/";
-
-        private string name;
         private static char[] splitChar = new char[] { ';' };
 
         #endregion
@@ -151,7 +149,6 @@ namespace Crosstales.RTVoice.Tool
             {
                 Debug.Log("Generate a second time for sampling please");
             }
-            int i = 0;
             foreach (string inFile in fullNames)
             {
                 string name = Path.GetFileName(inFile);

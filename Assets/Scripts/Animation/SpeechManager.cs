@@ -11,7 +11,7 @@ public class SpeechManager : MonoBehaviour
     public LipSync lipsyncComponent;
     public LipSyncData clip1;
     public LipSyncData clip2;
-    public string inFolder = "Audio/AudioClip";
+    public string inFolder = "/Audio/AudioClip";
     public string path = "Assets/Audio/AudioClip/";
 
     // Use this for initialization
@@ -24,7 +24,6 @@ public class SpeechManager : MonoBehaviour
         foreach (string audioClipPath in fullNames)
         {
             string name = Path.GetFileName(audioClipPath);
-            Debug.Log(audioClipPath);
             clip = (LipSyncData)AssetDatabase.LoadAssetAtPath(path + name, typeof(LipSyncData));
         }
         lipsyncComponent.Play(clip);

@@ -344,16 +344,17 @@
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
     <Compile Include="Assets\Scripts\AIengine\V_Question.cs" />
     <Compile Include="Assets\Scripts\Animation\AImovment.cs" />
+    <Compile Include="Assets\Scripts\Animation\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Animation\SpeechManager.cs" />
-    <Compile Include="Assets\Scripts\IHMAuthentification.cs" />
-    <Compile Include="Assets\Scripts\IHMInterview.cs" />
-    <Compile Include="Assets\Scripts\IHMLoadSceneInterview.cs" />
-    <Compile Include="Assets\Scripts\IHMPauseResume.cs" />
-    <Compile Include="Assets\Scripts\IHMTermsOfContract.cs" />
-    <Compile Include="Assets\Scripts\IHMTransition.cs" />
-    <Compile Include="Assets\Scripts\PreloadSceneProgressBar.cs" />
-    <Compile Include="Assets\Scripts\PreloaderTween.cs" />
-    <Compile Include="Assets\Scripts\Sound_Manager.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMAuthentification.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMInterview.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMLoadSceneInterview.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMPauseResume.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMTermsOfContract.cs" />
+    <Compile Include="Assets\Scripts\IHM\IHMTransition.cs" />
+    <Compile Include="Assets\Scripts\IHM\PreloadSceneProgressBar.cs" />
+    <Compile Include="Assets\Scripts\IHM\PreloaderTween.cs" />
+    <Compile Include="Assets\Scripts\IHM\Sound_Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AIData\dialog.xml" />
