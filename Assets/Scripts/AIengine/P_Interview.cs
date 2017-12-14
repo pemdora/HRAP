@@ -9,6 +9,7 @@ namespace HRAP
     {
         private M_Candidate candidate;
         private IHMInterview ihm;
+        private CameraManager cameraManager;
         public List<M_Sequence> sequenceList;
         //  private Dictionary<int, int> candidateAnswers;// not used
         private V_Question q;
@@ -19,7 +20,7 @@ namespace HRAP
         private bool isWaiting;
         private bool isOver;
 
-        public P_Interview(M_Candidate candidate, IHMInterview ihm)
+        public P_Interview(M_Candidate candidate, IHMInterview ihm, CameraManager cameraManager)
         {
             this.candidate = candidate;
             this.sequenceList = new List<M_Sequence>();
@@ -31,6 +32,7 @@ namespace HRAP
             this.isOver = false;
 
             this.ihm = ihm;
+            this.cameraManager = cameraManager;
         }
 
 
@@ -43,12 +45,16 @@ namespace HRAP
             {
 
                 //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
+                // cameraManager.Display(getCurrentCamera())
+                // animation
+
 
                 if (Object.ReferenceEquals(
                     sequenceList[currentSequence].DialogElements[currentElement].GetType(),
                     typeof(M_Question)))
                 {
                     q = GetNextQuestion();
+                    
                     Console.WriteLine("Q: " + q.Question);
                     Console.WriteLine("Num Answers: " + q.NumAnswers);
                     foreach (string s in q.Answers)
@@ -67,6 +73,7 @@ namespace HRAP
                     typeof(M_Phrase)))
                 {
                     Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
+                    ihm.Clear();
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
                 }
 
@@ -101,13 +108,13 @@ namespace HRAP
             // otherwise do nothing
         }
 
-        public M_Animation GetCurrentAnimation()
+        private M_Animation GetCurrentAnimation()
         {
             return sequenceList[currentSequence].DialogElements[currentElement].Animation;
 
         }
 
-        public M_Camera GetCurrentCamera()
+        private M_Camera GetCurrentCamera()
         {
             return sequenceList[currentSequence].DialogElements[currentElement].Camera;
 
