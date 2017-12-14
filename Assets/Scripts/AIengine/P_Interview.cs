@@ -101,6 +101,18 @@ namespace HRAP
             // otherwise do nothing
         }
 
+        public M_Animation GetCurrentAnimation()
+        {
+            return sequenceList[currentSequence].DialogElements[currentElement].Animation;
+
+        }
+
+        public M_Camera GetCurrentCamera()
+        {
+            return sequenceList[currentSequence].DialogElements[currentElement].Camera;
+
+        }
+
         private V_Question GetNextQuestion()
         {
             V_Question result = null;
