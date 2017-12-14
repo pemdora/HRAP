@@ -45,7 +45,7 @@ namespace HRAP
             {
 
                 //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
-                // cameraManager.Display(getCurrentCamera())
+                // 
                 // animation
 
 
@@ -62,7 +62,7 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
-                    
+                    cameraManager.Display(GetCurrentCamera(), true);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
@@ -74,6 +74,7 @@ namespace HRAP
                 {
                     Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
                     ihm.Clear();
+                    cameraManager.Display(GetCurrentCamera(), false);
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
                 }
 

@@ -29,7 +29,7 @@ public class CameraManager : MonoBehaviour
     {
     }
 
-    private void Display(M_Camera camera,bool displayIHM) // Display current camera
+    public void Display(M_Camera camera,bool displayIHM) // Display current camera
     {
         switch (camera)
         {
