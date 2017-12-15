@@ -259,7 +259,7 @@ public class IHMInterview : MonoBehaviour
     }
     public void Clear()
     {
-        question.text = "WAITING FOR NEXT QUESTION";
+        // question.text = "WAITING FOR NEXT QUESTION";
     }
     public void Pause()
     {
@@ -304,6 +304,5 @@ public class IHMInterview : MonoBehaviour
     public static void MaskAllNguiComponents(bool x)
     {
         UIroot.SetActive(x);
-        
     }
 }

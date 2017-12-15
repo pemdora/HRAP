@@ -4,15 +4,31 @@ using System.IO;
 using System.Linq;
 using UnityEditor;
 using System.Collections;
+using UnityEngine.Events;
 
 public class SpeechManager : MonoBehaviour
 {
 
     public LipSync lipsyncComponent;
-    public LipSyncData clip1;
-    public LipSyncData clip2;
+    private LipSyncData clip = null;
     public string inFolder = "/Audio/AudioClip";
     public string path = "Assets/Audio/AudioClip/";
+
+    public static SpeechManager speechManagerinstance;
+
+    //SINGLETON
+    void Awake()
+    {
+        if (speechManagerinstance != null)
+        {
+            Debug.LogError("More than one GameManager in scene");
+            return;
+        }
+        else
+        {
+            speechManagerinstance = this;
+        }
+    }
 
     // Use this for initialization
     void Start()
@@ -20,30 +36,35 @@ public class SpeechManager : MonoBehaviour
         DirectoryInfo dir = new DirectoryInfo(Application.dataPath + inFolder);
         FileInfo[] info = dir.GetFiles("*.asset");
         string[] fullNames = info.Select(f => f.FullName).ToArray();
-        LipSyncData clip = null;
         foreach (string audioClipPath in fullNames)
         {
             string name = Path.GetFileName(audioClipPath);
             clip = (LipSyncData)AssetDatabase.LoadAssetAtPath(path + name, typeof(LipSyncData));
         }
-        lipsyncComponent.Play(clip);
-        // StartCoroutine(play(clip1));
-        // StartCoroutine(play(clip2));
+        /*
+        UnityEvent myEvent;
+        if (myEvent == null)
+            myEvent = lipsyncComponent.onFinishedPlaying;
+        myEvent.AddListener(PlayAutoSync); */
     }
-    public IEnumerator play(LipSyncData clip)
+
+    public void PlayAudio(string id)
     {
+        clip = (LipSyncData)AssetDatabase.LoadAssetAtPath(path + id + ".asset", typeof(LipSyncData));
         if (clip != null)
         {
             lipsyncComponent.Play(clip);
-            yield return new WaitForSeconds(clip.length);
         }
         else
         {
             Debug.Log("error");
         }
     }
+
     // Update is called once per frame
     void Update()
     {
+
     }
+
 }

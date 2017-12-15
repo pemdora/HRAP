@@ -19,10 +19,9 @@ public class AIengine : MonoBehaviour
     void Start () {
         // 1. We initialise model, view and Presenter with name of candidate and his job
         ihm = GetComponent<IHMInterview>();
-        cameraManager = GetComponent<CameraManager>();
        // chatm = GetComponent<ChatManager>();
         candidate = new M_Candidate("steve", "chef de projet"); // TODO has to get arguments from previous view
-        interview = new P_Interview(candidate, ihm, cameraManager);
+        interview = new P_Interview(candidate, ihm);
 
         ihm.SetPresenter(interview);
     }
@@ -38,15 +37,14 @@ public class AIengine : MonoBehaviour
         {
             // TODO : afficher le résultat dans la vue
         }
-
-        /*
+        
         // TEST
         // THIS HAS TO BE MOVED TO VIEW CLASS
         if (Input.GetKeyDown("space"))
         {
             Debug.Log("Choix enregistré");
             interview.SetChosenAnswer(1);
-        }*/
+        }
 
     }
     
