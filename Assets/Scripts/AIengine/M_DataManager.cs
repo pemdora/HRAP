@@ -10,6 +10,7 @@ namespace HRAP
     public class M_DataManager
     {
         private static string dialogPath = @"..\HRAP\Assets\AIData\dialog.xml";
+        private static string matriceCQPath = @"..\HRAP\Assets\AIData\matriceCQ.csv";
         // private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
         // private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
@@ -36,6 +37,13 @@ namespace HRAP
             }
         }
 
+        // Matrice CQ
+        public string[][] GetMatrice()
+        {
+            return File.ReadAllLines(matriceCQPath).Where(line => line != "").Select(x => x.Split(';')).ToArray();
+        }
+
+        
 
         // Counts number of lines in a file
 
@@ -58,9 +66,9 @@ namespace HRAP
 
         }
 
-        private List<M_Skill> GetPoints(string file, int id)
+        private List<M_Competences> GetPoints(string file, int id)
         {
-            List<M_Skill> skillsList = new List<M_Skill>();
+            List<M_Competences> skillsList = new List<M_Competences>();
 
             // 1. Get points in points File
 
@@ -83,7 +91,7 @@ namespace HRAP
 
                     for (int i = 1; i < temp.Length; i++)
                     {
-                        skillsList.Add(new M_Skill(headers[i], GetSkillCategory(headers[i]), Convert.ToInt32(temp[i]), false));
+                        skillsList.Add(new M_Competences(headers[i], false, Convert.ToInt32(temp[i]), false));
                     }
                 }
 
@@ -274,33 +282,10 @@ namespace HRAP
             return Count(skillsPath);
         }
 
-        public M_SkillCategory GetSkillCategory(string category)
+       
+        public List<M_Competences> InitializeSkills()
         {
-            M_SkillCategory result;
-            switch (category)
-            {
-                case "motivation":
-                    result = M_SkillCategory.MOTIVATION;
-                    break;
-                case "controle emotionnel":
-                    result = M_SkillCategory.CONTROLE_EMOTIONNEL;
-                    break;
-                case "leadership":
-                    result = M_SkillCategory.LEADERSHIP;
-                    break;
-                case "sociabilite":
-                    result = M_SkillCategory.SOCIABILITE;
-                    break;
-                default:
-                    result = M_SkillCategory.NULL;
-                    break;
-            }
-            return result;
-        }
-
-        public List<M_Skill> InitializeSkills()
-        {
-            List<M_Skill> result = new List<M_Skill>();
+            List<M_Competences> result = new List<M_Competences>();
 
             StreamReader reader = new StreamReader(skillsPath);
             string line = reader.ReadLine();
@@ -313,7 +298,7 @@ namespace HRAP
                 // first line is headers
                 if (count != 0)
                 {
-                    result.Add(new M_Skill(temp[0], GetSkillCategory(temp[1]), 0, false));
+                    result.Add(new M_Competences(temp[0], false, 0, false));
                 }
 
                 line = reader.ReadLine();
@@ -438,7 +423,7 @@ namespace HRAP
         }
 
 
-        // Return a sequence with the first element
+        // Return a sequence 
         public M_Sequence GetSequence(int id)
         {
             M_Sequence result = null;
@@ -558,7 +543,6 @@ namespace HRAP
         }
 
         // Count number of sequences in dialog.xml
-        // Not used
         public int CountSequences()
         {
             int result = 0;

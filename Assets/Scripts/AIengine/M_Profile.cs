@@ -10,7 +10,7 @@ namespace HRAP
     {
         private int id;
         private string name;
-        protected List<M_Skill> skillsList;
+        protected List<M_Competences> skillsList;
 
         public M_Profile(string name)
         {
@@ -19,7 +19,7 @@ namespace HRAP
             this.skillsList = InitializeSkills();
         }
 
-        public M_Profile(int id, string name, List<M_Skill> skills)
+        public M_Profile(int id, string name, List<M_Competences> skills)
         {
             this.id = id;
             this.name = name;
@@ -29,24 +29,24 @@ namespace HRAP
         // Access attributes
         public int Id { get { return id; } }
         public string Name { get { return name; } }
-        public List<M_Skill> Skills { get { return skillsList; } set { skillsList = value; } }
+        public List<M_Competences> Skills { get { return skillsList; } set { skillsList = value; } }
 
         private int InitializeId()
         {
             return M_DataManager.Instance.CountCandidates() + 1;
         }
 
-        private List<M_Skill> InitializeSkills()
+        private List<M_Competences> InitializeSkills()
         {
             return M_DataManager.Instance.InitializeSkills();
         }
 
         
-        public List<M_Skill> CompareSkillsTo(M_Profile otherProfile)
+        public List<M_Competences> CompareSkillsTo(M_Profile otherProfile)
         {
-            List<M_Skill> result = new List<M_Skill>();
+            List<M_Competences> result = new List<M_Competences>();
             int count = 0;
-            foreach (M_Skill s in skillsList)
+            foreach (M_Competences s in skillsList)
             {
                 s.Points -= otherProfile.Skills[count].Points;
                 result.Add(s);

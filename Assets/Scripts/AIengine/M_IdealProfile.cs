@@ -14,18 +14,18 @@ namespace HRAP
             this.experience = experience;
         }
 
-        public M_IdealProfile(int id, string name, M_Experience experience, List<M_Skill> skillsList) : base(id, name, skillsList)
+        public M_IdealProfile(int id, string name, M_Experience experience, List<M_Competences> skillsList) : base(id, name, skillsList)
         {
             this.experience = experience;
         }
 
         public M_Experience Experience { get { return experience; } }
 
-        public List<M_Skill> GetImportantSkills()
+        public List<M_Competences> GetImportantSkills()
         {
-            List<M_Skill> result = new List<M_Skill>();
+            List<M_Competences> result = new List<M_Competences>();
 
-            foreach (M_Skill s in skillsList)
+            foreach (M_Competences s in skillsList)
             {
                 if (s.IsImportant)
                 {
@@ -36,11 +36,11 @@ namespace HRAP
             return result;
         }
 
-        public List<M_Skill> GetNotImportantSkills()
+        public List<M_Competences> GetNotImportantSkills()
         {
-            List<M_Skill> result = new List<M_Skill>();
+            List<M_Competences> result = new List<M_Competences>();
 
-            foreach (M_Skill s in skillsList)
+            foreach (M_Competences s in skillsList)
             {
                 if (!s.IsImportant)
                 {

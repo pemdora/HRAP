@@ -20,15 +20,15 @@ namespace HRAPTest
             ip.Skills[1].IsImportant = true;
             ip.Skills[7].IsImportant = true;
 
-            List<M_Skill> list1 = ip.GetImportantSkills();
-            List<M_Skill> list2 = ip.GetNotImportantSkills();
+            List<M_Competences> list1 = ip.GetImportantSkills();
+            List<M_Competences> list2 = ip.GetNotImportantSkills();
 
-            foreach(M_Skill s in list1)
+            foreach(M_Competences s in list1)
             {
                 Console.WriteLine("list 1 : " + s.Name);
             }
 
-            foreach (M_Skill s in list2)
+            foreach (M_Competences s in list2)
             {
                 Console.WriteLine("list 2 : " + s.Name);
             }

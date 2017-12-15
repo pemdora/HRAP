@@ -10,6 +10,25 @@ namespace HRAPTest
     public class M_DataManagerTests
     {
 
+        // MATRICE CQ
+
+        [TestMethod]
+        public void testMatriceCQ()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            string[][] mat = M_DataManager.Instance.GetMatrice();
+
+              for (int i=0; i < mat.Length; i++)
+              {
+
+                      Console.WriteLine(mat[i][0]);
+
+              }
+
+        }
+
+
         // SEQUENCES
 
         [TestMethod]

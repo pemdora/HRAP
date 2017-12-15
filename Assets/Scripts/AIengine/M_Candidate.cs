@@ -16,7 +16,7 @@ namespace HRAP
             this.result = null;
         }
 
-        public M_Candidate(int id, string name, string targetJob, string result, List<M_Skill> skillsList) : base(id, name, skillsList)
+        public M_Candidate(int id, string name, string targetJob, string result, List<M_Competences> skillsList) : base(id, name, skillsList)
         {
             this.targetJob = targetJob;
             this.result = result;
