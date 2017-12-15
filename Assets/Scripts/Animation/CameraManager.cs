@@ -15,6 +15,22 @@ public class CameraManager : MonoBehaviour
     public Camera camera_PR_5; // Plan rapproché 5
     public Camera camera_GP_1; // Gros Plan
 
+
+    public static CameraManager cameraManagerinstance;
+
+    //SINGLETON
+    void Awake()
+    {
+        if (cameraManagerinstance != null)
+        {
+            Debug.LogError("More than one GameManager in scene");
+            return;
+        }
+        else
+        {
+            cameraManagerinstance = this;
+        }
+    }
     // Use this for initialization
     void Start()
     {

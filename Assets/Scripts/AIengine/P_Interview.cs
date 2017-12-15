@@ -20,7 +20,7 @@ namespace HRAP
         private bool isWaiting;
         private bool isOver;
 
-        public P_Interview(M_Candidate candidate, IHMInterview ihm, CameraManager cameraManager)
+        public P_Interview(M_Candidate candidate, IHMInterview ihm)
         {
             this.candidate = candidate;
             this.sequenceList = new List<M_Sequence>();
@@ -32,7 +32,6 @@ namespace HRAP
             this.isOver = false;
 
             this.ihm = ihm;
-            this.cameraManager = cameraManager;
         }
 
 
@@ -62,7 +61,8 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
-                    cameraManager.Display(GetCurrentCamera(), true);
+                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true);
+                    SpeechManager.speechManagerinstance.PlayAudio("1a");
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
@@ -74,7 +74,8 @@ namespace HRAP
                 {
                     Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
                     ihm.Clear();
-                    cameraManager.Display(GetCurrentCamera(), false);
+                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true); // if we have no question mask the quesion interface
+                    SpeechManager.speechManagerinstance.PlayAudio("1a");
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
                 }
 
