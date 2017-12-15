@@ -37,7 +37,13 @@ public class CameraManager : MonoBehaviour
         camera_PE_1.enabled = true;
         camera_PA_1.enabled = false;
         camera_PA_2.enabled = false;
-        camera_GP_1.enabled = false;
+        camera_PE_1.enabled = false;
+        camera_PR_1.enabled = false;
+        camera_PR_2.enabled = false;
+        camera_PR_3.enabled = false;
+        camera_PR_4.enabled = false;
+        camera_PR_5.enabled = false;
+        IHMInterview.MaskAllNguiComponents(true);
     }
 
     // Update is called once per frame
