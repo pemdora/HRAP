@@ -62,7 +62,7 @@ namespace HRAP
                     }
 
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true);
-                    SpeechManager.speechManagerinstance.PlayAudio("1a");
+                    SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
@@ -75,7 +75,7 @@ namespace HRAP
                     Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
                     ihm.Clear();
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true); // if we have no question mask the quesion interface
-                    SpeechManager.speechManagerinstance.PlayAudio("1a");
+                    SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
                 }
 
@@ -161,7 +161,6 @@ namespace HRAP
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
             this.candidate.UpdateSkills(answers[chosen_answer]);*/
-            AIengine.Affichage("Envoie des résultats");
             isWaiting = false;
         }
 

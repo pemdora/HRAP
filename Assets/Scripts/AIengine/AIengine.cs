@@ -37,35 +37,5 @@ public class AIengine : MonoBehaviour
         {
             // TODO : afficher le résultat dans la vue
         }
-        
-        // TEST
-        // THIS HAS TO BE MOVED TO VIEW CLASS
-        if (Input.GetKeyDown("space"))
-        {
-            Debug.Log("Choix enregistré");
-            interview.SetChosenAnswer(1);
-        }
-
     }
-    
-    // TEST
-    // THIS HAS TO BE MOVED 
-    public static void Affichage(string text) // ne dois pas être statique dans la fonction finale
-    {
-        Debug.Log(text);
-    }
-    
-    /*
-    public static void AffichageRéponses(List<string> questionsToDisplay) // ne dois pas être statique dans la fonction finale
-    {
-        int i = 0;
-        foreach (string questionToDisplay in questionsToDisplay)
-        {
-            i++;
-            Debug.Log(i+". "+questionToDisplay);
-        }
-    }
-    // END TEST
-    */
-
 }

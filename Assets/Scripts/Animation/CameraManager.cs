@@ -17,6 +17,8 @@ public class CameraManager : MonoBehaviour
 
 
     public static CameraManager cameraManagerinstance;
+    // TEST
+    private bool activateInterface = true;
 
     //SINGLETON
     void Awake()
@@ -49,6 +51,12 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TEST
+        if (Input.GetKeyDown("space"))
+        {
+            activateInterface = !activateInterface;
+            IHMInterview.MaskAllNguiComponents(activateInterface);
+        }
     }
 
     public void Display(M_Camera camera,bool displayIHM) // Display current camera
@@ -165,4 +173,5 @@ public class CameraManager : MonoBehaviour
         }
 
     }
+
 }

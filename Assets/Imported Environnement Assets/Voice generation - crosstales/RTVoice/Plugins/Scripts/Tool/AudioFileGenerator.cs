@@ -1,8 +1,4 @@
 ﻿using UnityEngine;
-using NAudio.Wave;
-using System;
-using System.Linq;
-using System.IO;
 
 namespace Crosstales.RTVoice.Tool
 {
@@ -133,44 +129,6 @@ namespace Crosstales.RTVoice.Tool
                     }
                 }
             }
-            SamplingTo16k();
-        }
-
-        /// <summary>Generate the audio files sampled in 16kHz from the generated .wav files.</summary>
-        public void SamplingTo16k()
-        {
-            Debug.Log("Sampling generated .wav files to 16kHz");
-            int outRate = 16000;
-            string outFile;
-            DirectoryInfo dir = new DirectoryInfo(Application.dataPath+inFolder);
-            FileInfo[] info = dir.GetFiles("*.wav");
-            string[] fullNames = info.Select(f => f.FullName).ToArray();
-            if (fullNames.Length==0)
-            {
-                Debug.Log("Generate a second time for sampling please");
-            }
-            foreach (string inFile in fullNames)
-            {
-                string name = Path.GetFileName(inFile);
-                WaveFileReader reader = new NAudio.Wave.WaveFileReader(inFile);
-                WaveFormat newFormat = new WaveFormat(outRate, 16, 1);
-                WaveFormatConversionStream str = new WaveFormatConversionStream(newFormat, reader);
-                outFile = Application.dataPath + outFolder + @"/" + name;
-                try
-                {
-                    WaveFileWriter.CreateWaveFile(outFile, str);
-                }
-                catch (Exception ex)
-                {
-                    Debug.Log(ex.Message);
-                }
-                finally
-                {
-                    str.Close();
-                }
-            }
-
-            Debug.Log("Conversion done");
         }
 
     #endregion
