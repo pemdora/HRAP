@@ -43,11 +43,6 @@ namespace HRAP
             if (!isWaiting)
             {
 
-                //TODO : Corriger l'envoie du nombre de réponse (int) il est pas bon une fois passé à la vue
-                // 
-                // animation
-
-
                 if (Object.ReferenceEquals(
                     sequenceList[currentSequence].DialogElements[currentElement].GetType(),
                     typeof(M_Question)))
@@ -145,8 +140,7 @@ namespace HRAP
                 int numAnswers = count - (currentElement + 1);
                 result = new V_Question(question.Text, numAnswers, answersString);
             }
-
-
+            
             return result;
         }
 

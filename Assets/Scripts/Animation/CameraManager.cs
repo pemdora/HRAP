@@ -45,7 +45,6 @@ public class CameraManager : MonoBehaviour
         camera_PR_3.enabled = false;
         camera_PR_4.enabled = false;
         camera_PR_5.enabled = false;
-        IHMInterview.MaskAllNguiComponents(true);
     }
 
     // Update is called once per frame
