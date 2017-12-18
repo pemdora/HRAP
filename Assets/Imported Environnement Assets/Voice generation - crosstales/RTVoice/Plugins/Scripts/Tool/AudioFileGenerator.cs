@@ -18,10 +18,6 @@ namespace Crosstales.RTVoice.Tool
         [Tooltip("Are the specified file paths inside the Assets-folder (current project)? If this option is enabled, it prefixes the path with 'Application.dataPath'.")]
         public bool FileInsideAssets = true;
 
-        /// <summary>Folder where audio files are created from folder Asset ex "Audio\RTgeneration".</summary>
-        [Tooltip("Text files to generate.")]
-        public string inFolder = @"/Audio/RTgeneration";
-        public string outFolder = @"/Audio/RTgenerationSampled/";
         private static char[] splitChar = new char[] { ';' };
 
         #endregion

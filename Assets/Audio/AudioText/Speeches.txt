@@ -1,10 +1,7 @@
 #Text;Output file (without extension);Voice name;Rate;Pitch;Volume
-#This is a test speech;C:\Users\slaub\Desktop\Speeches\01
 #This is a test speech;C:\Users\slaub\Desktop\Speeches\02;Microsoft Zira Desktop
-#This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary01
 #This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary02;cmu-slt-hsmm
-#This is a test speech;_Speeches\01
-#This is a test speech;_Speeches\02;Microsoft Zira Desktop
+#This is a test speech;_Speeches\02;Microsoft Zira Desktop => in folder Assets
 Bonjour, je suis ravie de vous accueillir;Audio\RTgeneration\1a;Microsoft Hortense Desktop
 Je vous en prie, asseyez vous;Audio\RTgeneration\1b;Microsoft Hortense Desktop
 Par quoi souhaitez-vous commencer notre entretien ?;Audio\RTgeneration\2a;Microsoft Hortense Desktop
@@ -13,38 +10,38 @@ Tres bien, en effet, vos competences techniques m'interessent beaucoup;Audio\RTg
 Je vous propose d'evoquer ensemble diffairentes situations dans lesquelles vous jouez le role d'un chef de projet;Audio\RTgeneration\2c;Microsoft Hortense Desktop
 Pour chacune d'elles, vous pourrez m'indiquer quelle est, de votre point de vue, la meilleure facon de proceder pour gerrer un evenement ou atteindre un objectif;Audio\RTgeneration\2d;Microsoft Hortense Desktop
 Et si nous commencions finalement par vos competences techniques ?;Audio\RTgeneration\2e;Microsoft Hortense Desktop
-Vous êtes donc un chef de projet à qui l'on vient de confier un projet strategique pour l'entreprise;Audio\RTgeneration\3a;Microsoft Hortense Desktop
-Tout le monde vous felicite et vous souhaite bon courage;Audio\RTgeneration\3b;Microsoft Hortense Desktop
-Pourriez-vous me dire quel est votre premier reflexe;Audio\RTgeneration\3c;Microsoft Hortense Desktop
-C'est une bonne initiative. L'equipe d'avant-vente aura certainement beaucoup d'informations utiles à vous transmettre;Audio\RTgeneration\4a;Microsoft Hortense Desktop
-Votre responsable n'est pas disponible pour l'instant mais il vous a communique les coordonnees du responsable de l'avant-vente avec de s'absenter;Audio\RTgeneration\4b;Microsoft Hortense Desktop
-Cela ne me semble pas être la meilleure façon de proceder. La reunion tarde à être organisee et votre responsable vous invite à la programmer vous-même;Audio\RTgeneration\4c;Microsoft Hortense Desktop
+Vous zaite donc un chef de projet a qui l'on vient de confier un projet strategique pour l'entreprise;Audio\RTgeneration\3a;Microsoft Hortense Desktop
+Tout le monde vous fait-licite et vous souhaite bon courage;Audio\RTgeneration\3b;Microsoft Hortense Desktop
+Pourriez-vous me dire quel est votre premier raiflexe;Audio\RTgeneration\3c;Microsoft Hortense Desktop
+C'est une bonne initiative. L'equipe d'avant-vente aura certainement beaucoup d'informations utiles a vous transmettre;Audio\RTgeneration\4a;Microsoft Hortense Desktop
+Votre responsable n'est pas disponible pour l'instant mais il vous a communique les coordonnez du responsable de l'avant-vente avant de s'absenter;Audio\RTgeneration\4b;Microsoft Hortense Desktop
+Cela ne me semble pas etre la meilleure façon de proceder. La reunion tarde a etre organisee et votre responsable vous invite a la programmer vous-meme;Audio\RTgeneration\4c;Microsoft Hortense Desktop
 La reunion de transfert d'information avec l'equipe d'avant-vente doit commencer mais certaines personnes se font attendre. Que faites-vous?;Audio\RTgeneration\5a;Microsoft Hortense Desktop
-Finalement les retardataires arrivent alors que vous êtes en train de quitter la salle de reunion;Audio\RTgeneration\6a;Microsoft Hortense Desktop
+Finalement les retardataires arrivent alors que vous etes en train de quitter la salle de reunion;Audio\RTgeneration\6a;Microsoft Hortense Desktop
 Au bout de 20 minutes, les retardaires finissent par vous rejoindre et la reunion commence;Audio\RTgeneration\6b;Microsoft Hortense Desktop
-Apres 20 minutes tout le monde est là mais vous devez reprendre du debut afin que tout le monde ait le même niveau d'information;Audio\RTgeneration\6c;Microsoft Hortense Desktop
-En tant que responsable du projet, vous animez la reunion. Vous n'êtes cependant pas familier avec ce type de reunion. Comment decidez-vous de l'aborder?;Audio\RTgeneration\7a;Microsoft Hortense Desktop
-La reunion se deroule bien mais le responsable de l'avant-vente n'a que peu de temps à vous consacrer. Il doit en effet travailler sur un dossier à la fois tres critique et tres urgent;Audio\RTgeneration\8a;Microsoft Hortense Desktop
-Il vous fait savoir qu'il n'a plus que 5 minutes à vous consacrer malgre son engagement initial. Comment reagissez-vous;Audio\RTgeneration\8b;Microsoft Hortense Desktop
+Apres 20 minutes tout le monde est la mais vous devez reprendre du debut afin que tout le monde ait le meme niveau d'information;Audio\RTgeneration\6c;Microsoft Hortense Desktop
+En tant que responsable du projet, vous animez la reunion. Vous n'etes cependant pas familier avec ce type de reunion. Comment decidez-vous de l'aborder?;Audio\RTgeneration\7a;Microsoft Hortense Desktop
+La reunion se deroule bien mais le responsable de l'avant-vente n'a que peu de temps a vous consacrer. Il doit en effet travailler sur un dossier a la fois tres critique et tres urgent;Audio\RTgeneration\8a;Microsoft Hortense Desktop
+Il vous fait savoir qu'il n'a plus que 5 minutes a vous consacrer malgre son engagement initial. Comment reagissez-vous;Audio\RTgeneration\8b;Microsoft Hortense Desktop
 Au moment de rediger votre compte rendu, vous vous rendez-compte que certaines informations vous font defaut.;Audio\RTgeneration\9a;Microsoft Hortense Desktop
-Il accepte à contre cœur et repond à vos questions de façon laconique avant de s'eclipser;Audio\RTgeneration\9b;Microsoft Hortense Desktop
-Votre attitude est jugee deplacee et les personnes presentes se braquent. On vous explique de finalement tout a dejà ete dit ce qui permet d'abreger la reunion;Audio\RTgeneration\9c;Microsoft Hortense Desktop
+Il accepte a contre cœur et repond a vos questions de façon laconique avant de s'eclipser;Audio\RTgeneration\9b;Microsoft Hortense Desktop
+Votre attitude est jugee deplacee et les personnes presentes se braquent. On vous explique de finalement tout a deja ete dit ce qui permet d'abreger la reunion;Audio\RTgeneration\9c;Microsoft Hortense Desktop
 Le moment est venu de faire un point sur les documents produits au cours de la phase d'avant-vente.;Audio\RTgeneration\10a;Microsoft Hortense Desktop
 Lorsque vous demandez une copie du contrat, le responsable commercial vous explique qu'il n'a pas eu le temps de l'imprimer mais que vous pourrez le trouver dans l'intranet. Quelle est votre reaction?;Audio\RTgeneration\11a;Microsoft Hortense Desktop
 La reunion de transfert est le moment pour vous de prendre connaissance de l'evaluation des charges faite par l'equipe technique en charge de l'avant-vente;Audio\RTgeneration\12a;Microsoft Hortense Desktop
 Lorsque vous souhaitez en examiner les grandes lignes, on vous indique qu'il ne s'agit pas de la derniere version car deux iterations de dernieres minute ont ete faites pour emporter l'affaire. Comment reagissez-vous?;Audio\RTgeneration\13a;Microsoft Hortense Desktop
-De retour dans votre bureau, vous prenez le temps de consulter vos notes et de revoir rapidement les documents que l'on a mis à votre disposition;Audio\RTgeneration\14a;Microsoft Hortense Desktop
-Les documents sont à la fois nombreux et complexes. Vous savez que si vous souhaitez en faire le tour il vous faudra plusieurs jours.;Audio\RTgeneration\14b;Microsoft Hortense Desktop
+De retour dans votre bureau, vous prenez le temps de consulter vos notes et de revoir rapidement les documents que l'on a mis a votre disposition;Audio\RTgeneration\14a;Microsoft Hortense Desktop
+Les documents sont a la fois nombreux et complexes. Vous savez que si vous souhaitez en faire le tour il vous faudra plusieurs jours.;Audio\RTgeneration\14b;Microsoft Hortense Desktop
 Sachant que vous devez rencontrer le client dans deux jours puis votre equipe dans la foulee, que decidez-vous?;Audio\RTgeneration\15a;Microsoft Hortense Desktop;
 Votre reunion de lancement interne arrive tres vite et vous n'avez que tres peu de temps pour la preparer.;Audio\RTgeneration\16a;Microsoft Hortense Desktop
-On vous a demande de challenger l'estimation des charges faite par l'equipe d'avant-vente et de mettre à jour la liste des risques.;Audio\RTgeneration\16b;Microsoft Hortense Desktop
+On vous a demande de challenger l'estimation des charges faite par l'equipe d'avant-vente et de mettre a jour la liste des risques.;Audio\RTgeneration\16b;Microsoft Hortense Desktop
 Comme souvent le sujet est complexe et vous n'avez pas toutes les competences techniques requises pour analyser l'estimation des charges en detail. Que faites vous?;Audio\RTgeneration\17a;Microsoft Hortense Desktop
-A l'occasion d'une presentation technique vous rencontrez l'un de vos anciens responsable. Il vous felicite pour votre nouveau projet mais souligne que le client est parfois difficile à gerer.;Audio\RTgeneration\18a;Microsoft Hortense Desktop
-Il vous invite donc à examiner en detail les risques projet afin de mettre en œuvre les operations de mitigation necessaire le plus tôt possible;Audio\RTgeneration\18b;Microsoft Hortense Desktop
-Vous revenez à votre bureau et decidez d'examiner les risques projet d'un œil nouveau. Quelle est votre demarche?;Audio\RTgeneration\19a;Microsoft Hortense Desktop
+A l'occasion d'une presentation technique vous rencontrez l'un de vos anciens responsable. Il vous felicite pour votre nouveau projet mais souligne que le client est parfois difficile a gerer.;Audio\RTgeneration\18a;Microsoft Hortense Desktop
+Il vous invite donc a examiner en detail les risques projet afin de mettre en œuvre les operations de mitigation necessaire le plus tôt possible;Audio\RTgeneration\18b;Microsoft Hortense Desktop
+Vous revenez a votre bureau et decidez d'examiner les risques projet d'un œil nouveau. Quelle est votre demarche?;Audio\RTgeneration\19a;Microsoft Hortense Desktop
 Quelques jours passent et vous vous apercevez que vous n'avez pas encore redige le compte rendu de votre reunion de transfert. Que faites-vous pour y remedier?;Audio\RTgeneration\20a;Microsoft Hortense Desktop
-La reunion de lancement interne arrive à grands pas et vous devez vous preparer à rencontrer votre nouvelle equipe;Audio\RTgeneration\21a;Microsoft Hortense Desktop
-Vous avez bien entendu dejà pris connaissance de l'organisation proposee dans la reponse faite par l'equipe d'avant vente et vous decidez de vous attarder à present sur les activites à mener à bien et les charges associees;Audio\RTgeneration\21b;Microsoft Hortense Desktop
-Apres un rapide survol vous notez un dcalage important entre le contenu des activites et les charges prevues pour les realiser. Quelle conclusion en tirez-vousAudio\RTgeneration\22a;Microsoft Hortense Desktop
-L'organisation et les activites vous sont à present bien connues et il est temps de consulter les profils de votre futur equipe;Audio\RTgeneration\23a;Microsoft Hortense Desktop
+La reunion de lancement interne arrive a grands pas et vous devez vous preparer a rencontrer votre nouvelle equipe;Audio\RTgeneration\21a;Microsoft Hortense Desktop
+Vous avez bien entendu deja pris connaissance de l'organisation proposee dans la reponse faite par l'equipe d'avant vente et vous decidez de vous attarder a present sur les activites a mener a bien et les charges associees;Audio\RTgeneration\21b;Microsoft Hortense Desktop
+Apres un rapide survol vous notez un dcalage important entre le contenu des activites et les charges prevues pour les realiser. Quelle conclusion en tirez-vous;Audio\RTgeneration\22a;Microsoft Hortense Desktop
+L'organisation et les activites vous sont a present bien connues et il est temps de consulter les profils de votre futur equipe;Audio\RTgeneration\23a;Microsoft Hortense Desktop
 Vous avez le choix entre les rencontrer ou consulter votre referentiel de CV. Que faites-vous?;Audio\RTgeneration\24a;Microsoft Hortense Desktop
