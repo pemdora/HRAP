@@ -305,12 +305,14 @@ public class IHMInterview : MonoBehaviour
     {
         UIroot.SetActive(x);
     }
-    public static String[] GetNameAndPosition()
+    public static List<String> GetNameAndPosition()
     {
-        String[] result;
+        List<String> result = new List<string>();
         if (cname.text != "Name" && cposition.text != "Position")
         {
-            result = { cname.text, cposition.text };
+            result.Add(cname.text);
+            result.Add(cposition.text);
+            
         }
         else
         {
