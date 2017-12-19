@@ -61,6 +61,8 @@ namespace HRAP
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
+                    // We are waiting for the candidate answer
+                    isWaiting = true;
                 }
 
                 if (Object.ReferenceEquals(
@@ -72,6 +74,8 @@ namespace HRAP
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true); // if we have no question mask the quesion interface
                     SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
+                    // We are waiting for the candidate answer
+                    isWaiting = true;
                 }
 
 
@@ -99,8 +103,6 @@ namespace HRAP
                     this.currentElement++;
                 }
 
-                // We are waiting for the candidate answer
-                isWaiting = true;
             }
             // otherwise do nothing
         }
