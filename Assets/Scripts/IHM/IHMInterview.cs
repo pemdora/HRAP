@@ -8,7 +8,7 @@ public class IHMInterview : MonoBehaviour
     // Init
     UIButton button_a, button_b, button_c, button_d, button_pause, button_settings, yesContinue, noContinue;
     UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
-    UILabel cname, clastname, cposition;
+    static UILabel cname, clastname, cposition;
     P_Interview interview;
     GameObject continuePanel, pause;
     UIScrollView scrollview;
@@ -304,5 +304,19 @@ public class IHMInterview : MonoBehaviour
     public static void MaskAllNguiComponents(bool x)
     {
         UIroot.SetActive(x);
+    }
+    public static String[] GetNameAndPosition()
+    {
+        String[] result;
+        if (cname.text != "Name" && cposition.text != "Position")
+        {
+            result = { cname.text, cposition.text };
+        }
+        else
+        {
+            result = null;
+        }
+        return result;
+
     }
 }

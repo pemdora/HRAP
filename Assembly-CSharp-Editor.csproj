@@ -219,7 +219,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\3rd party\Assets.txt" />
-     <None Include="Assets\Imported Environnement Assets\Audio Resampling - NAudio Dll\NAudio.xml" />
+     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\README.win32.txt" />
      <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Text\Poem.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
@@ -234,9 +234,11 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
      <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Documentation\Colors.txt" />
+     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\ChangeLog.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
@@ -248,6 +250,7 @@
      <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
      <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\EmotionML.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\LICENSE.GPL.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
@@ -318,9 +321,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="NAudio">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Assets/Imported Environnement Assets/Audio Resampling - NAudio Dll/NAudio.dll</HintPath>
  </Reference>
  <Reference Include="RTVoiceUWPBridge">
  <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Assets/Imported Environnement Assets/Voice generation - crosstales/RTVoice/Plugins/WSA/Stub/RTVoiceUWPBridge.dll</HintPath>
