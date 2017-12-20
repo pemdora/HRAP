@@ -41,7 +41,7 @@ public class CandidateController : MonoBehaviour
         }
 
         // if the candidate is close to hit point target (1.5f), then he stop "walking" animation
-        if (animator.GetBool("isWalking") && Vector3.Distance(hit.point, this.transform.position) <= 0.75f)
+        if (animator.GetBool("isWalking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
         {
             animator.SetBool("isWalking", false);
         }
