@@ -38,6 +38,22 @@ namespace HRAP
             this.ihm = ihm;
         }
 
+        public P_Interview(M_Candidate candidate)
+        {
+            this.candidate = candidate;
+            this.sequenceList = new List<M_Sequence>();
+            sequenceList.Add(new M_Sequence());
+            //this.candidateAnswers = new Dictionary<int, int>();// TO DO
+            this.currentSequence = 0;
+            this.currentElement = 0;
+            this.qcm = null;
+            this.previous = null;
+            this.isWaiting = false;
+            this.isOver = false;
+
+        }
+
+
         public bool IsOver { get { return isOver; } set { isOver = value; } }
 
         public void Launch()
@@ -59,11 +75,11 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
-                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
+                   /* CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                     SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
-                    ihm.DisplayAnswers(q.Answers);
+                    ihm.DisplayAnswers(q.Answers);*/
                     // We are waiting for the candidate answer
                     isWaiting = true;
                 }
@@ -78,10 +94,10 @@ namespace HRAP
                     if (currentPhrase.Display)
                     {
                         Console.WriteLine("P: " + currentPhrase.Text);
-                         ihm.Clear();
+                        /* ihm.Clear();
                          CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
                          SpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
-                         ihm.DisplayComment(currentPhrase.Text);
+                         ihm.DisplayComment(currentPhrase.Text);*/
 
                         // We are waiting for the candidate answer
                         this.previous = currentPhrase;
