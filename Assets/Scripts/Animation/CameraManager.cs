@@ -58,7 +58,7 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    public void Display(M_Camera camera,bool displayIHM) // Display current camera
+    public void Display(M_Camera camera) // Display current camera
     {
         switch (camera)
         {
@@ -161,14 +161,6 @@ public class CameraManager : MonoBehaviour
                 camera_PR_4.enabled = false;
                 camera_PR_5.enabled = true;
                 break;
-        }
-        if (displayIHM)
-        {
-            IHMInterview.MaskAllNguiComponents(true);
-        }
-        else
-        {
-            IHMInterview.MaskAllNguiComponents(false);
         }
 
     }

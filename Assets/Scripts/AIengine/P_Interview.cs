@@ -12,7 +12,9 @@ namespace HRAP
         private CameraManager cameraManager;
         public List<M_Sequence> sequenceList;
         //  private Dictionary<int, int> candidateAnswers;// not used
+        private M_DialogElement previous;
         private V_Question q;
+        private M_QCM qcm;
 
 
         private int currentSequence;
@@ -28,6 +30,7 @@ namespace HRAP
             //this.candidateAnswers = new Dictionary<int, int>();// TO DO
             this.currentSequence = 0;
             this.currentElement = 0;
+            this.previous = null;
             this.isWaiting = false;
             this.isOver = false;
 
@@ -56,7 +59,7 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
-                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true);
+                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                     SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
@@ -69,13 +72,21 @@ namespace HRAP
                     sequenceList[currentSequence].DialogElements[currentElement].GetType(),
                     typeof(M_Phrase)))
                 {
-                    Console.WriteLine("P: " + sequenceList[currentSequence].DialogElements[currentElement].Text);
-                    ihm.Clear();
-                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera(), true); // if we have no question mask the quesion interface
-                    SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
-                    ihm.DisplayComment(sequenceList[currentSequence].DialogElements[currentElement].Text);
-                    // We are waiting for the candidate answer
-                    isWaiting = true;
+                    M_Phrase currentPhrase = (M_Phrase)sequenceList[currentSequence].DialogElements[currentElement];
+                    if (currentElement == 0 ) currentPhrase.Display = true;
+                    if(previous !=null && currentPhrase.Id==previous.Next) currentPhrase.Display = true;
+                    if (currentPhrase.Display)
+                    {
+                        Console.WriteLine("P: " + currentPhrase.Text);
+                        ihm.Clear();
+                        CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
+                        SpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
+                        ihm.DisplayComment(currentPhrase.Text);
+                        this.previous = currentPhrase;
+                        // We are waiting for the candidate answer
+                        isWaiting = true;
+                    }
+
                 }
 
 
@@ -121,6 +132,7 @@ namespace HRAP
 
         private V_Question GetNextQuestion()
         {
+            M_QCM qcm = null;
             V_Question result = null;
 
             M_Question question = (M_Question)sequenceList[currentSequence].DialogElements[currentElement];
@@ -129,6 +141,7 @@ namespace HRAP
             {
 
                 int count = currentElement + 1;
+                List<M_Answer> answerList = new List<M_Answer>();
                 List<string> answersString = new List<string>();
 
                     while (count < sequenceList[currentSequence].DialogElements.Count
@@ -136,10 +149,13 @@ namespace HRAP
                         sequenceList[currentSequence].DialogElements[count].GetType(),
                         typeof(M_Answer)))
                     {
-                        answersString.Add(sequenceList[currentSequence].DialogElements[count].Text);
+                        M_Answer answer = (M_Answer)sequenceList[currentSequence].DialogElements[count];
+                    answerList.Add(answer);
+                        answersString.Add(answer.Text);
                         count++;
                     }
                 int numAnswers = count - (currentElement + 1);
+                this.qcm = new M_QCM(question, answerList);
                 result = new V_Question(question.Text, numAnswers, answersString);
             }
             
@@ -157,6 +173,14 @@ namespace HRAP
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
             this.candidate.UpdateSkills(answers[chosen_answer]);*/
+            M_Answer answerChosen = qcm.Answers[chosen_answer];
+            foreach(M_Phrase p in sequenceList[currentSequence].DialogElements)
+            {
+                if (p.Id == answerChosen.Next)
+                {
+                    p.Display = true;
+                }
+            }
             isWaiting = false;
         }
 

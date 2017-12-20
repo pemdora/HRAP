@@ -399,7 +399,7 @@ namespace HRAP
         private M_Answer GenerateAnswer(XmlTextReader reader, int id)
         {
             return new M_Answer(
-                                "id",
+                                reader.GetAttribute("id"),
                                 "qid",
                                 id,
                                 reader.GetAttribute("actor"),
