@@ -30,11 +30,27 @@ namespace HRAP
             //this.candidateAnswers = new Dictionary<int, int>();// TO DO
             this.currentSequence = 0;
             this.currentElement = 0;
+            this.qcm = null;
             this.previous = null;
             this.isWaiting = false;
             this.isOver = false;
 
             this.ihm = ihm;
+        }
+
+        public P_Interview(M_Candidate candidate)
+        {
+            this.candidate = candidate;
+            this.sequenceList = new List<M_Sequence>();
+            sequenceList.Add(new M_Sequence());
+            //this.candidateAnswers = new Dictionary<int, int>();// TO DO
+            this.currentSequence = 0;
+            this.currentElement = 0;
+            this.qcm = null;
+            this.previous = null;
+            this.isWaiting = false;
+            this.isOver = false;
+
         }
 
 
@@ -59,11 +75,11 @@ namespace HRAP
                         Console.WriteLine("A: " + s);
                     }
 
-                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
+                   /* CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                     SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
-                    ihm.DisplayAnswers(q.Answers);
+                    ihm.DisplayAnswers(q.Answers);*/
                     // We are waiting for the candidate answer
                     isWaiting = true;
                 }
@@ -78,12 +94,13 @@ namespace HRAP
                     if (currentPhrase.Display)
                     {
                         Console.WriteLine("P: " + currentPhrase.Text);
-                        ihm.Clear();
-                        CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
-                        SpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
-                        ihm.DisplayComment(currentPhrase.Text);
-                        this.previous = currentPhrase;
+                        /* ihm.Clear();
+                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
+                         SpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
+                         ihm.DisplayComment(currentPhrase.Text);*/
+
                         // We are waiting for the candidate answer
+                        this.previous = currentPhrase;
                         isWaiting = true;
                     }
 
@@ -111,6 +128,7 @@ namespace HRAP
                 // Set next element
                 if (currentElement < sequenceList[currentSequence].DialogElements.Count - 1)
                 {
+                    
                     this.currentElement++;
                 }
 
@@ -132,7 +150,6 @@ namespace HRAP
 
         private V_Question GetNextQuestion()
         {
-            M_QCM qcm = null;
             V_Question result = null;
 
             M_Question question = (M_Question)sequenceList[currentSequence].DialogElements[currentElement];
@@ -173,14 +190,24 @@ namespace HRAP
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
             this.candidate.UpdateSkills(answers[chosen_answer]);*/
-            M_Answer answerChosen = qcm.Answers[chosen_answer];
-            foreach(M_Phrase p in sequenceList[currentSequence].DialogElements)
+            try
             {
-                if (p.Id == answerChosen.Next)
+                M_Answer answerChosen = null;
+                answerChosen = qcm.Answers[chosen_answer];
+
+                foreach (M_Phrase p in sequenceList[currentSequence].DialogElements)
                 {
-                    p.Display = true;
+                    if (p.Id == answerChosen.Next)
+                    {
+                        p.Display = true;
+                    }
                 }
             }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+                
             isWaiting = false;
         }
 
