@@ -10,10 +10,31 @@ public class CandidateController : MonoBehaviour
     private Animator animator;
     public new Camera camera; // Main camera for player controller
     private RaycastHit hit; // Raycast for mouse hit
-    private bool canMove; // boolean that choose if the player can move or not
+    public bool canMove; // boolean that choose if the player can move or not
 
     public GameObject particle;
     public GameObject pointer;
+
+    // Goal points variables
+    public Transform goalPointsList;
+    private Transform[] goalPoints;
+    public int currentGP = 0;
+
+    public static CandidateController candidateControllerInstance;
+
+    //SINGLETON
+    void Awake()
+    {
+        if (candidateControllerInstance != null)
+        {
+            Debug.LogError("More than one Candidate Controller in scene");
+            return;
+        }
+        else
+        {
+            candidateControllerInstance = this;
+        }
+    }
 
     // Use this for initialization
     void Start()
@@ -21,6 +42,13 @@ public class CandidateController : MonoBehaviour
         // Find a reference to the Animator component.
         animator = GetComponent<Animator>();
         motor = GetComponent<CandidateMovment>();
+        // Get child elements from GoalPoints object
+        goalPoints = new Transform[goalPointsList.childCount];
+        for (int i = 0; i < goalPoints.Length; i++)
+        {
+            goalPoints[i] = goalPointsList.GetChild(i);
+        }
+        particle.transform.position = goalPoints[0].position;
         canMove = true;
     }
 
@@ -49,9 +77,14 @@ public class CandidateController : MonoBehaviour
         // if the candidate is close to reached target (1.5f), then he stop "walking" animation
         if (Vector3.Distance(particle.transform.position, this.transform.position) <= 1f)
         {
+            currentGP++;
+            if(currentGP< goalPoints.Length) // if we a next waypoint in the list
+            {
+                particle.transform.position = goalPoints[currentGP].position;
+            }
             this.particle.SetActive(false);
-            IHMInterview.MaskAllNguiComponents(true);
             canMove = false;
+            IHMInterview.MaskAllNguiComponents(true);
         }
 
     }
