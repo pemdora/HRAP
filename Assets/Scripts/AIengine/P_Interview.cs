@@ -58,7 +58,7 @@ namespace HRAP
                     }
 
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
-                    SpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
+                    AISpeechManager.speechManagerinstance.PlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
@@ -76,7 +76,7 @@ namespace HRAP
                         Console.WriteLine("P: " + currentPhrase.Text);
                          ihm.Clear();
                          CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
-                         SpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
+                         AISpeechManager.speechManagerinstance.PlayAudio(currentPhrase.Id);
                          ihm.DisplayComment(currentPhrase.Text);
 
                         // We are waiting for the candidate answer

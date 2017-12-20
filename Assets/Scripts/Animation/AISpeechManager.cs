@@ -6,7 +6,7 @@ using UnityEditor;
 using System.Collections;
 using UnityEngine.Events;
 
-public class SpeechManager : MonoBehaviour
+public class AISpeechManager : MonoBehaviour
 {
 
     public LipSync lipsyncComponent;
@@ -14,7 +14,7 @@ public class SpeechManager : MonoBehaviour
     public string inFolder = "/Audio/AudioClip";
     public string path = "Assets/Audio/AudioClip/";
 
-    public static SpeechManager speechManagerinstance;
+    public static AISpeechManager speechManagerinstance;
 
     //SINGLETON
     void Awake()

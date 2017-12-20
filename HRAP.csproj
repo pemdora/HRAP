@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -345,7 +347,7 @@
     <Compile Include="Assets\Scripts\Animation\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Animation\CandidateController.cs" />
     <Compile Include="Assets\Scripts\Animation\CandidateMovment.cs" />
-    <Compile Include="Assets\Scripts\Animation\SpeechManager.cs" />
+    <Compile Include="Assets\Scripts\Animation\AISpeechManager.cs" />
     <Compile Include="Assets\Scripts\IHM\IHMAuthentification.cs" />
     <Compile Include="Assets\Scripts\IHM\IHMInterview.cs" />
     <Compile Include="Assets\Scripts\IHM\IHMLoadSceneInterview.cs" />

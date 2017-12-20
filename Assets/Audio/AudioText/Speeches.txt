@@ -2,7 +2,7 @@
 #This is a test speech;C:\Users\slaub\Desktop\Speeches\02;Microsoft Zira Desktop
 #This is a test speech;C:\Users\slaub\Desktop\Speeches\Mary02;cmu-slt-hsmm
 #This is a test speech;_Speeches\02;Microsoft Zira Desktop => in folder Assets
-Bonjour, je suis ravie de vous accueillir²Audio\RTgeneration\1a;Microsoft Hortense Desktop
+Bonjour, je suis ravie de vous accueillir;Audio\RTgeneration\1a;Microsoft Hortense Desktop
 Je vous en prie, asseyez-vous.;Audio\RTgeneration\1b;Microsoft Hortense Desktop
 Par quoi souhaitez-vous commencer notre entretien ? ;Audio\RTgeneration\2a;Microsoft Hortense Desktop
 Très bien, en effet, vos compétences techniques m'intéressent beaucoup. ;Audio\RTgeneration\2b;Microsoft Hortense Desktop
@@ -40,7 +40,7 @@ Il vous invite donc à examiner en détail les risques projet afin de mettre en 
 Vous revenez à votre bureau et décidez d'examiner les risques projet d'un œil nouveau. Quelle est votre démarche? ;Audio\RTgeneration\19a;Microsoft Hortense Desktop
 Quelques jours passent et vous vous apercevez que vous n'avez pas encore rédigé le compte rendu de votre réunion de transfert. Que faites-vous pour y remédier? ;Audio\RTgeneration\20a;Microsoft Hortense Desktop
 La réunion de lancement interne arrive à grands pas et vous devez vous préparer à rencontrer votre nouvelle équipe.;Audio\RTgeneration\21a;Microsoft Hortense Desktop
-Vous avez bien entendu déjà pris connaissance de l'organisation proposée dans la réponse faite par l'équipe d'avant-vente et vous décidez de vous attarder à présent sur les activités à mener à bien et les charges associées.;Audio\RTgeneration\21b;Microsoft Hortense Desktop
+Vous avez bien entendu déjà pris connaissance de l'organisation proposée dans la réponse faite par l'équipe d'avant-vente et vous décidez de vous attarder à présent sur les activités à mener à bien, et les charges associées.;Audio\RTgeneration\21b;Microsoft Hortense Desktop
 Après un rapide survol vous notez un décalage important entre le contenu des activistes et les charges prévues pour les réaliser. Quelle conclusion en tirez-vous.;Audio\RTgeneration\22a;Microsoft Hortense Desktop
 L'organisation et les activités vous sont à présent bien connues et il est temps de consulter les profils de votre futur équipe.;Audio\RTgeneration\23a;Microsoft Hortense Desktop
 Vous avez le choix entre les rencontrer ou consulter votre référentiel de CV. Que faites-vous ? ;Audio\RTgeneration\24a;Microsoft Hortense Desktop
