@@ -6,7 +6,7 @@ using System.Collections;
 public class IHMInterview : MonoBehaviour
 {
     // Init
-    UIButton button_a, button_b, button_c, button_d, button_pause, button_settings, yesContinue, noContinue;
+    UIButton button_a, button_b, button_c, button_d, /*button_pause, button_settings,*/ yesContinue, noContinue;
     UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
     static UILabel cname, clastname, cposition;
     P_Interview interview;
@@ -27,8 +27,8 @@ public class IHMInterview : MonoBehaviour
         button_b = GameObject.Find("ButtonB").GetComponent<UIButton>();
         button_c = GameObject.Find("ButtonC").GetComponent<UIButton>();
         button_d = GameObject.Find("ButtonD").GetComponent<UIButton>();
-        button_settings = GameObject.Find("Button_settings").GetComponent<UIButton>();
-        button_pause = GameObject.Find("Button_pause").GetComponent<UIButton>();
+        //button_settings = GameObject.Find("Button_settings").GetComponent<UIButton>();
+        //button_pause = GameObject.Find("Button_pause").GetComponent<UIButton>();
        
         question = GameObject.Find("question").GetComponent<UILabel>();
         answer_a = GameObject.Find("answer_a").GetComponent<UILabel>();
