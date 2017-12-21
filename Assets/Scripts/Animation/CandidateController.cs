@@ -51,15 +51,14 @@ public class CandidateController : MonoBehaviour
         }
         particle.transform.position = goalPoints[0].position;
         canMove = true;
+        IHMInterview.MaskAllNguiComponents(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (canMove && Input.GetMouseButtonDown(0))
         {
-            IHMInterview.MaskAllNguiComponents(false);
             // Create a ray for position to click
             Ray ray = this.camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 5f, movmentMask))

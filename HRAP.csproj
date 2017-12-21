@@ -343,7 +343,7 @@
     <Compile Include="Assets\Scripts\AIengine\M_Sequence.cs" />
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
     <Compile Include="Assets\Scripts\AIengine\V_Question.cs" />
-    <Compile Include="Assets\Scripts\Animation\AImovment.cs" />
+    <Compile Include="Assets\Scripts\Animation\AIBehaviour.cs" />
     <Compile Include="Assets\Scripts\Animation\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Animation\CandidateController.cs" />
     <Compile Include="Assets\Scripts\Animation\CandidateMovment.cs" />
