@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using HRAP;
 
 [RequireComponent(typeof(CandidateMovment))]
 public class CandidateController : MonoBehaviour
@@ -21,9 +22,13 @@ public class CandidateController : MonoBehaviour
     private Transform[] goalPoints;
     public int currentGP = 0;
 
+    public Transform eva;
+    private Vector3 direction;
     public static CandidateController candidateControllerInstance;
+    public bool animationTrigger;
+    public Transform chair;
 
-    // TEST
+    // Timing
     private float hideInterfaceTime = 0;
     private IEnumerator coroutine;
 
@@ -67,7 +72,7 @@ public class CandidateController : MonoBehaviour
             Ray ray = this.camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 5f, movmentMask))
             {
-                animator.SetBool("isWalking", true);
+                animator.SetBool("Walking", true);
                 motor.MoveTopoint(hit.point);
                 pointer.transform.position = hit.point;
             }
@@ -83,21 +88,31 @@ public class CandidateController : MonoBehaviour
         }
 
         // if the candidate is close to hit point target (1.5f), then he stop "walking" animation
-        if (animator.GetBool("isWalking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
+        if (canMove && animator.GetBool("Walking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
         {
-            animator.SetBool("isWalking", false);
+            animator.SetBool("Walking", false);
         }
 
         // if the candidate is close to reached target (0.5f), then he stop "walking" animation
-        if (canMove&&Vector3.Distance(particle.transform.position, this.transform.position) <= 0.5f)
+        if ((canMove||animationTrigger)&&Vector3.Distance(particle.transform.position, this.transform.position) <= 1f)
         {
+            animator.SetBool("Walking", false);
             currentGP++;
-            if(currentGP< goalPoints.Length) // if we a next waypoint in the list
+            if(currentGP<goalPoints.Length) // if we a next waypoint in the list
             {
                 particle.transform.position = goalPoints[currentGP].position;
+                this.particle.SetActive(true);
             }
-            this.particle.SetActive(false);
+            if (currentGP==2) // if we are at 2d waypoint
+            {
+                this.particle.SetActive(false);
+                animator.SetBool("Sitting", true);
+                this.transform.position = chair.position;
+                LookAt(eva.position);
+            }
             canMove = false;
+            animationTrigger = false;
+            LookAt(eva.position);
             DiplayCandidateInterface(hideInterfaceTime);
         }
 
@@ -111,14 +126,50 @@ public class CandidateController : MonoBehaviour
         if (!canMove)
         {
             IHMInterview.MaskAllNguiComponents(false);
-            coroutine = Wait(5f);
+            coroutine = WaitAndDisplay(5f);
             StartCoroutine(coroutine);
         }
     }
 
-    private IEnumerator Wait(float waitTime)
+
+    public void LookAt(Vector3 positionToLookAt)
+    {
+        this.direction = positionToLookAt - this.transform.position;
+        this.direction.y = 0;
+
+        if (this.direction != Vector3.zero)
+        {
+            Quaternion lookRotation = Quaternion.LookRotation(direction); // mathematical way to deal with rotation
+            Vector3 rotation = Quaternion.Lerp(this.transform.rotation, lookRotation, Time.deltaTime * 10f).eulerAngles;
+            this.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f); // will just aim in the (x,z) plan
+        }
+    }
+
+
+    private IEnumerator WaitAndDisplay(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
         IHMInterview.MaskAllNguiComponents(true);
     }
+
+    public void PlayAnimation(M_Animation animation, float waitingTime) // Display current camera
+    {
+        switch (animation)
+        {
+            case M_Animation.ANIM_SASSOIR:
+                coroutine = WaitAndPlay(waitingTime);
+                StartCoroutine(coroutine);
+                break;
+        }
+    }
+
+    private IEnumerator WaitAndPlay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        animator.SetBool("Walking", true);
+        motor.MoveTopoint(goalPoints[currentGP].position);
+        animationTrigger = true;
+    }
+
+
 }

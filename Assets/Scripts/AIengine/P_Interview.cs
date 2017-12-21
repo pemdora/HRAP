@@ -56,13 +56,17 @@ namespace HRAP
                     {
                         Console.WriteLine("A: " + s);
                     }
-
-                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
-                    AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id);
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
+
+                    #region Camera - Animation - Audio 
+                    CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // Change camera position
+                    ChooseAnimationToPlay(); // Choose a dynamic animation to play
+                    AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id); // load and play audio
                     CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f);
+                    #endregion
+
                     // We are waiting for the candidate answer
                     isWaiting = true;
                 }
@@ -77,10 +81,13 @@ namespace HRAP
 
                         Console.WriteLine("P: " + currentPhrase.Text);
                         ihm.Clear();
-                        CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
-                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id);
                         ihm.DisplayComment(currentPhrase.Text);
+                        #region Camera - Animation - Audio 
+                        CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
+                        ChooseAnimationToPlay();
+                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id);
                         CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
+                        #endregion
 
                         // We are waiting for the candidate answer
                         this.previous = currentPhrase;
@@ -194,6 +201,15 @@ namespace HRAP
         public string GetResult()
         {
             return "tu crains, le job est pour moi";
+        }
+
+        public void ChooseAnimationToPlay()
+        {
+            if(sequenceList[currentSequence].DialogElements[currentElement].Id=="1b") // the interview has began, characters need to sit
+            {
+                // AIBehaviour.aiBehaviourInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 1f);
+                // CandidateController.candidateControllerInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 4f);
+            }
         }
 
     }

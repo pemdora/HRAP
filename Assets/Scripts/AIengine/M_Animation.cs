@@ -10,6 +10,7 @@ namespace HRAP
         NULL,
         ANIM_SALUTATIONS,
         ANIM_GESTE_MAIN,
+        ANIM_SASSOIR,
         ANIM_SOURIRE,
         OUVERTURE_BRAS,
         ANIM_CLIN_D_OEIL
