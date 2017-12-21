@@ -21,11 +21,11 @@ namespace HRAP
 
         public M_Experience Experience { get { return experience; } }
 
-        public List<M_Competences> GetImportantSkills()
+        public List<M_Competences> GetImportantCompetences()
         {
             List<M_Competences> result = new List<M_Competences>();
 
-            foreach (M_Competences s in skillsList)
+            foreach (M_Competences s in competencesList)
             {
                 if (s.IsImportant)
                 {
@@ -36,11 +36,11 @@ namespace HRAP
             return result;
         }
 
-        public List<M_Competences> GetNotImportantSkills()
+        public List<M_Competences> GetNotImportantCompetences()
         {
             List<M_Competences> result = new List<M_Competences>();
 
-            foreach (M_Competences s in skillsList)
+            foreach (M_Competences s in competencesList)
             {
                 if (!s.IsImportant)
                 {

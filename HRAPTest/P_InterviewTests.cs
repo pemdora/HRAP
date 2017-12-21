@@ -10,16 +10,14 @@ namespace HRAPTest
     public class P_InterviewTests
     {
         [TestMethod]
-        public void test2()
+        public void LaunchInterview()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
+            // A TESTER SANS IHM
 
-            // 1. On instancie P_Interview avec le nom du candidat et son poste
            /* M_Candidate candidate = new M_Candidate("steve", "chef de projet");
             P_Interview interview = new P_Interview(candidate);
             
-            //V_Question q = interview.GetNextQuestion();
-            Console.WriteLine("go");
             int count = 0;
             while (!interview.IsOver)
             {

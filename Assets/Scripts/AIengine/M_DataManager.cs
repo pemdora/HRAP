@@ -15,7 +15,7 @@ namespace HRAP
         // private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
-        private static string skillsPath = @"..\HRAP\Assets\AIData\skills.csv";
+        private static string competencesPath = @"..\HRAP\Assets\AIData\skills.csv";
         // private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
         private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
         private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
@@ -68,7 +68,7 @@ namespace HRAP
 
         private List<M_Competences> GetPoints(string file, int id)
         {
-            List<M_Competences> skillsList = new List<M_Competences>();
+            List<M_Competences> competencesList = new List<M_Competences>();
 
             // 1. Get points in points File
 
@@ -91,7 +91,7 @@ namespace HRAP
 
                     for (int i = 1; i < temp.Length; i++)
                     {
-                        skillsList.Add(new M_Competences(headers[i], false, Convert.ToInt32(temp[i]), false));
+                        competencesList.Add(new M_Competences(headers[i], false, Convert.ToInt32(temp[i]), false));
                     }
                 }
 
@@ -103,7 +103,7 @@ namespace HRAP
             p_reader.Close();
 
             // Check whether skills are important
-            if (skillsList != null)
+            if (competencesList != null)
             {
                 p_reader = new StreamReader(importantpointsPath);
                 line = p_reader.ReadLine();
@@ -119,7 +119,7 @@ namespace HRAP
                         {
                             if (Convert.ToInt32(temp[i]) != 0)
                             {
-                                skillsList[i].IsImportant = true;
+                                competencesList[i].IsImportant = true;
                             }
                         }
                     }
@@ -131,7 +131,7 @@ namespace HRAP
                 p_reader.Close();
             }
 
-            return skillsList;
+            return competencesList;
         }
 
 
@@ -170,7 +170,7 @@ namespace HRAP
             // Set points in candidate
             if (result != null)
             {
-                result.Skills = GetPoints(candidates_pointsPath, id);
+                result.CompetencesList = GetPoints(candidates_pointsPath, id);
             }
 
             return result;
@@ -185,9 +185,9 @@ namespace HRAP
                                 candidate.TargetJob + ";" +
                                 candidate.Result;
 
-            for (int i = 0; i < candidate.Skills.Count; i++)
+            for (int i = 0; i < candidate.CompetencesList.Count; i++)
             {
-                newLine += ";" + candidate.Skills[i].Points;
+                newLine += ";" + candidate.CompetencesList[i].Points;
             }
 
             newLine += "\n";
@@ -248,7 +248,7 @@ namespace HRAP
 
             if (result != null)
             {
-                result.Skills = GetPoints(idealprofiles_pointsPath, id);
+                result.CompetencesList = GetPoints(idealprofiles_pointsPath, id);
             }
 
             return result;
@@ -279,15 +279,15 @@ namespace HRAP
 
         public int CountSkills()
         {
-            return Count(skillsPath);
+            return Count(competencesPath);
         }
 
        
-        public List<M_Competences> InitializeSkills()
+        public List<M_Competences> InitializeCompetences()
         {
             List<M_Competences> result = new List<M_Competences>();
 
-            StreamReader reader = new StreamReader(skillsPath);
+            StreamReader reader = new StreamReader(competencesPath);
             string line = reader.ReadLine();
             int count = 0;
 

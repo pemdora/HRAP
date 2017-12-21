@@ -10,28 +10,41 @@ namespace HRAPTest
     public class M_IdealProfileTests
     {
         [TestMethod]
-        public void test3()
+        public void GetImportantSkills()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
             M_IdealProfile ip = new M_IdealProfile("chef de projet", M_Experience.EXPERT);
             Console.WriteLine(ip.Name);
 
-            ip.Skills[1].IsImportant = true;
-            ip.Skills[7].IsImportant = true;
+            ip.CompetencesList[1].IsImportant = true;
+            ip.CompetencesList[7].IsImportant = true;
 
-            List<M_Competences> list1 = ip.GetImportantSkills();
-            List<M_Competences> list2 = ip.GetNotImportantSkills();
+            List<M_Competences> list1 = ip.GetImportantCompetences();
 
-            foreach(M_Competences s in list1)
-            {
-                Console.WriteLine("list 1 : " + s.Name);
-            }
+            int expected_num_important = 2;
+            int actual_num_important = list1.Count;
 
-            foreach (M_Competences s in list2)
-            {
-                Console.WriteLine("list 2 : " + s.Name);
-            }
+            Assert.AreEqual(expected_num_important, actual_num_important);
+        }
+
+        [TestMethod]
+        public void GetNotImportantSkills()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            M_IdealProfile ip = new M_IdealProfile("chef de projet", M_Experience.EXPERT);
+            Console.WriteLine(ip.Name);
+
+            ip.CompetencesList[1].IsImportant = true;
+            ip.CompetencesList[7].IsImportant = true;
+
+            List<M_Competences> competenceList = ip.GetNotImportantCompetences();
+
+            int expected_num_important = 2;
+            int actual_num_important = competenceList.Count;
+
+            Assert.AreEqual(expected_num_important, actual_num_important);
         }
     }
 }

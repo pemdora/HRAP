@@ -27,11 +27,11 @@ namespace HRAP
 
         public void UpdateSkills(M_Answer answer)
         {
-            for (int i = 0; i < this.skillsList.Count(); i++)
+            for (int i = 0; i < this.competencesList.Count(); i++)
             {
-                if (this.skillsList[i].Name == answer.Skills[i].Name)
+                if (this.competencesList[i].Name == answer.Skills[i].Name)
                 {
-                    this.skillsList[i].Points += answer.Skills[i].Points;
+                    this.competencesList[i].Points += answer.Skills[i].Points;
                 }
             }
         }
