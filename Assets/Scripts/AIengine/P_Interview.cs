@@ -49,7 +49,7 @@ namespace HRAP
                 if (sequenceList[currentSequence].DialogElements[currentElement] is M_Question)
                 {
                     q = GetNextQuestion();
-                    
+
                     Console.WriteLine("Q: " + q.Question);
                     Console.WriteLine("Num Answers: " + q.NumAnswers);
                     foreach (string s in q.Answers)
@@ -62,6 +62,7 @@ namespace HRAP
                     ihm.Activate_buttons_nb_answers(q.NumAnswers);
                     ihm.DisplayQuestion(q.Question);
                     ihm.DisplayAnswers(q.Answers);
+                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f);
                     // We are waiting for the candidate answer
                     isWaiting = true;
                 }
@@ -69,15 +70,17 @@ namespace HRAP
                 if (sequenceList[currentSequence].DialogElements[currentElement] is M_Phrase)
                 {
                     M_Phrase currentPhrase = (M_Phrase)sequenceList[currentSequence].DialogElements[currentElement];
-                    if (currentElement == 0 ) currentPhrase.Display = true;
-                    if(previous !=null && currentPhrase.Id==previous.Next) currentPhrase.Display = true;
+                    if (currentElement == 0) currentPhrase.Display = true;
+                    if (previous != null && currentPhrase.Id == previous.Next) currentPhrase.Display = true;
                     if (currentPhrase.Display)
                     {
+
                         Console.WriteLine("P: " + currentPhrase.Text);
-                         ihm.Clear();
-                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // if we have no question mask the quesion interface
-                         AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id);
-                         ihm.DisplayComment(currentPhrase.Text);
+                        ihm.Clear();
+                        CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
+                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id);
+                        ihm.DisplayComment(currentPhrase.Text);
+                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
 
                         // We are waiting for the candidate answer
                         this.previous = currentPhrase;
@@ -107,7 +110,7 @@ namespace HRAP
                 // Set next element
                 if (currentElement < sequenceList[currentSequence].DialogElements.Count - 1)
                 {
-                    
+
                     this.currentElement++;
                 }
 
@@ -140,19 +143,19 @@ namespace HRAP
                 List<M_Answer> answerList = new List<M_Answer>();
                 List<string> answersString = new List<string>();
 
-                    while (count < sequenceList[currentSequence].DialogElements.Count
-                        && (sequenceList[currentSequence].DialogElements[count] is M_Answer))
-                    {
-                        M_Answer answer = (M_Answer)sequenceList[currentSequence].DialogElements[count];
-                        answerList.Add(answer);
-                        answersString.Add(answer.Text);
-                        count++;
-                    }
+                while (count < sequenceList[currentSequence].DialogElements.Count
+                    && (sequenceList[currentSequence].DialogElements[count] is M_Answer))
+                {
+                    M_Answer answer = (M_Answer)sequenceList[currentSequence].DialogElements[count];
+                    answerList.Add(answer);
+                    answersString.Add(answer.Text);
+                    count++;
+                }
                 int numAnswers = count - (currentElement + 1);
                 this.qcm = new M_QCM(question, answerList);
                 result = new V_Question(question.Text, numAnswers, answersString);
             }
-            
+
             return result;
         }
 
@@ -167,15 +170,15 @@ namespace HRAP
             // TODO : S'il n'y a plus de question, stopper la boucle
             //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
             this.candidate.UpdateSkills(answers[chosen_answer]);*/
-            if (!(sequenceList[currentSequence].DialogElements[currentElement] is M_Phrase) 
-                && this.qcm !=null)
+            if (!(sequenceList[currentSequence].DialogElements[currentElement] is M_Phrase)
+                && this.qcm != null)
             {
                 M_Answer answerChosen = null;
                 answerChosen = this.qcm.Answers[chosen_answer];
 
-                for(int i=currentSequence; i < sequenceList.Count; i++)
+                for (int i = currentSequence; i < sequenceList.Count; i++)
                 {
-                    foreach(M_DialogElement e in sequenceList[i].DialogElements)
+                    foreach (M_DialogElement e in sequenceList[i].DialogElements)
                     {
                         if (e.Id == answerChosen.Next)
                         {
@@ -184,7 +187,7 @@ namespace HRAP
                     }
                 }
             }
-                           
+
             isWaiting = false;
         }
 

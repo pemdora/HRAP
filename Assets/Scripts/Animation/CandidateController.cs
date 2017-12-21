@@ -23,6 +23,10 @@ public class CandidateController : MonoBehaviour
 
     public static CandidateController candidateControllerInstance;
 
+    // TEST
+    private float hideInterfaceTime = 0;
+    private IEnumerator coroutine;
+
     //SINGLETON
     void Awake()
     {
@@ -84,8 +88,8 @@ public class CandidateController : MonoBehaviour
             animator.SetBool("isWalking", false);
         }
 
-        // if the candidate is close to reached target (1.5f), then he stop "walking" animation
-        if (Vector3.Distance(particle.transform.position, this.transform.position) <= 1f)
+        // if the candidate is close to reached target (0.5f), then he stop "walking" animation
+        if (canMove&&Vector3.Distance(particle.transform.position, this.transform.position) <= 0.5f)
         {
             currentGP++;
             if(currentGP< goalPoints.Length) // if we a next waypoint in the list
@@ -94,8 +98,27 @@ public class CandidateController : MonoBehaviour
             }
             this.particle.SetActive(false);
             canMove = false;
-            IHMInterview.MaskAllNguiComponents(true);
+            DiplayCandidateInterface(hideInterfaceTime);
         }
 
+    }
+
+    // Display or Hide GUI Interface
+    public void DiplayCandidateInterface(float hideTime)
+    {
+        hideInterfaceTime = hideTime;
+        // If the candidate is not moving
+        if (!canMove)
+        {
+            IHMInterview.MaskAllNguiComponents(false);
+            coroutine = Wait(5f);
+            StartCoroutine(coroutine);
+        }
+    }
+
+    private IEnumerator Wait(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        IHMInterview.MaskAllNguiComponents(true);
     }
 }

@@ -30,6 +30,18 @@ public class AISpeechManager : MonoBehaviour
         }
     }
 
+    public float GetLengthAudioClip()
+    {
+        if (this.clip != null)
+        {
+            return this.clip.length;
+        }
+        else
+        {
+            return 0f;
+        }
+    }
+
     // Use this for initialization
     void Start()
     {

@@ -17,8 +17,6 @@ public class CameraManager : MonoBehaviour
 
 
     public static CameraManager cameraManagerinstance;
-    // TEST
-    private bool activateInterface = false;
 
     //SINGLETON
     void Awake()
@@ -157,7 +155,6 @@ public class CameraManager : MonoBehaviour
                 camera_PR_5.enabled = true;
                 break;
         }
-
     }
 
 }
