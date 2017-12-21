@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(CandidateMovment))]
 public class CandidateController : MonoBehaviour
@@ -59,13 +60,23 @@ public class CandidateController : MonoBehaviour
         if (canMove && Input.GetMouseButtonDown(0))
         {
             IHMInterview.MaskAllNguiComponents(false);
+            // Create a ray for position to click
             Ray ray = this.camera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, 100, movmentMask))
+            if (Physics.Raycast(ray.origin, ray.direction, out hit, 5f, movmentMask))
             {
                 animator.SetBool("isWalking", true);
                 motor.MoveTopoint(hit.point);
                 pointer.transform.position = hit.point;
             }
+            /*
+            NavMeshPath path = new NavMeshPath();
+            motor.Agent.CalculatePath(hit.point, path);
+            NavMeshHit hithit;
+            if (!NavMesh.SamplePosition(hit.point, out hithit, 0.01f, NavMesh.GetAreaFromName("Walkable")))
+            {
+                Debug.Log("ok");
+            }
+            */
         }
 
         // if the candidate is close to hit point target (1.5f), then he stop "walking" animation

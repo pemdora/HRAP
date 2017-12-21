@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public class CandidateMovment : MonoBehaviour {
+public class CandidateMovment : MonoBehaviour
+{
     private NavMeshAgent agent;
+
+    public NavMeshAgent Agent { get { return agent; } }
 
     void Start()
     {
