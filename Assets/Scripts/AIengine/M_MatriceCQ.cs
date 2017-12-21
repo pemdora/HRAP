@@ -62,7 +62,7 @@ namespace HRAP
 
 
         // TO DO : Convertir les points des valeurs des réponses en compétences pour le candidat
-        public List<M_Competences> ConvertToCompetences(List<M_Quality> qualityList)
+        public List<M_Competence> ConvertToCompetences(List<M_Quality> qualityList)
         {
             return null;
         }

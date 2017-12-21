@@ -10,7 +10,7 @@ namespace HRAP
     {
         private int id;
         private string name;
-        protected List<M_Competences> competencesList;
+        protected List<M_Competence> competencesList;
 
         public M_Profile(string name)
         {
@@ -19,7 +19,7 @@ namespace HRAP
             this.competencesList = InitializeCompetences();
         }
 
-        public M_Profile(int id, string name, List<M_Competences> competenceList)
+        public M_Profile(int id, string name, List<M_Competence> competenceList)
         {
             this.id = id;
             this.name = name;
@@ -29,30 +29,22 @@ namespace HRAP
         // Access attributes
         public int Id { get { return id; } }
         public string Name { get { return name; } }
-        public List<M_Competences> CompetencesList { get { return competencesList; } set { competencesList = value; } }
+        public List<M_Competence> CompetencesList { get { return competencesList; } set { competencesList = value; } }
 
         private int InitializeId()
         {
             return M_DataManager.Instance.CountCandidates() + 1;
         }
 
-        private List<M_Competences> InitializeCompetences()
+        private List<M_Competence> InitializeCompetences()
         {
-            return M_DataManager.Instance.InitializeCompetences();
-        }
-
-        
-        public List<M_Competences> CompareCompetencesTo(M_Profile otherProfile)
-        {
-            List<M_Competences> result = new List<M_Competences>();
-            int count = 0;
-            foreach (M_Competences s in competencesList)
+            List<M_Competence> competences = new List<M_Competence>();
+            List<String> competencesNames = M_MatriceCQ.Instance.Competences;
+            foreach (string name in competencesNames)
             {
-                s.Points -= otherProfile.CompetencesList[count].Points;
-                result.Add(s);
-                count++;
+                competences.Add(new M_Competence(name, false, 1,false));
             }
-            return result;
+            return competences;
         }
 
         

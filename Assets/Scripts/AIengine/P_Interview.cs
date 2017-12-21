@@ -9,11 +9,11 @@ namespace HRAP
     {
         private M_Candidate candidate;
         private IHMInterview ihm;
-        public List<M_Sequence> sequenceList;
-        //  private Dictionary<int, int> candidateAnswers;// not used
+        private List<M_Sequence> sequenceList;
         private M_DialogElement previous;
         private V_Question q;
         private M_QCM qcm;
+        private List<M_Answer> candidateAnswers;
 
 
         private int currentSequence;
@@ -24,9 +24,9 @@ namespace HRAP
         public P_Interview(M_Candidate candidate, IHMInterview ihm)
         {
             this.candidate = candidate;
+            this.candidateAnswers = new List<M_Answer>();
             this.sequenceList = new List<M_Sequence>();
             sequenceList.Add(new M_Sequence());
-            //this.candidateAnswers = new Dictionary<int, int>();// TO DO
             this.currentSequence = 0;
             this.currentElement = 0;
             this.qcm = null;
@@ -89,7 +89,7 @@ namespace HRAP
                         CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
                         #endregion
 
-                        // We are waiting for the candidate answer
+                        // We are waiting for the candidate answer (button click)
                         this.previous = currentPhrase;
                         isWaiting = true;
                     }
@@ -168,21 +168,13 @@ namespace HRAP
 
         public void SetChosenAnswer(int chosen_answer)
         {
-            // TO DO
 
-            /*string id = sequenceList[currentSequence].DialogElements[currentElement].Id;
-            List<M_Answer> answers = M_DataManager.Instance.GetAnswersByQuestionId(id);
-            // Error : Un élément avec la même clé a déjà été ajouté
-            // TODO : Ne pas générer les questions déjà posées
-            // TODO : S'il n'y a plus de question, stopper la boucle
-            //this.candidateAnswers.Add(id, answers[chosen_answer].Id);
-            this.candidate.UpdateSkills(answers[chosen_answer]);*/
             if (!(sequenceList[currentSequence].DialogElements[currentElement] is M_Phrase)
                 && this.qcm != null)
             {
                 M_Answer answerChosen = null;
                 answerChosen = this.qcm.Answers[chosen_answer];
-
+                candidateAnswers.Add(answerChosen);
                 for (int i = currentSequence; i < sequenceList.Count; i++)
                 {
                     foreach (M_DialogElement e in sequenceList[i].DialogElements)
@@ -200,7 +192,8 @@ namespace HRAP
 
         public string GetResult()
         {
-            return "tu crains, le job est pour moi";
+
+            return "Result";
         }
 
         public void ChooseAnimationToPlay()

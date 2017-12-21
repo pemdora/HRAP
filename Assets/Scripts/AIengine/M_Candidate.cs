@@ -16,7 +16,7 @@ namespace HRAP
             this.result = null;
         }
 
-        public M_Candidate(int id, string name, string targetJob, string result, List<M_Competences> skillsList) : base(id, name, skillsList)
+        public M_Candidate(int id, string name, string targetJob, string result, List<M_Competence> competencesList) : base(id, name, competencesList)
         {
             this.targetJob = targetJob;
             this.result = result;
@@ -25,15 +25,10 @@ namespace HRAP
         public string TargetJob { get { return targetJob; } }
         public string Result { get { return result; } }
 
+        // TO DO
         public void UpdateSkills(M_Answer answer)
         {
-            for (int i = 0; i < this.competencesList.Count(); i++)
-            {
-                if (this.competencesList[i].Name == answer.Skills[i].Name)
-                {
-                    this.competencesList[i].Points += answer.Skills[i].Points;
-                }
-            }
+
         }
 
 

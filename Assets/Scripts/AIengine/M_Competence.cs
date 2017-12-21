@@ -5,14 +5,14 @@ using System.Text;
 
 namespace HRAP
 {
-    public class M_Competences
+    public class M_Competence
     {
         private string name;
         private bool isTech;
         private int points;
         private bool isImportant;
 
-        public M_Competences(string name, bool isTech, int points, bool isImportant)
+        public M_Competence(string name, bool isTech, int points, bool isImportant)
         {
             this.name = name;
             this.isTech = isTech;

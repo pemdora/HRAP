@@ -19,5 +19,10 @@ namespace HRAP
         public string Name { get { return name; } }
         public int Points { get { return points; } set { points = value; } }
 
+        public override string ToString()
+        {
+            return "Name: " + name + " Points: " + points;
+        }
+
     }
 }

@@ -10,54 +10,6 @@ namespace HRAPTest
     public class M_DataManagerTests
     {
 
-        // MATRICE CQ
-
-        [TestMethod]
-        public void testMatriceCQ()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            string[][] mat = M_DataManager.Instance.GetMatrice();
-
-              for (int i=0; i < mat.Length; i++)
-              {
-
-                      Console.WriteLine(mat[i][0]);
-
-              }
-
-        }
-
-
-        // SEQUENCES
-
-        [TestMethod]
-        public void testXML()
-        {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
-            int countSequences = M_DataManager.Instance.CountSequences();
-            M_Sequence seq = M_DataManager.Instance.GetSequence(countSequences);
-            if (seq != null)
-            {
-                Console.WriteLine(seq.ToString());
-            }
-            
-            M_DialogElement element = M_DataManager.Instance.GetElementById("2a");
-            Console.WriteLine(element.GetType());
-            Console.WriteLine(countSequences);
-
-            // must display 5
-            Console.WriteLine("Next sq of 3: "+M_DataManager.Instance.GetNextSequenceId(3));
-
-            // must display 25
-            Console.WriteLine("Last seq id : " + M_DataManager.Instance.GetLastSequenceId());
-
-
-        }
-
-       
-
         // CANDIDATES
 
         [TestMethod]
@@ -68,22 +20,90 @@ namespace HRAPTest
             string expected_name = "yasmeen";
             M_Candidate actual_candidate = M_DataManager.Instance.GetCandidate(2);
             Assert.AreEqual(expected_name, actual_candidate.Name);
-             
+
         }
 
-        // IDEAL PROFILES
+        // MATRICE CQ
 
-            // TO DO
         [TestMethod]
-        public void GetIdealProfile_WithValidID()
+        public void GetMatriceCQ()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-            //string expected_name = "chef de projet";
-            //M_IdealProfile actual_idealprofile = M_DataManager.Instance.GetIdealProfile(1);
-            //Assert.AreEqual(expected_name, actual_idealprofile.Name);
+            // Check the number of qualities (35)
+            string[][] mat = M_DataManager.Instance.GetMatrice();
+            int expected_length = 35;
+            int current_length = mat.Length;
+            Assert.AreEqual(expected_length, current_length);
+        }
+
+
+        // SEQUENCES
+
+        [TestMethod]
+        public void GetSequence()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            int countSequences = M_DataManager.Instance.CountSequences();
+            M_Sequence seq = M_DataManager.Instance.GetSequence(countSequences);
+
+            // Vérifie que l'on récupère 6 éléments dans la dernière sequence
+            int expected = 6;
+            int current = seq.DialogElements.Count;
+            Assert.AreEqual(expected, current);
 
         }
+
+
+
+        [TestMethod]
+        public void GetDialogElement_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            // Vérifie que l'élément récupéré est bien une réponse
+            M_DialogElement element = M_DataManager.Instance.GetElementById("_1");
+            Assert.ReferenceEquals(element, typeof(M_Answer));
+
+        }
+
+        [TestMethod]
+        public void GetNextSequenceId_WithValidID()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            // Vérifie que l'on récupère le bon id de la sequence 3
+            int expected_id = 5;
+            int current_id = M_DataManager.Instance.GetNextSequenceId(3);
+            Assert.AreEqual(expected_id, current_id);
+
+        }
+
+        [TestMethod]
+        public void GetLastSequenceId()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            // Vérifie que l'on récupère le bon id de la dernière sequence
+            int expected_id = 25;
+            int current_id = M_DataManager.Instance.GetLastSequenceId();
+            Assert.AreEqual(expected_id, current_id);
+
+        }
+
+        [TestMethod]
+        public void CountSequences()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            // Vérifie que l'on récupère le bon nombre de séquences
+            int expected = 14;
+            int current = M_DataManager.Instance.CountSequences();
+            Assert.AreEqual(expected, current);
+
+        }
+
 
     }
 }

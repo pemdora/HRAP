@@ -20,7 +20,7 @@ namespace HRAPTest
             ip.CompetencesList[1].IsImportant = true;
             ip.CompetencesList[7].IsImportant = true;
 
-            List<M_Competences> list1 = ip.GetImportantCompetences();
+            List<M_Competence> list1 = ip.GetImportantCompetences();
 
             int expected_num_important = 2;
             int actual_num_important = list1.Count;
@@ -39,7 +39,7 @@ namespace HRAPTest
             ip.CompetencesList[1].IsImportant = true;
             ip.CompetencesList[7].IsImportant = true;
 
-            List<M_Competences> competenceList = ip.GetNotImportantCompetences();
+            List<M_Competence> competenceList = ip.GetNotImportantCompetences();
 
             int expected_num_important = 2;
             int actual_num_important = competenceList.Count;

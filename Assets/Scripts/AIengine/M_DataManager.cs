@@ -11,12 +11,9 @@ namespace HRAP
     {
         private static string dialogPath = @"..\HRAP\Assets\AIData\dialog.xml";
         private static string matriceCQPath = @"..\HRAP\Assets\AIData\matriceCQ.csv";
-        // private static string questionsPath = @"..\HRAP\Assets\AIData\questions.csv";
-        // private static string answersPath = @"..\HRAP\Assets\AIData\answers.csv";
         private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
-        private static string competencesPath = @"..\HRAP\Assets\AIData\skills.csv";
-        // private static string answers_pointsPath = @"..\HRAP\Assets\AIData\answers_points.csv";
+        //private static string competencesPath = @"..\HRAP\Assets\AIData\skills.csv";
         private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
         private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
         private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
@@ -66,9 +63,9 @@ namespace HRAP
 
         }
 
-        private List<M_Competences> GetPoints(string file, int id)
+        private List<M_Competence> GetPoints(string file, int id)
         {
-            List<M_Competences> competencesList = new List<M_Competences>();
+            List<M_Competence> competencesList = new List<M_Competence>();
 
             // 1. Get points in points File
 
@@ -91,7 +88,7 @@ namespace HRAP
 
                     for (int i = 1; i < temp.Length; i++)
                     {
-                        competencesList.Add(new M_Competences(headers[i], false, Convert.ToInt32(temp[i]), false));
+                        competencesList.Add(new M_Competence(headers[i], false, Convert.ToInt32(temp[i]), false));
                     }
                 }
 
@@ -275,42 +272,6 @@ namespace HRAP
         }
 
 
-        // SKILLS
-
-        public int CountSkills()
-        {
-            return Count(competencesPath);
-        }
-
-       
-        public List<M_Competences> InitializeCompetences()
-        {
-            List<M_Competences> result = new List<M_Competences>();
-
-            StreamReader reader = new StreamReader(competencesPath);
-            string line = reader.ReadLine();
-            int count = 0;
-
-            while (line != null)
-            {
-                string[] temp = line.Split(';');
-
-                // first line is headers
-                if (count != 0)
-                {
-                    result.Add(new M_Competences(temp[0], false, 0, false));
-                }
-
-                line = reader.ReadLine();
-                count++;
-            }
-
-            reader.Close();
-            return result;
-
-        }
-
-
         // DIALOG
 
 
@@ -398,6 +359,14 @@ namespace HRAP
 
         private M_Answer GenerateAnswer(XmlTextReader reader, int id)
         {
+            // Temporary solution for qualities list initialization
+            // Each point value is 1
+            List<M_Quality> qualities = new List<M_Quality>();
+            foreach(string qualityName in M_MatriceCQ.Instance.Qualities)
+            {
+                qualities.Add(new M_Quality(qualityName, 1));
+            }
+
             return new M_Answer(
                                 reader.GetAttribute("id"),
                                 "qid",
@@ -407,7 +376,7 @@ namespace HRAP
                                 ToAnimation(reader.GetAttribute("animation")),
                                 ToCamera(reader.GetAttribute("camera")),
                                 reader.GetAttribute("next"),
-                                null);
+                                qualities);
         }
 
         private M_Phrase GeneratePhrase(XmlTextReader reader, int id)
@@ -510,7 +479,6 @@ namespace HRAP
                 catch { }
             } while (reader.ReadToNextSibling("dialog"));
 
-
             return 0;
         }
 
@@ -537,7 +505,6 @@ namespace HRAP
                         }
                     }
                 }
-
             }
             return null;
         }
@@ -548,13 +515,9 @@ namespace HRAP
             int result = 0;
             XmlTextReader reader = new XmlTextReader(dialogPath);
             reader.ReadToFollowing("dialog");
-            do
-            {
-                result++;
-            } while (reader.ReadToNextSibling("dialog"));
+            do { result++; } while (reader.ReadToNextSibling("dialog"));
             reader.Close();
             return result;
-
         }
 
 
