@@ -190,11 +190,16 @@ namespace HRAP
             isWaiting = false;
         }
 
-        // TO COMPLETE
-        public string GetResult()
+        // Envoie les competences avec les valeurs du candidat
+        public Dictionary<string,double> GetResult()
         {
+            Dictionary<string, double> result = new Dictionary<string, double>();
             candidate.UpdateCompetences(candidateAnswers);
-            return "Result";
+            foreach(M_Competence c in candidate.CompetencesList)
+            {
+                result.Add(c.Name, c.Points);
+            }
+            return result;
         }
 
         public void ChooseAnimationToPlay()

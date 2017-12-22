@@ -6,7 +6,7 @@ using System.Collections;
 public class IHMInterview : MonoBehaviour
 {
     // Init
-    UIButton button_a, button_b, button_c, button_d,buttonNext, /*button_pause, button_settings,*/ yesContinue, noContinue;
+    UIButton button_a, button_b, button_c, button_d, /*button_pause, button_settings,*/ yesContinue, noContinue;
     UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
     static UILabel cname, clastname, cposition;
     P_Interview interview;
@@ -27,10 +27,9 @@ public class IHMInterview : MonoBehaviour
         button_b = GameObject.Find("ButtonB").GetComponent<UIButton>();
         button_c = GameObject.Find("ButtonC").GetComponent<UIButton>();
         button_d = GameObject.Find("ButtonD").GetComponent<UIButton>();
-        buttonNext = GameObject.Find("ButtonNext").GetComponent<UIButton>();
         //button_settings = GameObject.Find("Button_settings").GetComponent<UIButton>();
         //button_pause = GameObject.Find("Button_pause").GetComponent<UIButton>();
-
+       
         question = GameObject.Find("question").GetComponent<UILabel>();
         answer_a = GameObject.Find("answer_a").GetComponent<UILabel>();
         answer_b = GameObject.Find("answer_b").GetComponent<UILabel>();
@@ -43,9 +42,9 @@ public class IHMInterview : MonoBehaviour
         yesContinue = GameObject.Find("ButtonYes").GetComponent<UIButton>();
         noContinue = GameObject.Find("ButtonNo").GetComponent<UIButton>();
 
-        //cname = GameObject.Find("cname").GetComponent<UILabel>();
-        //clastname = GameObject.Find("clastname").GetComponent<UILabel>();
-        //cposition = GameObject.Find("cposition").GetComponent<UILabel>();
+        cname = GameObject.Find("cname").GetComponent<UILabel>();
+        clastname = GameObject.Find("clastname").GetComponent<UILabel>();
+        cposition = GameObject.Find("cposition").GetComponent<UILabel>();
 
         scrollview = GameObject.Find("Comment_scroll_area").GetComponent<UIScrollView>();
         UIroot = GameObject.Find("UI Root"); // use to mask all ngui elements
@@ -72,9 +71,13 @@ public class IHMInterview : MonoBehaviour
         answer_b.text = "[0000FF][b]B: [/b][-]";
         answer_c.text = "[00FF00][b]C: [/b][-]";
         answer_d.text = "[FFFF00][b]D: [/b][-]";
-        buttonNext.gameObject.SetActive(false);
+              
         pause.SetActive(false);
         continuePanel.SetActive(false);
+
+    }
+    void update()
+    {
 
     }
     // Initialise Presenter
@@ -106,7 +109,7 @@ public class IHMInterview : MonoBehaviour
                         break;
                 }
             }
-                      
+
         }
         catch (MissingReferenceException e)
         {
@@ -190,13 +193,6 @@ public class IHMInterview : MonoBehaviour
         answer_c.enabled = false;
         answer_d.enabled = false;
     }
-    public void MaskQuizzButtons()
-    {
-        NGUITools.SetActive(button_a.gameObject, false);
-        NGUITools.SetActive(button_b.gameObject, false);
-        NGUITools.SetActive(button_c.gameObject, false);
-        NGUITools.SetActive(button_d.gameObject, false);
-    }
     //n'est plus utilisé depuis l'installation du controlleur
     public void Button_is_pressed_next_question()
     {
@@ -204,26 +200,22 @@ public class IHMInterview : MonoBehaviour
         if(UIButton.current == button_a)
         {
             interview.SetChosenAnswer((int)answers.A);
-            //Debug.Log((int)answers.A);
+            Debug.Log((int)answers.A);
         }
         else if (UIButton.current == button_b)
         {
             interview.SetChosenAnswer((int)answers.B);
-            //Debug.Log((int)answers.B);
+            Debug.Log((int)answers.B);
         }
         else if (UIButton.current == button_c)
         {
             interview.SetChosenAnswer((int)answers.C);
-            //Debug.Log((int)answers.C);
+            Debug.Log((int)answers.C);
         }     
         else  if (UIButton.current == button_d)
         {
             interview.SetChosenAnswer((int)answers.D);
-            //Debug.Log(answers.D);
-        }
-        else if (UIButton.current == buttonNext)
-        {
-            interview.SetChosenAnswer(0);
+            Debug.Log(answers.D);
         }
         else
         {
@@ -243,11 +235,13 @@ public class IHMInterview : MonoBehaviour
     {
         question.text = "[u][b]Question[/u] : [/b]";
         question.text += q;//print question
-        buttonNext.gameObject.SetActive(false);
     }
     public void DisplayAnswers(List<string> ans)//for controller
     {
         // collect list of label for answers
+        Debug.Log("ICIIIIIIII");
+        Debug.Log(ans.Count);
+        Debug.Log(ans.ToString());
         List<UILabel> answers = List_answers_by_question(ans.Count);
 
         int index = 0;
@@ -262,13 +256,10 @@ public class IHMInterview : MonoBehaviour
         comment.text +="\n\n"+c;//print question
         scrollview.UpdateScrollbars();
         scrollview.verticalScrollBar.value = 1;
-        buttonNext.gameObject.SetActive(true);
     }
     public void Clear()
     {
-        question.text = "WAITING FOR NEXT QUESTION";
-        Desable_all_buttons();
-        buttonNext.gameObject.SetActive(true);
+        // question.text = "WAITING FOR NEXT QUESTION";
     }
     public void Pause()
     {
@@ -314,20 +305,16 @@ public class IHMInterview : MonoBehaviour
     {
         UIroot.SetActive(x);
     }
-    public static List<String> GetNameAndPosition()
-    {
-        List<String> result = new List<string>();
-        if (cname.text != "Name" && cposition.text != "Position")
-        {
-            result.Add(cname.text);
-            result.Add(cposition.text);
-            
-        }
-        else
-        {
-            result = null;
-        }
-        return result;
 
+    public string GetName()
+    {
+        if (cname.text != "Name") return cname.text;
+        return "";
+    }
+
+    public string GetPosition()
+    {
+        if (cposition.text != "Position") return cposition.text;
+        return "";
     }
 }
