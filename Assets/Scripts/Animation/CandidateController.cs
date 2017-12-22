@@ -10,7 +10,7 @@ public class CandidateController : MonoBehaviour
     public LayerMask movmentMask;  // Create a layer "Ground" where only ground object are affected
     private CandidateMovment motor; // Script for candidate movment
     private Animator animator;
-    public new Camera camera; // Main camera for player controller
+    public Camera Candidatecamera; // Main camera for player controller
     private RaycastHit hit; // Raycast for mouse hit
     public bool canMove; // boolean that choose if the player can move or not
 
@@ -69,7 +69,7 @@ public class CandidateController : MonoBehaviour
         if (canMove && Input.GetMouseButtonDown(0))
         {
             // Create a ray for position to click
-            Ray ray = this.camera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = this.Candidatecamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 5f, movmentMask))
             {
                 animator.SetBool("Walking", true);
@@ -87,14 +87,14 @@ public class CandidateController : MonoBehaviour
             */
         }
 
-        // if the candidate is close to hit point target (1.5f), then he stop "walking" animation
+        // if the candidate is close to hit point target (1f), then he stop "walking" animation
         if (canMove && animator.GetBool("Walking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
         {
             animator.SetBool("Walking", false);
         }
 
-        // if the candidate is close to reached target (0.5f), then he stop "walking" animation
-        if ((canMove||animationTrigger)&&Vector3.Distance(particle.transform.position, this.transform.position) <= 1f)
+        // if the candidate is close to reached target (0.75f), then he stop "walking" animation
+        if ((canMove||animationTrigger)&&Vector3.Distance(particle.transform.position, this.transform.position) <= 0.75f)
         {
             animator.SetBool("Walking", false);
             currentGP++;

@@ -2,7 +2,9 @@
 using RogoDigital.Lipsync;
 using System.IO;
 using System.Linq;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System.Collections;
 using UnityEngine.Events;
 
@@ -50,8 +52,10 @@ public class AISpeechManager : MonoBehaviour
 
     public void LoadandPlayAudio(string id)
     {
+#if UNITY_EDITOR
         // load clip from value given for P_Interview
         clip = (LipSyncData)AssetDatabase.LoadAssetAtPath(path + id + ".asset", typeof(LipSyncData));
+#endif
         // P_interview told that AI is going speak soon
         speakTrigger = true;
         // if the candidate wants to begin dialogue (he cannot move anymore)
