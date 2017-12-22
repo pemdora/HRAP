@@ -190,9 +190,10 @@ namespace HRAP
             isWaiting = false;
         }
 
+        // TO COMPLETE
         public string GetResult()
         {
-
+            candidate.UpdateCompetences(candidateAnswers);
             return "Result";
         }
 

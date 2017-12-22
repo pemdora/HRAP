@@ -61,13 +61,66 @@ namespace HRAP
         public List<string> Qualities { get { return qualities; } }
 
 
-        // TO DO : Convertir les points des valeurs des réponses en compétences pour le candidat
-        public List<M_Competence> ConvertToCompetences(List<M_Quality> qualityList)
+        private double[] GetFinalQualitiesValues(List<M_Answer> answers)
         {
-            return null;
+            int numQualities = this.qualities.Count;
+
+            int[] counters = new int[numQualities];
+            double[] finalValues = new double[numQualities];
+
+            // On récupère les points des qualités de chaque réponses
+            foreach (M_Answer answer in answers)
+            {
+                for (int i = 0; i < numQualities; i++)
+                {
+                    if (answer.QualitiesList[i].Points != 0)
+                    {
+                        counters[i]++;
+                        finalValues[i] += answer.QualitiesList[i].Points;
+                    }
+                }
+            }
+
+            // On fait la moyenne des points
+            for (int i = 0; i < numQualities; i++)
+            {
+                if (counters[i] != 0)
+                {
+                    finalValues[i] = finalValues[i] / counters[i];
+                }
+                else
+                {
+                    // La qualité n'a pas été évaluée
+                    finalValues[i] = Double.NaN;
+                }
+            }
+
+            return finalValues;
         }
 
+        public double[] GetFinalCompetencesValues(List<M_Answer> answers)
+        {
+            int numCompetences = this.competences.Count;
+            double[] finalValues = new double[numCompetences];
 
+            int numQualities = this.qualities.Count;
+            double[] qualitiesValues = GetFinalQualitiesValues(answers);
+            double sum;
+
+            for (int j = 0; j < numCompetences; j++)
+            {
+                sum = 0;
+                for (int i = 0; i < numQualities; i++)
+                {
+                    if (!Double.IsNaN(qualitiesValues[i]))
+                    {
+                        sum += qualitiesValues[i] * ponderations[i][j];
+                    }
+                }
+                finalValues[j] = sum / numQualities;
+            }
+            return finalValues;
+        }
 
     }
 }

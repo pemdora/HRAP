@@ -25,10 +25,13 @@ namespace HRAP
         public string TargetJob { get { return targetJob; } }
         public string Result { get { return result; } }
 
-        // TO DO
-        public void UpdateSkills(M_Answer answer)
+        public void UpdateCompetences(List<M_Answer> answers)
         {
-
+            double[] competencesValues = M_MatriceCQ.Instance.GetFinalCompetencesValues(answers);
+            for(int i = 0; i < this.competencesList.Count; i++)
+            {
+                competencesList[i].Points = competencesValues[i];
+            }
         }
 
 

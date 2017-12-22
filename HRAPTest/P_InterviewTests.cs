@@ -15,16 +15,17 @@ namespace HRAPTest
             Directory.SetCurrentDirectory(@"..\..\..");
             // A TESTER SANS IHM
 
-           /* M_Candidate candidate = new M_Candidate("steve", "chef de projet");
-            P_Interview interview = new P_Interview(candidate);
-            
-            int count = 0;
-            while (!interview.IsOver)
-            {
-                interview.Launch();
-                interview.SetChosenAnswer(1);
-                count++;
-            }*/
+            /* M_Candidate candidate = new M_Candidate("steve", "chef de projet");
+             P_Interview interview = new P_Interview(candidate);
+
+             int count = 0;
+             while (!interview.IsOver)
+             {
+                 interview.Launch();
+                 interview.SetChosenAnswer(1);
+                 count++;
+             }*/
+
         }
     }
 }
