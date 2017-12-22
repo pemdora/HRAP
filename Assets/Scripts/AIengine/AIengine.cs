@@ -30,6 +30,7 @@ public class AIengine : MonoBehaviour
         else
         {
             // TODO : afficher le résultat dans la vue
+            ihm.Over();
         }
     }
 }

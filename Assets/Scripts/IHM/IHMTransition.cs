@@ -22,7 +22,7 @@ public class IHMTransition : MonoBehaviour {
 	{
         ChangeScene("4-Interview");
     }
-	public static void Transition_menu_5()//menu 5
+	public void Transition_menu_5()//menu 5
 	{
 		ChangeScene("5-Greetings");
 	}

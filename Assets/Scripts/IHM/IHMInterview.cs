@@ -6,18 +6,19 @@ using System.Collections;
 public class IHMInterview : MonoBehaviour
 {
     // Init
-    UIButton button_a, button_b, button_c, button_d, /*button_pause, button_settings,*/ yesContinue, noContinue;
+    UIButton button_a, button_b, button_c, button_d, buttonNext/*, button_pause, button_settings, yesContinue, noContinue*/;
     UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
     static UILabel cname, clastname, cposition;
     P_Interview interview;
-    GameObject continuePanel, pause;
+    GameObject continuePanel, pause, finishPanel;
     UIScrollView scrollview;
     //collect element from scene
     static GameObject UIroot;
     GameObject quizz;
     GameObject Comment_scroll_area;
     enum answers { A, B, C, D};
-    //IHMAuthentification authentication;
+    IHMTransition ihmtrans;//use for the finish
+
     // Use this for initialization
     void Start()
     {
@@ -27,9 +28,8 @@ public class IHMInterview : MonoBehaviour
         button_b = GameObject.Find("ButtonB").GetComponent<UIButton>();
         button_c = GameObject.Find("ButtonC").GetComponent<UIButton>();
         button_d = GameObject.Find("ButtonD").GetComponent<UIButton>();
-        //button_settings = GameObject.Find("Button_settings").GetComponent<UIButton>();
-        //button_pause = GameObject.Find("Button_pause").GetComponent<UIButton>();
-       
+        buttonNext = GameObject.Find("ButtonNext").GetComponent<UIButton>();
+
         question = GameObject.Find("question").GetComponent<UILabel>();
         answer_a = GameObject.Find("answer_a").GetComponent<UILabel>();
         answer_b = GameObject.Find("answer_b").GetComponent<UILabel>();
@@ -38,13 +38,11 @@ public class IHMInterview : MonoBehaviour
         comment = GameObject.Find("comment").GetComponent<UILabel>();
 
         pause = GameObject.Find("Pause");
-        continuePanel = GameObject.Find("PanelDisplayContinueInterview");
-        yesContinue = GameObject.Find("ButtonYes").GetComponent<UIButton>();
-        noContinue = GameObject.Find("ButtonNo").GetComponent<UIButton>();
+        finishPanel = GameObject.Find("FinishInterviewPanel");
+        //continuePanel = GameObject.Find("PanelDisplayContinueInterview");
+        //yesContinue = GameObject.Find("ButtonYes").GetComponent<UIButton>();
+        //noContinue = GameObject.Find("ButtonNo").GetComponent<UIButton>();
 
-        cname = GameObject.Find("cname").GetComponent<UILabel>();
-        clastname = GameObject.Find("clastname").GetComponent<UILabel>();
-        cposition = GameObject.Find("cposition").GetComponent<UILabel>();
 
         scrollview = GameObject.Find("Comment_scroll_area").GetComponent<UIScrollView>();
         UIroot = GameObject.Find("UI Root"); // use to mask all ngui elements
@@ -73,12 +71,13 @@ public class IHMInterview : MonoBehaviour
         answer_d.text = "[FFFF00][b]D: [/b][-]";
               
         pause.SetActive(false);
-        continuePanel.SetActive(false);
+        //continuePanel.SetActive(false);
+        finishPanel.SetActive(false);
+        buttonNext.gameObject.SetActive(false);
 
     }
     void update()
     {
-
     }
     // Initialise Presenter
     public void SetPresenter(P_Interview interview)
@@ -111,10 +110,12 @@ public class IHMInterview : MonoBehaviour
             }
 
         }
+
         catch (MissingReferenceException e)
         {
             Debug.Log(e.Message);
         }
+        buttonNext.gameObject.SetActive(false);
     }
 
     List<UILabel> List_answers_by_question(int nb_answers)
@@ -187,35 +188,39 @@ public class IHMInterview : MonoBehaviour
         button_b.isEnabled = false;
         button_c.isEnabled = false;
         button_d.isEnabled = false;
+        buttonNext.gameObject.SetActive(true);
 
         answer_a.enabled = false;
         answer_b.enabled = false;
         answer_c.enabled = false;
         answer_d.enabled = false;
     }
-    //n'est plus utilisé depuis l'installation du controlleur
     public void Button_is_pressed_next_question()
     {
         
         if(UIButton.current == button_a)
         {
             interview.SetChosenAnswer((int)answers.A);
-            Debug.Log((int)answers.A);
+            //Debug.Log((int)answers.A);
         }
         else if (UIButton.current == button_b)
         {
             interview.SetChosenAnswer((int)answers.B);
-            Debug.Log((int)answers.B);
+            
         }
         else if (UIButton.current == button_c)
         {
             interview.SetChosenAnswer((int)answers.C);
-            Debug.Log((int)answers.C);
+            
         }     
         else  if (UIButton.current == button_d)
         {
             interview.SetChosenAnswer((int)answers.D);
-            Debug.Log(answers.D);
+            
+        }
+        else if (UIButton.current == buttonNext)
+        {
+            interview.SetChosenAnswer(0);
         }
         else
         {
@@ -239,9 +244,6 @@ public class IHMInterview : MonoBehaviour
     public void DisplayAnswers(List<string> ans)//for controller
     {
         // collect list of label for answers
-        Debug.Log("ICIIIIIIII");
-        Debug.Log(ans.Count);
-        Debug.Log(ans.ToString());
         List<UILabel> answers = List_answers_by_question(ans.Count);
 
         int index = 0;
@@ -256,10 +258,12 @@ public class IHMInterview : MonoBehaviour
         comment.text +="\n\n"+c;//print question
         scrollview.UpdateScrollbars();
         scrollview.verticalScrollBar.value = 1;
+        buttonNext.gameObject.SetActive(true);
     }
     public void Clear()
     {
-        // question.text = "WAITING FOR NEXT QUESTION";
+        question.text = "WAITING FOR NEXT QUESTION";
+        buttonNext.gameObject.SetActive(true);
     }
     public void Pause()
     {
@@ -279,23 +283,23 @@ public class IHMInterview : MonoBehaviour
         }
 
     }
-    public void DisplayContinuePanel()
-    {
+    //public void DisplayContinuePanel()
+    //{
        
-        continuePanel.SetActive(true);
+    //   // continuePanel.SetActive(true);
         
-        if (UIButton.current == yesContinue)
-        {
-            continuePanel.SetActive(false);
-            Debug.Log("Close de continue window");
-        }
-        else if (UIButton.current == noContinue)
-        {
-            IHMTransition.Transition_menu_5();
-            Debug.Log("Interview finished");
-        }
+    //    if (UIButton.current == yesContinue)
+    //    {
+    //        continuePanel.SetActive(false);
+    //        Debug.Log("Close de continue window");
+    //    }
+    //    else if (UIButton.current == noContinue)
+    //    {
+    //        ihmtrans.Transition_menu_5();
+    //        Debug.Log("Interview finished");
+    //    }
 
-    }
+    //}
     public void MaskMainNguiComponent(bool x)
     {
         quizz.SetActive(x);
@@ -305,7 +309,11 @@ public class IHMInterview : MonoBehaviour
     {
         UIroot.SetActive(x);
     }
-
+    public void Over()
+    {
+        question.text = "THE INTERVIEW IS OVER";
+        finishPanel.SetActive(true);
+    }
     public string GetName()
     {
         if (cname.text != "Name") return cname.text;
