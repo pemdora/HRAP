@@ -14,7 +14,7 @@ public class AIengine : MonoBehaviour
         // We initialise model, view and Presenter with name of candidate and his job
         ihm = GetComponent<IHMInterview>();
 
-        candidate = new M_Candidate(ihm.GetName(), ihm.GetPosition());
+        candidate = new M_Candidate("Steve", "Chef de Projet");
         interview = new P_Interview(candidate, ihm);
 
         ihm.SetPresenter(interview);
