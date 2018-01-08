@@ -1,0 +1,6 @@
+cd Env
+cd Scripts
+activate
+cd ..
+cd ..
+job_assessment.py --csv-file profil.csv --nearest-neighbors 3
