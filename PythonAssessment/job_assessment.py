@@ -13,7 +13,7 @@ from tqdm import tqdm
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
-from sklearn import svm, metrics, neighbors
+from sklearn import metrics, neighbors
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
@@ -324,3 +324,4 @@ if __name__ == "__main__":
     else:
         logger.error('No classifier specified')
         sys.exit()
+

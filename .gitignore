@@ -5,6 +5,7 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /PythonAssessment/Env
+/PythonAssessment/buildata
 
 # Visual Studio 2015 cache directory
 /.vs/
