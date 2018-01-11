@@ -10,7 +10,7 @@ public class AIengine : MonoBehaviour
     private IHMInterview ihm;
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
         // We initialise model, view and Presenter with name of candidate and his job
         ihm = GetComponent<IHMInterview>();
 
