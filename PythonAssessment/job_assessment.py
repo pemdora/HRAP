@@ -210,7 +210,7 @@ if __name__ == "__main__":
         if choice=='1':
             print( "Menu 1 has been selected")
             print_classifier_menu(0)
-            clf_input = input("Enter your choice [1-4]: ")
+            clf_input = input("Enter your choice [1-3]: ")
 
             # ******************* Classifier 1 : NEAREST NEIGHBORS *********************
             if clf_input=='1':
@@ -245,7 +245,7 @@ if __name__ == "__main__":
             # ********************** Classifier 1 : NEAREST NEIGHBORS **********************
 
             if clf_input=='1':
-                k = input("Enter number of neighbors [1-9]: ")
+                k = input("Enter a number of neighbors [1-9]: ")
                 if k in ['1','2','3','4','5','6','7','8','9']:
                     k = int(k)
                     # create KNN classifier with args.nearest_neighbors as a parameter
@@ -400,13 +400,13 @@ if __name__ == "__main__":
 
         ## ********************************* MENU 3 : EXIT *********************************
         elif choice=='3':
-            print( "Exit")
+            print("Exit")
             loop=False # This will make the while loop to end as not value of loop is set to False
 
         ## *********************************************************************************
 
         else:
             # Any integer inputs other than values 1-3 we print an error message
-            raw_input("Wrong option selection. Enter any key to try again..")
+            print("Wrong option selection. Enter any key to try again..")
 
         ## *********************************************************************************
