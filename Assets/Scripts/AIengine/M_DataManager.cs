@@ -135,12 +135,13 @@ namespace HRAP
 
         // CANDIDATES
 
-     /*   public int CountCandidates()
+        public int CountCandidates()
         {
-            return Count(candidatesPath);
+            //return Count(candidatesPath);
+            return 0;
         }
 
-        public M_Candidate GetCandidate(int id)
+       /* public M_Candidate GetCandidate(int id)
         {
             M_Candidate result = null;
 
@@ -171,9 +172,9 @@ namespace HRAP
             }
 
             return result;
-        }
+        }*/
 
-        // TO DO
+        //TO DO
         public void AddCandidate(M_Candidate candidate)
         {
 
@@ -189,9 +190,10 @@ namespace HRAP
 
             newLine += "\n";
 
-            File.AppendAllText(candidatesPath, newLine);
+            // TO DO : Save candidate in csv file
+            //File.AppendAllText(candidatesPath, newLine);
 
-        }*/
+        }
 
 
         // IDEAL PROFILES
