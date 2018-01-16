@@ -9,14 +9,14 @@ namespace HRAP
 {
     public class M_DataManager
     {
-        private static string dialogPath = @"..\HRAP\Assets\AIData\dialog.xml";
-        private static string matriceCQPath = @"..\HRAP\Assets\AIData\matriceCQ.csv";
+        private static string dialogPath = AIengine.datapath + @"\AIData\dialog.xml";// @"..\HRAP\Assets\AIData\dialog.xml";
+        private static string matriceCQPath = AIengine.datapath + @"\AIData\matriceCQ.csv"; // @"..\HRAP\Assets\AIData\matriceCQ.csv";
         // private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
-        private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
-        //private static string competencesPath = @"..\HRAP\Assets\AIData\skills.csv";
-        private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
-        private static string idealprofiles_pointsPath = @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
-        private static string importantpointsPath = @"..\HRAP\Assets\AIData\importantpoints.csv";
+        private static string idealProfilesPath = AIengine.datapath + @"\AIData\idealprofiles.csv"; // @"..\HRAP\Assets\AIData\idealprofiles.csv";
+        //private static string competencesPath = AIengine.datapath +  @"..\HRAP\Assets\AIData\skills.csv";
+        private static string candidates_pointsPath = AIengine.datapath + @"\AIData\candidates_points.csv"; // @"..\HRAP\Assets\AIData\candidates_points.csv";
+        private static string idealprofiles_pointsPath = AIengine.datapath + @"\AIData\idealprofiles_points.csv";//  @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
+        private static string importantpointsPath = AIengine.datapath + @"\AIData\importantpoints.csv"; // @"..\HRAP\Assets\AIData\importantpoints.csv";
 
         private static M_DataManager instance;
 

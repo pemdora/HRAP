@@ -8,9 +8,11 @@ public class AIengine : MonoBehaviour
     private M_Candidate candidate;
     private P_Interview interview;
     private IHMInterview ihm;
+    public static string datapath;
 
     // Use this for initialization
     void Awake () {
+        datapath = Application.dataPath;
         // We initialise model, view and Presenter with name of candidate and his job
         ihm = GetComponent<IHMInterview>();
 
@@ -18,6 +20,11 @@ public class AIengine : MonoBehaviour
         interview = new P_Interview(candidate, ihm);
 
         ihm.SetPresenter(interview);
+    }
+
+    private void Start()
+    {
+        
     }
 
     // Update is called once per frame
