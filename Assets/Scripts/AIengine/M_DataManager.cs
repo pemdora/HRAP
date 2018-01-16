@@ -11,7 +11,7 @@ namespace HRAP
     {
         private static string dialogPath = @"..\HRAP\Assets\AIData\dialog.xml";
         private static string matriceCQPath = @"..\HRAP\Assets\AIData\matriceCQ.csv";
-        private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
+        // private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
         private static string idealProfilesPath = @"..\HRAP\Assets\AIData\idealprofiles.csv";
         //private static string competencesPath = @"..\HRAP\Assets\AIData\skills.csv";
         private static string candidates_pointsPath = @"..\HRAP\Assets\AIData\candidates_points.csv";
@@ -135,7 +135,7 @@ namespace HRAP
 
         // CANDIDATES
 
-        public int CountCandidates()
+     /*   public int CountCandidates()
         {
             return Count(candidatesPath);
         }
@@ -191,7 +191,7 @@ namespace HRAP
 
             File.AppendAllText(candidatesPath, newLine);
 
-        }
+        }*/
 
 
         // IDEAL PROFILES
