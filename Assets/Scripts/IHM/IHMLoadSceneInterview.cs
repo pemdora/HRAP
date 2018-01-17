@@ -16,16 +16,13 @@ public class IHMLoadSceneInterview : MonoBehaviour {
     // Use this for initialization
     void Start () {
         cont = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
-        loader.gameObject.SetActive(false);
+        //loader.gameObject.SetActive(false);
     }
 	
-	// Update is called once per frame
-	void Update () {
-	}
     public void LoadLevel4()
     {
         loader.gameObject.SetActive(true);
-        cont.enabled = false;
+        cont.isEnabled = false;
 
         StartCoroutine(LoadLevelWithProgressBar("4-Interview"));
 
@@ -34,20 +31,10 @@ public class IHMLoadSceneInterview : MonoBehaviour {
     {
         Debug.Log("Start load scene");
         ao = SceneManager.LoadSceneAsync(sceneName);
-        //ao.allowSceneActivation = false;
         
         while (!ao.isDone)
         {
             slider.value = ao.progress;
-            //if (ao.progress == 0.9f)
-            //{
-            //    loadtext.text = "PRESS ENTER !";
-            //    if (Input.GetKeyDown(KeyCode.Return))
-            //    {
-            //        ao.allowSceneActivation = true;
-            //    }
-            //}
-            Debug.Log(ao.progress);
             yield return null;
         }
     }

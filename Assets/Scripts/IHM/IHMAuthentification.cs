@@ -56,8 +56,8 @@ public class IHMAuthentification : MonoBehaviour
 
     public void OnClick()
     {
-        Set_interactable(false);
         bouton_continuer.gameObject.GetComponent<TransitionalObject>().enabled = false; // play anim
+        Set_interactable(false);
     }
     void Set_interactable(bool b)
     {
