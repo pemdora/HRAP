@@ -16,13 +16,12 @@ public class IHMLoadSceneInterview : MonoBehaviour {
     // Use this for initialization
     void Start () {
         cont = GameObject.Find("Bouton_continuer").GetComponent<UIButton>();
-        //loader.gameObject.SetActive(false);
     }
 	
     public void LoadLevel4()
     {
         loader.gameObject.SetActive(true);
-        cont.isEnabled = false;
+        //cont.isEnabled = false;
 
         StartCoroutine(LoadLevelWithProgressBar("4-Interview"));
 
