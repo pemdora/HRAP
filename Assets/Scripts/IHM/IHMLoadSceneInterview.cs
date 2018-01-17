@@ -21,7 +21,6 @@ public class IHMLoadSceneInterview : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(slider.value);
 	}
     public void LoadLevel4()
     {

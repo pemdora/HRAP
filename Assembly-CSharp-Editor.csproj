@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CT_RTV</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CT_RTV</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,65 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSync.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSyncLanguageModel.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSyncLanguageModelEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\Editor\SphinxWrapper.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\AudioUtility.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\BakeBlendshapesTool.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\BlendSystemEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\BlendshapeManagerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\EyeControllerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\GestureSetupWizard.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncClipSetup.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncDataEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncEditorExtensions.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncPresetUtility.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\LipSyncProjectSettings.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\AutoSyncWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\ClipSettingsWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\DefaultMarkerSettingsWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\EmotionMixerWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\MarkerSettingsWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\Modals\SetIntensityWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\PhonemeSetEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\PoseExtractorWizard.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Editor\SpriteManagerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\ContinuationManager.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\ModalParent.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\ModalWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\RDEditorShortcut.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\RDExtensionWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\Shared\Editor\WizardWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\AudioFileGeneratorEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\LoudspeakerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\SequencerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\SpeakerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\SpeechTextEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\TextFileSpeakerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Extension\VoiceInitalizerEditor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Integration\ConfigBase.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Integration\ConfigPreferences.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Integration\ConfigWindow.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Integration\RTVoiceGameObject.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Integration\RTVoiceMenu.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\AutoInitalize.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\CompileDefines.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\ConfigLoader.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\Launch.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\OCCheck.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\ReminderCheck.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\SetApiLevel.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\SetupResources.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\Telemetry.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\UpdateCheck.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Task\WSACheck.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Util\BuildPostprocessor.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Util\EditorConfig.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Util\EditorConstants.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Util\EditorHelper.cs" />
-     <Compile Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Plugins\Editor\Util\GAApi.cs" />
      <Compile Include="Assets\Laireon Games\Common\Editor\GUIHelper.cs" />
      <Compile Include="Assets\Laireon Games\Common\Editor\NoteEditor.cs" />
      <Compile Include="Assets\Laireon Games\Simple Transitions\Scripts\Editor\TransitionGroupEditor.cs" />
@@ -196,72 +137,131 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\Shaders\DoubleSided_Alpha-Diffuse.shader" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSync.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSyncLanguageModel.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\AutoSync\Editor\AutoSyncLanguageModelEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\AutoSync\Editor\SphinxWrapper.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\AudioUtility.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\BakeBlendshapesTool.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\BlendSystemEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\BlendshapeManagerEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\EyeControllerEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\GestureSetupWizard.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncClipSetup.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncDataEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncEditorExtensions.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncPresetUtility.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\LipSyncProjectSettings.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\AutoSyncWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\ClipSettingsWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\DefaultMarkerSettingsWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\EmotionMixerWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\MarkerSettingsWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\Modals\SetIntensityWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\PhonemeSetEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\PoseExtractorWizard.cs" />
+     <Compile Include="Assets\Rogo Digital\LipSync Pro\Editor\SpriteManagerEditor.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\ContinuationManager.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\ModalParent.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\ModalWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\RDEditorShortcut.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\RDExtensionWindow.cs" />
+     <Compile Include="Assets\Rogo Digital\Shared\Editor\WizardWindow.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\AudioFileGeneratorEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\LoudspeakerEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\SequencerEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\SpeakerEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\SpeechTextEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\TextFileSpeakerEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Extension\VoiceInitalizerEditor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Integration\ConfigBase.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Integration\ConfigPreferences.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Integration\ConfigWindow.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Integration\RTVoiceGameObject.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Integration\RTVoiceMenu.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\AutoInitalize.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\CompileDefines.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\ConfigLoader.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\Launch.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\OCCheck.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\ReminderCheck.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\SetApiLevel.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\SetupResources.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\Telemetry.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\UpdateCheck.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Task\WSACheck.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Util\BuildPostprocessor.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Util\EditorConfig.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Util\EditorConstants.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Util\EditorHelper.cs" />
+     <Compile Include="Assets\crosstales\RTVoice\Plugins\Editor\Util\GAApi.cs" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\Shaders\DoubleSided_Alpha-Diffuse.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.11.4.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\crosstales\RTVoice\Documentation\VERSIONS.txt" />
+     <None Include="Assets\crosstales\RTVoice\3rd party\Assets.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+     <None Include="Assets\crosstales\UI\Documentation\VERSIONS.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\Audio\AudioText\Speeches.txt" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Documentation\VERSIONS.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Velvet.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Models\GRFL_Head_Liza\readme.txt" />
      <None Include="Assets\AIData\dialog.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\README.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\3rd party\Assets.txt" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\README.win32.txt" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Text\Poem.txt" />
+     <None Include="Assets\Rogo Digital\sox-14-4-2\README.win32.txt" />
+     <None Include="Assets\crosstales\RTVoice\Documentation\SSML.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\BlendSystems\NewBlendSystemTemplate.cs.txt" />
+     <None Include="Assets\crosstales\RTVoice\Demo\Text\Speeches.txt" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\Examples\Audio\Gettysburg.xml" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\BlendSystems\NewBlendSystemTemplate.cs.txt" />
      <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Ground.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
      <None Include="Assets\Imported Environnement Assets\Decor - ArchVizPRO Interior Vol.5\3D SHADER\Glass_Refraction.shader" />
+     <None Include="Assets\crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\VERSIONS.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\crosstales\UI\Documentation\Colors.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\README.txt" />
+     <None Include="Assets\Rogo Digital\sox-14-4-2\README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\UI\Documentation\Colors.txt" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\ChangeLog.txt" />
+     <None Include="Assets\Rogo Digital\sox-14-4-2\ChangeLog.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\SSML.txt" />
+     <None Include="Assets\crosstales\RTVoice\Demo\Text\Poem.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\id\181f4dab-261f-4746-85f8-849c2866d353.txt" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Documentation\EmotionML.txt" />
+     <None Include="Assets\crosstales\RTVoice\Documentation\EmotionML.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\sox-14-4-2\LICENSE.GPL.txt" />
+     <None Include="Assets\Rogo Digital\sox-14-4-2\LICENSE.GPL.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\AutoSync\ReadMe.txt" />
+     <None Include="Assets\crosstales\RTVoice\README.txt" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\AutoSync\ReadMe.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
-     <None Include="Assets\Imported Environnement Assets\Facial animation - Rogo Digital\LipSync Pro\Documentation is now online!.txt" />
+     <None Include="Assets\Rogo Digital\LipSync Pro\Documentation is now online!.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
-     <None Include="Assets\Imported Environnement Assets\Voice generation - crosstales\RTVoice\Demo\Text\Speeches.txt" />
  <Reference Include="Assembly-UnityScript">
  <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
@@ -323,7 +323,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="RTVoiceUWPBridge">
- <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Assets/Imported Environnement Assets/Voice generation - crosstales/RTVoice/Plugins/WSA/Stub/RTVoiceUWPBridge.dll</HintPath>
+ <HintPath>C:/Users/badre/Documents/GitHub/HRAP/Assets/crosstales/RTVoice/Plugins/WSA/Stub/RTVoiceUWPBridge.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
