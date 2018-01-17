@@ -12,14 +12,24 @@ namespace HRAPTest
 
         // CANDIDATES
 
-        [TestMethod]
+       /* [TestMethod]
         public void GetCandidate_WithValidID()
         {
             Directory.SetCurrentDirectory(@"..\..\..");
 
-            string expected_name = "yasmeen";
-            M_Candidate actual_candidate = M_DataManager.Instance.GetCandidate(2);
+            string expected_name = "martine";
+            M_Candidate actual_candidate = M_DataManager.Instance.GetCandidate(1);
             Assert.AreEqual(expected_name, actual_candidate.Name);
+
+        }*/
+
+        [TestMethod]
+        public void AddCandidate()
+        {
+            Directory.SetCurrentDirectory(@"..\..\..");
+
+            M_Candidate candidate = new M_Candidate("Steve", "Chef de Projet");
+            M_DataManager.Instance.AddCandidate(candidate);
 
         }
 

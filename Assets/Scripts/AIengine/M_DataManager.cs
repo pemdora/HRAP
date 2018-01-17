@@ -9,14 +9,10 @@ namespace HRAP
 {
     public class M_DataManager
     {
-        private static string dialogPath = AIengine.datapath + @"\AIData\dialog.xml";// @"..\HRAP\Assets\AIData\dialog.xml";
-        private static string matriceCQPath = AIengine.datapath + @"\AIData\matriceCQ.csv"; // @"..\HRAP\Assets\AIData\matriceCQ.csv";
-        // private static string candidatesPath = @"..\HRAP\Assets\AIData\candidates.csv";
-        private static string idealProfilesPath = AIengine.datapath + @"\AIData\idealprofiles.csv"; // @"..\HRAP\Assets\AIData\idealprofiles.csv";
-        //private static string competencesPath = AIengine.datapath +  @"..\HRAP\Assets\AIData\skills.csv";
-        private static string candidates_pointsPath = AIengine.datapath + @"\AIData\candidates_points.csv"; // @"..\HRAP\Assets\AIData\candidates_points.csv";
-        private static string idealprofiles_pointsPath = AIengine.datapath + @"\AIData\idealprofiles_points.csv";//  @"..\HRAP\Assets\AIData\idealprofiles_points.csv";
-        private static string importantpointsPath = AIengine.datapath + @"\AIData\importantpoints.csv"; // @"..\HRAP\Assets\AIData\importantpoints.csv";
+        private static string dialogPath = AIengine.datapath + @"\AIData\dialog.xml";
+        private static string matriceCQPath = AIengine.datapath + @"\AIData\matriceCQ.csv"; 
+        private static string candidatesPath = AIengine.datapath + @"\AIData\candidates.csv"; 
+
 
         private static M_DataManager instance;
 
@@ -34,21 +30,25 @@ namespace HRAP
             }
         }
 
-        // Matrice CQ
+        // **********************  MATRICE CQ  **********************
+
         public string[][] GetMatrice()
         {
             return File.ReadAllLines(matriceCQPath).Where(line => line != "").Select(x => x.Split(';')).ToArray();
         }
 
-        
 
-        // Counts number of lines in a file
 
-        private int Count(string file)
+
+        // **********************  CANDIDATES  **********************
+
+        // Counts number of candidates in candidates.csv
+
+        private int CountCandidates()
         {
             int result = -1;
 
-            StreamReader reader = new StreamReader(file);
+            StreamReader reader = new StreamReader(candidatesPath);
             string line = reader.ReadLine();
 
             while (line != null)
@@ -63,118 +63,9 @@ namespace HRAP
 
         }
 
-        private List<M_Competence> GetPoints(string file, int id)
-        {
-            List<M_Competence> competencesList = new List<M_Competence>();
-
-            // 1. Get points in points File
-
-            StreamReader p_reader = new StreamReader(file);
-            string line = p_reader.ReadLine();
-            string[] headers = { };
-            int count = 0;
-
-            while (line != null)
-            {
-                string[] temp = line.Split(';');
-                if (count == 0)
-                {
-                    headers = temp;
-
-                }
-
-                if (count != 0 && Convert.ToInt32(temp[0]) == id)
-                {
-
-                    for (int i = 1; i < temp.Length; i++)
-                    {
-                        competencesList.Add(new M_Competence(headers[i], false, Convert.ToInt32(temp[i]), false));
-                    }
-                }
 
 
-                line = p_reader.ReadLine();
-                count++;
-            }
-
-            p_reader.Close();
-
-            // Check whether skills are important
-            if (competencesList != null)
-            {
-                p_reader = new StreamReader(importantpointsPath);
-                line = p_reader.ReadLine();
-                count = 0;
-
-                while (line != null)
-                {
-                    string[] temp = line.Split(';');
-
-                    if (count != 0 && Convert.ToInt32(temp[0]) == id)
-                    {
-                        for (int i = 1; i < temp.Length; i++)
-                        {
-                            if (Convert.ToInt32(temp[i]) != 0)
-                            {
-                                competencesList[i].IsImportant = true;
-                            }
-                        }
-                    }
-
-                    line = p_reader.ReadLine();
-                    count++;
-                }
-
-                p_reader.Close();
-            }
-
-            return competencesList;
-        }
-
-
-
-        // CANDIDATES
-
-        public int CountCandidates()
-        {
-            //return Count(candidatesPath);
-            return 0;
-        }
-
-       /* public M_Candidate GetCandidate(int id)
-        {
-            M_Candidate result = null;
-
-            StreamReader reader = new StreamReader(candidatesPath);
-            string line = reader.ReadLine();
-            int count = 0;
-
-            while (line != null)
-            {
-                string[] temp = line.Split(';');
-
-                if (count != 0 && Convert.ToInt32(temp[0]) == id)
-                {
-                    result = new M_Candidate(id, temp[1], temp[2], temp[3], null);
-                }
-
-
-                line = reader.ReadLine();
-                count++;
-            }
-
-            reader.Close();
-
-            // Set points in candidate
-            if (result != null)
-            {
-                result.CompetencesList = GetPoints(candidates_pointsPath, id);
-            }
-
-            return result;
-        }*/
-
-        //TO DO
+        // Add a candidate in candidates.csv
         public void AddCandidate(M_Candidate candidate)
         {
 
@@ -191,162 +82,56 @@ namespace HRAP
             newLine += "\n";
 
             // TO DO : Save candidate in csv file
-            //File.AppendAllText(candidatesPath, newLine);
+            File.AppendAllText(candidatesPath, newLine);
 
         }
 
 
-        // IDEAL PROFILES
 
-        public M_Experience GetExperience(string exp)
-        {
-            M_Experience result;
-            switch (exp)
-            {
-                case "NULL":
-                    result = M_Experience.NULL;
-                    break;
-                case "JUNIOR":
-                    result = M_Experience.JUNIOR;
-                    break;
-                case "INTERMEDIATE":
-                    result = M_Experience.INTERMEDIATE;
-                    break;
-                case "EXPERT":
-                    result = M_Experience.EXPERT;
-                    break;
-                default:
-                    result = M_Experience.NULL;
-                    break;
-            }
-            return result;
-        }
-
-        public M_IdealProfile GetIdealProfile(int id)
-        {
-            M_IdealProfile result = null;
-            StreamReader reader = new StreamReader(idealProfilesPath);
-            string line = reader.ReadLine();
-            int count = 0;
-
-            while (line != null)
-            {
-                string[] temp = line.Split(';');
-
-                if (count != 0 && Convert.ToInt32(temp[0]) == id)
-                {
-                    result = new M_IdealProfile(id, temp[1], GetExperience(temp[2]), null);
-                }
+        // **********************  DIALOG  **********************
 
 
-                line = reader.ReadLine();
-                count++;
-            }
-
-            reader.Close();
-
-            if (result != null)
-            {
-                result.CompetencesList = GetPoints(idealprofiles_pointsPath, id);
-            }
-
-            return result;
-        }
-
-        public int GetIdealProfileID(string name, M_Experience exp)
-        {
-            StreamReader reader = new StreamReader(idealProfilesPath);
-            string line = reader.ReadLine();
-
-
-            while (line != null)
-            {
-                string[] temp = line.Split(';');
-                if (temp[1] == name && temp[2] == exp.ToString())
-                {
-                    return Convert.ToInt32(temp[0]);
-                }
-                line = reader.ReadLine();
-            }
-
-            reader.Close();
-            return 0;
-        }
-
-
-        // DIALOG
-
-
+        // Convert a string to enum Animation
         private M_Animation ToAnimation(string toParse)
         {
             M_Animation result;
 
             switch (toParse)
             {
-                case "Geste d'accueil":
-                    result = M_Animation.ANIM_SALUTATIONS;
-                    break;
-                case "Invitation de la main":
-                    result = M_Animation.ANIM_GESTE_MAIN;
-                    break;
-                case "Sourit":
-                    result = M_Animation.ANIM_SOURIRE;
-                    break;
-                case "Ouverture des bras":
-                    result = M_Animation.OUVERTURE_BRAS;
-                    break;
-                case "Clin d'œil":
-                    result = M_Animation.ANIM_CLIN_D_OEIL;
-                    break;
-                default:
-                    result = M_Animation.NULL;
-                    break;
+                case "Geste d'accueil": result = M_Animation.ANIM_SALUTATIONS; break;
+                case "Invitation de la main": result = M_Animation.ANIM_GESTE_MAIN; break;
+                case "Sourit": result = M_Animation.ANIM_SOURIRE; break;
+                case "Ouverture des bras": result = M_Animation.OUVERTURE_BRAS; break;
+                case "Clin d'œil": result = M_Animation.ANIM_CLIN_D_OEIL; break;
+                default: result = M_Animation.NULL; break;
             }
 
             return result;
         }
 
+        // Convert a string to enum Camera
         private M_Camera ToCamera(string toParse)
         {
             M_Camera result;
 
             switch (toParse)
             {
-                case "PE_1":
-                    result = M_Camera.PE_1;
-                    break;
-                case "PA_1":
-                    result = M_Camera.PA_1;
-                    break;
-                case "PA_2":
-                    result = M_Camera.PA_2;
-                    break;
-                case "PR_1":
-                    result = M_Camera.PR_1;
-                    break;
-                case "PR_2":
-                    result = M_Camera.PR_2;
-                    break;
-                case "PR_3":
-                    result = M_Camera.PR_3;
-                    break;
-                case "PR_4":
-                    result = M_Camera.PR_4;
-                    break;
-                case "PR_5":
-                    result = M_Camera.PR_5;
-                    break;
-                case "GP_1":
-                    result = M_Camera.GP_1;
-                    break;
-                default:
-                    result = M_Camera.PE_1;
-                    break;
+                case "PE_1": result = M_Camera.PE_1; break;
+                case "PA_1": result = M_Camera.PA_1; break;
+                case "PA_2": result = M_Camera.PA_2; break;
+                case "PR_1": result = M_Camera.PR_1; break;
+                case "PR_2": result = M_Camera.PR_2; break;
+                case "PR_3": result = M_Camera.PR_3; break;
+                case "PR_4": result = M_Camera.PR_4; break;
+                case "PR_5": result = M_Camera.PR_5; break;
+                case "GP_1": result = M_Camera.GP_1; break;
+                default: result = M_Camera.PE_1; break;
             }
 
             return result;
         }
 
+        // Generate a question from xml
         private M_Question GenerateQuestion(XmlTextReader reader, int id)
         {
             return new M_Question(
@@ -359,6 +144,7 @@ namespace HRAP
                                 reader.GetAttribute("next"));
         }
 
+        // Generate an answer from xml
         private M_Answer GenerateAnswer(XmlTextReader reader, int id)
         {
             // Temporary solution for qualities list initialization
@@ -381,6 +167,7 @@ namespace HRAP
                                 qualities);
         }
 
+        // Generate a phrase from xml
         private M_Phrase GeneratePhrase(XmlTextReader reader, int id)
         {
             return new M_Phrase(

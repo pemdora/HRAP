@@ -125,18 +125,21 @@ namespace HRAP
             // otherwise do nothing
         }
 
+        // Get current dialog element animation
         private M_Animation GetCurrentAnimation()
         {
             return sequenceList[currentSequence].DialogElements[currentElement].Animation;
 
         }
 
+        // Get current dialog element camera 
         private M_Camera GetCurrentCamera()
         {
             return sequenceList[currentSequence].DialogElements[currentElement].Camera;
 
         }
 
+        // Convert next M_Question to V_Question
         private V_Question GetNextQuestion()
         {
             V_Question result = null;
@@ -166,6 +169,7 @@ namespace HRAP
             return result;
         }
 
+        // Set candidate answer in candidateAnswers
         public void SetChosenAnswer(int chosen_answer)
         {
 
@@ -175,6 +179,8 @@ namespace HRAP
                 M_Answer answerChosen = null;
                 answerChosen = this.qcm.Answers[chosen_answer];
                 candidateAnswers.Add(answerChosen);
+
+                // Display next element
                 for (int i = currentSequence; i < sequenceList.Count; i++)
                 {
                     foreach (M_DialogElement e in sequenceList[i].DialogElements)

@@ -51,7 +51,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="M_DataManagerTests.cs" />
-    <Compile Include="M_IdealProfileTests.cs" />
     <Compile Include="M_MatriceCQTests.cs" />
     <Compile Include="P_InterviewTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

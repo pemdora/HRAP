@@ -1,6 +1,2 @@
-profile_id; name; targetJob; result
-1;martine;chef de projet;null
-2;yasmeen;chef de projet;null
-3;candidata;chef de projet;null
-4;uhjgtf;chef de projet;null
-5;okijhyu;chef de projet;null
+id; name; targetJob; result; Leadership;Sociabilité;Contrôle émotionnel ;Atteinte des objectifs;Avant vente;Pilotage Suivi;Relation client;Gestion équipe;Reporting
+1;martine;CP;CP;2;6;8;4;3;8;2;7;2

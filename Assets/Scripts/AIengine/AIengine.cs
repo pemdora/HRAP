@@ -16,7 +16,7 @@ public class AIengine : MonoBehaviour
         // We initialise model, view and Presenter with name of candidate and his job
         ihm = GetComponent<IHMInterview>();
 
-        candidate = new M_Candidate("Steve", "Chef de Projet");
+        candidate = new M_Candidate(ihm.GetName(), ihm.GetPosition());
         interview = new P_Interview(candidate, ihm);
 
         ihm.SetPresenter(interview);
@@ -36,8 +36,11 @@ public class AIengine : MonoBehaviour
         }
         else
         {
-            // TODO : afficher le résultat dans la vue
+            // TODO : afficher le résultat dans la vue ==> USE interview.getResult()
             ihm.Over();
+
+            // Save candidate in db
+            M_DataManager.Instance.AddCandidate(candidate);
         }
     }
 }
