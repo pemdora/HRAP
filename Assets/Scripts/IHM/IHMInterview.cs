@@ -7,7 +7,7 @@ public class IHMInterview : MonoBehaviour
 {
     // Init
     UIButton button_a, button_b, button_c, button_d, buttonNext/*, button_pause, button_settings, yesContinue, noContinue*/;
-    UILabel question, answer_a, answer_b, answer_c, answer_d,comment;
+    UILabel question, answer_a, answer_b, answer_c, answer_d, comment;
     static UILabel cname, clastname, cposition;
     P_Interview interview;
     GameObject continuePanel, pause, finishPanel;
@@ -16,7 +16,7 @@ public class IHMInterview : MonoBehaviour
     static GameObject UIroot;
     GameObject quizz;
     GameObject Comment_scroll_area;
-    enum answers { A, B, C, D};
+    enum answers { A, B, C, D };
     IHMTransition ihmtrans;//use for the finish
 
     // Use this for initialization
@@ -60,16 +60,16 @@ public class IHMInterview : MonoBehaviour
         }
         catch (NullReferenceException e)
         {
-            // Debug.Log(e.Message);
+            Debug.Log(e.Message);
         }
         //Initialising variables
-        
+
         question.text = "[u][b]Question[/u] : [/b]";
         answer_a.text = "[FF0000][b]A: [/b][-]";
         answer_b.text = "[0000FF][b]B: [/b][-]";
         answer_c.text = "[00FF00][b]C: [/b][-]";
         answer_d.text = "[FFFF00][b]D: [/b][-]";
-              
+
         pause.SetActive(false);
         //continuePanel.SetActive(false);
         finishPanel.SetActive(false);
@@ -197,8 +197,8 @@ public class IHMInterview : MonoBehaviour
     }
     public void Button_is_pressed_next_question()
     {
-        
-        if(UIButton.current == button_a)
+
+        if (UIButton.current == button_a)
         {
             interview.SetChosenAnswer((int)answers.A);
             //Debug.Log((int)answers.A);
@@ -206,17 +206,17 @@ public class IHMInterview : MonoBehaviour
         else if (UIButton.current == button_b)
         {
             interview.SetChosenAnswer((int)answers.B);
-            
+
         }
         else if (UIButton.current == button_c)
         {
             interview.SetChosenAnswer((int)answers.C);
-            
-        }     
-        else  if (UIButton.current == button_d)
+
+        }
+        else if (UIButton.current == button_d)
         {
             interview.SetChosenAnswer((int)answers.D);
-            
+
         }
         else if (UIButton.current == buttonNext)
         {
@@ -227,13 +227,13 @@ public class IHMInterview : MonoBehaviour
             Debug.LogError("ERROR ! ");
         }
 
-                    
+
         // Clean previous questions and answers
         question.text = "[u][b]Question[/u] : [/b]";
         answer_a.text = "[FF0000][b]A: [/b][-]";
         answer_b.text = "[0000FF][b]B: [/b][-]";
         answer_c.text = "[00FF00][b]C: [/b][-]";
-        answer_d.text = "[FFFF00][b]D: [/b][-]";       
+        answer_d.text = "[FFFF00][b]D: [/b][-]";
     }
 
     public void DisplayQuestion(string q)//for controller
@@ -255,7 +255,7 @@ public class IHMInterview : MonoBehaviour
     }
     public void DisplayComment(string c)//for controller
     {
-        comment.text +="\n\n"+c;//print question
+        comment.text += "\n\n" + c;//print question
         scrollview.UpdateScrollbars();
         scrollview.verticalScrollBar.value = 1;
         buttonNext.gameObject.SetActive(true);
@@ -263,6 +263,10 @@ public class IHMInterview : MonoBehaviour
     public void Clear()
     {
         question.text = "WAITING FOR NEXT QUESTION";
+        answer_a.text = "";
+        answer_b.text = "";
+        answer_c.text = "";
+        answer_d.text = "";
         buttonNext.gameObject.SetActive(true);
     }
     public void Pause()
@@ -283,11 +287,12 @@ public class IHMInterview : MonoBehaviour
         }
 
     }
+    //THIS CODE IS AN IMPROVEMENT NOT USED FOR THE RELEASE 
     //public void DisplayContinuePanel()
     //{
-       
+
     //   // continuePanel.SetActive(true);
-        
+
     //    if (UIButton.current == yesContinue)
     //    {
     //        continuePanel.SetActive(false);
