@@ -8,7 +8,7 @@ public class IHMInterview : MonoBehaviour
     // Init
     UIButton button_a, button_b, button_c, button_d, buttonNext/*, button_pause, button_settings, yesContinue, noContinue*/;
     UILabel question, answer_a, answer_b, answer_c, answer_d, comment;
-    static UILabel cname, clastname, cposition;
+    static string cname, clastname, cposition;
     P_Interview interview;
     GameObject continuePanel, pause, finishPanel;
     UIScrollView scrollview;
@@ -53,14 +53,17 @@ public class IHMInterview : MonoBehaviour
         {
             if (IHMAuthentification.firstName.value != null && IHMAuthentification.lastName.value != null && IHMAuthentification.poplist_label.text != "Choix du poste")
             {
-                cname.text = IHMAuthentification.firstName.value;
-                clastname.text = IHMAuthentification.lastName.value;
-                cposition.text = IHMAuthentification.poplist_label.text;
+                cname = IHMAuthentification.firstName.value;
+                clastname = IHMAuthentification.lastName.value;
+                cposition = IHMAuthentification.poplist_label.text;
             }
         }
         catch (NullReferenceException e)
         {
             Debug.Log(e.Message);
+            cname = "Name";
+            clastname = "caca";
+            cposition = "Position";
         }
         //Initialising variables
 
@@ -321,13 +324,14 @@ public class IHMInterview : MonoBehaviour
     }
     public string GetName()
     {
-        if (cname.text != "Name") return cname.text;
+        Debug.Log(cname);
+        if (cname != "Name") return cname;
         return "";
     }
 
     public string GetPosition()
     {
-        if (cposition.text != "Position") return cposition.text;
+        if (cposition != "Position") return cposition;
         return "";
     }
 }
