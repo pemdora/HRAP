@@ -44,7 +44,7 @@ namespace HRAP
 
         // Counts number of candidates in candidates.csv
 
-        private int CountCandidates()
+        public int CountCandidates()
         {
             int result = -1;
 
