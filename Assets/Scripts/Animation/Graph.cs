@@ -45,7 +45,7 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < nbQualities; i++)
         {
             points = new List<Transform>();
-            for (int j = 0; j < 100; j++)
+            for (int j = 0; j < 70; j++)
             {
                 point = Instantiate(pointPrefabAxis);
                 Material mymat = point.GetComponent<Renderer>().material;
