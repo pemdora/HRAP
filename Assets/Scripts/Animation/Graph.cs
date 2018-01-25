@@ -17,6 +17,7 @@ public class Graph : MonoBehaviour
     private float[] radianList;
     public int[] qualities = new int[9];
     private Transform[] qualitiesPoints = new Transform[9];
+    private int lenght = 60; // better to be a multiple of 10
 
 
     // Material used for the connecting lines
@@ -45,7 +46,7 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < nbQualities; i++)
         {
             points = new List<Transform>();
-            for (int j = 0; j < 70; j++)
+            for (int j = 0; j < lenght; j++)
             {
                 point = Instantiate(pointPrefabAxis);
                 Material mymat = point.GetComponent<Renderer>().material;
@@ -58,13 +59,14 @@ public class Graph : MonoBehaviour
             axis.Add(i, points);
         }
 
+        // Placing candidate points, candidate points are rated /10
         for (int i = 0; i < nbQualities; i++)
         {
             if (axis.TryGetValue(i, out points)) // If the data exist in the dictionary with the given key
             {
                 Transform candidatePoint = Instantiate(pointPrefabCandidate);
-                position.x = points[qualities[i]*10].localPosition.x;
-                position.y = points[qualities[i]*10].localPosition.y;
+                position.x = points[qualities[i]* lenght/10].localPosition.x; //  candidate points are rated /10
+                position.y = points[qualities[i]* lenght/10].localPosition.y;
                 candidatePoint.localPosition = position;
                 qualitiesPoints[i] = candidatePoint;
             }
