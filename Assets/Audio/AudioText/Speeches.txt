@@ -22,25 +22,94 @@ Après 20 minutes tout le monde est là mais vous devez reprendre du début afin
 En tant que responsable du projet, vous animez la réunion. Vous n'êtes cependant pas familier avec ce type de réunion. Comment décidez-vous de l'aborder? ;Audio\RTgeneration\7a;Microsoft Hortense Desktop
 La réunion se déroule bien mais le responsable de l'avant-vente n'a que peu de temps à vous consacrer. Il doit en effet travailler sur un dossier à la fois très critique et très urgent.;Audio\RTgeneration\8a;Microsoft Hortense Desktop
 Il vous fait savoir qu'il n'a plus que 5 minutes à vous consacrer malgré son engagement initial. Comment réagissez-vous.;Audio\RTgeneration\8b;Microsoft Hortense Desktop
-Au moment de rédiger votre compte rendu, vous vous rendez-compte que certaines informations vous font défaut. ;Audio\RTgeneration\9a;Microsoft Hortense Desktop
+Votre décision peut être trop attive risque de vous poser un problème au moment de la rédaction de compte rendu ;Audio\RTgeneration\9a;Microsoft Hortense Desktop
 Il accepte à contre cœur et répond à vos questions de façon laconique avant de s'éclipser.;Audio\RTgeneration\9b;Microsoft Hortense Desktop
-Votre attitude est jugée déplacée et les personnes présentes se braquent. On vous explique de finalement tout a déjà été dit ce qui permet d'abréger la réunion.;Audio\RTgeneration\9c;Microsoft Hortense Desktop
+Votre attitude est jugée déplacée et les personnes présentes se braquent. On vous explique que finalement tout a déjà été dit ce qui permet de passer au sujet suivant. ;Audio\RTgeneration\9c;Microsoft Hortense Desktop
 Le moment est venu de faire un point sur les documents produits au cours de la phase d'avant-vente.;Audio\RTgeneration\10a;Microsoft Hortense Desktop
-Lorsque vous demandez une copie du contrat, le responsable commercial vous explique qu'il n'a pas eu le temps de l'imprimer mais que vous pourrez le trouver dans l'intranet. Quelle est votre réaction?;Audio\RTgeneration\11a;Microsoft Hortense Desktop
-La réunion de transfert est le moment pour vous de prendre connaissance de l'évaluation des charges faite par l'équipe technique en charge de l'avant-vente.;Audio\RTgeneration\12a;Microsoft Hortense Desktop
-Lorsque vous souhaitez en examiner les grandes lignes, on vous indique qu'il ne s'agit pas de la dernière version car deux itérations de dernière minute ont été faites pour emporter l'affaire. Comment réagissez-vous? ;Audio\RTgeneration\13a;Microsoft Hortense Desktop
-De retour dans votre bureau, vous prenez le temps de consulter vos notes et de revoir rapidement les documents que l'on a mis à votre disposition.;Audio\RTgeneration\14a;Microsoft Hortense Desktop
+Lorsque vous demandez une copie du contrat, le responsable commercial vous explique qu'il n'a pas eu le temps de l'imprimer. Quelle est votre réaction?;Audio\RTgeneration\11a;Microsoft Hortense Desktop
+Après de rapides investigations il s'avère que le contrat n'a pas été signé ... Que décidez-vous de faire ? ;Audio\RTgeneration\11b;Microsoft Hortense Desktop
+Le responsable de l'avant vente vous convainc de continuer la réunion en vous assurant que la signature est en bonne voie ;Audio\RTgeneration\11c;Microsoft Hortense Desktop
+La réunion de transfert est le moment pour vous de prendre connaissance de l'évaluation des charges faite par l'équipe technique d'avant-vente ;Audio\RTgeneration\12a;Microsoft Hortense Desktop
+Lorsque vous souhaitez en examiner les grandes lignes, on vous indique qu'il ne s'agit pas de la dernière version ;Audio\RTgeneration\12b;Microsoft Hortense Desktop
+En effet, deux itérations de dernière minute ont été faites pour emporter l'affaire. Comment réagissez-vous? ;Audio\RTgeneration\13a;Microsoft Hortense Desktop
+De retour dans votre bureau, vous prenez le temps de consulter vos notes et de revoir rapidement les documents que l'on a mis à votre disposition ;Audio\RTgeneration\14a;Microsoft Hortense Desktop
 Les documents sont à la fois nombreux et complexes. Vous savez que si vous souhaitez en faire le tour il vous faudra plusieurs jours. ;Audio\RTgeneration\14b;Microsoft Hortense Desktop
-Sachant que vous devez rencontrer le client dans deux jours puis votre équipe dans la foulée, que décidez-vous? ;Audio\RTgeneration\15a;Microsoft Hortense Desktop;
-Votre réunion de lancement interne arrive très vite et vous n'avez que très peu de temps pour la préparer. ;Audio\RTgeneration\16a;Microsoft Hortense Desktop
-On vous a demandé de challenger l'estimation des charges faite par l'équipe d'avant-vente et de mettre à jour la liste des risques. ;Audio\RTgeneration\16b;Microsoft Hortense Desktop
-Comme souvent le sujet est complexe et vous n'avez pas toutes les compétences techniques requises pour analyser l'estimation des charges en détail. Que faites-vous? ;Audio\RTgeneration\17a;Microsoft Hortense Desktop
-A l'occasion d'une présentation technique vous rencontrez l'un de vos anciens responsables. Il vous félicite pour votre nouveau projet mais souligne que le client est parfois difficile à gérer. ;Audio\RTgeneration\18a;Microsoft Hortense Desktop
-Il vous invite donc à examiner en détail les risques projet afin de mettre en œuvre les opérations de mitigation nécessaire le plus tôt possible.;Audio\RTgeneration\18b;Microsoft Hortense Desktop
-Vous revenez à votre bureau et décidez d'examiner les risques projet d'un œil nouveau. Quelle est votre démarche? ;Audio\RTgeneration\19a;Microsoft Hortense Desktop
-Quelques jours passent et vous vous apercevez que vous n'avez pas encore rédigé le compte rendu de votre réunion de transfert. Que faites-vous pour y remédier? ;Audio\RTgeneration\20a;Microsoft Hortense Desktop
-La réunion de lancement interne arrive à grands pas et vous devez vous préparer à rencontrer votre nouvelle équipe.;Audio\RTgeneration\21a;Microsoft Hortense Desktop
-Vous avez bien entendu déjà pris connaissance de l'organisation proposée dans la réponse faite par l'équipe d'avant-vente et vous décidez de vous attarder à présent sur les activités à mener à bien, et les charges associées.;Audio\RTgeneration\21b;Microsoft Hortense Desktop
-Après un rapide survol vous notez un décalage important entre le contenu des activistes et les charges prévues pour les réaliser. Quelle conclusion en tirez-vous.;Audio\RTgeneration\22a;Microsoft Hortense Desktop
-L'organisation et les activités vous sont à présent bien connues et il est temps de consulter les profils de votre futur équipe.;Audio\RTgeneration\23a;Microsoft Hortense Desktop
-Vous avez le choix entre les rencontrer ou consulter votre référentiel de CV. Que faites-vous ? ;Audio\RTgeneration\24a;Microsoft Hortense Desktop
+Sachant que vous devez rencontrer le client dans deux jours puis votre équipe dans la foulée, que décidez-vous?  ;Audio\RTgeneration\14c;Microsoft Hortense Desktop
+Au détour d'un couloir, vous rencontrez votre responsable qui vous demande si la réunion de lancement interne a bien été planifiée;Audio\RTgeneration\14d;Microsoft Hortense Desktop
+Il insiste sur son importance et affirme vous faire confiance pour motiver votre équipe et faire de ce projet un succès;Audio\RTgeneration\14e;Microsoft Hortense Desktop
+Sachant que vous aviez l'intention de la remettre au profit de la rencontre avec le client que répondez-vous;Audio\RTgeneration\14f;Microsoft Hortense Desktop
+Il est rassuré et vous souhaite une bonne journée avant de continuer son chemin;Audio\RTgeneration\15a;Microsoft Hortense Desktop
+Il s'étonne que vous ne preniez pas ce sujet assez au sérieux et semble douter du bien fondé de votre décision;Audio\RTgeneration\15b;Microsoft Hortense Desktop
+Vous êtes un peu déstabilisé par sa réaction. Comment réagissez-vous? ;Audio\RTgeneration\15c;Microsoft Hortense Desktop
+Il vous félicite pour avoir de la constance dans votre raisonnement mais vous demande néanmoins de planifier le lancement interne en priorité;Audio\RTgeneration\15d;Microsoft Hortense Desktop
+Il vous répète non sans une certaine impatience que l'équipe doit avoir votre priorité et s'excuse avant de prendre congé;Audio\RTgeneration\15e;Microsoft Hortense Desktop
+Votre réunion de lancement interne arrive très vite et vous n'avez que très peu de temps pour la préparer;Audio\RTgeneration\16a;Microsoft Hortense Desktop
+On vous a demandé de challenger l'estimation des charges faite par l'équipe d'avant-vente et de mettre à jour la liste des risques;Audio\RTgeneration\16b;Microsoft Hortense Desktop
+Comme souvent le sujet est complexe et vous n'avez pas toutes les compétences techniques requises pour analyser l'estimation des charges en détail. Que faites-vous ? ;Audio\RTgeneration\16c;Microsoft Hortense Desktop
+Après un échange constructif avec la personne chargée de l'estimation des charges vous réalisez que certains points sont en attente de validation;Audio\RTgeneration\16d;Microsoft Hortense Desktop
+Un point en particulier retient votre attention. Il s'agit de la sous-traitance d'une partie à la fois très technique et critique du projet;Audio\RTgeneration\16e;Microsoft Hortense Desktop
+Plusieurs sous-traitants potentiels ont été identifiés mais aucun n'a donné son accord par écrit. Que faites-vous? ;Audio\RTgeneration\16f;Microsoft Hortense Desktop
+Quelques jours plus tard, un sous-traitant vous appelle pour convenir des modalités de sous-traitance;Audio\RTgeneration\17a;Microsoft Hortense Desktop
+Sachant que vous aviez envisagé de vous passer de sous-traitance, comment réagissez-vous à cet appel? ;Audio\RTgeneration\17b;Microsoft Hortense Desktop
+Il est ravi de votre réponse et vous prenez rendez-vous pour mettre au point le contrat de sous-traitance;Audio\RTgeneration\17c;Microsoft Hortense Desktop
+Il vante le savoir faire de ses équipes et vous persuade finalement du bien-fondé de sa proposition;Audio\RTgeneration\17d;Microsoft Hortense Desktop
+Au moment de conclure l'entretien il vous précise que bien entendu, sa structure ne pourra pas s'engager au forfait mais au temps passé;Audio\RTgeneration\17e;Microsoft Hortense Desktop
+Sachant qu'il s'agit d'un projet au forfait et que les risques sont importants, comment réagissez-vous? ;Audio\RTgeneration\17f;Microsoft Hortense Desktop
+Il regrette de ne pas pouvoir travailler avec vous mais reste à votre disposition  si vous changez d'avis;Audio\RTgeneration\17g;Microsoft Hortense Desktop
+Après un instant de réflexion il vous propose un engagement forfaitaire pour un coût supplémentaire de 20%;Audio\RTgeneration\17h;Microsoft Hortense Desktop
+Votre budget est serré en vous devez tenir un objectif de rentabilité assez élevé, que décidez-vous? ;Audio\RTgeneration\17i;Microsoft Hortense Desktop
+Vous arrivez finalement à un accord qui satisfait les deux parties et vous vous donnez rendez-vous pour aborder le détail des opérations à venir;Audio\RTgeneration\17k;Microsoft Hortense Desktop
+A l'occasion d'une présentation technique vous rencontrez l'un de vos anciens responsables. Il vous félicite pour votre nouveau projet mais souligne que le client est parfois difficile à gérer;Audio\RTgeneration\18a;Microsoft Hortense Desktop
+Il vous invite donc à examiner en détail les risques projet afin de mettre en œuvre les opérations de mitigation nécessaires le plus tôt possible;Audio\RTgeneration\18b;Microsoft Hortense Desktop
+Vous revenez à votre bureau et décidez d'examiner les risques projet d'un œil nouveau. Quelle est votre démarche ? ;Audio\RTgeneration\19a;Microsoft Hortense Desktop
+Quelques jours passent et vous vous apercevez que vous n'avez pas encore rédigé le compte rendu de votre réunion de transfert. Que faites-vous pour y remédier ? ;Audio\RTgeneration\20a;Microsoft Hortense Desktop
+En croisant votre responsable, celui-ci s'étonne que la réunion de transfert n'ait pas encore eu lieu ;Audio\RTgeneration\20b;Microsoft Hortense Desktop
+Vous le rassurez en lui indiquant qu'elle a bien eu lieu et que vous êtes d'ailleurs en train de finaliser le compte rendu... ;Audio\RTgeneration\20c;Microsoft Hortense Desktop
+Vous prenez la résolution de ne plus prendre les aspects reporting à la légère et vous vous lancez dans la rédaction du compte rendu  ;Audio\RTgeneration\20d;Microsoft Hortense Desktop
+Après relecture de vos notes vous vous rendez compte qu'elles comportent beaucoup plus d'informations que dans votre souvenir  ;Audio\RTgeneration\20e;Microsoft Hortense Desktop
+Après réception des notes des personnes présentes, vous réalisez que beaucoup de choses importantes ont été dites ;Audio\RTgeneration\20f;Microsoft Hortense Desktop
+La réunion de lancement interne arrive à grands pas et vous devez vous préparer à rencontrer votre nouvelle équipe ;Audio\RTgeneration\21a;Microsoft Hortense Desktop
+Vous avez bien entendu déjà pris connaissance de l'organisation proposée dans la réponse faite par l'équipe d'avant vente;Audio\RTgeneration\21b;Microsoft Hortense Desktop
+Vous décidez de revenir sur les activités à mener à bien par votre équipe et les charges associées;Audio\RTgeneration\21c;Microsoft Hortense Desktop
+Après un rapide survol vous notez un décalage important entre certaines activités et les charges prévues pour les réaliser;Audio\RTgeneration\21d;Microsoft Hortense Desktop
+Quelle(s) conclusion(s) en tirez-vous ? ;Audio\RTgeneration\22a;Microsoft Hortense Desktop
+Après une relecture attentive vous ne trouvez que peu de choses à corriger et vous décidez de les porter à la connaissance de votre responsable;Audio\RTgeneration\22b;Microsoft Hortense Desktop
+Au final vous n'êtes pas satisfait du résultat obtenu et vous décidez de relire attentivement les éléments en votre possession;Audio\RTgeneration\22c;Microsoft Hortense Desktop
+Vous changez d'avis et préférez ne pas prendre le risque de traiter les charges prévisionnelles à la légère;Audio\RTgeneration\22d;Microsoft Hortense Desktop
+L'organisation et les activités vous sont à présent bien connues et il est temps de consulter les profils de votre future équipe;Audio\RTgeneration\23a;Microsoft Hortense Desktop
+Vous avez le choix entre les rencontrer ou consulter votre référentiel de CVs. Que faites-vous? ;Audio\RTgeneration\23b;Microsoft Hortense Desktop
+Vous accédez à la base de données de CV de l'entreprise après avoir fait les démarches nécessaires pour obtenir les droits d'accès;Audio\RTgeneration\23c;Microsoft Hortense Desktop
+Vous vous apercevez que les CVs ne sont pas mis à jour et que pour certains ils datent de quelques années. Que décidez-vous? ;Audio\RTgeneration\23d;Microsoft Hortense Desktop
+L'administrateur vous fait savoir qu'il est le responsable technique de la base et que c'est à vous de vous préoccuper de la mise à jour des CVs;Audio\RTgeneration\23e;Microsoft Hortense Desktop
+Vous demandez donc aux personnes concernées de mettre à jour leurs CVs dans les plus brefs délais;Audio\RTgeneration\23f;Microsoft Hortense Desktop
+Après quelques jours vous n'avez toujours reçu aucun CV. Que faites vous? ;Audio\RTgeneration\23g;Microsoft Hortense Desktop
+Vous obtenez très peu de retours et lorsque c'est le cas, c'est pour vous dire que la mise à jour des CVs n'est pas une priorité;Audio\RTgeneration\23h;Microsoft Hortense Desktop
+Face à cette situation, vous décidez finalement d'organiser une entrevue de 30 min avec chaque personne pour compléter vos informations;Audio\RTgeneration\23i;Microsoft Hortense Desktop
+Deux des futurs membres de votre équipe sont en pleine recette et n'ont pas de temps à vous consacrer;Audio\RTgeneration\24a;Microsoft Hortense Desktop
+Vous insistez en expliquant la nécessité d'une telle entrevue mais rien n'y fait. Comment réagissez-vous? ;Audio\RTgeneration\24b;Microsoft Hortense Desktop
+Leur chef de projet s'agace de votre insistance et vous demande de garder vos distances ;Audio\RTgeneration\24c;Microsoft Hortense Desktop
+Vous savez que c'est un personnage qui a la réputation de ne pas être très commode. Que faites-vous? ;Audio\RTgeneration\24d;Microsoft Hortense Desktop
+La réaction est immédiate et définitive, vous n'obtiendrez rien de lui ni à présent, ni dans l'avenir;Audio\RTgeneration\24e;Microsoft Hortense Desktop
+Finalement, il n'est pas si obtus que l'on vous l'avait dit. Après 15 min autour d'un café, l'affaire est réglée et vous rencontrer vos futurs collaborateurs le lendemain;Audio\RTgeneration\24f;Microsoft Hortense Desktop
+A présent le moment est venu de vérifier le plan de montée en charge de votre future équipe;Audio\RTgeneration\25a;Microsoft Hortense Desktop
+Après un rapide examen, vous remarquez que certains membres de votre équipe arrivent beaucoup trop tôt et risquent de n'avoir rien à faire. Comment réagissez-vous? ;Audio\RTgeneration\25b;Microsoft Hortense Desktop
+Les personnes concernées apprennent qu'elles vont suivre une formation avant d'intégrer votre projet;Audio\RTgeneration\25c;Microsoft Hortense Desktop
+Certaines d'entre elles viennent vous voir pour discuter du plan de formation car elles ne sont pas d'accord avec son contenu;Audio\RTgeneration\25d;Microsoft Hortense Desktop
+C'est aujourd'hui que vous présentez le projet à l'équipe. Vous savez que c'est un moment important ;Audio\RTgeneration\26a;Microsoft Hortense Desktop
+Votre responsable vous a donné la possibilité d'organiser votre réunion dans l'endroit de votre choix. Qu'avez-vous décidé? ;Audio\RTgeneration\26b;Microsoft Hortense Desktop
+Vous êtes à présent réunis pour parler du projet. Vous êtes à la fois un peu nerveux et impatient de vous lancer dans ce nouveau projet ;Audio\RTgeneration\26c;Microsoft Hortense Desktop
+De quelle façon choisissez-vous de procéder? ;Audio\RTgeneration\26d;Microsoft Hortense Desktop
+La présentation commence bien mais les questions à propos du projet se font rapidement plus précises en vous n'avez pas tous les éléments en tête. ;Audio\RTgeneration\27a;Microsoft Hortense Desktop
+Vous devez réagir pour ne pas laisser votre équipe dans l'inconnu. Comment décidez-vous de gérer la situation ? ;Audio\RTgeneration\27b;Microsoft Hortense Desktop
+Tout le monde a compris que le projet n'allait pas être une partie de plaisir. Malgré les encouragements de fin de réunion vous remarquez peu d'enthousiasme au sein de l'équipe ;Audio\RTgeneration\28a;Microsoft Hortense Desktop
+La rigueur a porté ses fruits. Votre équipe est bien informée mais vous regrettez un léger manque d'enthousiasme vis-à-vis du projet;Audio\RTgeneration\28b;Microsoft Hortense Desktop
+Votre présentation se passe très bien mais une personne de votre équipe vous fait remarquer que vous n'avez pas abordé le sujet des risques;Audio\RTgeneration\29a;Microsoft Hortense Desktop
+Un autre membre de l'équipe s'amuse de la remarque en vous apporte son soutien mais vous sentez comme un flottement dans l'assistance. Que faites-vous? ;Audio\RTgeneration\29b;Microsoft Hortense Desktop
+Les questions s'épuisent rapidement, il est temps de mettre fin à la réunion;Audio\RTgeneration\29c;Microsoft Hortense Desktop
+Vos précisions sont appréciées et la réunion se conclue sur une note positive;Audio\RTgeneration\29d;Microsoft Hortense Desktop
+Des remarques concernant d'éventuelles surprises laissent la place à un silence pesant. Il est temps de mettre fin à la réunion;Audio\RTgeneration\29e;Microsoft Hortense Desktop
+La phase préparatoire du projet est à présent terminée. Il vous faut maintenant organiser la réunion de lancement avec le client et démarrer les premiers travaux. ;Audio\RTgeneration\30a;Microsoft Hortense Desktop
+Je vous propose d'en rester là pour cette fois;Audio\RTgeneration\30b;Microsoft Hortense Desktop
+J'ai été ravie de passer ce moment avec vous et j'ai l'impression de beaucoup mieux vous connaître à présent;Audio\RTgeneration\30c;Microsoft Hortense Desktop
+Si vous le voulez bien, je vous donne rendez-vous dans quelques instants pour le débrief de notre échange;Audio\RTgeneration\30d;Microsoft Hortense Desktop
+Merci encore et à tout de suite;Audio\RTgeneration\30e;Microsoft Hortense Desktop

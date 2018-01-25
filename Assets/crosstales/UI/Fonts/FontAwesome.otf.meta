@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 1a79b8fc024d6144abc9c5a98dacdf56
+guid: c75e5cb6945e611449630cfe76284328
 timeCreated: 1496844352
 licenseType: Store
 TrueTypeFontImporter:
-  serializedVersion: 4
+  serializedVersion: 3
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 0
-  characterPadding: 1
+  characterSpacing: 1
+  characterPadding: 0
   includeFontData: 1
-  fontName: FontAwesome
-  fontNames:
-  - FontAwesome
+  fontNames: []
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

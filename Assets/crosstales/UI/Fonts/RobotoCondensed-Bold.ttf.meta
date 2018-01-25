@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 049e10133d97cce4285c8f3beecf4c6c
+guid: a09482e91ad482a45be18a8dd14f9662
 timeCreated: 1497944792
 licenseType: Store
 TrueTypeFontImporter:
-  serializedVersion: 4
+  serializedVersion: 3
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 0
-  characterPadding: 1
+  characterSpacing: 1
+  characterPadding: 0
   includeFontData: 1
-  fontName: Roboto Condensed
-  fontNames:
-  - Roboto Condensed
+  fontNames: []
   fallbackFontReferences:
   - {fileID: 12800000, guid: 06fc29e24ed8af646848420fbe9a94ca, type: 3}
   - {fileID: 12800000, guid: 8c997bb468f291f409861335c8eb638a, type: 3}
