@@ -16,9 +16,9 @@ namespace HRAPTest
         }
 
        [TestMethod]
-        public void GetFinalValues()
+        public void testExe()
         {
-            M_RunPy p = new M_RunPy(@"..\..\..\PythonAssessment\build\AIAssessment win\job_assessment.exe", " ", "");
+            M_RunPy p = new M_RunPy(@"..\..\..\PythonAssessment\build\AIAssessment win\job_assessment.exe");
         }
 
     }
