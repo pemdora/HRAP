@@ -106,6 +106,7 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < qualitiesPoints.Length; i++)
         {
             qualities[i] = dic[M_MatriceCQ.Instance.Competences[i]];
+            Debug.Log(qualities[i]);
         }
     }
 
