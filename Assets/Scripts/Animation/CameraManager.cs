@@ -49,10 +49,6 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Display(M_Camera.PR_3);
-        }
     }
 
     public void Display(M_Camera camera) // Display current camera

@@ -15,7 +15,7 @@ public class Graph : MonoBehaviour
     private int nbQualities;// Number of qualities
     Dictionary<int, List<Transform>> axis = new Dictionary<int, List<Transform>>(); // Dictionnary of each axis with points
     private float[] radianList;
-    public int[] qualities = new int[9];
+    private int[] qualities = new int[9];
     private Transform[] qualitiesPoints = new Transform[9];
     private int lenght = 60; // better to be a multiple of 10
 
@@ -34,8 +34,22 @@ public class Graph : MonoBehaviour
 
     GameObject[] ringGameObjects;
 
+
+    public static Graph graphInstance;
+
+    //SINGLETON
     void Awake()
     {
+        if (graphInstance != null)
+        {
+            Debug.LogError("More than one graph in scene");
+            return;
+        }
+        else
+        {
+            graphInstance = this;
+        }
+
         radianList = new float[] { 0f, 0.689f, 1.396f, 2.094f, 2.792f, 3.490f, 4.188f, 4.886f, 5.585f };
         nbQualities = radianList.Length;
         this.radius = pointPrefabAxis.GetComponent<SphereCollider>().radius;
@@ -59,6 +73,8 @@ public class Graph : MonoBehaviour
             axis.Add(i, points);
         }
 
+
+
         // Placing candidate points, candidate points are rated /10
         for (int i = 0; i < nbQualities; i++)
         {
@@ -75,6 +91,9 @@ public class Graph : MonoBehaviour
                 Debug.Log("Error, empty key value in dictionnary");
             }
         }
+
+        // initializing candidates points 
+        qualities = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     }
 
