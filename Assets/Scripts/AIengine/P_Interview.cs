@@ -201,9 +201,8 @@ namespace HRAP
         {
             Dictionary<string, double> result = new Dictionary<string, double>();
             
-            // TO TEST
             // Récupère les valeurs des qualités des réponses
-            //candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
+            candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
             
             // Transforme les qualités en compétences
             candidate.UpdateCompetences(candidateAnswers);
