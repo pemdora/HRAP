@@ -21,9 +21,6 @@ namespace HRAP
         private bool isWaiting;
         private bool isOver;
 
-        // Pour stopper l'interviex au bout de 5 questions
-        public int waitingToStop = 0;
-        public int stopAt = 5;
 
         public P_Interview(M_Candidate candidate, IHMInterview ihm)
         {
@@ -49,10 +46,6 @@ namespace HRAP
             // if the candidate has answer 
             if (!isWaiting)
             {
-                if (waitingToStop == stopAt)
-                {
-                    isOver = true;
-                }
 
                 if (sequenceList[currentSequence].DialogElements[currentElement] is M_Question)
                 {
@@ -74,8 +67,6 @@ namespace HRAP
                     AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id); // load and play audio
                     CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f);
                     #endregion
-
-                    waitingToStop++;
 
                     // We are waiting for the candidate answer
                     isWaiting = true;
