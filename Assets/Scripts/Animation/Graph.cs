@@ -95,7 +95,7 @@ public class Graph : MonoBehaviour
         }
 
         // initializing candidates points 
-        GetResult(AIengine.result);
+        GetResult(AIengine.aiEngine.result);
 
     }
 

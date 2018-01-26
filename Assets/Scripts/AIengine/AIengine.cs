@@ -10,19 +10,31 @@ public class AIengine : MonoBehaviour
     private IHMInterview ihm;
     public static string datapath;
 
-    public static Dictionary<string, double> result;
+    public Dictionary<string, double> result;
+    public static AIengine aiEngine;
 
     // Use this for initialization
     void Awake () {
-        datapath = Application.dataPath;
-        // We initialise model, view and Presenter with name of candidate and his job
-        ihm = GetComponent<IHMInterview>();
 
-        candidate = new M_Candidate(ihm.GetName(), ihm.GetPosition());
-        interview = new P_Interview(candidate, ihm);
+        if (aiEngine != null)
+        {
+            Debug.LogError("More than one Candidate Controller in scene");
+            return;
+        }
+        else
+        {
+            datapath = Application.dataPath;
+            // We initialise model, view and Presenter with name of candidate and his job
+            ihm = GetComponent<IHMInterview>();
 
-        ihm.SetPresenter(interview);
+            candidate = new M_Candidate(ihm.GetName(), ihm.GetPosition());
+            interview = new P_Interview(candidate, ihm);
+
+            ihm.SetPresenter(interview);
+            aiEngine = this;
+        }
     }
+    
 
     private void Start()
     {
@@ -44,6 +56,8 @@ public class AIengine : MonoBehaviour
             // Save candidate in db
             M_DataManager.Instance.AddCandidate(candidate);
             result = interview.GetResult();
+            for(int i=0;i<9;i++)
+                Debug.Log(interview.GetResult()[M_MatriceCQ.Instance.Competences[i]]);
         }
     }
 }
