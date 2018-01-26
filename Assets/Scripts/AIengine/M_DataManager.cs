@@ -165,7 +165,7 @@ namespace HRAP
                 case "PR_4": result = M_Camera.PR_4; break;
                 case "PR_5": result = M_Camera.PR_5; break;
                 case "GP_1": result = M_Camera.GP_1; break;
-                default: result = M_Camera.PE_1; break;
+                default: result = M_Camera.PR_3; break;
             }
 
             return result;
