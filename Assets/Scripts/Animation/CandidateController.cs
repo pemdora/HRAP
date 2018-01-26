@@ -126,7 +126,7 @@ public class CandidateController : MonoBehaviour
         if (!canMove)
         {
             IHMInterview.MaskAllNguiComponents(false);
-            coroutine = WaitAndDisplay(5f);
+            coroutine = WaitAndDisplay(hideTime);
             StartCoroutine(coroutine);
         }
     }

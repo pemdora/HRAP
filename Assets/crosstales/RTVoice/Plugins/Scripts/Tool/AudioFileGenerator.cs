@@ -138,7 +138,7 @@ namespace Crosstales.RTVoice.Tool
 
         private void onSpeakAudioGenerationComplete(Model.Wrapper wrapper)
         {
-            Debug.Log("Speech generated: " + wrapper);
+           // Debug.Log("Speech generated: " + wrapper);
         }
 
         #endregion

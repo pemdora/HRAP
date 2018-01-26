@@ -99,7 +99,7 @@ namespace HRAP
             int value = 3; // quality points
 
             // While we are not at the end of the file, or we did not find all answer ids in file
-            while (line != null || index < answerList.Count)
+            while (line != null && index < answerList.Count)
             {
                 string[] temp = line.Split(';');
 

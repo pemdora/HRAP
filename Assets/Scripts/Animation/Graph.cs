@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using HRAP;
 
 public class Graph : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Graph : MonoBehaviour
     private int nbQualities;// Number of qualities
     Dictionary<int, List<Transform>> axis = new Dictionary<int, List<Transform>>(); // Dictionnary of each axis with points
     private float[] radianList;
-    private int[] qualities = new int[9];
+    private double[] qualities = new double[9];
     private Transform[] qualitiesPoints = new Transform[9];
     private int lenght = 60; // better to be a multiple of 10
 
@@ -81,8 +82,9 @@ public class Graph : MonoBehaviour
             if (axis.TryGetValue(i, out points)) // If the data exist in the dictionary with the given key
             {
                 Transform candidatePoint = Instantiate(pointPrefabCandidate);
-                position.x = points[qualities[i]* lenght/10].localPosition.x; //  candidate points are rated /10
-                position.y = points[qualities[i]* lenght/10].localPosition.y;
+                int index = (int)(qualities[i] * lenght / 10);
+                position.x = points[index].localPosition.x; //  candidate points are rated /10
+                position.y = points[index].localPosition.y;
                 candidatePoint.localPosition = position;
                 qualitiesPoints[i] = candidatePoint;
             }
@@ -93,9 +95,20 @@ public class Graph : MonoBehaviour
         }
 
         // initializing candidates points 
-        qualities = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+        GetResult(AIengine.result);
 
     }
+
+    public void GetResult(Dictionary<string, double> dic)
+    {
+        // initializing candidates points 
+
+        for (int i = 0; i < qualitiesPoints.Length; i++)
+        {
+            qualities[i] = dic[M_MatriceCQ.Instance.Competences[i]];
+        }
+    }
+
 
     // Use this for initialization
     void Start()
@@ -139,12 +152,12 @@ public class Graph : MonoBehaviour
             this.ringGameObjects[i].transform.position = this.qualitiesPoints[i].transform.position;
 
             // Match the scale to the distance
-            cylinderDistance = 0.5f * Vector3.Distance(this.qualitiesPoints[i].transform.position, this.qualitiesPoints[i+1].transform.position);
+            cylinderDistance = 0.5f * Vector3.Distance(this.qualitiesPoints[i].transform.position, this.qualitiesPoints[i + 1].transform.position);
             this.ringGameObjects[i].transform.localScale = new Vector3(this.ringGameObjects[i].transform.localScale.x, cylinderDistance, this.ringGameObjects[i].transform.localScale.z);
 
             // Make the cylinder look at the main point.
             // Since the cylinder is pointing up(y) and the forward is z, we need to offset by 90 degrees.
-            this.ringGameObjects[i].transform.LookAt(this.qualitiesPoints[i+1].transform, Vector3.up);
+            this.ringGameObjects[i].transform.LookAt(this.qualitiesPoints[i + 1].transform, Vector3.up);
             this.ringGameObjects[i].transform.rotation *= Quaternion.Euler(90, 0, 0);
         }
 

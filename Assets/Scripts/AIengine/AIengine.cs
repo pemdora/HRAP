@@ -10,6 +10,8 @@ public class AIengine : MonoBehaviour
     private IHMInterview ihm;
     public static string datapath;
 
+    public static Dictionary<string, double> result;
+
     // Use this for initialization
     void Awake () {
         datapath = Application.dataPath;
@@ -41,6 +43,19 @@ public class AIengine : MonoBehaviour
 
             // Save candidate in db
             M_DataManager.Instance.AddCandidate(candidate);
+            if (interview.candidateAnswers != null)
+            {
+
+                foreach (object o in interview.candidateAnswers)
+                {
+                    Debug.Log(o);
+                }
+            }
+            result = interview.GetResult();
+            if (interview.candidateAnswers != null)
+            {
+                Debug.Log(interview.candidateAnswers.ToString());
+            }
         }
     }
 }

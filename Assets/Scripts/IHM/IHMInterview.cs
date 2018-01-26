@@ -60,9 +60,9 @@ public class IHMInterview : MonoBehaviour
         }
         catch (NullReferenceException e)
         {
-            Debug.Log(e.Message);
+            // Debug.Log(e.Message);
             cname = "Name";
-            clastname = "caca";
+            clastname = "Last";
             cposition = "Position";
         }
         //Initialising variables

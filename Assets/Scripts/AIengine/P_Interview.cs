@@ -13,14 +13,13 @@ namespace HRAP
         private M_DialogElement previous;
         private V_Question q;
         private M_QCM qcm;
-        private List<M_Answer> candidateAnswers;
+        public List<M_Answer> candidateAnswers;
 
 
         private int currentSequence;
         private int currentElement;
         private bool isWaiting;
         private bool isOver;
-
 
         public P_Interview(M_Candidate candidate, IHMInterview ihm)
         {
@@ -65,7 +64,7 @@ namespace HRAP
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // Change camera position
                     ChooseAnimationToPlay(); // Choose a dynamic animation to play
                     AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id); // load and play audio
-                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f);
+                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
                     #endregion
 
                     // We are waiting for the candidate answer
@@ -86,8 +85,8 @@ namespace HRAP
                         #region Camera - Animation - Audio 
                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                         ChooseAnimationToPlay();
-                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id);
-                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
+                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
+                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
                         #endregion
 
                         // We are waiting for the candidate answer (button click)
