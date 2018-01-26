@@ -111,11 +111,11 @@ namespace HRAP
                     {
                         if (temp[i] == "p")
                         {
-                            answerList[index].QualitiesList[i - 1].Points = value;
+                            answerList[index].QualitiesList[i].Points = value;
                         }
                         else if (temp[i] == "m")
                         {
-                            answerList[index].QualitiesList[i - 1].Points = -value;
+                            answerList[index].QualitiesList[i].Points = -value;
                         }
                     }
                     // Find next answer (answers are ordered by asc in both file and list)

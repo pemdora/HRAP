@@ -61,6 +61,7 @@ namespace HRAP
         public List<string> Qualities { get { return qualities; } }
 
 
+        // Fait la moyenne des points des qualités des réponses
         private double[] GetFinalQualitiesValues(List<M_Answer> answers)
         {
             int numQualities = this.qualities.Count;
@@ -80,6 +81,7 @@ namespace HRAP
                     }
                 }
             }
+            
 
             // On fait la moyenne des points
             for (int i = 0; i < numQualities; i++)
@@ -98,6 +100,7 @@ namespace HRAP
             return finalValues;
         }
 
+        // Utilise la matrice CQ pour convertir les qualités en compétences
         public double[] GetFinalCompetencesValues(List<M_Answer> answers)
         {
             int numCompetences = this.competences.Count;
@@ -106,18 +109,23 @@ namespace HRAP
             int numQualities = this.qualities.Count;
             double[] qualitiesValues = GetFinalQualitiesValues(answers);
             double sum;
+            double count;
 
             for (int j = 0; j < numCompetences; j++)
             {
                 sum = 0;
+                count = 0;
                 for (int i = 0; i < numQualities; i++)
                 {
-                    if (!Double.IsNaN(qualitiesValues[i]))
+                    if (!Double.IsNaN(qualitiesValues[i]) && ponderations[i][j]!=0)
                     {
                         sum += qualitiesValues[i] * ponderations[i][j];
+                        count++;
                     }
                 }
-                finalValues[j] = sum / numQualities;
+                if (count == 0) count = 1;
+                finalValues[j] = sum / count;
+
             }
             return finalValues;
         }

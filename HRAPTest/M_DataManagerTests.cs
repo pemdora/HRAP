@@ -44,22 +44,29 @@ namespace HRAPTest
         [TestMethod]
         public void UpdateAnswerPoints()
         {
-
+            // Créé une liste de réponses
             M_Answer a = (M_Answer)M_DataManager.Instance.GetElementById("5aR1");
             M_Answer b = (M_Answer)M_DataManager.Instance.GetElementById("5aR2");
 
-            // Put answers in answerList
             List<M_Answer> answersList = new List<M_Answer>();
             answersList.Add(a);
             answersList.Add(b);
 
-            // TO test
-             List<M_Answer> list = M_DataManager.Instance.UpdateQualityPoints(answersList);
+            // Récupère la liste de réponses mise à jour
+            List<M_Answer> list = M_DataManager.Instance.UpdateQualityPoints(answersList);
+            
+            // Valeurs de la réponse "a" récupérées dans le csv
+            int[] expectedValues = { 0, 0, 3, 3, 3, 3, 0, 0, -3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 0, 0, 0, 0 };
+            
+            int i = 0;
 
-            foreach (M_Answer answer in list)
+            // teste si les points sont équivalents à ceux récupérés dans la fonction UpdateQualityPoints()
+            foreach(M_Quality q in list[0].QualitiesList)
             {
-               // Console.WriteLine(answer);
+                Assert.AreEqual(expectedValues[i], q.Points);
+                i++;
             }
+
         }
 
 

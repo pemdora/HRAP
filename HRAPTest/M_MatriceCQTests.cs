@@ -24,25 +24,14 @@ namespace HRAPTest
             M_Answer a = (M_Answer)M_DataManager.Instance.GetElementById("5aR1");
             M_Answer b = (M_Answer)M_DataManager.Instance.GetElementById("5aR2");
 
-            // Init qualities points : 0 or 1
-            for(int i = 0; i < M_MatriceCQ.Instance.Qualities.Count; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    a.QualitiesList[i].Points = 0;
-                    b.QualitiesList[i].Points = 0;
-                }
-                else
-                {
-                    a.QualitiesList[i].Points = 1;
-                    b.QualitiesList[i].Points = 1;
-                }
-            }
-
             // Put answers in answerList
             List<M_Answer> answersList = new List<M_Answer>();
             answersList.Add(a);
-            answersList.Add(b);
+  
+            //answersList.Add(b);
+
+            // Update answers qualities
+            List<M_Answer> updatedList = M_DataManager.Instance.UpdateQualityPoints(answersList);
 
             // Test private method
             /*double[] qualitiesValues = M_MatriceCQ.Instance.GetFinalQualitiesValues(answersList);
@@ -52,7 +41,7 @@ namespace HRAPTest
             }*/
 
             // Test final competences values
-            double[] finalValues = M_MatriceCQ.Instance.GetFinalCompetencesValues(answersList);
+            double[] finalValues = M_MatriceCQ.Instance.GetFinalCompetencesValues(updatedList);
             for (int i = 0; i < M_MatriceCQ.Instance.Competences.Count; i++)
             {
                 Console.WriteLine("  final value: " + finalValues[i]);
@@ -60,7 +49,7 @@ namespace HRAPTest
 
             // Test UpdateCompetence for candidate
             M_Candidate c = new M_Candidate("test", "test");
-            c.UpdateCompetences(answersList);
+            c.UpdateCompetences(updatedList);
 
             foreach(M_Competence comp in c.CompetencesList)
             {
