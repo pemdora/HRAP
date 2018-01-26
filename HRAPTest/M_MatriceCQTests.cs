@@ -9,16 +9,20 @@ namespace HRAPTest
     [TestClass]
     public class M_MatriceCQTests
     {
-        // TO CLEAN
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            AIengine.datapath = @"..\..\..\Assets\";
+        }
 
         [TestMethod]
         public void GetFinalValues()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
+        
             // Generate answers
-            M_Answer a = (M_Answer)M_DataManager.Instance.GetElementById("_1");
-            M_Answer b = (M_Answer)M_DataManager.Instance.GetElementById("_2");
+            M_Answer a = (M_Answer)M_DataManager.Instance.GetElementById("5aR1");
+            M_Answer b = (M_Answer)M_DataManager.Instance.GetElementById("5aR2");
 
             // Init qualities points : 0 or 1
             for(int i = 0; i < M_MatriceCQ.Instance.Qualities.Count; i++)

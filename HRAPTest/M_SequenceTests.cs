@@ -9,11 +9,16 @@ namespace HRAPTest
     [TestClass]
     public class M_SequenceTests
     {
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            AIengine.datapath = @"..\..\..\Assets\";
+        }
+
         [TestMethod]
         public void GetFirstSequence()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie qu'il y a bien 2 éléments dans la séquence récupérée
             M_Sequence seq = new M_Sequence();
             int expected_num_element = 2;
@@ -24,8 +29,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetNextSequence()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie qu'il y a bien 7 éléments dans la séquence récupérée
             M_Sequence seq = new M_Sequence();
             seq = seq.GetNextSequence();

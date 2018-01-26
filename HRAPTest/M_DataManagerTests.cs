@@ -4,11 +4,18 @@ using HRAP;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
+
 namespace HRAPTest
 {
     [TestClass]
     public class M_DataManagerTests
     {
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            AIengine.datapath= @"..\..\..\Assets\";
+        }
 
         // CANDIDATES
 
@@ -16,11 +23,8 @@ namespace HRAPTest
         [TestMethod]
         public void AddCandidate()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             M_Candidate candidate = new M_Candidate("Steve", "Chef de Projet");
             M_DataManager.Instance.AddCandidate(candidate);
-
         }
 
         // MATRICE CQ
@@ -28,8 +32,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetMatriceCQ()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Check the number of qualities (35)
             string[][] mat = M_DataManager.Instance.GetMatrice();
             int expected_length = 35;
@@ -42,7 +44,6 @@ namespace HRAPTest
         [TestMethod]
         public void UpdateAnswerPoints()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
 
             M_Answer a = (M_Answer)M_DataManager.Instance.GetElementById("5aR1");
             M_Answer b = (M_Answer)M_DataManager.Instance.GetElementById("5aR2");
@@ -53,7 +54,12 @@ namespace HRAPTest
             answersList.Add(b);
 
             // TO test
-            // List<M_Answer> jks = M_DataManager.Instance.UpdateQualityPoints(answersList);
+             List<M_Answer> list = M_DataManager.Instance.UpdateQualityPoints(answersList);
+
+            foreach (M_Answer answer in list)
+            {
+               // Console.WriteLine(answer);
+            }
         }
 
 
@@ -62,8 +68,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetSequence()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             int countSequences = M_DataManager.Instance.CountSequences();
             M_Sequence seq = M_DataManager.Instance.GetSequence(5);
 
@@ -79,8 +83,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetDialogElement_WithValidID()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie que l'élément récupéré est bien une réponse
             M_DialogElement element = M_DataManager.Instance.GetElementById("2aR2");
             Assert.ReferenceEquals(element, typeof(M_Answer));
@@ -90,8 +92,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetNextSequenceId_WithValidID()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie que l'on récupère le bon id de la sequence 3
             int expected_id = 5;
             int current_id = M_DataManager.Instance.GetNextSequenceId(3);
@@ -102,8 +102,6 @@ namespace HRAPTest
         [TestMethod]
         public void GetLastSequenceId()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie que l'on récupère le bon id de la dernière sequence
             int expected_id = 26;
             int current_id = M_DataManager.Instance.GetLastSequenceId();
@@ -114,14 +112,11 @@ namespace HRAPTest
         [TestMethod]
         public void CountSequences()
         {
-            Directory.SetCurrentDirectory(@"..\..\..");
-
             // Vérifie que l'on récupère le bon nombre de séquences
             int expected = 15;
             int current = M_DataManager.Instance.CountSequences();
             Assert.AreEqual(expected, current);
             
-
         }
 
 

@@ -88,7 +88,7 @@ namespace HRAP
    
         // **************  ANSWER QUALITY POINTS  ***************
 
-        // All answers are initialized at 0
+        // All answers points are initialized at 0
         // When the interview is over, we update only the candidate answers with real values
         public List<M_Answer> UpdateQualityPoints(List<M_Answer> answerList)
         {
@@ -103,7 +103,7 @@ namespace HRAP
             {
                 string[] temp = line.Split(';');
 
-                if (temp[0] == answerList[index].Id)
+                if (index < answerList.Count && temp[0] == answerList[index].Id)
                 {
                     // Answer is found, we now update qualities points
                     // 'p' is for 'plus' and 'm' is for 'minus'
@@ -172,11 +172,10 @@ namespace HRAP
         }
 
         // Generate a question from xml
-        private M_Question GenerateQuestion(XmlTextReader reader, int id)
+        private M_Question GenerateQuestion(XmlTextReader reader)
         {
             return new M_Question(
                                 reader.GetAttribute("id"),
-                                id,
                                 reader.GetAttribute("actor"),
                                 reader.GetAttribute("text"),
                                 ToAnimation(reader.GetAttribute("animation")),
@@ -185,7 +184,7 @@ namespace HRAP
         }
 
         // Generate an answer from xml
-        private M_Answer GenerateAnswer(XmlTextReader reader, int id)
+        private M_Answer GenerateAnswer(XmlTextReader reader)
         {
             // Init qualities list, each point value is 0
             List<M_Quality> qualities = new List<M_Quality>();
@@ -196,8 +195,6 @@ namespace HRAP
 
             return new M_Answer(
                                 reader.GetAttribute("id"),
-                                "qid",
-                                id,
                                 reader.GetAttribute("actor"),
                                 reader.GetAttribute("text"),
                                 ToAnimation(reader.GetAttribute("animation")),
@@ -207,11 +204,10 @@ namespace HRAP
         }
 
         // Generate a phrase from xml
-        private M_Phrase GeneratePhrase(XmlTextReader reader, int id)
+        private M_Phrase GeneratePhrase(XmlTextReader reader)
         {
             return new M_Phrase(
                                 reader.GetAttribute("id"),
-                                id,
                                 reader.GetAttribute("actor"),
                                 reader.GetAttribute("text"),
                                 ToAnimation(reader.GetAttribute("animation")),
@@ -264,13 +260,13 @@ namespace HRAP
                         switch (reader.Name)
                         {
                             case "question":
-                                dialogElements.Add(GenerateQuestion(reader, id));
+                                dialogElements.Add(GenerateQuestion(reader));
                                 break;
                             case "answer":
-                                dialogElements.Add(GenerateAnswer(reader, id));
+                                dialogElements.Add(GenerateAnswer(reader));
                                 break;
                             case "line":
-                                dialogElements.Add(GeneratePhrase(reader, id));
+                                dialogElements.Add(GeneratePhrase(reader));
                                 break;
                         }
                     }
@@ -280,7 +276,7 @@ namespace HRAP
             return result;
         }
 
-        // Cette fonction est necessaire pcq les ids ne se suivent pas
+        // Cette fonction est necessaire car les ids ne se suivent pas
         public int GetNextSequenceId(int previousId)
         {
             XmlTextReader reader = new XmlTextReader(dialogPath);
@@ -321,15 +317,14 @@ namespace HRAP
                 {
                     if (reader.GetAttribute("id") == elementId)
                     {
-                        // TO DO : set sequence id
                         switch (reader.Name)
                         {
                             case "question":
-                                return GenerateQuestion(reader, 0);
+                                return GenerateQuestion(reader);
                             case "answer":
-                                return GenerateAnswer(reader, 0);
+                                return GenerateAnswer(reader);
                             case "line":
-                                return GeneratePhrase(reader, 0);
+                                return GeneratePhrase(reader);
                         }
                     }
                 }
