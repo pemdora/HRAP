@@ -303,7 +303,7 @@ namespace HRAP
                 catch { }
             } while (reader.ReadToNextSibling("dialog"));
 
-            return 0;
+            return -1;
         }
 
 
