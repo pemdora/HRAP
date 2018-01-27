@@ -283,6 +283,7 @@
     <Compile Include="Assets\Scripts\AIengine\M_RunPy.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Sequence.cs" />
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
+    <Compile Include="Assets\Scripts\AIengine\V_Competence.cs" />
     <Compile Include="Assets\Scripts\AIengine\V_Question.cs" />
     <Compile Include="Assets\Scripts\Animation\AIBehaviour.cs" />
     <Compile Include="Assets\Scripts\Animation\AISpeechManager.cs" />

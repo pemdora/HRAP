@@ -105,9 +105,10 @@ namespace HRAP
 
                 if (index < answerList.Count && temp[0] == answerList[index].Id)
                 {
+
                     // Answer is found, we now update qualities points
                     // 'p' is for 'plus' and 'm' is for 'minus'
-                    for (int i = 1; i < temp.Length; i++)
+                    for (int i = 1; i < temp.Length-1; i++)
                     {
                         if (temp[i] == "p")
                         {
@@ -121,7 +122,8 @@ namespace HRAP
                     // Find next answer (answers are ordered by asc in both file and list)
                     index++;
                 }
-            line = p_reader.ReadLine();
+                
+                line = p_reader.ReadLine();
             }
             return answerList;
         }

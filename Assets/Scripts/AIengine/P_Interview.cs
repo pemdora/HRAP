@@ -178,7 +178,8 @@ namespace HRAP
             {
                 M_Answer answerChosen = null;
                 answerChosen = this.qcm.Answers[chosen_answer];
-                candidateAnswers.Add(answerChosen);
+                if (!candidateAnswers.Contains(answerChosen))
+                    candidateAnswers.Add(answerChosen);
 
                 // Display next element
                 for (int i = currentSequence; i < sequenceList.Count; i++)
@@ -196,6 +197,8 @@ namespace HRAP
             isWaiting = false;
         }
 
+        /***************** TO DELETE (TARA) *****************/
+
         // Envoie les competences avec les valeurs du candidat
         public Dictionary<string,double> GetResult()
         {
@@ -211,6 +214,28 @@ namespace HRAP
             foreach(M_Competence c in candidate.CompetencesList)
             {
                 result.Add(c.Name, c.Points);
+            }
+
+            return result;
+        }
+        /*****************************************************/
+
+
+        // Envoie les competences avec les valeurs du candidat
+        public List<V_Competence> GetResult1()
+        {
+            List<V_Competence> result = new List<V_Competence>();
+
+            // Récupère les valeurs des qualités des réponses
+            candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
+
+            // Transforme les qualités en compétences
+            candidate.UpdateCompetences(candidateAnswers);
+
+            // Envoie le résultat sous forme de dictionnaire
+            foreach (M_Competence c in candidate.CompetencesList)
+            {
+                result.Add(new V_Competence(c.Name, c.Points));
             }
 
             return result;
