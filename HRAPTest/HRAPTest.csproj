@@ -54,6 +54,7 @@
     <Compile Include="M_MatriceCQTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="M_SequenceTests.cs" />
+    <Compile Include="P_InterviewTests.cs" />
     <Compile Include="RunPyTests.cs" />
   </ItemGroup>
   <ItemGroup>

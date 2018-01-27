@@ -222,7 +222,6 @@ namespace HRAP
             M_Sequence result = null;
             List<M_DialogElement> dialogElements = new List<M_DialogElement>();
             bool seqFound = false;
-            bool seqOver = false;
             int readerId = 0;
 
             XmlTextReader reader = new XmlTextReader(dialogPath);
@@ -230,32 +229,26 @@ namespace HRAP
             {
                 if (reader.NodeType == XmlNodeType.Element)
                 {
-                    if (reader.Name == "dialog")
+
+                    if (!seqFound && reader.Name == "dialog")
                     {
                         try
                         {
                             readerId = Convert.ToInt32(reader.GetAttribute("id"));
-
-                            if (seqFound)
-                            {
-                                seqOver = true;
-                                result.DialogElements = dialogElements;
-                            }
 
                             if (readerId == id)
                             {
                                 result = new M_Sequence(id, reader.GetAttribute("name"), null);
                                 seqFound = true;
                             }
+
                         }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e.Message);
-                        }
+                        catch (Exception e) { Console.WriteLine(e.Message); }
 
                     }
 
-                    if (seqFound && !seqOver)
+
+                    if (seqFound)
                     {
                         switch (reader.Name)
                         {
@@ -268,9 +261,17 @@ namespace HRAP
                             case "line":
                                 dialogElements.Add(GeneratePhrase(reader));
                                 break;
+                            default:
+                                break;
                         }
                     }
+
                 }
+            }
+            if (seqFound)
+            {
+                result.DialogElements = dialogElements;
+                reader.Close();
             }
 
             return result;
