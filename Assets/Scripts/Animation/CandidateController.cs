@@ -20,13 +20,14 @@ public class CandidateController : MonoBehaviour
     // Goal points variables
     public Transform goalPointsList;
     private Transform[] goalPoints;
-    public int currentGP = 0;
+    private int currentGP = 0;
+    public Transform handshakingPoint;
+    public Transform chair;
 
     public Transform eva;
     private Vector3 direction;
     public static CandidateController candidateControllerInstance;
     public bool animationTrigger;
-    public Transform chair;
 
     // Timing
     private float hideInterfaceTime = 0;
@@ -91,17 +92,30 @@ public class CandidateController : MonoBehaviour
         if (canMove && animator.GetBool("Walking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
         {
             animator.SetBool("Walking", false);
+
+        }
+        // if the candidate is close to animation point target (1f), then he stop "walking" animation
+        if (animator.GetBool("Walking") && Vector3.Distance(handshakingPoint.position, this.transform.position) <= 1f)
+        {
+            animator.SetBool("Walking", false);
+            animator.SetBool("Sitting", true);
         }
 
         // if the candidate is close to reached target (0.75f), then he stop "walking" animation
         if ((canMove||animationTrigger)&&Vector3.Distance(particle.transform.position, this.transform.position) <= 0.75f)
         {
-            animator.SetBool("Walking", false);
             currentGP++;
+            Debug.Log(currentGP);
+            animator.SetBool("Walking", false);
             if(currentGP<goalPoints.Length) // if we a next waypoint in the list
             {
                 particle.transform.position = goalPoints[currentGP].position;
                 this.particle.SetActive(true);
+            }
+            if (currentGP==1) // if we are at 2d waypoint
+            {
+                PlayAnimation(M_Animation.ANIM_GESTE_MAIN, 0f);
+                LookAt(eva.position);
             }
             if (currentGP==2) // if we are at 2d waypoint
             {
@@ -157,17 +171,21 @@ public class CandidateController : MonoBehaviour
         switch (animation)
         {
             case M_Animation.ANIM_SASSOIR:
-                coroutine = WaitAndPlay(waitingTime);
+                coroutine = WaitAndPlay(waitingTime,"Walking", goalPoints[currentGP].position);
+                StartCoroutine(coroutine);
+                break;
+            case M_Animation.ANIM_GESTE_MAIN:
+                coroutine = WaitAndPlay(waitingTime,"Walking", handshakingPoint.position);
                 StartCoroutine(coroutine);
                 break;
         }
     }
 
-    private IEnumerator WaitAndPlay(float waitTime)
+    private IEnumerator WaitAndPlay(float waitTime,string animName, Vector3 position)
     {
         yield return new WaitForSeconds(waitTime);
-        animator.SetBool("Walking", true);
-        motor.MoveTopoint(goalPoints[currentGP].position);
+        animator.SetBool(animName, true);
+        motor.MoveTopoint(position);
         animationTrigger = true;
     }
 
