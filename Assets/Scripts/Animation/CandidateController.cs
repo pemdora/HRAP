@@ -98,7 +98,7 @@ public class CandidateController : MonoBehaviour
         if (animator.GetBool("Walking") && Vector3.Distance(handshakingPoint.position, this.transform.position) <= 1f)
         {
             animator.SetBool("Walking", false);
-            animator.SetBool("Sitting", true);
+            animator.SetBool("HandShaking", true);
         }
 
         // if the candidate is close to reached target (0.75f), then he stop "walking" animation

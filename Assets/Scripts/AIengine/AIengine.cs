@@ -55,9 +55,9 @@ public class AIengine : MonoBehaviour
 
             // Save candidate in db
             M_DataManager.Instance.AddCandidate(candidate);
-            result = interview.GetResult();
-            for(int i=0;i<9;i++)
-                Debug.Log(interview.GetResult()[M_MatriceCQ.Instance.Competences[i]]);
+            // result = interview.GetResult1();
+            foreach (var money in interview.GetResult1())
+                Debug.Log(money.Points);
         }
     }
 }
