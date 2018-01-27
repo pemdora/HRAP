@@ -222,6 +222,7 @@ namespace HRAP
             M_Sequence result = null;
             List<M_DialogElement> dialogElements = new List<M_DialogElement>();
             bool seqFound = false;
+            bool seqOver= false;
             int readerId = 0;
 
             XmlTextReader reader = new XmlTextReader(dialogPath);
@@ -229,13 +230,16 @@ namespace HRAP
             {
                 if (reader.NodeType == XmlNodeType.Element)
                 {
+                    if (seqFound && reader.Name == "dialog")
+                    {
+                        seqOver = true;
+                    }
 
                     if (!seqFound && reader.Name == "dialog")
                     {
                         try
                         {
                             readerId = Convert.ToInt32(reader.GetAttribute("id"));
-
                             if (readerId == id)
                             {
                                 result = new M_Sequence(id, reader.GetAttribute("name"), null);
@@ -248,7 +252,7 @@ namespace HRAP
                     }
 
 
-                    if (seqFound)
+                    if (seqFound && !seqOver)
                     {
                         switch (reader.Name)
                         {
@@ -261,8 +265,7 @@ namespace HRAP
                             case "line":
                                 dialogElements.Add(GeneratePhrase(reader));
                                 break;
-                            default:
-                                break;
+ 
                         }
                     }
 
@@ -270,8 +273,9 @@ namespace HRAP
             }
             if (seqFound)
             {
+                seqOver = true;
                 result.DialogElements = dialogElements;
-                reader.Close();
+                //reader.Close();
             }
 
             return result;
@@ -326,6 +330,8 @@ namespace HRAP
                                 return GenerateAnswer(reader);
                             case "line":
                                 return GeneratePhrase(reader);
+                            default:
+                                break;
                         }
                     }
                 }

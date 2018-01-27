@@ -22,7 +22,7 @@ namespace HRAPTest
         {
             // A TESTER SANS IHM
 
-           /*  M_Candidate candidate = new M_Candidate("steve", "chef de projet");
+             M_Candidate candidate = new M_Candidate("steve", "chef de projet");
              P_Interview interview = new P_Interview(candidate);
              int count = 0;
              while (!interview.IsOver)
@@ -30,7 +30,7 @@ namespace HRAPTest
                  interview.Launch();
                  interview.SetChosenAnswer(1);
                  count++;
-             }*/
+             }
 
         }
     }
