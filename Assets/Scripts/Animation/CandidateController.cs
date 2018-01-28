@@ -89,35 +89,35 @@ public class CandidateController : MonoBehaviour
         }
 
         // if the candidate is close to hit point target (1f), then he stop "walking" animation
-        if (canMove && animator.GetBool("Walking") && Vector3.Distance(hit.point, this.transform.position) <= 1f)
+        if (canMove && animator.GetBool("Walking") && Vector3.Distance(hit.point, this.transform.position) <= 1.2f)
         {
             animator.SetBool("Walking", false);
-
         }
         // if the candidate is close to animation point target (1f), then he stop "walking" animation
-        if (animator.GetBool("Walking") && Vector3.Distance(handshakingPoint.position, this.transform.position) <= 1f)
+        if (animator.GetBool("Walking") && Vector3.Distance(handshakingPoint.position, this.transform.position) <= 0.75f)
         {
             animator.SetBool("Walking", false);
             animator.SetBool("HandShaking", true);
+            PlayAnimation(M_Animation.ANIM_GESTE_MAIN, 0); // Vector is not importat for a simple animation
         }
 
         // if the candidate is close to reached target (0.75f), then he stop "walking" animation
-        if ((canMove||animationTrigger)&&Vector3.Distance(particle.transform.position, this.transform.position) <= 0.75f)
+        if ((canMove || animationTrigger) && Vector3.Distance(particle.transform.position, this.transform.position) <= 0.75f)
         {
             currentGP++;
             Debug.Log(currentGP);
             animator.SetBool("Walking", false);
-            if(currentGP<goalPoints.Length) // if we a next waypoint in the list
+            if (currentGP < goalPoints.Length) // if we a next waypoint in the list
             {
                 particle.transform.position = goalPoints[currentGP].position;
                 this.particle.SetActive(true);
             }
-            if (currentGP==1) // if we are at 2d waypoint
+            if (currentGP == 1) // if we are at 2d waypoint
             {
-                PlayAnimation(M_Animation.ANIM_GESTE_MAIN, 0f);
+                PlayAnimation(M_Animation.ANIM_MARCHE, 0f, handshakingPoint.position);
                 LookAt(eva.position);
             }
-            if (currentGP==2) // if we are at 2d waypoint
+            if (currentGP == 2) // if we are at 2d waypoint
             {
                 this.particle.SetActive(false);
                 animator.SetBool("Sitting", true);
@@ -166,26 +166,42 @@ public class CandidateController : MonoBehaviour
         IHMInterview.MaskAllNguiComponents(true);
     }
 
+    #region P_interview call
+    // Play animation with a wait time from P_interview
     public void PlayAnimation(M_Animation animation, float waitingTime) // Display current camera
     {
         switch (animation)
         {
-            case M_Animation.ANIM_SASSOIR:
-                coroutine = WaitAndPlay(waitingTime,"Walking", goalPoints[currentGP].position);
+            case M_Animation.ANIM_MARCHE:
+                coroutine = WaitAndPlay(waitingTime, "Walking", goalPoints[currentGP].position);
                 StartCoroutine(coroutine);
                 break;
+        }
+    }
+    #endregion
+
+    // Play animation with a wait time
+    public void PlayAnimation(M_Animation animation, float waitingTime, Vector3 position) // Display current camera
+    {
+        switch (animation)
+        {
             case M_Animation.ANIM_GESTE_MAIN:
-                coroutine = WaitAndPlay(waitingTime,"Walking", handshakingPoint.position);
+                coroutine = WaitAndPlay(waitingTime, "HandShaking", position);
+                StartCoroutine(coroutine);
+                break;
+            case M_Animation.ANIM_MARCHE:
+                coroutine = WaitAndPlay(waitingTime, "Walking", position); // goalPoints[currentGP].position
                 StartCoroutine(coroutine);
                 break;
         }
     }
 
-    private IEnumerator WaitAndPlay(float waitTime,string animName, Vector3 position)
+    private IEnumerator WaitAndPlay(float waitTime, string animName, Vector3 position)
     {
         yield return new WaitForSeconds(waitTime);
         animator.SetBool(animName, true);
-        motor.MoveTopoint(position);
+        if(position!=Vector3.one)
+            motor.MoveTopoint(position);
         animationTrigger = true;
     }
 

@@ -13,6 +13,7 @@ namespace HRAP
         ANIM_SASSOIR,
         ANIM_SOURIRE,
         OUVERTURE_BRAS,
-        ANIM_CLIN_D_OEIL
+        ANIM_CLIN_D_OEIL,
+        ANIM_MARCHE
     }
 }

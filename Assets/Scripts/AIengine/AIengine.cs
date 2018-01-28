@@ -9,6 +9,7 @@ public class AIengine : MonoBehaviour
     private P_Interview interview;
     private IHMInterview ihm;
     public static string datapath;
+    private bool end;
 
     public Dictionary<string, double> result;
     public static AIengine aiEngine;
@@ -32,6 +33,7 @@ public class AIengine : MonoBehaviour
 
             ihm.SetPresenter(interview);
             aiEngine = this;
+            end = false;
         }
     }
     
@@ -50,14 +52,17 @@ public class AIengine : MonoBehaviour
         }
         else
         {
-            // TODO : afficher le résultat dans la vue ==> USE interview.getResult()
-            ihm.Over();
+            if (end != true)
+            {
+                ihm.Over();
 
-            // Save candidate in db
-            M_DataManager.Instance.AddCandidate(candidate);
-            // result = interview.GetResult1();
-            foreach (var money in interview.GetResult1())
-                Debug.Log(money.Points);
+                // Save candidate in db
+                M_DataManager.Instance.AddCandidate(candidate);
+                // result = interview.GetResult1();
+                foreach (var money in interview.GetResult1())
+                    Debug.Log(money.Points);
+                end = true;
+            }
         }
     }
 }
