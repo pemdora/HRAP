@@ -17,6 +17,11 @@ public class CameraManager : MonoBehaviour
 
 
     public static CameraManager cameraManagerinstance;
+    
+    // Camera rotation for candidate
+    public Transform candidate;
+    float fDistance = 1;
+    float fSpeed = 5;
 
     //SINGLETON
     void Awake()
@@ -34,7 +39,7 @@ public class CameraManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        camera_PE_1.enabled = true;
+        camera_PE_1.enabled = true; // default camera for candidate to move
         camera_PA_1.enabled = false;
         camera_PA_2.enabled = false;
         camera_PE_1.enabled = false;
@@ -50,6 +55,24 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (camera_PE_1.enabled)
+        {
+            if (Input.GetKey("right"))
+            {
+                float step = fSpeed * Time.deltaTime;
+                float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
+                float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
+                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, -fDistanceRadians);
+            }
+
+            if (Input.GetKey("left"))
+            {
+                float step = fSpeed * Time.deltaTime;
+                float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
+                float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
+                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, fDistanceRadians);
+            }
+        }
     }
 
     public void Display(M_Camera camera) // Display current camera
