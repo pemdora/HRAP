@@ -280,7 +280,6 @@
     <Compile Include="Assets\Scripts\AIengine\M_QCM.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Quality.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Question.cs" />
-    <Compile Include="Assets\Scripts\AIengine\M_RunPy.cs" />
     <Compile Include="Assets\Scripts\AIengine\M_Sequence.cs" />
     <Compile Include="Assets\Scripts\AIengine\P_Interview.cs" />
     <Compile Include="Assets\Scripts\AIengine\V_Competence.cs" />
