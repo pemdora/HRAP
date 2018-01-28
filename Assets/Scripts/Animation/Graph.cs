@@ -105,7 +105,6 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < qualitiesPoints.Length; i++)
         {
             qualities[i] = list[i].Points;
-            Debug.Log(qualities[i]);
         }
     }
 

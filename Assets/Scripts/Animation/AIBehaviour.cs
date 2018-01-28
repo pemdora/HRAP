@@ -97,6 +97,7 @@ public class AIBehaviour : MonoBehaviour
                 animator.SetBool("Turning", true);
                 animator.SetBool("Sitting", true);
             }
+            CameraManager.cameraManagerinstance.Scale();
             animationTrigger = false;
         }
     }

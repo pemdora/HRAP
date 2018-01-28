@@ -43,6 +43,7 @@ public class CameraManager : MonoBehaviour
         camera_PR_3.enabled = false;
         camera_PR_4.enabled = false;
         camera_PR_5.enabled = false;
+        camera_GP_1.enabled = false;
 
     }
 
@@ -155,5 +156,21 @@ public class CameraManager : MonoBehaviour
                 camera_PR_5.enabled = true;
                 break;
         }
+    }
+
+    // Scaling camera to follow when sit down
+    public void Scale()
+    {
+        camera_PE_1.transform.position -=Vector3.up * 0.5f;
+        camera_PA_1.transform.position -= Vector3.up * 0.5f;
+        camera_PA_2.transform.position -= Vector3.up * 0.5f;
+        camera_PE_1.transform.position -= Vector3.up * 0.5f;
+        camera_PR_1.transform.position -= Vector3.up * 0.5f;
+        camera_PR_2.transform.position -= Vector3.up * 0.5f;
+        camera_PR_3.transform.position -= Vector3.up * 0.5f;
+        camera_PR_4.transform.position -= Vector3.up * 0.5f;
+        camera_PR_5.transform.position -= Vector3.up * 0.5f;
+        camera_GP_1.transform.position -= Vector3.up * 0.5f;
+
     }
 }

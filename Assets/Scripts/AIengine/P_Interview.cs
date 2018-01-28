@@ -64,7 +64,7 @@ namespace HRAP
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // Change camera position
                     ChooseAnimationToPlay(); // Choose a dynamic animation to play
                     AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id); // load and play audio
-                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
+                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip()); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
                     #endregion
 
                     // We are waiting for the candidate answer
@@ -86,7 +86,7 @@ namespace HRAP
                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                         ChooseAnimationToPlay();
                         AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
-                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
+                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip()); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
                         #endregion
 
                         // We are waiting for the candidate answer (button click)
@@ -208,16 +208,6 @@ namespace HRAP
             // Récupère les valeurs des qualités des réponses
             candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
             
-            /*
-            foreach (M_Answer a in candidateAnswers)
-            {
-                foreach (M_Quality q in a.QualitiesList)
-                {
-                    AIengine.Affiche(q.Points.ToString());
-                }
-                AIengine.Affiche("*************");
-            }*/
-
             // Transforme les qualités en compétences
             candidate.UpdateCompetences(candidateAnswers);
 
@@ -234,7 +224,7 @@ namespace HRAP
         {
             if(sequenceList[currentSequence].DialogElements[currentElement].Id=="1b") // the interview has began, characters need to sit
             {
-                AIBehaviour.aiBehaviourInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 0f);
+                AIBehaviour.aiBehaviourInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 0.5f);
                 CandidateController.candidateControllerInstance.PlayAnimation(M_Animation.ANIM_MARCHE, 2f);
             }
         }
