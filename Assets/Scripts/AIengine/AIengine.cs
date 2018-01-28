@@ -10,8 +10,7 @@ public class AIengine : MonoBehaviour
     private IHMInterview ihm;
     public static string datapath;
     private bool end;
-
-    public Dictionary<string, double> result;
+    
     public static AIengine aiEngine;
 
     // Use this for initialization
@@ -59,8 +58,8 @@ public class AIengine : MonoBehaviour
                 // Save candidate in db
                 M_DataManager.Instance.AddCandidate(candidate);
                 // result = interview.GetResult1();
-                foreach (var money in interview.GetResult1())
-                    Debug.Log(money.Points);
+                foreach (V_Competence c in interview.GetResult1())
+                    Debug.Log(c.Points);
                 end = true;
             }
         }

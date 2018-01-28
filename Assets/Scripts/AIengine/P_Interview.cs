@@ -245,8 +245,8 @@ namespace HRAP
         {
             if(sequenceList[currentSequence].DialogElements[currentElement].Id=="1b") // the interview has began, characters need to sit
             {
-                // AIBehaviour.aiBehaviourInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 1f);
-                // CandidateController.candidateControllerInstance.PlayAnimation(M_Animation.MARCHE, 4f);
+                AIBehaviour.aiBehaviourInstance.PlayAnimation(M_Animation.ANIM_SASSOIR, 0f);
+                CandidateController.candidateControllerInstance.PlayAnimation(M_Animation.ANIM_MARCHE, 2f);
             }
         }
 

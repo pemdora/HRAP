@@ -91,7 +91,7 @@ public class AIBehaviour : MonoBehaviour
         if (animationTrigger&&Vector3.Distance(wayPoints[currentGP].position, this.transform.position) <= 1f)
         {
             currentGP++;
-            if (currentGP < wayPoints.Length) // if we a next waypoint in the list
+            if (currentGP < wayPoints.Length) // if we have a next waypoint in the list
             {
                 LookAt(wayPoints[currentGP].position);
                 animator.SetBool("Turning", true);
