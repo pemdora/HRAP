@@ -10,9 +10,10 @@ public class AIengine : MonoBehaviour
     private IHMInterview ihm;
     public static string datapath;
     private bool end;
+
     
     public static AIengine aiEngine;
-
+    public List<V_Competence> result;
     // Use this for initialization
     void Awake () {
 
@@ -55,13 +56,13 @@ public class AIengine : MonoBehaviour
             {
                 ihm.Over();
 
+                result = interview.GetResult1();
+
                 // Save candidate in db
                 M_DataManager.Instance.AddCandidate(candidate);
-                // result = interview.GetResult1();
-                foreach (V_Competence c in interview.GetResult1())
-                    Debug.Log(c.Points);
                 end = true;
             }
         }
     }
+    
 }

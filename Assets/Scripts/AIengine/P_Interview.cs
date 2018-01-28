@@ -196,38 +196,27 @@ namespace HRAP
 
             isWaiting = false;
         }
-
-        /***************** TO DELETE (TARA) *****************/
-
-        // Envoie les competences avec les valeurs du candidat
-        public Dictionary<string,double> GetResult()
-        {
-            Dictionary<string, double> result = new Dictionary<string, double>();
-            
-            // Récupère les valeurs des qualités des réponses
-            candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
-            
-            // Transforme les qualités en compétences
-            candidate.UpdateCompetences(candidateAnswers);
-
-            // Envoie le résultat sous forme de dictionnaire
-            foreach(M_Competence c in candidate.CompetencesList)
-            {
-                result.Add(c.Name, c.Points);
-            }
-
-            return result;
-        }
-        /*****************************************************/
+        
 
 
         // Envoie les competences avec les valeurs du candidat
         public List<V_Competence> GetResult1()
         {
+
             List<V_Competence> result = new List<V_Competence>();
 
             // Récupère les valeurs des qualités des réponses
             candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
+            
+            /*
+            foreach (M_Answer a in candidateAnswers)
+            {
+                foreach (M_Quality q in a.QualitiesList)
+                {
+                    AIengine.Affiche(q.Points.ToString());
+                }
+                AIengine.Affiche("*************");
+            }*/
 
             // Transforme les qualités en compétences
             candidate.UpdateCompetences(candidateAnswers);

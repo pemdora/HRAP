@@ -73,8 +73,10 @@ public class Graph : MonoBehaviour
             }
             axis.Add(i, points);
         }
-
-
+        
+        // initializing candidates points 
+        if(null!=AIengine.aiEngine.result)
+            GetResult(AIengine.aiEngine.result);
 
         // Placing candidate points, candidate points are rated /10
         for (int i = 0; i < nbQualities; i++)
@@ -82,8 +84,8 @@ public class Graph : MonoBehaviour
             if (axis.TryGetValue(i, out points)) // If the data exist in the dictionary with the given key
             {
                 Transform candidatePoint = Instantiate(pointPrefabCandidate);
-                int index = (int)(qualities[i] * lenght / 10);
-                position.x = points[index].localPosition.x; //  candidate points are rated /10
+                int index = (int)(qualities[i] * lenght / 3);
+                position.x = points[index].localPosition.x; 
                 position.y = points[index].localPosition.y;
                 candidatePoint.localPosition = position;
                 qualitiesPoints[i] = candidatePoint;
@@ -94,18 +96,15 @@ public class Graph : MonoBehaviour
             }
         }
 
-        // initializing candidates points 
-        // GetResult(AIengine.aiEngine.result);
-
     }
 
-    public void GetResult(Dictionary<string, double> dic)
+    public void GetResult(List<V_Competence> list)
     {
         // initializing candidates points 
 
         for (int i = 0; i < qualitiesPoints.Length; i++)
         {
-            qualities[i] = dic[M_MatriceCQ.Instance.Competences[i]];
+            qualities[i] = list[i].Points;
             Debug.Log(qualities[i]);
         }
     }

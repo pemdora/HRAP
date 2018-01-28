@@ -324,7 +324,6 @@ public class IHMInterview : MonoBehaviour
     }
     public string GetName()
     {
-        Debug.Log(cname);
         if (cname != "Name") return cname;
         return "";
     }
