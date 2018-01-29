@@ -311,9 +311,10 @@ if __name__ == "__main__":
                 logger.info("Training set size is {}".format(X_train.shape))
                 logger.info("Validation set size is {}".format(X_validation.shape))
 
-                # Select best KNN classifier k for k=0 to 9
+                # Select best KNN classifier k for k=0 to nsample-1
                 best_k = [0,0] # k, accuracy_score
-                for i in range(1,10):
+                print("Shape of Tran set",sys.getsizeof(X_train.shape[0]))
+                for i in range(1,X_train.shape[0]):
                     neigh = neighbors.KNeighborsClassifier(n_neighbors=i)
                     logger.info('Use kNN classifier with k= {}'.format(i))
                     # Do Training and Testing
