@@ -164,7 +164,7 @@ def print_classifier_menu(i):
         print( "5. Exit")
     print( 66 * "-")
 
-# Display classifier menu
+# Display method menu
 def print_method_menu():
     print()
     print( 24 * "-" , "Choose a method " , 24 * "-")
@@ -242,7 +242,7 @@ if __name__ == "__main__":
         elif choice=='2':
             print( "Menu 2 has been selected")
             print_classifier_menu(1)
-            clf_input = input("Enter your choice [1-4]: ")
+            clf_input = input("Enter your choice [1-5]: ")
 
             # ********************** Classifier 1 : NEAREST NEIGHBORS **********************
 
@@ -390,6 +390,14 @@ if __name__ == "__main__":
                     display_testing_curve("KNN"+" Testing curves",samples_test,means_knn,st_deviations_knn)
                     display_testing_curve("Logistic Regression"+" Testing curves",samples_test,means_log,st_deviations_log)
                     plt.show()
+                else:
+                        # Do Training and testing
+                        print('Knn :')
+                        train_accuracy_knn,test_accuracy_knn = classifier_train_test("KNN",neigh,X_train_validation, X_test, y_train_validation, y_test)
+                        print('Logistic Regression :')
+                        train_accuracy_log,test_accuracy_log = classifier_train_test("Logistic Regression",logistic_reg,X_train_validation, X_test, y_train_validation, y_test)
+                        print('Knn Test accuracy score :', test_accuracy_knn)
+                        print('Logistic Test accuracy score :', test_accuracy_log)
 
                 # ************ Classifier 4 : NEAREST NEIGHBORS WITH CROSS VALIDATION ************
 
@@ -399,16 +407,9 @@ if __name__ == "__main__":
                     knn = neighbors.KNeighborsClassifier(n_neighbors=k)
                     logger.info('Use kNN classifier with k= {}'.format(k))
                     scores = cross_val_score(knn, X, y, cv=2, scoring='accuracy')
-                    print(scores.mean())
+                    logger.info(scores.mean())
 
-            else:
-                    # Do Training and testing
-                    print('Knn :')
-                    train_accuracy_knn,test_accuracy_knn = classifier_train_test("KNN",neigh,X_train_validation, X_test, y_train_validation, y_test)
-                    print('Logistic Regression :')
-                    train_accuracy_log,test_accuracy_log = classifier_train_test("Logistic Regression",logistic_reg,X_train_validation, X_test, y_train_validation, y_test)
-                    print('Knn Test accuracy score :', test_accuracy_knn)
-                    print('Logistic Test accuracy score :', test_accuracy_log)
+
 
         ## *********************************************************************************
 
