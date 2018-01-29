@@ -10,7 +10,7 @@ namespace HRAP
     public class M_DataManager
     {
         private static string dialogPath = AIengine.datapath + @"\AIData\dialog.xml";
-        private static string matriceCQPath = AIengine.datapath + @"\AIData\matriceCQ.csv"; 
+        private static string matriceCQPath = AIengine.datapath + @"\AIData\matriceCQ.csv";
         private static string candidatesPath = AIengine.datapath + @"\AIData\candidates.csv";
         private static string answerPointsPath = AIengine.datapath + @"\AIData\answerPoints.csv";
 
@@ -85,14 +85,14 @@ namespace HRAP
             File.AppendAllText(candidatesPath, newLine);
 
         }
-   
+
         // **************  ANSWER QUALITY POINTS  ***************
 
         // All answers points are initialized at 0
         // When the interview is over, we update only the candidate answers with real values
         public List<M_Answer> UpdateQualityPoints(List<M_Answer> answerList)
         {
-            
+
             StreamReader p_reader = new StreamReader(answerPointsPath);
             string line = p_reader.ReadLine();
             int index = 0;
@@ -108,7 +108,7 @@ namespace HRAP
 
                     // Answer is found, we now update qualities points
                     // 'p' is for 'plus' and 'm' is for 'minus'
-                    for (int i = 1; i < temp.Length-1; i++)
+                    for (int i = 1; i < temp.Length - 1; i++)
                     {
                         if (temp[i] == "p")
                         {
@@ -122,7 +122,7 @@ namespace HRAP
                     // Find next answer (answers are ordered by asc in both file and list)
                     index++;
                 }
-                
+
                 line = p_reader.ReadLine();
             }
             return answerList;
@@ -190,7 +190,7 @@ namespace HRAP
         {
             // Init qualities list, each point value is 0
             List<M_Quality> qualities = new List<M_Quality>();
-            foreach(string qualityName in M_MatriceCQ.Instance.Qualities)
+            foreach (string qualityName in M_MatriceCQ.Instance.Qualities)
             {
                 qualities.Add(new M_Quality(qualityName, 0));
             }
@@ -224,7 +224,7 @@ namespace HRAP
             M_Sequence result = null;
             List<M_DialogElement> dialogElements = new List<M_DialogElement>();
             bool seqFound = false;
-            bool seqOver= false;
+            bool seqOver = false;
             int readerId = 0;
 
             XmlTextReader reader = new XmlTextReader(dialogPath);
@@ -267,7 +267,7 @@ namespace HRAP
                             case "line":
                                 dialogElements.Add(GeneratePhrase(reader));
                                 break;
- 
+
                         }
                     }
 
@@ -372,13 +372,13 @@ namespace HRAP
                     }
                     catch { }
                 }
-                
+
             } while (reader.ReadToNextSibling("dialog"));
 
-            
+
             return 0;
         }
-        
+
 
     }
 }

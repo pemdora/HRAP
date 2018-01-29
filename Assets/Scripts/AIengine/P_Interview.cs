@@ -197,24 +197,7 @@ namespace HRAP
             isWaiting = false;
         }
 
-        public Dictionary<string, double> GetResult()
-        {
-            Dictionary<string, double> result = new Dictionary<string, double>();
 
-            // Récupère les valeurs des qualités des réponses
-            candidateAnswers = M_DataManager.Instance.UpdateQualityPoints(candidateAnswers);
-
-            // Transforme les qualités en compétences
-            candidate.UpdateCompetences(candidateAnswers);
-
-            // Envoie le résultat sous forme de dictionnaire
-            foreach (M_Competence c in candidate.CompetencesList)
-            {
-                result.Add(c.Name, c.Points);
-            }
-
-            return result;
-        }
 
         // Envoie les competences avec les valeurs du candidat
         public List<V_Competence> GetResult1()
