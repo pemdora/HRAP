@@ -11,11 +11,12 @@ public class AIengine : MonoBehaviour
     public static string datapath;
     private bool end;
 
-    
+
     public static AIengine aiEngine;
     public List<V_Competence> result;
     // Use this for initialization
-    void Awake () {
+    void Awake()
+    {
 
         if (aiEngine != null)
         {
@@ -36,11 +37,11 @@ public class AIengine : MonoBehaviour
             end = false;
         }
     }
-    
+
 
     private void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -64,5 +65,8 @@ public class AIengine : MonoBehaviour
             }
         }
     }
-    
+    public static void Affiche(string msg)
+    {
+        Debug.Log(msg);
+    }
 }

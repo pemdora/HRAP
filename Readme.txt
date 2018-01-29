@@ -1,0 +1,1 @@
+Déplacer la camera les fleches et pr le deplacement, cliquer sur le sol
