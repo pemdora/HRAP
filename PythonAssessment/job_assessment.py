@@ -15,6 +15,7 @@ from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics, neighbors
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
 import matplotlib.pyplot as plt
 
 import numpy as np
@@ -159,7 +160,8 @@ def print_classifier_menu(i):
     # for menu 2 : accuracy
     else:
         print( "3. Nearest Neighbors Logistic Regresion")
-        print( "4. Exit")
+        print( "4. Nearest Neighbors with Cross Validation")
+        print( "5. Exit")
     print( 66 * "-")
 
 # Display classifier menu
@@ -388,7 +390,18 @@ if __name__ == "__main__":
                     display_testing_curve("KNN"+" Testing curves",samples_test,means_knn,st_deviations_knn)
                     display_testing_curve("Logistic Regression"+" Testing curves",samples_test,means_log,st_deviations_log)
                     plt.show()
-                else:
+
+                # ************ Classifier 4 : NEAREST NEIGHBORS WITH CROSS VALIDATION ************
+
+            elif clf_input=='4':
+
+                for k in range(1,10):
+                    knn = neighbors.KNeighborsClassifier(n_neighbors=k)
+                    logger.info('Use kNN classifier with k= {}'.format(k))
+                    scores = cross_val_score(knn, X, y, cv=2, scoring='accuracy')
+                    print(scores.mean())
+
+            else:
                     # Do Training and testing
                     print('Knn :')
                     train_accuracy_knn,test_accuracy_knn = classifier_train_test("KNN",neigh,X_train_validation, X_test, y_train_validation, y_test)
