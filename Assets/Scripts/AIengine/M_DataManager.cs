@@ -32,6 +32,8 @@ namespace HRAP
 
         // **********************  MATRICE CQ  **********************
 
+        // Read matriceCQ.csv and return matriceCQ
+
         public string[][] GetMatrice()
         {
             return File.ReadAllLines(matriceCQPath).Where(line => line != "").Select(x => x.Split(';')).ToArray();
@@ -64,8 +66,8 @@ namespace HRAP
         }
 
 
-
         // Add a candidate in candidates.csv
+
         public void AddCandidate(M_Candidate candidate)
         {
 
@@ -81,7 +83,8 @@ namespace HRAP
 
             newLine += "\n";
 
-            // TO DO : Save candidate in csv file
+            // Write candidate in csv file
+
             File.AppendAllText(candidatesPath, newLine);
 
         }
@@ -89,13 +92,14 @@ namespace HRAP
         // **************  ANSWER QUALITY POINTS  ***************
 
         // All answers points are initialized at 0
-        // When the interview is over, we update only the candidate answers with real values
+        // When the interview is over, we update only the candidate answers with its real values
+
         public List<M_Answer> UpdateQualityPoints(List<M_Answer> answerList)
         {
 
             StreamReader p_reader = new StreamReader(answerPointsPath);
             string line = p_reader.ReadLine();
-            int index = 0;
+            int index = 0; // current answer position in answerList
             int value = 3; // quality points
 
             // While we are not at the end of the file, or we did not find all answer ids in file
@@ -105,8 +109,7 @@ namespace HRAP
 
                 if (index < answerList.Count && temp[0] == answerList[index].Id)
                 {
-
-                    // Answer is found, we now update qualities points
+                    // Answer is found is file, we now update qualities points in list
                     // 'p' is for 'plus' and 'm' is for 'minus'
                     for (int i = 1; i < temp.Length - 1; i++)
                     {
@@ -133,7 +136,8 @@ namespace HRAP
         // **********************  DIALOG  **********************
 
 
-        // Convert a string to enum Animation
+        // Convert string to enum Animation
+
         private M_Animation ToAnimation(string toParse)
         {
             M_Animation result;
@@ -151,7 +155,8 @@ namespace HRAP
             return result;
         }
 
-        // Convert a string to enum Camera
+        // Convert string to enum Camera
+
         private M_Camera ToCamera(string toParse)
         {
             M_Camera result;
@@ -173,7 +178,8 @@ namespace HRAP
             return result;
         }
 
-        // Generate a question from xml
+        // Generate a question from xml file
+
         private M_Question GenerateQuestion(XmlTextReader reader)
         {
             return new M_Question(
@@ -185,7 +191,8 @@ namespace HRAP
                                 reader.GetAttribute("next"));
         }
 
-        // Generate an answer from xml
+        // Generate an answer from xml file
+
         private M_Answer GenerateAnswer(XmlTextReader reader)
         {
             // Init qualities list, each point value is 0
@@ -205,7 +212,8 @@ namespace HRAP
                                 qualities);
         }
 
-        // Generate a phrase from xml
+        // Generate a phrase from xml file
+
         private M_Phrase GeneratePhrase(XmlTextReader reader)
         {
             return new M_Phrase(
@@ -218,7 +226,7 @@ namespace HRAP
         }
 
 
-        // Return a sequence 
+        // Return a sequence
         public M_Sequence GetSequence(int id)
         {
             M_Sequence result = null;
@@ -228,22 +236,31 @@ namespace HRAP
             int readerId = 0;
 
             XmlTextReader reader = new XmlTextReader(dialogPath);
+
             while (reader.Read())
             {
                 if (reader.NodeType == XmlNodeType.Element)
                 {
+                    // If sequence has already been found and current element is a sequence, sequence is over
+
                     if (seqFound && reader.Name == "dialog")
                     {
                         seqOver = true;
                     }
 
+                    // If sequence was not found and current element is a sequence
+
                     if (!seqFound && reader.Name == "dialog")
                     {
                         try
                         {
+                            // Read sequence and get id from xml file
+
                             readerId = Convert.ToInt32(reader.GetAttribute("id"));
+
                             if (readerId == id)
                             {
+                                // Sequence is found
                                 result = new M_Sequence(id, reader.GetAttribute("name"), null);
                                 seqFound = true;
                             }
@@ -253,7 +270,7 @@ namespace HRAP
 
                     }
 
-
+                    // If sequence is found, get all dialog elements until sequence is over
                     if (seqFound && !seqOver)
                     {
                         switch (reader.Name)
@@ -273,23 +290,24 @@ namespace HRAP
 
                 }
             }
+
+            // If sequence has been found, add all dialog elements in result
             if (seqFound)
             {
                 seqOver = true;
                 result.DialogElements = dialogElements;
-                //reader.Close();
             }
 
             return result;
         }
 
-        // Cette fonction est necessaire car les ids ne se suivent pas
+        // Return next sequence id (ids are not consecutive)
+
         public int GetNextSequenceId(int previousId)
         {
             XmlTextReader reader = new XmlTextReader(dialogPath);
             int readerId = 0;
             bool seqFound = false;
-
 
             reader.ReadToFollowing("dialog");
             do
@@ -305,15 +323,15 @@ namespace HRAP
                     {
                         return readerId;
                     }
-
                 }
-                catch { }
+                catch (Exception e) { Console.WriteLine(e.Message); }
             } while (reader.ReadToNextSibling("dialog"));
 
             return 0;
         }
 
 
+        // Return a dialog element by its id
 
         public M_DialogElement GetElementById(string elementId)
         {
@@ -342,6 +360,7 @@ namespace HRAP
         }
 
         // Count number of sequences in dialog.xml
+
         public int CountSequences()
         {
             int result = 0;
@@ -353,7 +372,8 @@ namespace HRAP
         }
 
 
-        // A ameliorer
+        // Return last sequence id from dialog.xml
+
         public int GetLastSequenceId()
         {
             int numSequences = CountSequences();
@@ -370,7 +390,7 @@ namespace HRAP
                     {
                         return Convert.ToInt32(reader.GetAttribute("id"));
                     }
-                    catch { }
+                    catch (Exception e) { Console.WriteLine(e.Message); }
                 }
 
             } while (reader.ReadToNextSibling("dialog"));
