@@ -21,7 +21,7 @@
       <FileName>Assets\Scripts\Animation\CameraManager.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CandidateController">
+  <Class Name="CandidateController" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>BoQAAQAEACAiOgAgAAiASAACAAEgAAIAAAAAgEAAAEI=</HashCode>
@@ -29,14 +29,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="CandidateMovment" Collapsed="true">
-    <Position X="5" Y="2" Width="1.75" />
+    <Position X="2.75" Y="1.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQQAAAAACAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAECAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Animation\CandidateMovment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Graph" Collapsed="true">
-    <Position X="7.5" Y="3" Width="1.5" />
+    <Position X="5.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BQQEAAQACCAEQAAAAIEAAAgAAACAAAAAAEDAIAAAEEA=</HashCode>
       <FileName>Assets\Scripts\Animation\Graph.cs</FileName>

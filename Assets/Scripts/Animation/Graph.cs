@@ -6,11 +6,12 @@ using HRAP;
 
 public class Graph : MonoBehaviour
 {
-    public Transform pointPrefabAxis;
-    public Transform pointPrefabCandidate;
-    public float size;
-    private float radius;
-    public Color[] cols = new Color[9];
+    [Header("Graph variables")]
+    public Transform pointPrefabAxis; // object used to represent axis points
+    public Transform pointPrefabCandidate; // object used to represent candidate points
+    public float size; // size of axis points
+    private float radius; // radius of axis points
+    public Color[] cols = new Color[9]; // differents colors for axis
 
     // Axis Values
     private int nbQualities;// Number of qualities
@@ -20,25 +21,17 @@ public class Graph : MonoBehaviour
     private Transform[] qualitiesPoints = new Transform[9];
     private int lenght = 60; // better to be a multiple of 10
 
-
     // Material used for the connecting lines
     public Material lineMat;
-
-    // Connect all of the `points` to the `mainPoint`
-    // public GameObject mainPoint;
-    // public GameObject[] points;
-
+    
     // Fill in this with the default Unity Cylinder mesh
     // We will account for the cylinder pivot/origin being in the middle.
     public Mesh cylinderMesh;
-
-
+    
     GameObject[] ringGameObjects;
-
-
-    public static Graph graphInstance;
-
+    
     //SINGLETON
+    public static Graph graphInstance;
     void Awake()
     {
         if (graphInstance != null)
@@ -51,6 +44,7 @@ public class Graph : MonoBehaviour
             graphInstance = this;
         }
 
+        // list of different radian angles of each axis
         radianList = new float[] { 0f, 0.689f, 1.396f, 2.094f, 2.792f, 3.490f, 4.188f, 4.886f, 5.585f };
         nbQualities = radianList.Length;
         this.radius = pointPrefabAxis.GetComponent<SphereCollider>().radius;
@@ -58,10 +52,12 @@ public class Graph : MonoBehaviour
         position.z = 0f;
         Transform point;
         List<Transform> points = new List<Transform>();
+
+        // Create a line of points for each quality axis
         for (int i = 0; i < nbQualities; i++)
         {
             points = new List<Transform>();
-            for (int j = 0; j < lenght; j++)
+            for (int j = 0; j < lenght; j++) // The line is composed of "length" points
             {
                 point = Instantiate(pointPrefabAxis);
                 Material mymat = point.GetComponent<Renderer>().material;
@@ -78,7 +74,7 @@ public class Graph : MonoBehaviour
         if(null!=AIengine.aiEngine.result)
             GetResult(AIengine.aiEngine.result);
 
-        // Placing candidate points, candidate points are rated /10
+        // Placing candidate points, candidate points are rated /3
         for (int i = 0; i < nbQualities; i++)
         {
             if (axis.TryGetValue(i, out points)) // If the data exist in the dictionary with the given key
@@ -108,8 +104,8 @@ public class Graph : MonoBehaviour
         }
     }
 
-
     // Use this for initialization
+    // Link all the points together with lines
     void Start()
     {
         this.ringGameObjects = new GameObject[qualitiesPoints.Length];

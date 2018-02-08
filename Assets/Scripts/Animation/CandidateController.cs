@@ -7,9 +7,9 @@ using HRAP;
 [RequireComponent(typeof(CandidateMovment))]
 public class CandidateController : MonoBehaviour
 {
+
+    [Header("Candidate controls variables")]
     public LayerMask movmentMask;  // Create a layer "Ground" where only ground object are affected
-    private CandidateMovment motor; // Script for candidate movment
-    private Animator animator;
     public Camera Candidatecamera; // Main camera for player controller
     private RaycastHit hit; // Raycast for mouse hit
     public bool canMove; // boolean that choose if the player can move or not
@@ -17,13 +17,17 @@ public class CandidateController : MonoBehaviour
     public GameObject particle;
     public GameObject pointer;
 
-    // Goal points variables
+    // Goal points variable
+    [Header("Goal points variables")]
     public Transform goalPointsList;
     private Transform[] goalPoints;
     private int currentGP = 0;
     public Transform handshakingPoint;
     public Transform chair;
 
+    [Header("Animation variables")]
+    private CandidateMovment motor; // Script for candidate movment
+    private Animator animator;
     public Transform eva;
     private Vector3 direction;
     public static CandidateController candidateControllerInstance;
