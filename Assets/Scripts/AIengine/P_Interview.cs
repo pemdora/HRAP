@@ -60,7 +60,7 @@ namespace HRAP
                     CameraManager.cameraManagerinstance.Display(GetCurrentCamera()); // Change camera position
                     ChooseAnimationToPlay(); // Choose a dynamic animation to play
                     AISpeechManager.speechManagerinstance.LoadandPlayAudio(sequenceList[currentSequence].DialogElements[currentElement].Id); // load and play audio
-                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
+                    CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip()); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
                     #endregion
 
                     // We are waiting for the candidate answer
@@ -87,7 +87,7 @@ namespace HRAP
                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                         ChooseAnimationToPlay();
                         AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id); 
-                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // AISpeechManager.speechManagerinstance.GetLengthAudioClip()
+                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(AISpeechManager.speechManagerinstance.GetLengthAudioClip()); // AISpeechManager.speechManagerinstance.GetLengthAudioClip()
                         #endregion
 
                         // We are waiting for the candidate answer (button click)
