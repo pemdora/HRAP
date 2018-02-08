@@ -74,18 +74,9 @@ public class CandidateController : MonoBehaviour
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 5f, movmentMask))
             {
                 animator.SetBool("Walking", true);
-                motor.MoveTopoint(hit.point);
+                motor.MoveToPoint(hit.point);
                 pointer.transform.position = hit.point;
             }
-            /*
-            NavMeshPath path = new NavMeshPath();
-            motor.Agent.CalculatePath(hit.point, path);
-            NavMeshHit hithit;
-            if (!NavMesh.SamplePosition(hit.point, out hithit, 0.01f, NavMesh.GetAreaFromName("Walkable")))
-            {
-                Debug.Log("ok");
-            }
-            */
         }
 
         // if the candidate is close to hit point target (1f), then he stop "walking" animation
@@ -93,7 +84,7 @@ public class CandidateController : MonoBehaviour
         {
             animator.SetBool("Walking", false);
         }
-        // if the candidate is close to animation point target (1f), then he stop "walking" animation
+        // if the candidate is close to animation point target (0.75f), then he stop "walking" animation
         if (animator.GetBool("Walking") && Vector3.Distance(handshakingPoint.position, this.transform.position) <= 0.75f)
         {
             animator.SetBool("Walking", false);
@@ -111,7 +102,7 @@ public class CandidateController : MonoBehaviour
                 particle.transform.position = goalPoints[currentGP].position;
                 this.particle.SetActive(true);
             }
-            if (currentGP == 1) // if we are at 2d waypoint
+            if (currentGP == 1) // if we are at 1st waypoint
             {
                 PlayAnimation(M_Animation.ANIM_MARCHE, 0f, handshakingPoint.position);
             }
@@ -141,12 +132,11 @@ public class CandidateController : MonoBehaviour
         // If the candidate is not moving
         if (!canMove)
         {
-            IHMInterview.MaskAllNguiComponents(false);
+            IHMInterview.MaskAllNguiComponents(false); // Hide components (MaskAllNguiComponents should actually be DisplayAllNguiComponents)
             coroutine = WaitAndDisplay(hideTime);
             StartCoroutine(coroutine);
         }
     }
-
 
     public void LookAt(Vector3 positionToLookAt)
     {
@@ -161,11 +151,10 @@ public class CandidateController : MonoBehaviour
         }
     }
 
-
     private IEnumerator WaitAndDisplay(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        IHMInterview.MaskAllNguiComponents(true);
+        IHMInterview.MaskAllNguiComponents(true); // Display UI 
     }
 
     #region P_interview call
@@ -183,6 +172,7 @@ public class CandidateController : MonoBehaviour
     }
     #endregion
 
+    // Overloaded PlayAnimation method
     // Play animation with a wait time
     public void PlayAnimation(M_Animation animation, float waitingTime, Vector3 position) // Display current camera
     {
@@ -204,7 +194,7 @@ public class CandidateController : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         animator.SetBool(animName, true);
         if(position!=Vector3.one)
-            motor.MoveTopoint(position);
+            motor.MoveToPoint(position);
         animationTrigger = true;
     }
 

@@ -16,14 +16,9 @@ public class CandidateMovment : MonoBehaviour
 
     }
 
-    public void MoveTopoint(Vector3 point)
+    public void MoveToPoint(Vector3 point)
     {
         agent.SetDestination(point);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
 }
