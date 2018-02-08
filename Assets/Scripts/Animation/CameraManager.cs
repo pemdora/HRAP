@@ -5,6 +5,7 @@ using HRAP;
 
 public class CameraManager : MonoBehaviour
 {
+    [Header("Cameras")]
     public Camera camera_PE_1; // Plan d'ensemble
     public Camera camera_PA_1; // Plan Americain avec 1 seul personnage
     public Camera camera_PA_2; // Plan Americain avec les 2 personnages
@@ -14,16 +15,14 @@ public class CameraManager : MonoBehaviour
     public Camera camera_PR_4; // Plan rapproché 4
     public Camera camera_PR_5; // Plan rapproché 5
     public Camera camera_GP_1; // Gros Plan
-
-
-    public static CameraManager cameraManagerinstance;
-    
-    // Camera rotation for candidate
+        
+    [Header("Camera Controller variables")]  // Camera rotation for candidate
     public Transform candidate;
-    float fDistance = 1;
-    float fSpeed = 5;
+    public float fDistance = 1;
+    public float fSpeed = 5;
 
     //SINGLETON
+    public static CameraManager cameraManagerinstance;
     void Awake()
     {
         if (cameraManagerinstance != null)
@@ -36,6 +35,7 @@ public class CameraManager : MonoBehaviour
             cameraManagerinstance = this;
         }
     }
+
     // Use this for initialization
     void Start()
     {
@@ -55,20 +55,20 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (camera_PE_1.enabled)
+        if (camera_PE_1.enabled) // if candidate controls are enabled
         {
             if (Input.GetKey("right"))
             {
-                float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
-                float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
-                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, -fDistanceRadians);
+                float orbitCircumference = 2F * fDistance * Mathf.PI;
+                float distanceRadians = (fSpeed / orbitCircumference) * 2 * Mathf.PI;
+                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, -distanceRadians); // rotate around Candidate
             }
 
             if (Input.GetKey("left"))
             {
-                float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
-                float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
-                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, fDistanceRadians);
+                float orbitCircumference = 2F * fDistance * Mathf.PI;
+                float distanceRadians = (fSpeed / orbitCircumference) * 2 * Mathf.PI;
+                camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, distanceRadians);
             }
         }
     }
@@ -182,7 +182,7 @@ public class CameraManager : MonoBehaviour
     // Scaling camera to follow when sit down
     public void Scale()
     {
-        camera_PE_1.transform.position -=Vector3.up * 0.5f;
+        camera_PE_1.transform.position -= Vector3.up * 0.5f;
         camera_PA_1.transform.position -= Vector3.up * 0.5f;
         camera_PA_2.transform.position -= Vector3.up * 0.5f;
         camera_PE_1.transform.position -= Vector3.up * 0.5f;
