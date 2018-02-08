@@ -7,14 +7,15 @@ using HRAP;
 [RequireComponent(typeof(NavMeshAgent))]
 public class AIBehaviour : MonoBehaviour
 {
-    public Transform candidate;
+    [Header("AI")]
+    public Transform candidatePosition;
     public Transform chair;
     private Vector3 direction;
     private Animator animator;
     private NavMeshAgent agent;
-    public bool animationTrigger;
+    public bool animationTrigger; // boolean that can activate behavior
 
-    // Goal points variables
+    [Header("Goal points variables")]
     public Transform wayPointsList;
     private Transform[] wayPoints;
     public int currentGP = 0;
@@ -22,9 +23,8 @@ public class AIBehaviour : MonoBehaviour
     // Timing 
     private IEnumerator coroutine;
 
-    public static AIBehaviour aiBehaviourInstance;
-
     //SINGLETON
+    public static AIBehaviour aiBehaviourInstance;
     void Awake()
     {
         if (aiBehaviourInstance != null)
@@ -85,10 +85,10 @@ public class AIBehaviour : MonoBehaviour
         }
         if (CandidateController.candidateControllerInstance.canMove)
         {
-            LookAt(candidate.position);
+            LookAt(candidatePosition.position);
         }
         // if the AI is close to reached target (1f), then she stop "walking" animation
-        if (animationTrigger&&Vector3.Distance(wayPoints[currentGP].position, this.transform.position) <= 1f)
+        if (animationTrigger && Vector3.Distance(wayPoints[currentGP].position, this.transform.position) <= 1f)
         {
             currentGP++;
             if (currentGP < wayPoints.Length) // if we have a next waypoint in the list
@@ -102,22 +102,22 @@ public class AIBehaviour : MonoBehaviour
         }
     }
 
-    public void PlayAnimation(M_Animation animation,float waitingTime) // Display current camera
+    public void PlayAnimation(M_Animation animation, float waitingTime) // Display current camera
     {
         switch (animation)
         {
-            case M_Animation.ANIM_SASSOIR:
-                coroutine = WaitAndPlay(waitingTime);
+            case M_Animation.ANIM_MARCHE:
+                coroutine = WaitAndPlay(waitingTime, "Walking");
                 StartCoroutine(coroutine);
                 break;
         }
     }
 
 
-    private IEnumerator WaitAndPlay(float waitTime)
+    private IEnumerator WaitAndPlay(float waitTime,string animName)
     {
         yield return new WaitForSeconds(waitTime);
-        animator.SetBool("Walking", true);
+        animator.SetBool(animName, true);
         animationTrigger = true;
     }
 }
