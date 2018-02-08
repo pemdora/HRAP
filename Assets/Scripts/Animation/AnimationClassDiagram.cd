@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="AIBehaviour" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BIQQAAAEACAAKQQAAAAAAgCAAAAgAAAAAAAAwEAAAEI=</HashCode>
       <FileName>Assets\Scripts\Animation\AIBehaviour.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AISpeechManager" Collapsed="true">
-    <Position X="7.75" Y="2.5" Width="1.5" />
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAASAAAAAACAAAAAAAABAgBAAgAAAAAAACAEA=</HashCode>
       <FileName>Assets\Scripts\Animation\AISpeechManager.cs</FileName>

@@ -3,13 +3,12 @@ using RogoDigital.Lipsync;
 
 public class AISpeechManager : MonoBehaviour
 {
-
     public LipSync lipsyncComponent;
     private LipSyncData clip = null;
     public bool speakTrigger;
 
-    public static AISpeechManager speechManagerinstance;
     //SINGLETON
+    public static AISpeechManager speechManagerinstance;
     void Awake()
     {
         if (speechManagerinstance != null)
@@ -43,9 +42,9 @@ public class AISpeechManager : MonoBehaviour
 
     public void LoadandPlayAudio(string id)
     {
+        // P_interview told that AI is going speak soon
         // load clip from value given for P_Interview
         clip = Resources.Load(id) as LipSyncData; // Load resource using Resource folder in Assets folder
-        // P_interview told that AI is going speak soon
         speakTrigger = true;
         // if the candidate wants to begin dialogue (he cannot move anymore)
         if (!CandidateController.candidateControllerInstance.canMove)

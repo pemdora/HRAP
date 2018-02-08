@@ -86,8 +86,8 @@ namespace HRAP
                         #region Camera - Animation - Audio 
                         CameraManager.cameraManagerinstance.Display(GetCurrentCamera());
                         ChooseAnimationToPlay();
-                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id); // AISpeechManager.speechManagerinstance.GetLengthAudioClip() - 4f
-                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // if it is a sentence, wait duration of clip -4s because clip finished 0.5s after she has spoken
+                        AISpeechManager.speechManagerinstance.LoadandPlayAudio(currentPhrase.Id); 
+                        CandidateController.candidateControllerInstance.DiplayCandidateInterface(0f); // AISpeechManager.speechManagerinstance.GetLengthAudioClip()
                         #endregion
 
                         // We are waiting for the candidate answer (button click)
