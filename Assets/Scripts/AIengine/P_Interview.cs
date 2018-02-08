@@ -210,7 +210,7 @@ namespace HRAP
 
         // Return candidate competences at the end of the interview
 
-        public List<V_Competence> GetResult1()
+        public List<V_Competence> GetResult()
         {
             List<V_Competence> result = new List<V_Competence>();
 

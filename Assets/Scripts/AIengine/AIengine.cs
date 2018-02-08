@@ -17,7 +17,6 @@ public class AIengine : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-
         if (aiEngine != null)
         {
             Debug.LogError("More than one Candidate Controller in scene");
@@ -38,12 +37,6 @@ public class AIengine : MonoBehaviour
         }
     }
 
-
-    private void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -57,7 +50,7 @@ public class AIengine : MonoBehaviour
             {
                 ihm.Over();
 
-                result = interview.GetResult1();
+                result = interview.GetResult();
 
                 // Save candidate in db
                 M_DataManager.Instance.AddCandidate(candidate);
@@ -65,7 +58,9 @@ public class AIengine : MonoBehaviour
             }
         }
     }
-    public static void Affiche(string msg)
+
+    // Used for debugging
+    public static void Display(string msg)
     {
         Debug.Log(msg);
     }

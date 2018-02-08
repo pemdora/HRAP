@@ -337,6 +337,7 @@
     <None Include="Assets\Rogo Digital\sox-14-4-2\LICENSE.GPL.txt" />
     <None Include="Assets\Rogo Digital\sox-14-4-2\README.txt" />
     <None Include="Assets\Rogo Digital\sox-14-4-2\README.win32.txt" />
+    <None Include="Assets\Scripts\Animation\AnimationClassDiagram.cd" />
     <None Include="Assets\crosstales\RTVoice\3rd party\Assets.txt" />
     <None Include="Assets\crosstales\RTVoice\Documentation\EmotionML.txt" />
     <None Include="Assets\crosstales\RTVoice\Documentation\SSML.txt" />
