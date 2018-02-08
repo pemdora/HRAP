@@ -59,7 +59,6 @@ public class CameraManager : MonoBehaviour
         {
             if (Input.GetKey("right"))
             {
-                float step = fSpeed * Time.deltaTime;
                 float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
                 float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
                 camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, -fDistanceRadians);
@@ -67,7 +66,6 @@ public class CameraManager : MonoBehaviour
 
             if (Input.GetKey("left"))
             {
-                float step = fSpeed * Time.deltaTime;
                 float fOrbitCircumfrance = 2F * fDistance * Mathf.PI;
                 float fDistanceRadians = (fSpeed / fOrbitCircumfrance) * 2 * Mathf.PI;
                 camera_PE_1.transform.RotateAround(candidate.transform.position, Vector3.up, fDistanceRadians);

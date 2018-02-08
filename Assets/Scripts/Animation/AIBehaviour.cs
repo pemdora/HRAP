@@ -37,6 +37,7 @@ public class AIBehaviour : MonoBehaviour
             aiBehaviourInstance = this;
         }
     }
+
     void Start()
     {
         // Find a reference to the Animator component in Awake since it exists in the scene.
@@ -51,14 +52,12 @@ public class AIBehaviour : MonoBehaviour
         }
         this.agent.autoTraverseOffMeshLink = false;
     }
-
-
+    
     public void MoveTopoint(Vector3 point)
     {
         agent.SetDestination(point);
     }
-
-
+    
     public void LookAt(Vector3 positionToLookAt)
     {
         this.direction = positionToLookAt - this.transform.position;
@@ -91,10 +90,10 @@ public class AIBehaviour : MonoBehaviour
         if (animationTrigger && Vector3.Distance(wayPoints[currentGP].position, this.transform.position) <= 1f)
         {
             currentGP++;
-            if (currentGP < wayPoints.Length) // if we have a next waypoint in the list
+            if (currentGP==1) // if we reached 1st waypoint, play animation sit
             {
                 LookAt(wayPoints[currentGP].position);
-                animator.SetBool("Turning", true);
+                animator.SetBool("Turning", true); // temporary Idle animation played for now
                 animator.SetBool("Sitting", true);
             }
             CameraManager.cameraManagerinstance.Scale();
@@ -112,8 +111,7 @@ public class AIBehaviour : MonoBehaviour
                 break;
         }
     }
-
-
+    
     private IEnumerator WaitAndPlay(float waitTime,string animName)
     {
         yield return new WaitForSeconds(waitTime);
